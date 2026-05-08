@@ -72,11 +72,12 @@ export interface Tea {
   urgency: TeaUrgency;
   expiry_estimate?: string;
   brewing?: {
-    water_temp_c: number;
-    steep_time_seconds: number;
-    leaf_grams_per_100ml?: number;
     vessel?: string;
-    rounds?: number;
+    leaf_grams_per_100ml?: number;
+    rounds: Array<{
+      water_temp_c: number;
+      steep_time_seconds: number;
+    }>;
     notes?: string;
   };
   notes: string;

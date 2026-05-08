@@ -1,39 +1,46 @@
 id: moroccan-mint-traditional
 name:
-  primary: "Moroccan Mint"
+  primary: Moroccan Mint
   alternate: null
 category: moroccan-mint
-category_label: "Moroccan Mint"
+category_label: Moroccan Mint
 producer:
-  name: "Market blend"
+  name: Market blend
   history: null
 origin:
-  region: "Marrakech"
-  country: "Morocco"
+  region: Marrakech
+  country: Morocco
   locality: null
 acquisition:
-  location: "Marrakech"
+  location: Marrakech
   year: 2024
   month: 6
-  context: "Holiday"
+  context: Holiday
 caffeine_level: 2
 urgency: calm
-expiry_estimate: "~2026.06"
+expiry_estimate: ~2026.06
 brewing:
-  water_temp_c: 100
-  steep_time_seconds: 180
+  vessel: Moroccan teapot
   leaf_grams_per_100ml: 5
-  vessel: "Moroccan teapot"
-  rounds: 1
-  notes: "Add fresh mint and sugar generously. Pour from height to aerate. The ritual matters."
-notes: |
-  Chinese gunpowder green tea base, intended for Moroccan mint tea
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 180
+  notes: Add fresh mint and sugar generously. Pour from height to aerate. The ritual matters.
+notes: 'Chinese gunpowder green tea base, intended for Moroccan mint tea
+
   preparation. The tea itself is secondary to the ritual — fresh mint,
+
   generous sugar, poured from height into small glasses. Bought in the
-  Marrakech souk. Might gift to someone who'd enjoy the ritual.
+
+  Marrakech souk. Might gift to someone who''d enjoy the ritual.
+
+  '
 photo:
-  url: "/photos/moroccan-mint-traditional.jpg"
-  alt: "Moroccan mint tea being poured from ornate teapot"
+  url: /photos/moroccan-mint-traditional.jpg
+  alt: Moroccan mint tea being poured from ornate teapot
   source: null
   is_local: true
-tags: [moroccan-tea, cultural, gift-candidate]
+tags:
+- moroccan-tea
+- cultural
+- gift-candidate

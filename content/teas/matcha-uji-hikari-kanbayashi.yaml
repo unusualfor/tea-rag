@@ -1,39 +1,47 @@
 id: matcha-uji-hikari-kanbayashi
 name:
-  primary: "Hikari Matcha"
-  alternate: "光"
-  pronunciation: "Hi-ka-ri"
+  primary: Hikari Matcha
+  alternate: 光
+  pronunciation: Hi-ka-ri
 category: matcha-ceremonial
-category_label: "Matcha (Ceremonial)"
+category_label: Matcha (Ceremonial)
 producer:
-  name: "Kanbayashi"
-  history: "Tea suppliers to the Tokugawa Shogunate. Centuries-old lineage from Uji."
+  name: Kanbayashi
+  history: Tea suppliers to the Tokugawa Shogunate. Centuries-old lineage from Uji.
 origin:
-  region: "Uji"
-  country: "Japan"
+  region: Uji
+  country: Japan
   locality: null
 acquisition:
-  location: "Uji, Kyoto"
+  location: Uji, Kyoto
   year: 2025
   month: 9
-  context: "Honeymoon trip"
+  context: Honeymoon trip
 caffeine_level: 5
 urgency: now
-expiry_estimate: "~2026.03"
+expiry_estimate: ~2026.03
 brewing:
-  water_temp_c: 80
-  steep_time_seconds: 15
+  vessel: chawan
   leaf_grams_per_100ml: 2
-  vessel: "chawan"
-  rounds: 1
-  notes: "Sift before whisking. Use chasen vigorously for 15 seconds until frothy."
-notes: |
-  Ceremonial grade matcha from Kanbayashi. Vibrant green, minimal bitterness,
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 15
+  notes: Sift before whisking. Use chasen vigorously for 15 seconds until frothy.
+notes: 'Ceremonial grade matcha from Kanbayashi. Vibrant green, minimal bitterness,
+
   pronounced umami with a clean finish. Best prepared as usucha (thin tea)
+
   for daily ritual. The color is remarkable — electric green.
+
+  '
 photo:
-  url: "/photos/matcha-uji-hikari-kanbayashi.jpg"
-  alt: "Tin of Kanbayashi Hikari ceremonial matcha"
-  source: "Kanbayashi official"
+  url: /photos/matcha-uji-hikari-kanbayashi.jpg
+  alt: Tin of Kanbayashi Hikari ceremonial matcha
+  source: Kanbayashi official
   is_local: true
-tags: [premium, japanese-tea, uji, honeymoon-collection, daily-ritual]
+tags:
+- premium
+- japanese-tea
+- uji
+- honeymoon-collection
+- daily-ritual

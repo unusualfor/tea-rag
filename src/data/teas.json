@@ -26,11 +26,14 @@
     "urgency": "stable",
     "expiry_estimate": "~2026.12",
     "brewing": {
-      "water_temp_c": 95,
-      "steep_time_seconds": 240,
-      "leaf_grams_per_100ml": 3,
       "vessel": "mug",
-      "rounds": 1,
+      "leaf_grams_per_100ml": 3,
+      "rounds": [
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 240
+        }
+      ],
       "notes": "Strong, malty, takes milk well. A breakfast tea. Can handle a longer steep without becoming unpleasant."
     },
     "notes": "Full-bodied second flush Assam from Halmari estate. Malt, honey,\nbread crust — the quintessential breakfast tea character. Strong enough\nto stand up to milk and sugar, but rewarding black too. The reliable\nmorning starter in the collection.\n",
@@ -74,11 +77,30 @@
     "urgency": "stable",
     "expiry_estimate": "~2028.01",
     "brewing": {
-      "water_temp_c": 90,
-      "steep_time_seconds": 60,
-      "leaf_grams_per_100ml": 4,
       "vessel": "gaiwan",
-      "rounds": 5,
+      "leaf_grams_per_100ml": 4,
+      "rounds": [
+        {
+          "water_temp_c": 90,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 90,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 90,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 90,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 90,
+          "steep_time_seconds": 60
+        }
+      ],
       "notes": "White tea is forgiving. Can also cold-brew overnight for a different character — sweet and clean."
     },
     "notes": "White Peony from Fuding — a mix of buds and young leaves, minimally\nprocessed. Honey sweetness, hay-like aroma, delicate stone fruit notes.\nImproves with age (white tea ages well). Currently drinking young and fresh,\nbut could be set aside for a year or two for more depth.\n",
@@ -121,11 +143,14 @@
     "urgency": "calm",
     "expiry_estimate": "~2026.08",
     "brewing": {
-      "water_temp_c": 95,
-      "steep_time_seconds": 240,
-      "leaf_grams_per_100ml": 3,
       "vessel": "mug",
-      "rounds": 1,
+      "leaf_grams_per_100ml": 3,
+      "rounds": [
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 240
+        }
+      ],
       "notes": "Standard Western brew. Takes milk if you want, but interesting enough black."
     },
     "notes": "High-grown Ceylon from Uva province. Brisk, slightly mentholated,\nwith a crisp astringency that works well in the afternoon. Not the most\ncomplex tea in the collection, but reliable and versatile. Considering\ngifting — it's a crowd-pleaser without requiring specialized brewing knowledge.\n",
@@ -169,11 +194,42 @@
     "urgency": "stable",
     "expiry_estimate": "~2028.01",
     "brewing": {
-      "water_temp_c": 98,
-      "steep_time_seconds": 20,
-      "leaf_grams_per_100ml": 8,
       "vessel": "gaiwan",
-      "rounds": 8,
+      "leaf_grams_per_100ml": 8,
+      "rounds": [
+        {
+          "water_temp_c": 98,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 98,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 98,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 98,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 98,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 98,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 98,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 98,
+          "steep_time_seconds": 20
+        }
+      ],
       "notes": "Very short first steeps (10-15s), extending gradually. The minerality emerges on later steeps."
     },
     "notes": "Wuyi rock oolong — heavily roasted, complex, with the distinctive mineral\nbackbone ('rock rhyme') that defines this style. Dark fruit, charcoal,\nroasted nuts in the first steeps, transitioning to a sweet mineral finish.\nRewards patience and multiple infusions. A tea with genuine depth.\n",
@@ -218,11 +274,18 @@
     "urgency": "now",
     "expiry_estimate": "~2026.01",
     "brewing": {
-      "water_temp_c": 85,
-      "steep_time_seconds": 180,
-      "leaf_grams_per_100ml": 3,
       "vessel": "porcelain cup",
-      "rounds": 2,
+      "leaf_grams_per_100ml": 3,
+      "rounds": [
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 180
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 180
+        }
+      ],
       "notes": "Lower temperature than you'd expect for a 'black' tea. First flush is closer to oolong in character."
     },
     "notes": "Spring first flush Darjeeling from Makaibari estate. Muscatel grape notes,\nfloral brightness, light body. More like a green tea than a typical black —\nfirst flush Darjeeling is its own category. Drink fresh; it doesn't improve\nwith age. The champagne of teas, as the cliché goes (but it's true).\n",
@@ -266,11 +329,14 @@
     "urgency": "stable",
     "expiry_estimate": "~2026.06",
     "brewing": {
-      "water_temp_c": 95,
-      "steep_time_seconds": 210,
-      "leaf_grams_per_100ml": 3,
       "vessel": "mug",
-      "rounds": 1,
+      "leaf_grams_per_100ml": 3,
+      "rounds": [
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 210
+        }
+      ],
       "notes": "Standard Western brewing. The bergamot is real oil, not artificial flavoring."
     },
     "notes": "A proper Earl Grey — whole-leaf Chinese black tea with natural bergamot\noil. The base tea has enough body to carry the citrus without being\noverwhelmed. A reminder that this classic can be much more than\nthe supermarket teabag version. Afternoon staple.\n",
@@ -313,11 +379,18 @@
     "urgency": "calm",
     "expiry_estimate": "~2026.09",
     "brewing": {
-      "water_temp_c": 90,
-      "steep_time_seconds": 30,
-      "leaf_grams_per_100ml": 4,
       "vessel": "kyusu",
-      "rounds": 2,
+      "leaf_grams_per_100ml": 4,
+      "rounds": [
+        {
+          "water_temp_c": 90,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 90,
+          "steep_time_seconds": 30
+        }
+      ],
       "notes": "Hot water, quick steep. The toasted rice puffs up beautifully. Good with food."
     },
     "notes": "Green tea blended with toasted rice from Ippodo. The rice adds a warm,\npopcorn-like aroma and nutty flavor that complements the grassy base.\nUnpretentious, satisfying, pairs well with meals. A daily-drinking tea\nwith zero pretension and genuine charm.\n",
@@ -362,11 +435,22 @@
     "urgency": "now",
     "expiry_estimate": "~2026.04",
     "brewing": {
-      "water_temp_c": 60,
-      "steep_time_seconds": 120,
-      "leaf_grams_per_100ml": 5,
       "vessel": "kyusu",
-      "rounds": 3,
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 60,
+          "steep_time_seconds": 120
+        },
+        {
+          "water_temp_c": 60,
+          "steep_time_seconds": 120
+        },
+        {
+          "water_temp_c": 60,
+          "steep_time_seconds": 120
+        }
+      ],
       "notes": "Low temperature is essential. First steep brings out umami; subsequent steeps reveal sweetness."
     },
     "notes": "Exceptional gyokuro from Kanbayashi, historic Uji producer. Deep umami,\nmarine sweetness, almost broth-like in body. The kind of tea that\nrewards full attention — not a daily driver, a meditation.\n",
@@ -410,11 +494,18 @@
     "urgency": "soon",
     "expiry_estimate": "~2026.06",
     "brewing": {
-      "water_temp_c": 90,
-      "steep_time_seconds": 30,
-      "leaf_grams_per_100ml": 5,
       "vessel": "kyusu",
-      "rounds": 2,
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 90,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 90,
+          "steep_time_seconds": 30
+        }
+      ],
       "notes": "More delicate than standard hojicha. Slightly lower temp brings out the residual umami from the gyokuro stems."
     },
     "notes": "Premium hojicha made from roasted gyokuro stems (karigane). Carries a\ndeeper sweetness and residual umami that regular hojicha lacks. The\nroasting is lighter, preserving some of the shaded character. A bridge\nbetween the intensity of gyokuro and the comfort of hojicha.\n",
@@ -458,11 +549,18 @@
     "urgency": "calm",
     "expiry_estimate": "~2026.09",
     "brewing": {
-      "water_temp_c": 95,
-      "steep_time_seconds": 30,
-      "leaf_grams_per_100ml": 4,
       "vessel": "kyusu",
-      "rounds": 2,
+      "leaf_grams_per_100ml": 4,
+      "rounds": [
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 30
+        }
+      ],
       "notes": "Boiling water is fine. Quick steep for roasty sweetness. Good evening tea — low caffeine."
     },
     "notes": "Roasted green tea from Kanbayashi. Warm, nutty, caramel-like sweetness\nwithout bitterness. Comforting rather than complex. A perfect evening tea\nor post-meal palate cleanser. The roasting process reduces caffeine significantly.\n",
@@ -506,11 +604,22 @@
     "urgency": "calm",
     "expiry_estimate": "~2026.12",
     "brewing": {
-      "water_temp_c": 80,
-      "steep_time_seconds": 60,
-      "leaf_grams_per_100ml": 5,
       "vessel": "kyusu",
-      "rounds": 3,
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 60
+        }
+      ],
       "notes": "Stems are forgiving — hard to over-steep. Good for casual brewing."
     },
     "notes": "Twig tea from Ippodo — made from stems and stalks rather than leaves.\nLight, sweet, slightly nutty with almost no astringency. Very low caffeine.\nA gentle, easygoing tea for any time of day. The stalks give it a\ndistinctive appearance and a clean, uncomplicated character.\n",
@@ -555,11 +664,22 @@
     "urgency": "now",
     "expiry_estimate": "~2026.02",
     "brewing": {
-      "water_temp_c": 80,
-      "steep_time_seconds": 60,
-      "leaf_grams_per_100ml": 4,
       "vessel": "glass cup",
-      "rounds": 3,
+      "leaf_grams_per_100ml": 4,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 60
+        }
+      ],
       "notes": "Glass cup recommended to watch leaves unfurl. First steep is the sweetest. Don't over-steep."
     },
     "notes": "Pre-Qingming (early spring) Dragon Well from the West Lake area.\nFlat, pan-fired leaves with a chestnut aroma and sweet, vegetal flavor.\nNo astringency when brewed correctly. One of the great Chinese greens —\nsubtle, elegant, and best consumed young. Drink before spring ends.\n",
@@ -603,11 +723,14 @@
     "urgency": "stable",
     "expiry_estimate": "~2026.06",
     "brewing": {
-      "water_temp_c": 100,
-      "steep_time_seconds": 300,
-      "leaf_grams_per_100ml": 5,
       "vessel": "saucepan",
-      "rounds": 1,
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 300
+        }
+      ],
       "notes": "Simmer tea and spices in water+milk (1:1) for 5 minutes. Strain. Sweeten to taste. This is cooking, not infusion."
     },
     "notes": "Personal masala chai blend — strong CTC Assam base with cardamom,\nginger, cinnamon, black pepper, cloves. Mixed at home to personal\nratios. The recipe changes slightly each time. A comforting,\nspice-forward drink for cold mornings or afternoon crashes.\n",
@@ -651,11 +774,14 @@
     "urgency": "stable",
     "expiry_estimate": "~2026.06",
     "brewing": {
-      "water_temp_c": 80,
-      "steep_time_seconds": 15,
-      "leaf_grams_per_100ml": 2,
       "vessel": "chawan",
-      "rounds": 1,
+      "leaf_grams_per_100ml": 2,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 15
+        }
+      ],
       "notes": "Good as daily matcha. Slightly more bitter than ceremonial grade — works well as latte base too."
     },
     "notes": "Everyday-grade matcha from Marukyu Koyamaen. Not as refined as their\nceremonial offerings, but reliably good for daily preparation. Balanced\nbetween bitter and sweet, with enough body to stand up to milk if desired.\nThe workhorse matcha in the collection.\n",
@@ -700,11 +826,14 @@
     "urgency": "now",
     "expiry_estimate": "~2026.03",
     "brewing": {
-      "water_temp_c": 80,
-      "steep_time_seconds": 15,
-      "leaf_grams_per_100ml": 2,
       "vessel": "chawan",
-      "rounds": 1,
+      "leaf_grams_per_100ml": 2,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 15
+        }
+      ],
       "notes": "Sift before whisking. Use chasen vigorously for 15 seconds until frothy."
     },
     "notes": "Ceremonial grade matcha from Kanbayashi. Vibrant green, minimal bitterness,\npronounced umami with a clean finish. Best prepared as usucha (thin tea)\nfor daily ritual. The color is remarkable — electric green.\n",
@@ -749,11 +878,14 @@
     "urgency": "calm",
     "expiry_estimate": "~2026.06",
     "brewing": {
-      "water_temp_c": 100,
-      "steep_time_seconds": 180,
-      "leaf_grams_per_100ml": 5,
       "vessel": "Moroccan teapot",
-      "rounds": 1,
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 180
+        }
+      ],
       "notes": "Add fresh mint and sugar generously. Pour from height to aerate. The ritual matters."
     },
     "notes": "Chinese gunpowder green tea base, intended for Moroccan mint tea\npreparation. The tea itself is secondary to the ritual — fresh mint,\ngenerous sugar, poured from height into small glasses. Bought in the\nMarrakech souk. Might gift to someone who'd enjoy the ritual.\n",
@@ -796,11 +928,50 @@
     "urgency": "stable",
     "expiry_estimate": null,
     "brewing": {
-      "water_temp_c": 100,
-      "steep_time_seconds": 15,
-      "leaf_grams_per_100ml": 7,
       "vessel": "gaiwan",
-      "rounds": 10,
+      "leaf_grams_per_100ml": 7,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 15
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 15
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 15
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 15
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 15
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 15
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 15
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 15
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 15
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 15
+        }
+      ],
       "notes": "Boiling water, very short steeps. Rinse first. This tea will evolve over 10+ steeps. Don't rush it."
     },
     "notes": "Young sheng pu'er from Yiwu, pressed in 2019. Still evolving — some\nbitterness that will mellow with age, but already showing Yiwu's\ncharacteristic honey sweetness and floral notes. Bought to age alongside\nthe collection. Check back in 2027 for more complexity.\n",
@@ -844,11 +1015,42 @@
     "urgency": "calm",
     "expiry_estimate": null,
     "brewing": {
-      "water_temp_c": 100,
-      "steep_time_seconds": 20,
-      "leaf_grams_per_100ml": 7,
       "vessel": "gaiwan",
-      "rounds": 8,
+      "leaf_grams_per_100ml": 7,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 20
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 20
+        }
+      ],
       "notes": "Rinse twice to wake the leaves. Dark, inky liquor. Smooth and grounding."
     },
     "notes": "Ripe pu'er from Menghai — the factory that invented the accelerated\nfermentation process. Earth, dark chocolate, dried dates. Smooth,\nthick mouthfeel with no rough edges. A winter evening tea, meditative\nand warming. Already well-aged enough to drink now without any pile taste.\n",
@@ -893,11 +1095,22 @@
     "urgency": "soon",
     "expiry_estimate": "~2026.06",
     "brewing": {
-      "water_temp_c": 70,
-      "steep_time_seconds": 60,
-      "leaf_grams_per_100ml": 4,
       "vessel": "kyusu",
-      "rounds": 3,
+      "leaf_grams_per_100ml": 4,
+      "rounds": [
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 60
+        }
+      ],
       "notes": "First steep at 70°C for umami. Second at 80°C for sweetness. Third at 90°C for astringency and finish."
     },
     "notes": "Premium sencha from Marukyu Koyamaen. Asatsuyu means \"morning dew\" — apt for\na tea this clean and refreshing. Vegetal sweetness, light marine notes,\nexcellent balance. A reliable choice for afternoon sessions.\n",
@@ -941,11 +1154,22 @@
     "urgency": "soon",
     "expiry_estimate": "~2026.03",
     "brewing": {
-      "water_temp_c": 70,
-      "steep_time_seconds": 45,
-      "leaf_grams_per_100ml": 4,
       "vessel": "kyusu",
-      "rounds": 3,
+      "leaf_grams_per_100ml": 4,
+      "rounds": [
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 45
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 45
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 45
+        }
+      ],
       "notes": "Deep-steamed leaves break down easily. Use a fine mesh kyusu. Shorter steep than regular sencha."
     },
     "notes": "Deep-steamed sencha from Yame, Fukuoka. The extended steaming breaks down\nleaf structure, producing a richer, more opaque brew with full body and\nreduced astringency. Sweet, slightly creamy, with a vegetal depth that\nlighter senchas lack. Daily-driver quality.\n",
@@ -989,11 +1213,22 @@
     "urgency": "soon",
     "expiry_estimate": "~2026.04",
     "brewing": {
-      "water_temp_c": 70,
-      "steep_time_seconds": 90,
-      "leaf_grams_per_100ml": 4,
       "vessel": "kyusu",
-      "rounds": 3,
+      "leaf_grams_per_100ml": 4,
+      "rounds": [
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 90
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 90
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 90
+        }
+      ],
       "notes": "Treat like a sencha but with slightly longer steep. The curly leaves need time to unfurl."
     },
     "notes": "Tamaryokucha ('curly green tea') from Sonogi — pan-fired rather than\nsteamed, giving it a rounder, slightly sweeter profile than standard\nsencha. The Chinese influence is visible in the curled leaf shape and\nthe toasty-sweet character. An unusual Japanese green worth exploring.\nCurrently in tasting mode — deciding if it earns a permanent spot.\n",
@@ -1037,11 +1272,34 @@
     "urgency": "stable",
     "expiry_estimate": "~2027.01",
     "brewing": {
-      "water_temp_c": 95,
-      "steep_time_seconds": 30,
-      "leaf_grams_per_100ml": 7,
       "vessel": "gaiwan",
-      "rounds": 6,
+      "leaf_grams_per_100ml": 7,
+      "rounds": [
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 30
+        }
+      ],
       "notes": "Gongfu style. Short steeps, many rounds. The tea evolves beautifully across infusions — floral to mineral to sweet."
     },
     "notes": "Classic Tieguanyin from Anxi, lightly oxidized (jade style). Orchid\nfragrance, clean floral sweetness, with a lingering mineral finish.\nThe rolled leaves unfurl slowly across steeps, releasing new dimensions.\nA great introduction to Chinese oolong tradition.\n",
@@ -1086,11 +1344,14 @@
     "urgency": "stable",
     "expiry_estimate": "~2027.01",
     "brewing": {
-      "water_temp_c": 100,
-      "steep_time_seconds": 300,
-      "leaf_grams_per_100ml": 5,
       "vessel": "çaydanlık (double teapot)",
-      "rounds": 1,
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 300
+        }
+      ],
       "notes": "Traditional double-teapot method: strong concentrate on top, diluted with water from below. Served in tulip glasses."
     },
     "notes": "Turkish black tea from Rize, the heartland of Turkish tea culture.\nStrong, tannic, meant to be sipped throughout the day from small tulip\nglasses. Not subtle — bold and functional. Pairs with sugar cubes\nand conversation. A cultural experience more than a connoisseur tea.\n",

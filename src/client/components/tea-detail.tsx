@@ -16,7 +16,7 @@ import {
   formatBrewingTime,
   caffeineLabel,
 } from "@/lib/tea-utils";
-import { Thermometer, Clock, Scale, Coffee, RotateCcw } from "lucide-react";
+import { Thermometer, Clock, Scale, Coffee } from "lucide-react";
 
 interface TeaDetailProps {
   tea: Tea | null;
@@ -91,39 +91,48 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
           {tea.brewing && (
             <div>
               <h4 className="text-sm font-medium text-foreground mb-3">Brewing</h4>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <BrewingParam
-                  icon={<Thermometer className="w-3.5 h-3.5" />}
-                  label="Temperature"
-                  value={formatBrewingTemp(tea.brewing.water_temp_c)}
-                />
-                <BrewingParam
-                  icon={<Clock className="w-3.5 h-3.5" />}
-                  label="Steep time"
-                  value={formatBrewingTime(tea.brewing.steep_time_seconds)}
-                />
+
+              {/* Vessel & leaf ratio */}
+              <div className="flex flex-wrap gap-4 mb-3">
                 {tea.brewing.leaf_grams_per_100ml && (
-                  <BrewingParam
-                    icon={<Scale className="w-3.5 h-3.5" />}
-                    label="Leaf ratio"
-                    value={`${tea.brewing.leaf_grams_per_100ml}g / 100ml`}
-                  />
+                  <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                    <Scale className="w-3.5 h-3.5" />
+                    <span>{tea.brewing.leaf_grams_per_100ml}g / 100ml</span>
+                  </div>
                 )}
                 {tea.brewing.vessel && (
-                  <BrewingParam
-                    icon={<Coffee className="w-3.5 h-3.5" />}
-                    label="Vessel"
-                    value={tea.brewing.vessel}
-                  />
-                )}
-                {tea.brewing.rounds && (
-                  <BrewingParam
-                    icon={<RotateCcw className="w-3.5 h-3.5" />}
-                    label="Rounds"
-                    value={`${tea.brewing.rounds}`}
-                  />
+                  <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                    <Coffee className="w-3.5 h-3.5" />
+                    <span>{tea.brewing.vessel}</span>
+                  </div>
                 )}
               </div>
+
+              {/* Rounds */}
+              {tea.brewing.rounds.length === 1 ? (
+                <div className="flex gap-4 text-sm">
+                  <span className="flex items-center gap-1.5">
+                    <Thermometer className="w-3.5 h-3.5 text-muted-foreground" />
+                    {formatBrewingTemp(tea.brewing.rounds[0].water_temp_c)}
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <Clock className="w-3.5 h-3.5 text-muted-foreground" />
+                    {formatBrewingTime(tea.brewing.rounds[0].steep_time_seconds)}
+                  </span>
+                </div>
+              ) : (
+                <div className="space-y-1">
+                  {tea.brewing.rounds.map((round, i) => (
+                    <div key={i} className="flex items-center gap-2 text-sm">
+                      <span className="w-4 text-xs text-muted-foreground font-medium">{i + 1}.</span>
+                      <span>{formatBrewingTemp(round.water_temp_c)}</span>
+                      <span className="text-muted-foreground">·</span>
+                      <span>{formatBrewingTime(round.steep_time_seconds)}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
               {tea.brewing.notes && (
                 <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
                   {tea.brewing.notes}
@@ -175,25 +184,5 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
         </div>
       </DialogContent>
     </Dialog>
-  );
-}
-
-function BrewingParam({
-  icon,
-  label,
-  value,
-}: {
-  icon: React.ReactNode;
-  label: string;
-  value: string;
-}) {
-  return (
-    <div className="flex flex-col gap-0.5">
-      <div className="flex items-center gap-1.5 text-muted-foreground">
-        <span className="shrink-0 w-3.5 h-3.5">{icon}</span>
-        <span className="text-xs">{label}</span>
-      </div>
-      <p className="text-sm font-medium">{value}</p>
-    </div>
   );
 }

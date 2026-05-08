@@ -1,18 +1,19 @@
 id: puer-sheng-yiwu-2019
 name:
-  primary: "Yiwu Sheng Pu'er 2019"
-  alternate: "易武生普"
+  primary: Yiwu Sheng Pu'er 2019
+  alternate: 易武生普
 category: puer-sheng
-category_label: "Pu'er (Sheng/Raw)"
+category_label: Pu'er (Sheng/Raw)
 producer:
-  name: "Yiwu Mountain Tea"
-  history: "Yiwu is one of the six ancient tea mountains in Yunnan. Historically a starting point for the ancient tea-horse road."
+  name: Yiwu Mountain Tea
+  history: Yiwu is one of the six ancient tea mountains in Yunnan. Historically a starting point for the ancient tea-horse
+    road.
 origin:
-  region: "Yiwu"
-  country: "China"
-  locality: "Yunnan"
+  region: Yiwu
+  country: China
+  locality: Yunnan
 acquisition:
-  location: "Online (white2tea)"
+  location: Online (white2tea)
   year: 2024
   month: 11
   context: null
@@ -20,20 +21,46 @@ caffeine_level: 4
 urgency: stable
 expiry_estimate: null
 brewing:
-  water_temp_c: 100
-  steep_time_seconds: 15
+  vessel: gaiwan
   leaf_grams_per_100ml: 7
-  vessel: "gaiwan"
-  rounds: 10
-  notes: "Boiling water, very short steeps. Rinse first. This tea will evolve over 10+ steeps. Don't rush it."
-notes: |
-  Young sheng pu'er from Yiwu, pressed in 2019. Still evolving — some
-  bitterness that will mellow with age, but already showing Yiwu's
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 15
+  - water_temp_c: 100
+    steep_time_seconds: 15
+  - water_temp_c: 100
+    steep_time_seconds: 15
+  - water_temp_c: 100
+    steep_time_seconds: 15
+  - water_temp_c: 100
+    steep_time_seconds: 15
+  - water_temp_c: 100
+    steep_time_seconds: 15
+  - water_temp_c: 100
+    steep_time_seconds: 15
+  - water_temp_c: 100
+    steep_time_seconds: 15
+  - water_temp_c: 100
+    steep_time_seconds: 15
+  - water_temp_c: 100
+    steep_time_seconds: 15
+  notes: Boiling water, very short steeps. Rinse first. This tea will evolve over 10+ steeps. Don't rush it.
+notes: 'Young sheng pu''er from Yiwu, pressed in 2019. Still evolving — some
+
+  bitterness that will mellow with age, but already showing Yiwu''s
+
   characteristic honey sweetness and floral notes. Bought to age alongside
+
   the collection. Check back in 2027 for more complexity.
+
+  '
 photo:
-  url: "/photos/puer-sheng-yiwu-2019.jpg"
-  alt: "Compressed pu'er cake with wrapper showing Yiwu origin"
+  url: /photos/puer-sheng-yiwu-2019.jpg
+  alt: Compressed pu'er cake with wrapper showing Yiwu origin
   source: null
   is_local: true
-tags: [chinese-tea, puer, ages-well, yunnan]
+tags:
+- chinese-tea
+- puer
+- ages-well
+- yunnan

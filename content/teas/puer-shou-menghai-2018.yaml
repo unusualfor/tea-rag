@@ -1,18 +1,18 @@
 id: puer-shou-menghai-2018
 name:
-  primary: "Menghai Shou Pu'er 2018"
-  alternate: "勐海熟普"
+  primary: Menghai Shou Pu'er 2018
+  alternate: 勐海熟普
 category: puer-shou
-category_label: "Pu'er (Shou/Ripe)"
+category_label: Pu'er (Shou/Ripe)
 producer:
-  name: "Menghai Tea Factory"
-  history: "The original factory that developed the shou (ripe) pu'er process in the 1970s. Benchmark for the style."
+  name: Menghai Tea Factory
+  history: The original factory that developed the shou (ripe) pu'er process in the 1970s. Benchmark for the style.
 origin:
-  region: "Menghai"
-  country: "China"
-  locality: "Yunnan"
+  region: Menghai
+  country: China
+  locality: Yunnan
 acquisition:
-  location: "Online"
+  location: Online
   year: 2024
   month: 12
   context: null
@@ -20,20 +20,42 @@ caffeine_level: 3
 urgency: calm
 expiry_estimate: null
 brewing:
-  water_temp_c: 100
-  steep_time_seconds: 20
+  vessel: gaiwan
   leaf_grams_per_100ml: 7
-  vessel: "gaiwan"
-  rounds: 8
-  notes: "Rinse twice to wake the leaves. Dark, inky liquor. Smooth and grounding."
-notes: |
-  Ripe pu'er from Menghai — the factory that invented the accelerated
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 20
+  - water_temp_c: 100
+    steep_time_seconds: 20
+  - water_temp_c: 100
+    steep_time_seconds: 20
+  - water_temp_c: 100
+    steep_time_seconds: 20
+  - water_temp_c: 100
+    steep_time_seconds: 20
+  - water_temp_c: 100
+    steep_time_seconds: 20
+  - water_temp_c: 100
+    steep_time_seconds: 20
+  - water_temp_c: 100
+    steep_time_seconds: 20
+  notes: Rinse twice to wake the leaves. Dark, inky liquor. Smooth and grounding.
+notes: 'Ripe pu''er from Menghai — the factory that invented the accelerated
+
   fermentation process. Earth, dark chocolate, dried dates. Smooth,
+
   thick mouthfeel with no rough edges. A winter evening tea, meditative
+
   and warming. Already well-aged enough to drink now without any pile taste.
+
+  '
 photo:
-  url: "/photos/puer-shou-menghai-2018.jpg"
-  alt: "Dark compressed shou pu'er brick"
+  url: /photos/puer-shou-menghai-2018.jpg
+  alt: Dark compressed shou pu'er brick
   source: null
   is_local: true
-tags: [chinese-tea, puer, yunnan, evening-tea]
+tags:
+- chinese-tea
+- puer
+- yunnan
+- evening-tea

@@ -1,39 +1,49 @@
 id: sencha-asatsuyu-marukyu-koyamaen
 name:
-  primary: "Sencha Asatsuyu"
-  alternate: "朝露"
-  pronunciation: "A-sa-tsu-yu"
+  primary: Sencha Asatsuyu
+  alternate: 朝露
+  pronunciation: A-sa-tsu-yu
 category: sencha
-category_label: "Sencha"
+category_label: Sencha
 producer:
-  name: "Marukyu Koyamaen"
-  history: "Founded 1704 in Uji. One of the most respected tea houses in Japan, seven generations of expertise."
+  name: Marukyu Koyamaen
+  history: Founded 1704 in Uji. One of the most respected tea houses in Japan, seven generations of expertise.
 origin:
-  region: "Uji"
-  country: "Japan"
+  region: Uji
+  country: Japan
   locality: null
 acquisition:
-  location: "Kyoto"
+  location: Kyoto
   year: 2025
   month: 9
-  context: "Honeymoon trip"
+  context: Honeymoon trip
 caffeine_level: 3
 urgency: soon
-expiry_estimate: "~2026.06"
+expiry_estimate: ~2026.06
 brewing:
-  water_temp_c: 70
-  steep_time_seconds: 60
+  vessel: kyusu
   leaf_grams_per_100ml: 4
-  vessel: "kyusu"
-  rounds: 3
-  notes: "First steep at 70°C for umami. Second at 80°C for sweetness. Third at 90°C for astringency and finish."
-notes: |
-  Premium sencha from Marukyu Koyamaen. Asatsuyu means "morning dew" — apt for
+  rounds:
+  - water_temp_c: 70
+    steep_time_seconds: 60
+  - water_temp_c: 70
+    steep_time_seconds: 60
+  - water_temp_c: 70
+    steep_time_seconds: 60
+  notes: First steep at 70°C for umami. Second at 80°C for sweetness. Third at 90°C for astringency and finish.
+notes: 'Premium sencha from Marukyu Koyamaen. Asatsuyu means "morning dew" — apt for
+
   a tea this clean and refreshing. Vegetal sweetness, light marine notes,
+
   excellent balance. A reliable choice for afternoon sessions.
+
+  '
 photo:
-  url: "/photos/sencha-asatsuyu-marukyu-koyamaen.jpg"
-  alt: "Green packet of Marukyu Koyamaen Asatsuyu sencha"
+  url: /photos/sencha-asatsuyu-marukyu-koyamaen.jpg
+  alt: Green packet of Marukyu Koyamaen Asatsuyu sencha
   source: null
   is_local: true
-tags: [japanese-tea, uji, honeymoon-collection]
+tags:
+- japanese-tea
+- uji
+- honeymoon-collection

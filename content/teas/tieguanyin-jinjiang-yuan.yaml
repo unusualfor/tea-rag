@@ -1,40 +1,58 @@
 id: tieguanyin-jinjiang-yuan
 name:
-  primary: "Tieguanyin"
-  alternate: "铁观音"
-  pronunciation: "Tie-guan-yin"
+  primary: Tieguanyin
+  alternate: 铁观音
+  pronunciation: Tie-guan-yin
 category: oolong
-category_label: "Oolong"
+category_label: Oolong
 producer:
-  name: "Jinjiang Yuan"
-  history: "Small family producer in Anxi county, Fujian. Three generations of oolong craft."
+  name: Jinjiang Yuan
+  history: Small family producer in Anxi county, Fujian. Three generations of oolong craft.
 origin:
-  region: "Anxi"
-  country: "China"
-  locality: "Fujian"
+  region: Anxi
+  country: China
+  locality: Fujian
 acquisition:
-  location: "Online"
+  location: Online
   year: 2025
   month: 3
   context: null
 caffeine_level: 3
 urgency: stable
-expiry_estimate: "~2027.01"
+expiry_estimate: ~2027.01
 brewing:
-  water_temp_c: 95
-  steep_time_seconds: 30
+  vessel: gaiwan
   leaf_grams_per_100ml: 7
-  vessel: "gaiwan"
-  rounds: 6
-  notes: "Gongfu style. Short steeps, many rounds. The tea evolves beautifully across infusions — floral to mineral to sweet."
-notes: |
-  Classic Tieguanyin from Anxi, lightly oxidized (jade style). Orchid
+  rounds:
+  - water_temp_c: 95
+    steep_time_seconds: 30
+  - water_temp_c: 95
+    steep_time_seconds: 30
+  - water_temp_c: 95
+    steep_time_seconds: 30
+  - water_temp_c: 95
+    steep_time_seconds: 30
+  - water_temp_c: 95
+    steep_time_seconds: 30
+  - water_temp_c: 95
+    steep_time_seconds: 30
+  notes: Gongfu style. Short steeps, many rounds. The tea evolves beautifully across infusions — floral to mineral to sweet.
+notes: 'Classic Tieguanyin from Anxi, lightly oxidized (jade style). Orchid
+
   fragrance, clean floral sweetness, with a lingering mineral finish.
+
   The rolled leaves unfurl slowly across steeps, releasing new dimensions.
+
   A great introduction to Chinese oolong tradition.
+
+  '
 photo:
-  url: "/photos/tieguanyin-jinjiang-yuan.jpg"
-  alt: "Tightly rolled green Tieguanyin oolong balls"
+  url: /photos/tieguanyin-jinjiang-yuan.jpg
+  alt: Tightly rolled green Tieguanyin oolong balls
   source: null
   is_local: true
-tags: [chinese-tea, oolong, gongfu, anxi]
+tags:
+- chinese-tea
+- oolong
+- gongfu
+- anxi
