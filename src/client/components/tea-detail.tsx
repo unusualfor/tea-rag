@@ -186,9 +186,9 @@ function BrewingParam({
   value: string;
 }) {
   return (
-    <div className="flex items-start gap-2">
-      <div className="text-muted-foreground mt-0.5">{icon}</div>
-      <div>
+    <div className="flex items-start gap-3">
+      <div className="text-muted-foreground mt-0.5 shrink-0">{icon}</div>
+      <div className="min-w-0">
         <p className="text-xs text-muted-foreground">{label}</p>
         <p className="text-sm font-medium">{value}</p>
       </div>
