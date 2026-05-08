@@ -66,7 +66,8 @@ function validateTea(tea: unknown, filename: string): Tea {
     errors.push("missing 'producer.name'");
   if (!t.origin || !(t.origin as Record<string, unknown>).region)
     errors.push("missing 'origin.region'");
-  if (!t.status) errors.push("missing 'status'");
+  if (!t.caffeine_level || typeof t.caffeine_level !== "number" || t.caffeine_level < 1 || t.caffeine_level > 5)
+    errors.push("missing or invalid 'caffeine_level' (must be 1-5)");
   if (!t.urgency) errors.push("missing 'urgency'");
   if (!t.notes) errors.push("missing 'notes'");
 

@@ -16,7 +16,7 @@ acquisition:
   year: 2024
   month: 11
   context: null
-status: keeper
+caffeine_level: 4
 urgency: stable
 expiry_estimate: null
 brewing:

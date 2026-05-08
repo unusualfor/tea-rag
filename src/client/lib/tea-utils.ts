@@ -11,12 +11,16 @@ export const urgencyConfig: Record<
   stable: { label: "Stable", color: "text-slate-600 bg-slate-50", dotColor: "bg-slate-400" },
 };
 
-export const statusLabels: Record<string, string> = {
-  keeper: "Keeper",
-  tasting: "Tasting",
-  "maybe-gift": "Maybe gift",
-  gift: "Gift",
-};
+export function caffeineLabel(level: 1 | 2 | 3 | 4 | 5): string {
+  const labels: Record<number, string> = {
+    1: "☕ Very low caffeine",
+    2: "☕ Low caffeine",
+    3: "☕ Moderate caffeine",
+    4: "☕ High caffeine",
+    5: "☕ Very high caffeine",
+  };
+  return labels[level];
+}
 
 // Map categories to broad "tradition" for color coding the placeholder
 const categoryColors: Record<string, string> = {

@@ -42,7 +42,6 @@ export type TeaCategory =
   // Fallback
   | "other";
 
-export type TeaStatus = "keeper" | "maybe-gift" | "gift" | "tasting";
 export type TeaUrgency = "now" | "soon" | "summer" | "calm" | "stable";
 
 export interface Tea {
@@ -69,7 +68,7 @@ export interface Tea {
     month?: number;
     context?: string;
   };
-  status: TeaStatus;
+  caffeine_level: 1 | 2 | 3 | 4 | 5;
   urgency: TeaUrgency;
   expiry_estimate?: string;
   brewing?: {
@@ -96,7 +95,6 @@ export interface SearchRequest {
   filters?: {
     category?: TeaCategory;
     urgency?: TeaUrgency;
-    status?: TeaStatus;
     country?: string;
   };
   top_k?: number;

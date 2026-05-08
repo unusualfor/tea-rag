@@ -17,7 +17,7 @@ acquisition:
   year: 2024
   month: 8
   context: "Holiday"
-status: keeper
+caffeine_level: 3
 urgency: stable
 expiry_estimate: "~2027.01"
 brewing:

@@ -1,18 +1,16 @@
 import { useState, useEffect, useCallback } from "react";
-import type { Tea, TeaCategory, TeaUrgency, TeaStatus } from "@shared/types";
+import type { Tea, TeaCategory, TeaUrgency } from "@shared/types";
 import teasData from "../../data/teas.json";
 
 export interface Filters {
   category: TeaCategory | null;
   urgency: TeaUrgency | null;
-  status: TeaStatus | null;
   country: string | null;
 }
 
 const emptyFilters: Filters = {
   category: null,
   urgency: null,
-  status: null,
   country: null,
 };
 
@@ -30,7 +28,6 @@ export function useTeas() {
   const filteredTeas = (searchResults ?? allTeas).filter((tea) => {
     if (filters.category && tea.category !== filters.category) return false;
     if (filters.urgency && tea.urgency !== filters.urgency) return false;
-    if (filters.status && tea.status !== filters.status) return false;
     if (filters.country && tea.origin.country !== filters.country) return false;
     return true;
   });
@@ -46,7 +43,6 @@ export function useTeas() {
       const activeFilters: Record<string, string> = {};
       if (filters.category) activeFilters.category = filters.category;
       if (filters.urgency) activeFilters.urgency = filters.urgency;
-      if (filters.status) activeFilters.status = filters.status;
       if (filters.country) activeFilters.country = filters.country;
 
       const res = await fetch("/api/search", {
@@ -96,7 +92,7 @@ export function useTeas() {
   );
   const countries = [...new Set(allTeas.map((t) => t.origin.country))].sort();
   const urgencies: TeaUrgency[] = ["now", "soon", "summer", "calm", "stable"];
-  const statuses: TeaStatus[] = ["keeper", "tasting", "maybe-gift", "gift"];
+
 
   const clearFilters = () => setFilters(emptyFilters);
 
@@ -123,6 +119,5 @@ export function useTeas() {
     categoryLabels,
     countries,
     urgencies,
-    statuses,
   };
 }

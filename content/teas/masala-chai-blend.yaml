@@ -16,7 +16,7 @@ acquisition:
   year: 2025
   month: 1
   context: "Personal spice blend"
-status: keeper
+caffeine_level: 4
 urgency: stable
 expiry_estimate: "~2026.06"
 brewing:

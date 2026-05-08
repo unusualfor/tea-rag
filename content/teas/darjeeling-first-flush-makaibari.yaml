@@ -16,7 +16,7 @@ acquisition:
   year: 2025
   month: 4
   context: "Spring first flush season"
-status: keeper
+caffeine_level: 3
 urgency: now
 expiry_estimate: "~2026.01"
 brewing:

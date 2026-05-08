@@ -66,7 +66,7 @@ ingestApp.post("/api/ingest", async (c) => {
         country: record.tea.origin.country,
         region: record.tea.origin.region,
         urgency: record.tea.urgency,
-        status: record.tea.status,
+        caffeine_level: String(record.tea.caffeine_level),
         contentHash: record.contentHash,
         name: record.tea.name.primary,
         embeddingModel: EMBEDDING_MODEL,

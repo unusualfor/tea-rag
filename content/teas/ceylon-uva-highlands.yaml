@@ -16,7 +16,7 @@ acquisition:
   year: 2024
   month: 9
   context: null
-status: maybe-gift
+caffeine_level: 4
 urgency: calm
 expiry_estimate: "~2026.08"
 brewing:

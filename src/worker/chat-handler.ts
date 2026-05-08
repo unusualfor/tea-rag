@@ -48,7 +48,7 @@ Your tools let you query the collection. Use them — do not invent teas, produc
 
 IMPORTANT: Call each tool at most ONCE per question. After receiving the tool result, respond immediately using the data you got. Do not call the same tool twice.
 
-When the user asks open-ended questions like "what should I drink?" or "what's good right now?", consider the urgency field (teas marked 'now' or 'soon' should be drunk before they fade), time of day, season, and mood implied by the question. Recommend specific teas and briefly explain why.
+When the user asks open-ended questions like "what should I drink?" or "what's good right now?", consider the urgency field (teas marked 'now' or 'soon' should be drunk before they fade), the caffeine_level field (1=very low, 5=very high — important for afternoon/evening recommendations), time of day, season, and mood implied by the question. Recommend specific teas and briefly explain why.
 
 When the user asks about similarities ("like that gyokuro from Uji"), use search_teas with a descriptive query.
 
@@ -78,7 +78,7 @@ const TOOL_DEFINITIONS = [
   {
     name: "list_teas_by_filter",
     description:
-      "List teas matching structured filters: category, country, urgency, or status. Returns a summary of each matching tea (id, name, category, country, urgency). Use this for specific structured queries like 'all Japanese teas', 'what's urgent right now', 'show me oolongs'. Do NOT use this for semantic/mood-based queries — use search_teas instead.",
+      "List teas matching structured filters: category, country, or urgency. Returns a summary of each matching tea (id, name, category, country, urgency, caffeine level). Use this for specific structured queries like 'all Japanese teas', 'what's urgent right now', 'show me oolongs'. Do NOT use this for semantic/mood-based queries — use search_teas instead.",
     parameters: {
       type: "object" as const,
       properties: {
@@ -94,11 +94,6 @@ const TOOL_DEFINITIONS = [
           type: "string",
           description:
             "Filter by urgency level: 'now' (drink immediately), 'soon', 'summer', 'calm' (no rush), 'stable'.",
-        },
-        status: {
-          type: "string",
-          description:
-            "Filter by status: 'keeper' (permanent collection), 'tasting' (evaluating), 'maybe-gift', 'gift'.",
         },
       },
       required: [] as string[],
@@ -153,7 +148,7 @@ function teaSummary(tea: Tea) {
     country: tea.origin.country,
     region: tea.origin.region,
     urgency: tea.urgency,
-    status: tea.status,
+    caffeine_level: tea.caffeine_level,
     producer: tea.producer.name,
     brief: tea.notes.split("\n")[0].trim(),
   };
@@ -176,7 +171,6 @@ function executeListTeasByFilter(args: Record<string, string>) {
   if (args.category) filtered = filtered.filter((t) => t.category === args.category);
   if (args.country) filtered = filtered.filter((t) => t.origin.country === args.country);
   if (args.urgency) filtered = filtered.filter((t) => t.urgency === args.urgency);
-  if (args.status) filtered = filtered.filter((t) => t.status === args.status);
   return { count: filtered.length, teas: filtered.map(teaSummary) };
 }
 

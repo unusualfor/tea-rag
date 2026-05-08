@@ -10,11 +10,11 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import {
   urgencyConfig,
-  statusLabels,
   getCategoryGradient,
   getCountryFlag,
   formatBrewingTemp,
   formatBrewingTime,
+  caffeineLabel,
 } from "@/lib/tea-utils";
 import { Thermometer, Clock, Scale, Coffee, RotateCcw } from "lucide-react";
 
@@ -58,7 +58,9 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
             <Badge variant="outline" className={urgency.color}>
               {urgency.label}
             </Badge>
-            <Badge variant="outline">{statusLabels[tea.status]}</Badge>
+            <Badge variant="outline">
+              {caffeineLabel(tea.caffeine_level)}
+            </Badge>
             <Badge variant="outline">
               {getCountryFlag(tea.origin.country)} {tea.origin.region}, {tea.origin.country}
             </Badge>

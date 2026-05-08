@@ -28,7 +28,6 @@ export function App() {
     categoryLabels,
     countries,
     urgencies,
-    statuses,
   } = useTeas();
 
   const [mode, setMode] = useState<Mode>("browse");
@@ -44,7 +43,6 @@ export function App() {
       categoryLabels={categoryLabels}
       countries={countries}
       urgencies={urgencies}
-      statuses={statuses}
     />
   );
 

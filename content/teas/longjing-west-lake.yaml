@@ -17,7 +17,7 @@ acquisition:
   year: 2025
   month: 5
   context: null
-status: keeper
+caffeine_level: 3
 urgency: now
 expiry_estimate: "~2026.02"
 brewing:

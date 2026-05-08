@@ -40,12 +40,10 @@ app.get("/api/teas", async (c) => {
 
   const category = c.req.query("category");
   const urgency = c.req.query("urgency");
-  const status = c.req.query("status");
   const country = c.req.query("country");
 
   if (category) filtered = filtered.filter((t) => t.category === category);
   if (urgency) filtered = filtered.filter((t) => t.urgency === urgency);
-  if (status) filtered = filtered.filter((t) => t.status === status);
   if (country) filtered = filtered.filter((t) => t.origin.country === country);
 
   return c.json({ teas: filtered, total: filtered.length });
@@ -79,7 +77,6 @@ app.post("/api/search", async (c) => {
   const metadataFilter: Record<string, string> = {};
   if (filters?.category) metadataFilter.category = filters.category;
   if (filters?.urgency) metadataFilter.urgency = filters.urgency;
-  if (filters?.status) metadataFilter.status = filters.status;
   if (filters?.country) metadataFilter.country = filters.country;
 
   // Query Vectorize

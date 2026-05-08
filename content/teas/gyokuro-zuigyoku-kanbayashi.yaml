@@ -17,7 +17,7 @@ acquisition:
   year: 2025
   month: 9
   context: "Honeymoon trip"
-status: keeper
+caffeine_level: 4
 urgency: now
 expiry_estimate: "~2026.04"
 brewing:

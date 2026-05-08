@@ -1,9 +1,9 @@
-import type { TeaCategory, TeaUrgency, TeaStatus } from "@shared/types";
+import type { TeaCategory, TeaUrgency } from "@shared/types";
 import type { Filters } from "@/hooks/use-teas";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
-import { urgencyConfig, statusLabels } from "@/lib/tea-utils";
+import { urgencyConfig } from "@/lib/tea-utils";
 import { X } from "lucide-react";
 
 interface FiltersSidebarProps {
@@ -15,7 +15,6 @@ interface FiltersSidebarProps {
   categoryLabels: Record<string, string>;
   countries: string[];
   urgencies: TeaUrgency[];
-  statuses: TeaStatus[];
 }
 
 export function FiltersSidebar({
@@ -27,7 +26,6 @@ export function FiltersSidebar({
   categoryLabels,
   countries,
   urgencies,
-  statuses,
 }: FiltersSidebarProps) {
   return (
     <div className="space-y-6">
@@ -100,25 +98,6 @@ export function FiltersSidebar({
               active={filters.country === c}
               onClick={() =>
                 onFilterChange("country", filters.country === c ? null : c)
-              }
-            />
-          ))}
-        </div>
-      </div>
-
-      <Separator />
-
-      {/* Status */}
-      <div>
-        <h3 className="text-sm font-medium mb-2">Status</h3>
-        <div className="flex flex-wrap gap-1.5">
-          {statuses.map((s) => (
-            <FilterChip
-              key={s}
-              label={statusLabels[s]}
-              active={filters.status === s}
-              onClick={() =>
-                onFilterChange("status", filters.status === s ? null : s)
               }
             />
           ))}
