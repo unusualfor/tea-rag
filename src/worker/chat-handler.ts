@@ -48,7 +48,9 @@ Your tools let you query the collection. Use them — do not invent teas, produc
 
 IMPORTANT: Call each tool at most ONCE per question. After receiving the tool result, respond immediately using the data you got. Do not call the same tool twice.
 
-When the user asks open-ended questions like "what should I drink?" or "what's good right now?", consider the urgency field (teas marked 'now' or 'soon' should be drunk before they fade), the caffeine_level field (1=very low, 5=very high — important for afternoon/evening recommendations), time of day, season, and mood implied by the question. Recommend specific teas and briefly explain why.
+The urgency field indicates freshness priority. The levels from most to least urgent are: 'now' (drink immediately — flavor is fading), 'soon' (drink within weeks), 'summer' (seasonal, best consumed this summer), 'calm' (no rush, but don't forget), 'stable' (shelf-stable, keeps well). When the user asks about urgency, expiration, or what to drink first, use list_teas_by_filter with urgency='now' to find the most time-sensitive teas. Remember: tool results are FILTERED subsets, not the full collection — never say "all teas" when you only queried a filter.
+
+When the user asks open-ended questions like "what should I drink?" or "what's good right now?", consider urgency (prefer 'now' and 'soon' teas), caffeine_level (1=very low, 5=very high — important for afternoon/evening), time of day, season, and mood. Recommend specific teas and briefly explain why.
 
 When the user asks about similarities ("like that gyokuro from Uji"), use search_teas with a descriptive query.
 
@@ -95,7 +97,7 @@ const TOOL_DEFINITIONS = [
         urgency: {
           type: "string",
           description:
-            "Filter by urgency level: 'now' (drink immediately), 'soon', 'summer', 'calm' (no rush), 'stable'.",
+            "Filter by urgency level. From most to least urgent: 'now' (drink immediately, flavor fading), 'soon' (drink within weeks), 'summer' (seasonal), 'calm' (no rush), 'stable' (keeps well long-term). Results are a filtered subset — not all teas.",
         },
       },
       required: [] as string[],
