@@ -1,0 +1,59 @@
+id: boston-tea-party-lapsang-souchong
+name:
+  primary: Lapsang Souchong (Boston Tea Party historical collection)
+  alternate: 正山小种 (Zhèngshān Xiǎozhǒng)
+category: black-chinese
+category_label: Chinese Black
+producer:
+  name: Oliver Pluff & Co. (for Boston Tea Party Ships & Museum)
+  history: 'Hand-packaged by Oliver Pluff & Co. (Charleston, South Carolina) for the Boston Tea Party Ships & Museum gift
+    shop. Sold as part of the ''Teas of the Boston Tea Party Collection,'' a 5-tube set (~9-15g each) representing the five
+    teas thrown overboard during the 1773 Boston Tea Party: Bohea, Congou, Lapsang Souchong, Singlo, and Hyson (per the museum''s
+    historical research). The original 1773 cargo included 10 chests of Souchong (~684 lbs total). Souchong itself originates
+    from the Wuyi Mountains of Fujian, China — the term derives from Hokkien 正山小种 zhèngshān xiǎozhǒng meaning ''small-leaf
+    cultivar from the original mountain.'' Modern souchong exports are typically pinewood-smoked (Lapsang Souchong); 18th-century
+    souchong would have had only a faint smoky character from the drying process.'
+origin:
+  region: Wuyi Mountains (original tea); packaged in Charleston, SC
+  country: China (origin); USA (packager)
+  locality: Fujian province
+acquisition:
+  location: Boston Tea Party Ships & Museum gift shop
+  year: 2025
+  month: 5
+  context: Red Hat Summit Boston work trip
+caffeine_level: 3
+urgency: stable
+expiry_estimate: '2027.05'
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 240
+  notes: 'Western brewing: 1-2 tsp (2-3g) per 250ml boiling water, 3-5 minutes. Lapsang Souchong is a polarizing tea — its
+    pinewood smoke aroma is reminiscent of campfire, bacon, or Islay whisky. Single infusion mostly; the smoke fades quickly
+    on second steep. Pairs well with strong-flavored foods (smoked meats, blue cheese) and whisky. Adding milk is unconventional
+    but works for a ''smoked breakfast tea'' effect.'
+notes: |
+  Smoky black tea from Fujian's Wuyi Mountains, sold here as a
+  historical commemorative item. The museum collection includes
+  this in a 5-tube set with the other teas thrown overboard in 1773.
+  Modern Lapsang is more aggressively smoked than its 18th-century
+  predecessor. Black teas keep extremely well — stable urgency.
+
+  Note: this is a souvenir-grade tea, not a premium artisanal Lapsang.
+  For comparison: Wuyi Star or Yunshen brands offer higher-grade
+  unsmoked or lightly-smoked Zhengshan Xiaozhong that emphasize
+  the original tea character (longan/dried fruit notes) rather
+  than the heavy modern smoke.
+tags:
+- chinese-tea
+- black-tea
+- lapsang-souchong
+- smoked
+- fujian
+- wuyi
+- museum-souvenir
+- historical
+- commercial

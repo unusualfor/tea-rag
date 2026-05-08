@@ -1,0 +1,56 @@
+id: golden-bridge-west-lake-longjing
+name:
+  primary: West Lake Longjing (Dragon Well)
+  alternate: 西湖龙井 (Xī Hú Lóng Jǐng)
+category: green-chinese
+category_label: Chinese Green
+producer:
+  name: Golden Bridge brand
+  history: Generic Chinese export brand; specific producing entity not well-documented in English-language sources. Multiple
+    Chinese tea exporters use 'Golden Bridge' or '金桥' branding for value-tier teas distributed via Asian grocery channels.
+    The product is a 'West Lake Longjing' (Xī Hú Lóng Jǐng), one of China's Ten Famous Teas, traditionally produced around
+    West Lake in Hangzhou, Zhejiang province. Authentic core-area Longjing requires anti-counterfeiting certification per
+    the Hangzhou West Lake Longjing Tea Industry Association (since 2020) — an unbranded export tea labelled 'West Lake Longjing'
+    may or may not actually originate from the protected core area.
+origin:
+  region: Hangzhou (West Lake area, claimed)
+  country: China
+  locality: Zhejiang province
+acquisition:
+  location: New York
+  year: 2025
+  month: 3
+  context: Trip with Federica
+caffeine_level: 3
+urgency: now
+expiry_estimate: null
+brewing:
+  vessel: glass
+  leaf_grams_per_100ml: 1.5
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 120
+  - water_temp_c: 80
+    steep_time_seconds: 120
+  - water_temp_c: 80
+    steep_time_seconds: 120
+  notes: 'Western/Chinese-style: 3g per 150ml at 80-85°C, 2-3 minutes (or ''wait 10 minutes'' per some packaging). Use a tall
+    glass to watch leaves dance and unfurl — Longjing is traditionally appreciated visually. Gongfu schedule alternative:
+    4g/100ml in gaiwan, 80°C, 30s/45s/60s. Chestnut/bean notes; should not be bitter. If bitter, lower the temperature.'
+notes: |
+  Likely a value-tier Longjing of unverified core-area origin.
+  Standard pan-fired Chinese green tea: flat blade-shaped leaves,
+  pale jade liquor, chestnut/bean fragrance. Premium Longjing
+  (Mingqian or pre-Qingming) commands prices of $200+/kg from
+  certified core-area producers; value-tier export brands typically
+  source from outer West Lake areas or Yuezhou/Qiantang regions.
+  Green teas have short shelf life (12-18 months max); urgency 'now'
+  unless acquisition was very recent.
+tags:
+- chinese-tea
+- longjing
+- dragon-well
+- green-tea
+- hangzhou
+- zhejiang
+- commercial

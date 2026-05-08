@@ -1,0 +1,48 @@
+id: uji-no-mukashi-nakamura-tokichi
+name:
+  primary: Matcha 'Uji no Mukashi'
+  alternate: 宇治の昔
+category: matcha-ceremonial
+category_label: Matcha (Ceremonial)
+producer:
+  name: Nakamura Tokichi Honten
+  history: Established in Uji in 1854. Main store designated as Important Cultural Landscape (Meiji-era tea merchant architecture).
+    'Uji no Mukashi' (宇治の昔, 'Old Days of Uji') sits one tier below Hatsu no Mukashi in the Mukashi line, but is still a top-shelf
+    ceremonial matcha. Like all tencha-based matchas from Nakamura Tokichi, leaves are stone-milled at slow speed to avoid
+    heat-induced flavor loss.
+origin:
+  region: Uji
+  country: Japan
+  locality: Kyoto prefecture
+acquisition:
+  location: Uji, Kyoto
+  year: 2025
+  month: 9
+  context: Honeymoon trip
+caffeine_level: 5
+urgency: now
+expiry_estimate: '2026.03'
+brewing:
+  vessel: chawan
+  leaf_grams_per_100ml: 3
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 0
+  notes: 'Versatile matcha — works well both as usucha and koicha. Usucha: 2g + 70ml water at 80°C, whisked. Koicha: 4g +
+    30ml at 80°C, kneaded. Sift before whisking. Same caveats as Hatsu no Mukashi: 6+ months from canning, finish in 2-3 weeks
+    once opened, refrigerate sealed.'
+notes: |
+  Ceremonial matcha from Nakamura Tokichi, one tier below Hatsu no
+  Mukashi but still excellent. Slightly more accessible price point
+  while maintaining the umami-forward, low-bitterness Nakamura
+  signature. Use this for daily ceremonial-style preparation while
+  saving Hatsu no Mukashi for special occasions — but consume both
+  promptly given honeymoon-acquisition timing.
+tags:
+- japanese-tea
+- matcha
+- uji
+- ceremonial
+- premium
+- honeymoon-collection
+- historic-producer

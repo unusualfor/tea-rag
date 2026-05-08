@@ -1,0 +1,46 @@
+id: matcha-ikeda-senchado
+name:
+  primary: Matcha
+  alternate: 抹茶
+category: matcha-ceremonial
+category_label: Matcha (Ceremonial)
+producer:
+  name: Ikeda Senchado
+  history: Private brand of Ikeda Seicha Co. (founded 1948), based in Tenmonkan, Kagoshima. Run by tea master Kenta Ikeda
+    — 茶師十段 (10th-dan tea master), a rare top-level certification. Distinctive 'lit-flame' (烈火) roasting and blending style.
+    Kagoshima-grown matcha is rare; Ikeda Senchado is one of the few producers offering certified-organic Kagoshima matcha.
+    Specializes in showcasing Kagoshima's tea character (mellow southern-plain teas vs. aromatic northern-mountain teas).
+origin:
+  region: Kagoshima
+  country: Japan
+  locality: null
+acquisition:
+  location: Kagoshima, Japan
+  year: 2026
+  month: 3
+  context: 3GPP RAN#111 work trip
+caffeine_level: 5
+urgency: soon
+expiry_estimate: '2026.11'
+brewing:
+  vessel: chawan
+  leaf_grams_per_100ml: 3
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 0
+  notes: 'Usucha-style: 2g matcha + 70ml water at 80°C, whisked with chasen in a zigzag motion until a fine froth forms. Sift
+    before whisking. For koicha: 4g + 30ml at 80°C, kneaded slowly. Refrigerate after opening, finish within 2-3 weeks for
+    optimal freshness.'
+notes: |
+  Single-origin Kagoshima matcha — fresher and sweeter than typical
+  Uji matchas, with the distinctive character of Kyushu southern teas.
+  Kagoshima sees earlier spring harvests than Uji (warmer climate),
+  which can give a slightly different umami profile. A great
+  counterpoint to Uji-centric matcha collections.
+tags:
+- japanese-tea
+- matcha
+- kagoshima
+- ceremonial
+- single-origin
+- kyushu-collection

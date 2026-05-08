@@ -1,0 +1,53 @@
+id: matcha-kuwari-samidori-ujitawara
+name:
+  primary: Matcha Uji 'Kuwari'
+  alternate: さみどり
+category: matcha-single-cultivar
+category_label: Matcha (single-cultivar)
+producer:
+  name: Unknown (Ujitawara)
+  history: 'Producer: small Ujitawara producer (specific name not recorded — Ujitawara is a small town in Tsuzuki District,
+    Kyoto, considered the historical birthplace of Japanese sencha and an important matcha-growing area). ''Kuwari'' is a
+    labeling/grade term used by the producer. The defining feature: the matcha is single-cultivar Samidori (さみどり), a classic
+    Uji cultivar prized for koicha — vivid green color, high amino-acid content, smooth umami. Most matchas are blended; single-cultivar
+    matcha is a connoisseur''s choice.'
+origin:
+  region: Ujitawara
+  country: Japan
+  locality: Kyoto prefecture
+acquisition:
+  location: Ujitawara, Kyoto
+  year: 2025
+  month: 9
+  context: Honeymoon trip
+caffeine_level: 5
+urgency: now
+expiry_estimate: '2026.07'
+brewing:
+  vessel: chawan
+  leaf_grams_per_100ml: 3
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 0
+  notes: 'Single-cultivar Samidori — try both usucha (2g + 70ml at 80°C, whisked) and koicha (4g + 30ml at 80°C, kneaded)
+    to taste the cultivar''s character without blending. Samidori is traditionally a koicha-leaning cultivar but works in
+    both. Sift before whisking. Same freshness caveats as other honeymoon-acquired matchas: 6+ months from canning, consume
+    promptly.'
+notes: |
+  Single-cultivar Samidori matcha — a connoisseur piece. Most matchas
+  are intentional blends to balance umami, sweetness, and astringency;
+  single-cultivar versions let you taste one cultivar's specific
+  character, which is rare and didactic for a matcha enthusiast.
+  Samidori is one of the classic Uji cultivars, paired with the more
+  modern Goko and Asahi for premium tencha. The 'Kuwari' designation
+  on the producer's labeling is not a widely-catalogued term — Francesco
+  may have additional context from purchase.
+tags:
+- japanese-tea
+- matcha
+- ujitawara
+- kyoto
+- single-cultivar
+- samidori
+- premium
+- honeymoon-collection

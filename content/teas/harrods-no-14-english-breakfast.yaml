@@ -1,0 +1,51 @@
+id: harrods-no-14-english-breakfast
+name:
+  primary: Harrods No. 14 English Breakfast
+  alternate: null
+category: english-breakfast
+category_label: English Breakfast
+producer:
+  name: Harrods
+  history: 'Harrods is a luxury department store in Knightsbridge, London, founded in 1849. No. 14 English Breakfast is described
+    by Harrods as their ''best-selling'' tea: a 4-region blend of full-bodied Assam, crisp Ceylon, floral Darjeeling, and
+    bright Kenyan, formulated to hold its strength when served with milk. Available in both loose-leaf (125g, 200g caddies)
+    and tea-bag formats.'
+origin:
+  region: India (Assam, Darjeeling), Sri Lanka, Kenya
+  country: Multi-origin (UK-blended)
+  locality: null
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 4
+urgency: stable
+expiry_estimate: '2025.11'
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1.5
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 240
+  notes: 'Western brewing: 1 tsp (~3g) per 250ml boiling water, 3-5 minutes. Designed to take milk well — add a splash after
+    brewing. Slightly higher leaf-to-water ratio than afternoon teas because the blend is built for strength. Single infusion.'
+notes: |
+  Classic 4-region English Breakfast blend. Punchy, full-bodied,
+  with a malty-bright character that holds up to milk and sugar.
+  Designed as a morning tea, traditionally served with a full
+  English breakfast or as a wake-up brew. Higher caffeine than
+  the Afternoon Ceylon (No. 16) due to the Assam component.
+
+  Black tea — stable shelf life. Available format: 125g, 200g loose-leaf
+  caddies, plus 50-bag and 100-bag tin formats.
+tags:
+- british-blend
+- harrods
+- english-breakfast
+- assam
+- ceylon
+- darjeeling
+- kenyan
+- morning-tea
+- luxury-souvenir

@@ -1,0 +1,47 @@
+id: biwa-cha-is-farm-nagasaki
+name:
+  primary: Biwa-cha
+  alternate: びわ茶
+category: herbal
+category_label: Herbal
+producer:
+  name: Nagasaki I's Farm
+  history: Small Nagasaki-based farm. Nagasaki is one of Japan's two main loquat (biwa) production regions alongside Chiba;
+    the smaller 'Mogi' loquat variety is native to Nagasaki City. Biwa-cha is made from the leaves (not the fruit) of the
+    loquat tree, traditionally used in Japanese folk medicine and listed in the Pharmacopoeia of Japan since 1886. Caffeine-free.
+origin:
+  region: Nagasaki
+  country: Japan
+  locality: null
+acquisition:
+  location: Nagasaki, Japan
+  year: 2026
+  month: 3
+  context: 3GPP RAN#111 work trip
+caffeine_level: 1
+urgency: calm
+expiry_estimate: null
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1
+  rounds:
+  - water_temp_c: 95
+    steep_time_seconds: 300
+  notes: 'Decoction-style brewing typical of Japanese herbal tisanes: 5g leaves in 500ml of near-boiling water, simmer or
+    steep 3-5 minutes. Liquor turns reddish-brown / honey-colored. Can be re-steeped for a lighter second cup. Drinkable hot
+    or cold-brewed; cold brew works well as a summer beverage. Caffeine-free, suitable for evening or for those avoiding caffeine.'
+notes: |
+  Not strictly tea (Camellia sinensis) — a tisane made from loquat
+  (Eriobotrya japonica) leaves. Earthy, slightly sweet, light fruity
+  finish. Traditionally consumed for its claimed digestive and
+  respiratory benefits, though Francesco can decide whether to keep
+  any health claims out of the public catalog. Very stable: dried
+  leaves don't degrade quickly. Good caffeine-free option.
+tags:
+- japanese-tea
+- herbal-tisane
+- biwa-cha
+- nagasaki
+- caffeine-free
+- ages-well
+- kyushu-collection

@@ -1,0 +1,53 @@
+id: nonpareil-te-gong-huang-shan-mao-feng-teavivre
+name:
+  primary: Nonpareil Te Gong Huang Shan Mao Feng Green Tea
+  alternate: 特贡黄山毛峰
+category: green-chinese
+category_label: Chinese Green
+producer:
+  name: TeaVivre
+  history: Pre-Qing Ming spring harvest from high-altitude tea trees on Mt. Huangshan in Shexian County, Anhui Province. Made
+    by Mr. Ke at Dailing Tea Garden, a tea master with 40+ years of experience specializing in traditional Mao Feng craftsmanship.
+    'Te Gong' (特贡) marks the highest grade — historically used as imperial tribute. Sparrow-tongue shaped buds from Huangshan
+    large-leaf cultivar.
+origin:
+  region: Anhui
+  country: China
+  locality: Shexian County, Mt. Huangshan
+acquisition:
+  location: TeaVivre (online)
+  year: null
+  month: null
+  context: null
+caffeine_level: 3
+urgency: now
+expiry_estimate: '2026.10'
+brewing:
+  vessel: gaiwan
+  leaf_grams_per_100ml: 4
+  rounds:
+  - water_temp_c: 85
+    steep_time_seconds: 30
+  - water_temp_c: 85
+    steep_time_seconds: 30
+  - water_temp_c: 85
+    steep_time_seconds: 30
+  - water_temp_c: 85
+    steep_time_seconds: 30
+  notes: 'APPROXIMATED from standard Huang Shan Mao Feng parameters — TeaVivre does not publish gongfu schedule for the Te
+    Gong nonpareil grade. Gongfu schedule (110ml gaiwan, 4g): rinse, 30s, 45s, 70s, 100s. Western: 2g per 250ml at 85°C, 3-5
+    minutes. Pre-ming green teas are delicate; consider lower temp (~80°C) and shorter first steep if bitterness develops.'
+notes: |
+  Pre-Qing Ming (early spring, before April 5) harvest, considered the
+  most precious window for green tea. Bird-tongue (sparrow-tongue) shape:
+  the leaves stand vertically when brewed in glass, then slowly sink.
+  Smooth and sweet with orchid-like floral aroma, hints of chestnut and
+  toasted rice. One of China's top ten green teas. Best consumed within
+  6-12 months of harvest while the freshness peaks.
+tags:
+- chinese-tea
+- anhui
+- premium
+- pre-ming
+- spring-tea
+- teavivre

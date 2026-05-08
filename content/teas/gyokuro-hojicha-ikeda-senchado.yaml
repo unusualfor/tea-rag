@@ -1,0 +1,52 @@
+id: gyokuro-hojicha-ikeda-senchado
+name:
+  primary: Gyokuro Hōjicha
+  alternate: 玉露焙じ茶
+category: hojicha-from-gyokuro
+category_label: Hojicha (from Gyokuro)
+producer:
+  name: Ikeda Senchado
+  history: Private brand of Ikeda Seicha Co. (founded 1948), Tenmonkan, Kagoshima. Run by tea master Kenta Ikeda (茶師十段). This
+    premium hōjicha is made by roasting gyokuro leaves (rather than bancha or stems) over the shop's signature 'lit-flame'
+    (烈火) high-heat roasting process. The roasting preserves residual umami from the shaded gyokuro base while developing nutty,
+    toasted notes.
+origin:
+  region: Kagoshima
+  country: Japan
+  locality: null
+acquisition:
+  location: Kagoshima, Japan
+  year: 2026
+  month: 3
+  context: 3GPP RAN#111 work trip
+caffeine_level: 2
+urgency: calm
+expiry_estimate: '2027.02'
+brewing:
+  vessel: kyusu
+  leaf_grams_per_100ml: 5
+  rounds:
+  - water_temp_c: 90
+    steep_time_seconds: 30
+  - water_temp_c: 90
+    steep_time_seconds: 30
+  notes: 'Premium hōjicha brewing — slightly lower temp than standard hōjicha to preserve residual umami from the gyokuro
+    base. First infusion: 90°C, 30s. Second: 95°C, 15s. Standard hōjicha can take full-boil water but this gyokuro-base version
+    benefits from gentler treatment.'
+notes: |
+  Luxury hōjicha made from roasted gyokuro leaves, not bancha. Carries
+  a deeper sweetness and residual umami that regular hōjicha lacks.
+  The roasted character makes it more stable than other Kagoshima teas
+  in this collection — degrades slowly, no rush to open. A natural
+  end-of-day or after-dinner tea (low caffeine, comforting, warming).
+  Note: distinct from Kanbayashi's Hojicha-from-Gyokuro (Uji-based)
+  in the existing collection — Ikeda's version uses Kagoshima base
+  and a more aggressive roast.
+tags:
+- japanese-tea
+- hojicha
+- hojicha-from-gyokuro
+- kagoshima
+- premium
+- ages-well
+- kyushu-collection

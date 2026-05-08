@@ -1,0 +1,55 @@
+id: republic-of-tea-organic-ceremonial-matcha
+name:
+  primary: The Republic of Tea Organic Ceremonial Matcha
+  alternate: null
+category: matcha-ceremonial
+category_label: Matcha (ceremonial grade, organic)
+producer:
+  name: The Republic of Tea
+  history: The Republic of Tea is a US tea brand founded in 1992 in Northern California by Mel and Patricia Ziegler (Banana
+    Republic founders) and Bill Rosenzweig. Their Organic Ceremonial Matcha is described as 'organic shade-grown tea made
+    from young tencha leaves and stone-ground into a fine powder' — Japan-sourced tencha, US-distributed. Sold in small tins
+    (4 servings each) and as part of multi-matcha gift sets including flavored variants (Sweet Vanilla, Dubai Chocolate, Strawberry,
+    Lavender).
+origin:
+  region: Japan (specific prefecture not disclosed)
+  country: Japan
+  locality: Tencha leaves, shade-grown
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 4
+urgency: now
+expiry_estimate: '2027.10'
+brewing:
+  vessel: chawan
+  leaf_grams_per_100ml: 2.5
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 0
+  notes: 'Per producer: ½-1 tsp matcha + 6oz (180ml) of just-short-of-boiling water (~175°F / 80°C); whisk for 1-2 minutes
+    until well blended. NOTE: producer says ''just below boiling'' which is somewhat vague — at >85°C matcha turns bitter,
+    so aim for 75-80°C, not actually approaching 100°C. For traditional usucha use closer to 70°C and a thicker concentration
+    (2g + 60ml). Iced/latte: blend ½-1 tsp with 8oz cold water or milk.'
+notes: |
+  US-distributed ceremonial-grade matcha made from Japanese tencha
+  leaves. Stone-ground; smooth, mellow, vegetal sweetness, deep
+  green color. Comparable in tier to Mighty Leaf's organic matcha
+  — competent grocery-channel ceremonial-grade, suitable for usucha
+  and lattes but not for koicha or formal tea ceremony.
+
+  Matcha shelf life: short. Finish within 2-3 weeks once opened;
+  refrigerate sealed. Urgency 'now' applies as soon as the tin is
+  opened. Republic of Tea also sells flavored matcha variants under
+  the same brand line — the unflavored 'Organic Ceremonial' is the
+  cleanest and most versatile.
+tags:
+- japanese-tea
+- matcha
+- organic
+- ceremonial
+- tencha
+- us-brand
+- commercial

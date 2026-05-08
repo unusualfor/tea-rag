@@ -1,0 +1,54 @@
+id: vahdam-mint-melody
+name:
+  primary: Vahdam Mint Melody Green Tea
+  alternate: null
+category: other
+category_label: Other
+producer:
+  name: Vahdam India
+  history: 'Vahdam India is a Delhi-based direct-to-consumer tea brand founded in 2015 by Bala Sarda. They source from over
+    150 plantations across India''s main tea regions (Darjeeling, Assam, Nilgiri, Kangra, Sikkim) and ship globally. Certified
+    carbon-neutral and plastic-neutral, they donate 1% of revenue to tea-grower children''s education through their ''Teach
+    Me'' initiative. Mint Melody is one of their flagship green-tea blends: high-grown Himalayan green tea (50%) + spearmint
+    (25%) + peppermint (25%).'
+origin:
+  region: Himalayan foothills (green tea base)
+  country: India
+  locality: Multi-region; high-grown
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 2
+urgency: soon
+expiry_estimate: null
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1
+  rounds:
+  - water_temp_c: 85
+    steep_time_seconds: 240
+  notes: 'Per Vahdam: 1 tea bag (or 2g loose) per 200ml, 3-5 minutes. The mint leaves are tolerant of slightly hotter water
+    than pure green tea, so 80-90°C works (vs. the 70-75°C ideal for premium pure green tea). Can be enjoyed hot or iced;
+    especially refreshing as a cold brew (4-6 hours in fridge with cold water, 1 bag/200ml). Single infusion in tea-bag format;
+    loose-leaf tolerates a second steep.'
+notes: |
+  Indian high-grown green tea blended with both spearmint (sweeter,
+  rounded) and peppermint (sharper, more cooling). The 50/50 mint
+  ratio is generous — this is firmly a mint-forward blend, not just
+  a 'hint of mint.' Pleasant cold-brewed; works as an iced tea base.
+
+  Available formats: loose-leaf (3.53oz / 100g resealable pouch),
+  pyramid tea bags (15ct or 30ct or 100ct, plant-based or nylon).
+  Vahdam claims 3-year shelf life from harvest date. Mint volatiles
+  fade over months — drink within ~12 months for best aroma.
+tags:
+- indian-tea
+- vahdam
+- flavored-green
+- mint
+- peppermint
+- spearmint
+- himalayan
+- commercial

@@ -1,0 +1,49 @@
+id: canada-true-maple-black-tea
+name:
+  primary: Canada True Maple Black Tea
+  alternate: null
+category: other
+category_label: Other
+producer:
+  name: Canada True (Heart Industries Ltd.)
+  history: 'Canada True is a Canadian souvenir brand owned by Heart Industries Ltd., specializing in maple-flavored gift-shop
+    products: tea, cookies, fudge, and pure maple syrup. Their tea range targets the Canadian souvenir market with maple-flavored
+    variants on standard tea bases (black, green, herbal, blueberry, ice wine). The Maple Black Tea uses ''high-grown Ceylon''
+    leaves with ''natural identical Canadian maple syrup flavour.'''
+origin:
+  region: Sri Lanka (tea base) + Canada (flavoring/blending)
+  country: Sri Lanka (tea); Canada (brand/blending)
+  locality: High-grown Ceylon
+acquisition:
+  location: Canada
+  year: null
+  month: null
+  context: Canada visit / souvenir
+caffeine_level: 3
+urgency: stable
+expiry_estimate: null
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 240
+  notes: 'Per Canada True instructions: 1 tea bag per cup, boiling water, 3-5 minutes hot. For iced: brew 1 bag with 1/3 cup
+    boiling water, steep 3-5 min, remove bag, top with cold water and ice. Single infusion (tea bag format).'
+notes: |
+  Canadian souvenir tea — high-grown Ceylon black base with synthetic
+  maple flavoring (the label specifies 'natural identical' flavor,
+  i.e., a flavoring chemically identical to natural maple compounds
+  but not derived from actual maple syrup). Sweetish, mild, easy-drinking;
+  not a serious tasting tea.
+
+  Sold typically as 23g/10-bag boxes or 50g/25-bag tins or 60g/30-bag
+  tins. Shelf-stable. Pairs well with breakfast pastries and
+  Canadian-themed gifting contexts.
+tags:
+- canadian-tea
+- flavored-black
+- maple
+- ceylon-base
+- souvenir
+- commercial

@@ -1,0 +1,56 @@
+id: anxi-monkey-king-tie-guan-yin-teavivre
+name:
+  primary: Anxi Monkey King (Ma Liu Mie) Tie Guan Yin Oolong Tea
+  alternate: 安溪铁观音
+category: oolong
+category_label: Oolong
+producer:
+  name: TeaVivre
+  history: Sourced from the Fujing Tea Garden in Huqiu, one of the main Tie Guan Yin production areas in Anxi County, Fujian
+    (500-800m elevation). 'Ma Liu Mie' is Hokkien for 'monkey-picked' — the name comes from a legend that the cliffs where
+    the tea grows are too steep for human pickers, so monkeys were trained to climb them. Belongs to the zhengchao type of
+    Tie Guan Yin. Anxi was named the Home of Chinese Oolong by the Ministry of Agriculture in 1995.
+origin:
+  region: Fujian
+  country: China
+  locality: Huqiu, Anxi County
+acquisition:
+  location: TeaVivre (online)
+  year: null
+  month: null
+  context: null
+caffeine_level: 3
+urgency: soon
+expiry_estimate: '2027.05'
+brewing:
+  vessel: gaiwan
+  leaf_grams_per_100ml: 6
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 30
+  - water_temp_c: 100
+    steep_time_seconds: 30
+  - water_temp_c: 100
+    steep_time_seconds: 30
+  - water_temp_c: 100
+    steep_time_seconds: 30
+  - water_temp_c: 100
+    steep_time_seconds: 30
+  - water_temp_c: 100
+    steep_time_seconds: 30
+  - water_temp_c: 100
+    steep_time_seconds: 30
+  notes: 'Gongfu schedule (110ml gaiwan, 7g): rinse, 30s, 40s, 50s, 60s, 80s, 100s, 120s. Western: 5g per 355ml at 100°C,
+    3-5 minutes.'
+notes: |
+  Lightly oxidized green-style Tie Guan Yin (qingxiang). Strong and
+  long-lasting orchid-like floral fragrance, smooth and brisk on the
+  palate, with a sweet aftertaste. Tightly rolled jade-green pearls
+  unfurl into whole leaves through multiple infusions.
+tags:
+- chinese-tea
+- fujian
+- oolong
+- tie-guan-yin
+- anxi
+- teavivre

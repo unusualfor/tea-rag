@@ -1,0 +1,44 @@
+id: matcha-love
+name:
+  primary: Japanese Culinary Matcha
+  alternate: null
+category: matcha-culinary
+category_label: Matcha (Culinary)
+producer:
+  name: Matcha Love
+  history: null
+origin:
+  region: Unknown
+  country: Japan
+  locality: null
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 4
+urgency: calm
+expiry_estimate: null
+brewing:
+  vessel: matcha bowl
+  leaf_grams_per_100ml: 2
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 0
+  notes: Designed primarily for lattes, smoothies and baking rather than traditional usucha preparation.
+notes: |
+  Unsweetened Japanese culinary-grade matcha powder marketed for baking,
+  smoothies and lattes. Likely blended for versatility and stronger flavor
+  retention in milk-based or sweet preparations rather than ceremonial
+  drinking. The packaging screams 'I can become ice cream at any moment.'
+photo:
+  url: /photos/matcha-love-japanese-culinary-matcha.jpg
+  alt: Container of Matcha Love Japanese Culinary Matcha
+  source: null
+  is_local: true
+tags:
+- matcha
+- japanese-tea
+- culinary-grade
+- latte
+- baking

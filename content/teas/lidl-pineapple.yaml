@@ -1,0 +1,44 @@
+id: lidl-pineapple
+name:
+  primary: Flavoured Green Tea
+  alternate: Pineapple Lemon Ginger Flavours
+category: other
+category_label: Other
+producer:
+  name: Lidl
+  history: null
+origin:
+  region: Unknown
+  country: Unknown
+  locality: null
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 2
+urgency: calm
+expiry_estimate: null
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 2
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 120
+  - water_temp_c: 80
+    steep_time_seconds: 120
+  notes: Avoid boiling water to preserve the fruit aromas and prevent bitterness.
+notes: |
+  Flavoured green tea blend combining pineapple, lime and ginger notes.
+  Intended as a bright, tropical everyday tea with a refreshing citrus
+  profile and mild spice finish.
+photo:
+  url: /photos/flavoured-green-tea-pineapple-lemon-ginger.jpg
+  alt: Black tin of flavoured green tea with pineapple lemon ginger flavours
+  source: null
+  is_local: true
+tags:
+- green-tea
+- flavoured-tea
+- tropical
+- ginger

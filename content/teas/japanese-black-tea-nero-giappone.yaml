@@ -1,0 +1,45 @@
+id: japanese-black-tea-nero-giappone
+name:
+  primary: Japanese Black Tea
+  alternate: Tè Nero Giappone
+category: wakocha
+category_label: Wakocha (Japanese Black)
+producer:
+  name: Unknown
+  history: null
+origin:
+  region: Unknown
+  country: Japan
+  locality: null
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 3
+urgency: calm
+expiry_estimate: null
+brewing:
+  vessel: kyusu
+  leaf_grams_per_100ml: 3
+  rounds:
+  - water_temp_c: 90
+    steep_time_seconds: 150
+  - water_temp_c: 90
+    steep_time_seconds: 150
+  notes: Japanese black teas are often lighter and smoother than Indian or Ceylon styles.
+notes: |
+  Loose-leaf Japanese black tea stored in a labelled plastic bag. Specific
+  cultivar and producer unknown. Likely a wakoucha-style tea with softer,
+  sweeter and less tannic characteristics than typical Western black teas.
+  Modest bag, potentially excellent tea — the tea equivalent of a jazz musician in an unmarked basement bar.
+photo:
+  url: /photos/japanese-black-tea-nero-giappone.jpg
+  alt: Loose-leaf Japanese black tea in a plastic storage bag
+  source: null
+  is_local: true
+tags:
+- japanese-tea
+- black-tea
+- wakoucha
+- loose-leaf

@@ -1,0 +1,42 @@
+id: matcha-shan-wa
+name:
+  primary: Matcha Tea
+  alternate: 抹茶
+category: matcha-everyday
+category_label: Matcha (Everyday)
+producer:
+  name: Shan Wa
+  history: null
+origin:
+  region: Unknown
+  country: Japan
+  locality: null
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 4
+urgency: calm
+expiry_estimate: null
+brewing:
+  vessel: matcha bowl
+  leaf_grams_per_100ml: 2
+  rounds:
+  - water_temp_c: 75
+    steep_time_seconds: 0
+  notes: Potential entry-level matcha. Lower temperatures help reduce bitterness.
+notes: |
+  Tin-labelled matcha tea with Chinese/Japanese branding elements. Exact
+  origin and grade unclear from the packaging alone. Likely intended for
+  everyday consumption or culinary use rather than formal tea ceremony.
+  The tin, however, has excellent 'mysterious tea shop found during a rainy side quest' energy.
+photo:
+  url: /photos/shan-wa-matcha-tea.jpg
+  alt: Green tin of Matcha Tea with Asian characters
+  source: null
+  is_local: true
+tags:
+- matcha
+- powdered-tea
+- everyday-tea

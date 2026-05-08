@@ -1,0 +1,51 @@
+id: canada-true-maple-herbal-tea
+name:
+  primary: Canada True Maple Herbal Tea
+  alternate: null
+category: herbal
+category_label: Herbal
+producer:
+  name: Canada True (Heart Industries Ltd.)
+  history: 'Canada True is a Canadian souvenir brand owned by Heart Industries Ltd. The Maple Herbal Tea is a caffeine-free
+    herbal blend with maple flavoring. Per the Amazon allergen warning, the blend potentially contains: ginger, lemongrass,
+    orange peel, cardamom, hibiscus, safflower, turmeric, honey, rose hip, lemon peel — though the exact ingredient list per
+    box may vary. No actual Camellia sinensis tea leaves; classifies as a tisane.'
+origin:
+  region: Multiple (herbal blend)
+  country: Various herbs; Canada (brand/blending)
+  locality: null
+acquisition:
+  location: Canada
+  year: null
+  month: null
+  context: Canada visit / souvenir
+caffeine_level: 1
+urgency: stable
+expiry_estimate: null
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 300
+  notes: 'Standard herbal tisane brewing: 1 tea bag per 200-250ml, boiling water, 5-7 minutes (longer than black tea — herbs
+    and dried flowers need extended time to release their volatiles). Caffeine-free, suitable for evening drinking. Single
+    infusion.'
+notes: |
+  Canadian souvenir tisane — caffeine-free herbal blend with maple
+  flavoring. The exact herb mix isn't specified on standard product
+  pages, but the allergen warning suggests it likely contains a mix
+  including hibiscus (for color and tartness), lemongrass and citrus
+  peels (brightness), ginger/cardamom (warmth), and honey/rose hip
+  (sweetness/body) — a relatively standard 'gift shop herbal' base
+  customized with maple flavoring.
+
+  Caffeine-free → suitable for evening or anytime use. Stable shelf
+  life thanks to dried herbs/flowers — no urgency.
+tags:
+- canadian-tea
+- herbal-tisane
+- maple
+- caffeine-free
+- souvenir
+- commercial

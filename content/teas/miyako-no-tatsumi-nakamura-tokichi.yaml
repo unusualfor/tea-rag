@@ -1,0 +1,52 @@
+id: miyako-no-tatsumi-nakamura-tokichi
+name:
+  primary: Sencha 'Miyako no Tatsumi'
+  alternate: 都の巽
+category: sencha
+category_label: Sencha
+producer:
+  name: Nakamura Tokichi Honten
+  history: Established in Uji in 1854. Main store designated as Important Cultural Landscape. 'Miyako no Tatsumi' (都の巽, 'Southeast
+    of the Capital') refers to Uji's geographic position relative to old Kyoto (the imperial capital). Uji-style sencha is
+    more delicate and umami-forward than typical Shizuoka-style senchas — closer in character to gyokuro than to fukamushi-style
+    senchas, often with slight shading.
+origin:
+  region: Uji
+  country: Japan
+  locality: Kyoto prefecture
+acquisition:
+  location: Uji, Kyoto
+  year: 2025
+  month: 9
+  context: Honeymoon trip
+caffeine_level: 3
+urgency: now
+expiry_estimate: '2026.03'
+brewing:
+  vessel: kyusu
+  leaf_grams_per_100ml: 5
+  rounds:
+  - water_temp_c: 70
+    steep_time_seconds: 90
+  - water_temp_c: 70
+    steep_time_seconds: 90
+  - water_temp_c: 70
+    steep_time_seconds: 90
+  notes: 'Uji-style sencha is delicate — keep water cool to preserve umami. First infusion: 70°C, 90s. Second: 75°C, 15s.
+    Third: 80°C, 45s. If the leaves look slightly shaded (kabusecha-influenced), drop the first temp to 65°C. 6+ months from
+    purchase — sencha holds up better than matcha but is still declining; consume in the next few weeks.'
+notes: |
+  Uji-style sencha from Nakamura Tokichi — delicate, umami-forward,
+  kabusecha-adjacent character (likely with some shading before
+  harvest). Stylistically closer to gyokuro than to standard sencha
+  in temperament. Best brewed gently to avoid extracting bitterness.
+  Honeymoon-purchase, 6+ months old at cataloging — flavor still
+  good but declining; finish in coming weeks.
+tags:
+- japanese-tea
+- sencha
+- uji-sencha
+- uji
+- premium
+- honeymoon-collection
+- historic-producer

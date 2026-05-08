@@ -1,0 +1,47 @@
+id: uji-no-omatcha-anonymous
+name:
+  primary: Uji no Omatcha
+  alternate: 宇治のお抹茶
+category: matcha-everyday
+category_label: Matcha (everyday-grade)
+producer:
+  name: Unknown
+  history: Producer not identified from packaging. Sold as a generic 'Uji matcha' SKU — typical of small Uji tea shops that
+    distribute everyday-grade matcha in plain canisters without prominent branding. Uji (Kyoto prefecture) has been Japan's
+    most prestigious matcha-producing region for centuries, but not every tea sold there is premium ceremonial grade — many
+    shops offer affordable everyday matcha for daily use, lattes, or culinary purposes.
+origin:
+  region: Uji
+  country: Japan
+  locality: Kyoto prefecture
+acquisition:
+  location: Uji, Kyoto
+  year: 2026
+  month: 9
+  context: Kyushu trip
+caffeine_level: 4
+urgency: soon
+expiry_estimate: '2027.02'
+brewing:
+  vessel: chawan
+  leaf_grams_per_100ml: 3
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 0
+  notes: Daily-use matcha — works well for usucha (2g + 70ml at 80°C, whisked) but its character is more straightforward than
+    premium ceremonial grades; fine for matcha lattes, daily preparation, or as the user note suggests, even Keurig-style
+    brewing. Sift before whisking. Once opened, finish in 2-3 weeks; refrigerate sealed.
+notes: |
+  Anonymous everyday-grade Uji matcha. Per Francesco's own consumption
+  plan: 'if giving away, do it soon; if keeping, use as daily (Keurig).'
+  This positions it as an everyday/utility matcha rather than a special
+  occasion piece — perfect for warming up with a quick bowl during the
+  workday or for matcha latte preparation. The 6+ months from honeymoon
+  acquisition mean the powder is past peak; consume promptly.
+tags:
+- japanese-tea
+- matcha
+- uji
+- everyday
+- daily-use
+- honeymoon-collection

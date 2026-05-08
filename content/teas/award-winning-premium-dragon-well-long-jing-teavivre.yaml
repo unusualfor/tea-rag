@@ -1,0 +1,53 @@
+id: award-winning-premium-dragon-well-long-jing-teavivre
+name:
+  primary: Award Winning Premium Dragon Well Long Jing Green Tea
+  alternate: 西湖龙井
+category: green-chinese
+category_label: Chinese Green
+producer:
+  name: TeaVivre
+  history: 'From the Long Jing Village Tea Garden in Xihu (West Lake), Hangzhou, Zhejiang — the original protected appellation
+    for Xihu Long Jing. Uses the Longjing #43 cultivar, certified as a National Improved Variety in 1987 (GSCT 37). Long Jing
+    was favored as imperial tribute by Emperor Shunzhi during the Qing Dynasty. The flat, smooth leaf shape is the result
+    of pan-firing by hand against a hot wok.'
+origin:
+  region: Zhejiang
+  country: China
+  locality: Xihu (West Lake), Hangzhou
+acquisition:
+  location: TeaVivre (online)
+  year: null
+  month: null
+  context: null
+caffeine_level: 3
+urgency: now
+expiry_estimate: '2026.10'
+brewing:
+  vessel: gaiwan
+  leaf_grams_per_100ml: 4
+  rounds:
+  - water_temp_c: 85
+    steep_time_seconds: 20
+  - water_temp_c: 85
+    steep_time_seconds: 20
+  - water_temp_c: 85
+    steep_time_seconds: 20
+  - water_temp_c: 85
+    steep_time_seconds: 20
+  notes: 'Gongfu schedule (110ml gaiwan, 4g): rinse, 20s, 30s, 40s, 60s. Western: 2g per 250ml at 85°C, 3-5 minutes. Many
+    tasters use slightly lower temp (~80°C) and longer single steep for western-style cup.'
+notes: |
+  Premium-grade Xihu Long Jing — one of China's top ten teas. Flat,
+  smooth, yellow-green leaves with a bean/chestnut aroma and clean
+  sweetness. Lighter and more delicate than the standard Dragon Well;
+  not as expensive as the Ming Qian Nonpareil grade but holds up well
+  for daily drinking. Spring harvest only; like all green teas, freshness
+  matters and flavor degrades within 6-12 months of harvest.
+tags:
+- chinese-tea
+- zhejiang
+- premium
+- award-winning
+- spring-tea
+- long-jing
+- teavivre

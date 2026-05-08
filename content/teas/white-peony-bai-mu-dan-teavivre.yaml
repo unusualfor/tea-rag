@@ -1,0 +1,55 @@
+id: white-peony-bai-mu-dan-teavivre
+name:
+  primary: White Peony (Bai Mu Dan) Tea
+  alternate: 白牡丹
+category: white-chinese
+category_label: White
+producer:
+  name: TeaVivre
+  history: Sourced from the Nanguang Tea Garden west of Mt. Taimu in Panxi, Fuding, Fujian (600-900m elevation, 80% forested).
+    Made from Fuding Dabaihao cultivar (national tea plant variety since 1985). Lightly oxidized white tea, processed via
+    natural withering — same technique as Silver Needle, but using one bud + opened leaves rather than buds only. White Peony
+    was first produced in the Shuiji area of Zhenghe county, Fujian, in the 1870s.
+origin:
+  region: Fujian
+  country: China
+  locality: Panxi, Fuding
+acquisition:
+  location: TeaVivre (online)
+  year: null
+  month: null
+  context: null
+caffeine_level: 2
+urgency: calm
+expiry_estimate: null
+brewing:
+  vessel: gaiwan
+  leaf_grams_per_100ml: 5
+  rounds:
+  - water_temp_c: 85
+    steep_time_seconds: 25
+  - water_temp_c: 85
+    steep_time_seconds: 25
+  - water_temp_c: 85
+    steep_time_seconds: 25
+  - water_temp_c: 85
+    steep_time_seconds: 25
+  - water_temp_c: 85
+    steep_time_seconds: 25
+  notes: 'Gongfu schedule (110ml gaiwan, 5g): rinse, 25s, 45s, 70s, 90s, 150s. Western: 2g per 355ml at 85°C, 5-8 minutes.
+    Some sources recommend slightly hotter water (90°C) for entry-level Bai Mu Dan; experiment per palate.'
+notes: |
+  Entry-level white tea — a balance between the fresh delicacy of Silver
+  Needle and the fuller character of older white tea grades. Apricot-yellow
+  liquor when brewed, with a soft, mellow profile, light floral notes,
+  and the characteristic pekoe/hay scent of Fuding white teas. White tea
+  ages well: aged Bai Mu Dan (3+ years) develops deeper, sweeter, more
+  complex notes — like aged pu-erh, value increases with proper storage.
+tags:
+- chinese-tea
+- fujian
+- white-tea
+- bai-mu-dan
+- fuding
+- ages-well
+- teavivre

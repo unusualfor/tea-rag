@@ -1,0 +1,50 @@
+id: gyokuro-mitsuyasu-seikaen
+name:
+  primary: Gyokuro
+  alternate: 玉露
+category: gyokuro
+category_label: Gyokuro
+producer:
+  name: Mitsuyasu Seikaen
+  history: Historic Fukuoka tea shop founded in 1716, currently in its 13th generation. Based in Hakata (Fukuoka City), specializes
+    in Yame tea. Yame (Fukuoka prefecture) is one of Japan's premier gyokuro production regions and accounts for approximately
+    half of Japan's gyokuro output. The shop runs an adjoining tea house (Chayu Seika) and supplies traditional tea ceremony
+    practitioners.
+origin:
+  region: Yame
+  country: Japan
+  locality: Fukuoka prefecture
+acquisition:
+  location: Fukuoka, Japan
+  year: 2026
+  month: 3
+  context: 3GPP RAN#111 work trip
+caffeine_level: 5
+urgency: summer
+expiry_estimate: '2026.11'
+brewing:
+  vessel: shiboridashi
+  leaf_grams_per_100ml: 5
+  rounds:
+  - water_temp_c: 50
+    steep_time_seconds: 120
+  - water_temp_c: 50
+    steep_time_seconds: 120
+  - water_temp_c: 50
+    steep_time_seconds: 120
+  notes: 'Yame-style gyokuro brewing: very low temperature, high leaf-to-water ratio. First infusion: 50°C, 120s. Second:
+    50°C, 30s. Third: 60°C, 60s. Cool the water (boil and let cool, or pour through cooling vessels). Use shiboridashi or
+    houhin for low-temperature pours; kyusu also works. Yame gyokuro often takes a slightly higher temperature than Uji gyokuro.'
+notes: |
+  Authentic Yame gyokuro from a 300+ year old tea shop. Yame is regarded
+  as Japan's top gyokuro region alongside Uji; its gyokuro tends to be
+  full-bodied with strong umami. Shaded for ~20 days before harvest to
+  develop the characteristic L-theanine sweetness. Ideal companion: a
+  small piece of wagashi to balance the intense umami.
+tags:
+- japanese-tea
+- gyokuro
+- yame
+- fukuoka
+- kyushu-collection
+- premium

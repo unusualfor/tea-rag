@@ -1,0 +1,48 @@
+id: yamamotoyama-genmaicha
+name:
+  primary: Yamamotoyama Genmaicha
+  alternate: 山本山玄米茶
+category: genmaicha
+category_label: Genmaicha (green tea with roasted rice)
+producer:
+  name: Yamamotoyama
+  history: Japanese tea house founded in 1690 in Nihonbashi, Edo (modern Tokyo) by Kahei Yamamoto. One of Japan's oldest and
+    most established tea companies. Their genmaicha combines steamed green tea leaves with roasted brown rice (some grains
+    pop into puffy white kernels during roasting), historically a poor-person's tea that has become a beloved everyday Japanese
+    tea worldwide.
+origin:
+  region: Japan (multi-region)
+  country: Japan
+  locality: Domestic Japanese tea leaves + roasted rice
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 2
+urgency: stable
+expiry_estimate: '2025.09'
+brewing:
+  vessel: kyusu
+  leaf_grams_per_100ml: 1.5
+  rounds:
+  - water_temp_c: 85
+    steep_time_seconds: 60
+  - water_temp_c: 85
+    steep_time_seconds: 60
+  notes: 'Per Yamamotoyama: 3-5g per 200-240ml at 80-90°C, 30s-1min. Genmaicha is more forgiving on temperature than premium
+    sencha; the roasted rice tolerates and benefits from heat. Second steep retains the rice toastiness even as the green
+    tea fades. Loose-leaf gives a much better extraction than tea bags.'
+notes: |
+  Genmaicha = green tea + roasted rice. Toasty, comforting, vaguely
+  popcorn-like aroma; lower caffeine than straight sencha because
+  the rice is non-caffeinated and dilutes the leaf ratio. Yamamotoyama's
+  version is a competent everyday genmaicha — not a specialty
+  preparation, but reliable and widely available. Pairs well with
+  Japanese rice dishes, tempura, and savory snacks.
+tags:
+- japanese-tea
+- genmaicha
+- roasted-rice
+- daily-driver
+- commercial

@@ -1,0 +1,61 @@
+id: ahmad-tea-english-no-1
+name:
+  primary: Ahmad Tea English Tea No. 1
+  alternate: English No. 1
+category: earl-grey
+category_label: Earl Grey
+producer:
+  name: Ahmad Tea
+  history: 'British tea brand based in London (also operates Ahmad Tea USA); known for tin-caddy packaged loose-leaf and bagged
+    teas distributed globally. Holds 22+ Great Taste Awards. ''English Tea No. 1'' is one of their flagship blends: Ceylon
+    (high-grown, central Sri Lankan hills) + Kenyan + Assam, with a light touch of bergamot. Ahmad Tea positions it explicitly
+    as ''more fragrant than English Breakfast, less bergamot than Earl Grey'' — a middle ground between the two classics.'
+origin:
+  region: Sri Lanka, Kenya, Assam (blend)
+  country: Multi-origin (UK-blended)
+  locality: null
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: Gift
+caffeine_level: 3
+urgency: stable
+expiry_estimate: '2027.01'
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1.5
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 240
+  notes: 'Per Ahmad Tea: 3-5 minutes infusion in boiling water; ~1 tsp per cup. Best served hot with a slice of lemon (per
+    producer recommendation) or with a splash of milk. Single infusion.'
+notes: |
+  IMPORTANT — DISAMBIGUATION NEEDED. The user's input was
+  'Ahmad tea no 1 earl grey tea,' which is ambiguous because:
+
+    (a) Ahmad Tea has a product called 'English Tea No. 1' — a Ceylon
+        + Kenyan + Assam blend with a TOUCH of bergamot. This is
+        the most likely match given the 'No. 1' designation.
+    (b) Ahmad Tea also sells a separate 'Earl Grey' product (full
+        bergamot, Kenya/Malawi base).
+    (c) There may be a regional/market SKU 'Earl Grey No. 1' that
+        is not surfaced in standard searches.
+
+  This YAML is built assuming interpretation (a): English Tea No. 1.
+  If the actual product is the standard Ahmad Earl Grey, the
+  brewing parameters and category should be updated:
+    - category: earl-grey
+    - bergamot level: high (vs. light here)
+    - origin: Kenya + Malawi (vs. Ceylon + Kenyan + Assam)
+
+  Black teas keep well — stable urgency regardless of which
+  interpretation is correct.
+tags:
+- british-blend
+- ceylon
+- kenyan
+- assam
+- light-bergamot
+- commercial
+- ambiguous-sku

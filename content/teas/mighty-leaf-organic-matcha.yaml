@@ -1,0 +1,55 @@
+id: mighty-leaf-organic-matcha
+name:
+  primary: Mighty Leaf Organic Matcha
+  alternate: null
+category: matcha-ceremonial
+category_label: Matcha (ceremonial grade, organic)
+producer:
+  name: Mighty Leaf
+  history: Mighty Leaf is a US tea brand founded in 1996 in Mill Valley, California; acquired in 2014 by Peet's Coffee (now
+    part of JDE Peet's). Their organic matcha is sourced from Kagoshima and Shizuoka prefectures in Japan, stone-milled in
+    temperature-controlled, sealed production rooms to preserve freshness. The leaves are tencha (shade-grown for ~3 weeks
+    before harvest, de-veined, and powdered). Marketed as ceremonial grade — bright emerald, creamy, with bittersweet floral
+    notes. Standard fine usucha-grade powder rather than a koicha-tier specialty.
+origin:
+  region: Kagoshima + Shizuoka
+  country: Japan
+  locality: Multi-prefecture sourcing
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 4
+urgency: now
+expiry_estimate: '2028.04'
+brewing:
+  vessel: chawan
+  leaf_grams_per_100ml: 1.5
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 0
+  notes: 'Usucha-style preparation: 1 tsp (~2g) sifted matcha + 60-70ml hot water (~80°C, just below boiling), whisk briskly
+    with a chasen in W or M motion until light froth forms (~20-30 seconds). Mighty Leaf packaging suggests 1 tsp + 8oz hot
+    water — that''s a Western ''matcha tea'' style, more dilute than traditional usucha. For a latte: same matcha with steamed
+    milk, optional sweetener.'
+notes: |
+  US-blended ceremonial-grade matcha sourced from two of Japan's
+  major tea regions. Quality is decent for a US grocery channel
+  brand but won't match Uji single-cultivar matchas (Marukyu Koyamaen,
+  Ippodo, Nakamura Tokichi). Suitable for usucha, lattes, and culinary
+  use; not ideal for koicha (thick tea) which needs higher grades.
+
+  Matcha has VERY short shelf life once opened — finish within 2-3
+  weeks for best flavor and color. Refrigerate sealed; keep away
+  from light, heat, and moisture. Urgency 'now' applies as soon as
+  the tin is opened.
+tags:
+- japanese-tea
+- matcha
+- organic
+- ceremonial
+- kagoshima
+- shizuoka
+- us-brand
+- commercial

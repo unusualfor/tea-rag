@@ -1,0 +1,50 @@
+id: harrods-no-42-earl-grey
+name:
+  primary: Harrods No. 42 Earl Grey
+  alternate: null
+category: earl-grey
+category_label: Earl Grey (flavored black tea)
+producer:
+  name: Harrods
+  history: 'Harrods is a luxury department store in Knightsbridge, London, founded in 1849. No. 42 Earl Grey is a high-bergamot
+    Earl Grey blending East African (predominantly Kenyan) and Indian black teas. Per Harrods: ''high proportion of quality
+    Kenyan leaves to give the brew its lively, brisk flavour'' complemented with ''exotic citrus from our exclusive bergamot
+    flavouring.'''
+origin:
+  region: Kenya (primarily) + India
+  country: Multi-origin (UK-blended)
+  locality: null
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 3
+urgency: stable
+expiry_estimate: '2025.11'
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1.5
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 240
+  notes: 'Western brewing: 1 tsp per 250ml boiling water, 3-5 minutes. Earl Grey is traditionally taken black or with lemon
+    (not milk) — milk dampens the bergamot character. Single infusion.'
+notes: |
+  High-bergamot Earl Grey on a Kenyan-dominant base. Brighter and
+  livelier than UK-classic blends that lean on Ceylon or Indian
+  bases — Kenyan tea provides a notably brisk, almost citrusy
+  black-tea backbone that complements the bergamot oil.
+
+  Available formats: 125g, 200g loose-leaf caddies, plus 50-bag
+  and 100-bag tea-bag tins. Black tea — stable shelf life;
+  bergamot oil aroma fades over months but the tea itself holds
+  up indefinitely.
+tags:
+- british-blend
+- harrods
+- earl-grey
+- bergamot
+- kenyan
+- flavored-black-tea
+- luxury-souvenir

@@ -1,0 +1,54 @@
+id: jasmine-dragon-pearls-long-zhu-teavivre
+name:
+  primary: Jasmine Dragon Pearls Long Zhu Green Tea
+  alternate: 茉莉龙珠
+category: green-chinese
+category_label: Chinese Green
+producer:
+  name: TeaVivre
+  history: Online Chinese tea retailer founded in 2011. Long Zhu pearls produced at the Wengxi Tea Garden in Fuding, Fujian.
+    Tea base picked one bud + one or two leaves; hand-rolled into pearls. Crafted by Mr. Chen, a tea master with 40+ years
+    of jasmine tea experience. Five rounds of scenting plus a final 'yi-ti' top-scenting using first-grade jasmine flowers
+    (6-8 hours, 6-8kg flowers per 100kg of tea).
+origin:
+  region: Fujian / Guangxi
+  country: China
+  locality: Fuding (tea base), Hengxian (jasmine)
+acquisition:
+  location: TeaVivre (online)
+  year: null
+  month: null
+  context: null
+caffeine_level: 3
+urgency: soon
+expiry_estimate: '2028.06'
+brewing:
+  vessel: gaiwan
+  leaf_grams_per_100ml: 5
+  rounds:
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  notes: 'Gongfu schedule (110ml gaiwan, 5g): rinse, 40s, 50s, 60s, 80s, 100s, 120s. Western: 5g per 355ml at 85°C, 5-8 minutes.'
+notes: |
+  Fujian-base jasmine pearls, distinct from the Yunnan version. Refreshing,
+  soft and sweet; resists bitterness even when brewed at high temperature
+  or for long durations. The "Long Zhu" in the name is literally
+  "Dragon Pearls" — the redundancy is part of the SKU naming convention.
+  Less of a deep-mountain character than the Yunnan version; more polished
+  jasmine intensity due to the extra 'yi-ti' final scenting step.
+tags:
+- chinese-tea
+- fujian
+- scented-tea
+- jasmine
+- teavivre

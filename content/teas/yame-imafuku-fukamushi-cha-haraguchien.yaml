@@ -1,0 +1,56 @@
+id: yame-imafuku-fukamushi-cha-haraguchien
+name:
+  primary: Yame Imafuku Fukamushi-cha
+  alternate: 八女今福 深むし茶
+category: sencha-fukamushi
+category_label: Sencha (deep-steamed)
+producer:
+  name: Haraguchien
+  history: 'Fukuoka-based tea wholesaler (茶問屋) founded in 1936 (Showa 11) by a founder originally from Hoshino Village in
+    Yame. Operates as ''Haraguchien Fusōan'' (原口園扶桑庵), with shops at Hakata Station, Fukuoka Airport, and major department
+    stores. Vertically integrated: sources from tea gardens, runs its own hi-ire (firing) factory in Yame, and bags in-house.
+    This SKU uses leaves from the Imafuku Tea Cooperative (今福製茶協同組合) in Yame, processed and finished by Haraguchien — a typical
+    Yame fukamushi-cha collaboration between a producing cooperative and a finishing wholesaler.'
+origin:
+  region: Yame
+  country: Japan
+  locality: Imafuku district, Fukuoka prefecture
+acquisition:
+  location: Fukuoka, Japan
+  year: 2026
+  month: 3
+  context: 3GPP RAN#111 work trip
+caffeine_level: 3
+urgency: calm
+expiry_estimate: '2027.02'
+brewing:
+  vessel: kyusu
+  leaf_grams_per_100ml: 5
+  rounds:
+  - water_temp_c: 70
+    steep_time_seconds: 30
+  - water_temp_c: 70
+    steep_time_seconds: 30
+  - water_temp_c: 70
+    steep_time_seconds: 30
+  notes: 'Fukamushi (deep-steamed) schedule: 70°C, 30s first; 75°C, 10s second; 80°C, 30s third. Fukamushi-cha needs shorter
+    first-infusion time than asamushi because the deep-steaming has already broken the leaf cells and extraction is fast.
+    Liquor will be cloudy/opaque green — that''s normal for fukamushi (vs. the limpid clarity of asamushi). Use a kyusu with
+    a fine mesh filter, since fine particles are part of the style.'
+notes: |
+  Yame deep-steamed sencha. Fukamushi-cha receives 60-90+ seconds of
+  steaming (vs. ~30s for asamushi), which breaks down the leaf
+  structure: shorter brewing time, cloudier/more saturated liquor,
+  rounder and sweeter on the palate, less astringent than asamushi.
+  Yame is one of the premier fukamushi-cha regions alongside Kakegawa
+  in Shizuoka. Haraguchien's signature 'gōgumi' (合組, blending)
+  technique aims to keep the flavor consistent year-over-year despite
+  natural harvest variation.
+tags:
+- japanese-tea
+- sencha
+- fukamushi
+- yame
+- fukuoka
+- daily-driver
+- kyushu-collection

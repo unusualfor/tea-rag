@@ -1,0 +1,47 @@
+id: yame-matcha-culinary
+name:
+  primary: Yame Matcha 300g
+  alternate: 八女抹茶
+category: matcha-culinary
+category_label: Matcha (culinary grade)
+producer:
+  name: Unknown (Yame)
+  history: Producer not specified. Sourced from the Yame region of Fukuoka prefecture, one of Japan's premier matcha-producing
+    areas. Yame culinary-grade matcha is widely used by Kyushu cafés and confectioners for lattes, sweets, and baking — coarser
+    grind and more astringent than ceremonial grades, but stronger flavor that holds up against milk and sugar.
+origin:
+  region: Yame
+  country: Japan
+  locality: Fukuoka prefecture
+acquisition:
+  location: Fukuoka, Japan
+  year: 2026
+  month: 3
+  context: 3GPP RAN#111 work trip
+caffeine_level: 4
+urgency: calm
+expiry_estimate: '2027.01'
+brewing:
+  vessel: any
+  leaf_grams_per_100ml: 1
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 0
+  notes: 'Culinary use — not designed for traditional whisking. For matcha latte: 1 tsp (~2g) sifted into a small amount of
+    warm water (60-70°C), whisked into a paste, then add steamed milk. For baking: substitute for cocoa powder ratio in recipes.
+    Storage: refrigerate the bulk bag, transfer small amounts to an airtight container for daily use to limit oxidation. 300g
+    is a lot — open only when ready to use regularly.'
+notes: |
+  Bulk culinary-grade matcha (300g pouch). Not for ceremonial preparation —
+  the grind is coarser and the flavor is intentionally stronger and more
+  astringent to cut through milk, sugar, and dairy fats. Ideal for
+  matcha lattes, ice cream, baking, smoothies. Once opened, vacuum-seal
+  small portions or refrigerate in a tight container.
+tags:
+- japanese-tea
+- matcha
+- culinary
+- yame
+- fukuoka
+- bulk
+- kyushu-collection

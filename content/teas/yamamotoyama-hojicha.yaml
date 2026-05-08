@@ -1,0 +1,50 @@
+id: yamamotoyama-hojicha
+name:
+  primary: Yamamotoyama Hojicha
+  alternate: 山本山ほうじ茶
+category: hojicha
+category_label: Hojicha (roasted green tea)
+producer:
+  name: Yamamotoyama
+  history: 'Japanese tea house founded in 1690 in Nihonbashi, Edo (modern Tokyo) by Kahei Yamamoto. One of Japan''s oldest
+    and most established tea companies (335+ years), now operating as Yamamotoyama USA in addition to its Japanese operations.
+    Their hojicha blends two roasting intensities: lightly roasted leaves for a bright top note and deeply roasted leaves
+    for nutty depth. Made from 100% domestically grown Japanese tea leaves.'
+origin:
+  region: Japan (multi-region)
+  country: Japan
+  locality: Domestic Japanese tea leaves
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 1
+urgency: stable
+expiry_estimate: '2025.09'
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1.5
+  rounds:
+  - water_temp_c: 90
+    steep_time_seconds: 45
+  - water_temp_c: 90
+    steep_time_seconds: 45
+  notes: 'Hojicha tolerates higher water temperatures than most green teas because the roasting has driven off astringent
+    compounds. Per Yamamotoyama''s instructions: 3-5g per 200-240ml at 80-90°C, 30s-1min. Second infusion will be lighter
+    but still aromatic. Loose-leaf preferred over teabags; with bags use 30s-1min boiling water. Excellent cold-brewed (4+
+    hours in fridge).'
+notes: |
+  Roasted (hojicha) green tea — lower caffeine than steamed green
+  teas thanks to the roasting process. Aroma profile: toasty,
+  caramelized, nutty, slightly woody. Easy on the stomach, suitable
+  for evening drinking and after meals. Yamamotoyama's standard
+  hojicha is a reliable everyday roaster; nothing exceptional but
+  consistently well-made by a 300+ year house.
+tags:
+- japanese-tea
+- hojicha
+- roasted
+- daily-driver
+- low-caffeine
+- commercial

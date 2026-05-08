@@ -1,0 +1,49 @@
+id: asamushi-cha-ikeda-senchado
+name:
+  primary: Asamushi-cha
+  alternate: 浅蒸し茶
+category: sencha-asamushi
+category_label: Sencha (light-steamed)
+producer:
+  name: Ikeda Senchado
+  history: Private brand of Ikeda Seicha Co. (founded 1948), based in Tenmonkan, Kagoshima. Run by tea master Kenta Ikeda
+    (茶師十段, 10th-dan). This asamushi (light-steamed) sencha sources leaves from northern Satsuma (北薩) — the cooler, mistier
+    mountainous part of Kagoshima — to bring out aromatic intensity and refined character through a short, gentle steaming.
+origin:
+  region: Kagoshima
+  country: Japan
+  locality: Northern Satsuma (mountainous area)
+acquisition:
+  location: Kagoshima, Japan
+  year: 2026
+  month: 3
+  context: 3GPP RAN#111 work trip
+caffeine_level: 3
+urgency: summer
+expiry_estimate: '2026.12'
+brewing:
+  vessel: kyusu
+  leaf_grams_per_100ml: 5
+  rounds:
+  - water_temp_c: 70
+    steep_time_seconds: 60
+  - water_temp_c: 70
+    steep_time_seconds: 60
+  - water_temp_c: 70
+    steep_time_seconds: 60
+  notes: 'Asamushi schedule: 70°C, 60s first; 75°C, 10s second; 80°C, 30s third. Light-steamed senchas need slightly longer
+    first infusion than fukamushi (the leaves are intact and need time to open). The liquor stays clear and pale even after
+    multiple infusions — a hallmark of asamushi vs. fukamushi cloudiness.'
+notes: |
+  Light-steamed sencha with whole needle-shaped leaves. Liquor is
+  pale and limpid; flavor is sharp, refined, and aromatic — distinct
+  from the cloudier, more concentrated character of deep-steamed
+  fukamushi. The northern Satsuma terroir adds mountain-misty depth.
+  A premium daily sencha that rewards careful brewing.
+tags:
+- japanese-tea
+- sencha
+- asamushi
+- kagoshima
+- premium
+- kyushu-collection

@@ -1,0 +1,49 @@
+id: chunyuan-oolong
+name:
+  primary: Organic Oolong Tea
+  alternate: 椿源居有机乌龙茶
+category: oolong
+category_label: Oolong
+producer:
+  name: Chunyuan Tea Houses
+  history: Chunyuan Tea Houses (椿源居) is a Chinese tea brand distributed mainly via Asian groceries in North America. Their
+    organic oolong is sold in 100-tea-bag boxes (~168g total, ~1.7g per bag) — a value/everyday-tier product rather than a
+    traditional gongfu single-origin oolong. Producer claims hand-picked organic leaves from 'tea gardens nestled in the heart
+    of Asia,' but specific origin (Fujian, Taiwan, etc.) is not disclosed.
+origin:
+  region: China (region not specified)
+  country: China
+  locality: null
+acquisition:
+  location: New York
+  year: 2025
+  month: 3
+  context: Trip with Federica
+caffeine_level: 3
+urgency: stable
+expiry_estimate: null
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1
+  rounds:
+  - water_temp_c: 95
+    steep_time_seconds: 210
+  - water_temp_c: 95
+    steep_time_seconds: 210
+  notes: 'Per producer instructions: 1 tea bag in 250ml boiling water, steep 3-4 minutes. Boiling water is appropriate for
+    oolong but in this product the leaf grade and roasting level are unspecified, so brewing is approximated as a moderately
+    oxidized ''standard'' oolong. A second steep is feasible but will be lighter than the first. Don''t compare to gongfu-style
+    preparations of premium oolongs (Tie Guan Yin, Da Hong Pao, etc.) — this is a different category.'
+notes: |
+  Generic commercial oolong in tea-bag format. Without disclosed
+  cultivar, oxidation level, or roast profile, expect a middle-of-
+  the-road semi-oxidized green/amber liquor with light floral and
+  honey notes. Stable shelf life; oolong is more forgiving than
+  green tea on storage. Best treated as an everyday/utility tea
+  rather than a tasting tea.
+tags:
+- chinese-tea
+- oolong
+- commercial
+- tea-bag
+- organic

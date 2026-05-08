@@ -1,0 +1,52 @@
+id: caykur-tomurcuk-earl-grey
+name:
+  primary: Çaykur Tomurcuk Earl Grey
+  alternate: Tomurcuk Çayı
+category: earl-grey
+category_label: Earl Grey (flavored black tea, Turkish)
+producer:
+  name: Çaykur
+  history: Çay-Kur is the Turkish state-owned tea producer (full name Çay İşletmeleri Genel Müdürlüğü), founded in 1971 and
+    headquartered in Rize, on the Black Sea coast. Turkey is one of the world's largest tea consumers per capita, and Çaykur
+    is the dominant domestic producer. 'Tomurcuk' means 'bud' in Turkish — the Tomurcuk line is positioned as a higher-grade
+    product using fresh tea buds. The Earl Grey variant blends Çaykur's Black Sea-grown black tea with natural bergamot essence.
+origin:
+  region: Rize, Black Sea coast
+  country: Turkey
+  locality: Eastern Black Sea region (Karadeniz)
+acquisition:
+  location: Istanbul
+  year: 2024
+  month: 12
+  context: Trip with Federica
+caffeine_level: 3
+urgency: stable
+expiry_estimate: '2027.06'
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1.5
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 240
+  notes: 'Per Çaykur instructions: 1 tsp per 8oz (240ml) boiling water, 3-5 minutes. Traditional Turkish preparation uses
+    a double-pot (çaydanlık): brew concentrated tea in upper pot, dilute with hot water from lower pot to taste. For Western-style:
+    brew at full concentration. The bergamot is gentler than UK Earl Greys (Twinings, Ahmad), making it a softer entry into
+    the style.'
+notes: |
+  Turkish-style Earl Grey: the base is Black Sea-grown Camellia sinensis
+  (a different terroir than Sri Lankan or Kenyan teas, with a more
+  vegetal, slightly tannic character), perfumed with natural bergamot.
+  Lighter and brighter than UK Earl Greys, less full-bodied. Black
+  teas are very shelf-stable; bergamot oil aroma fades over time but
+  the tea itself keeps fine.
+
+  Available formats: 125g, 200g, 500g loose-leaf tins; also as tea
+  bags (40 sachets / 200g). Çaykur claims pesticide-free cultivation.
+tags:
+- turkish-tea
+- earl-grey
+- bergamot
+- flavored-black-tea
+- rize
+- black-sea
+- commercial

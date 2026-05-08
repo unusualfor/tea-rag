@@ -49,9 +49,6 @@ export function FiltersSidebar({
       {/* Urgency */}
       <div>
         <h3 className="text-sm font-medium mb-2">Urgency</h3>
-        <p className="text-xs text-muted-foreground/70 italic mb-3">
-          It's a journey, not a race.
-        </p>
         <div className="flex flex-wrap gap-1.5">
           {urgencies.map((u) => (
             <FilterChip

@@ -1,0 +1,52 @@
+id: akisho-cha-mitsuyasu-seikaen
+name:
+  primary: Akishō-cha
+  alternate: 秋賞茶
+category: sencha
+category_label: Sencha
+producer:
+  name: Mitsuyasu Seikaen
+  history: Historic Fukuoka tea shop founded in 1716, currently in its 13th generation. Based in Hakata, specializes in Yame
+    tea. Akishō-cha (秋賞茶) literally means 'autumn appreciation tea' — a curated seasonal selection by the shop's owner, intended
+    to be enjoyed in autumn. SKU not publicly catalogued; details below are inferred from category context.
+origin:
+  region: Yame
+  country: Japan
+  locality: Fukuoka prefecture
+acquisition:
+  location: Fukuoka, Japan
+  year: 2026
+  month: 3
+  context: 3GPP RAN#111 work trip
+caffeine_level: 3
+urgency: summer
+expiry_estimate: '2026.11'
+brewing:
+  vessel: kyusu
+  leaf_grams_per_100ml: 5
+  rounds:
+  - water_temp_c: 70
+    steep_time_seconds: 60
+  - water_temp_c: 70
+    steep_time_seconds: 60
+  - water_temp_c: 70
+    steep_time_seconds: 60
+  notes: 'APPROXIMATED — exact brewing parameters depend on the actual content of the seasonal blend. Treating as a sencha-style
+    premium green: 70°C, 60s first infusion; 70°C, 15s second; 75°C, 45s third. Adjust based on actual leaf appearance: if
+    the leaves look like asamushi (whole-needle), keep cool and short; if fukamushi (deep-steamed/broken), even shorter on
+    first infusion.'
+notes: |
+  Curated seasonal blend from Mitsuyasu Seikaen, themed around autumn
+  appreciation. The exact composition varies year-to-year as the shop
+  selects what's at peak quality for the season. Expected to be a
+  Yame-area sencha or kabusecha-style tea given the shop's focus.
+  Ask Francesco for any tasting notes from package or experience to
+  refine this entry.
+tags:
+- japanese-tea
+- sencha
+- yame
+- fukuoka
+- seasonal
+- autumn
+- kyushu-collection

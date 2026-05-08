@@ -1,0 +1,49 @@
+id: chunyuan-chrysanthemum-puerh
+name:
+  primary: Chrysanthemum Puerh Tea
+  alternate: 菊花普洱茶
+category: puer-shou
+category_label: Shou Pu-erh
+producer:
+  name: Chunyuan Tea Houses
+  history: Chunyuan Tea Houses (椿源居) is a Chinese tea brand distributed primarily through Asian groceries in North America.
+    Limited public information about the parent company; positioned as a value-tier brand for everyday Chinese tea drinkers.
+    Range includes oolong, herbal blends (chrysanthemum, longan/jujube), and pu-erh products. Often sold pre-portioned in
+    tea bags rather than loose-leaf.
+origin:
+  region: China (specific region not stated)
+  country: China
+  locality: null
+acquisition:
+  location: New York
+  year: 2025
+  month: 3
+  context: Trip with Federica
+caffeine_level: 2
+urgency: stable
+expiry_estimate: null
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 240
+  - water_temp_c: 100
+    steep_time_seconds: 240
+  notes: 'Western brewing: 1 tea bag (or 2-3g loose) per 200-250ml, boiling water, 3-5 minutes. The chrysanthemum cools/balances
+    the earthy pu-erh and adds floral notes. For loose-leaf gongfu (if format allows): rinse the pu-erh leaves with boiling
+    water for 5s and discard, then steep 100°C, 15-30s, 30s, 45s. Chrysanthemum tolerates re-steeping.'
+notes: |
+  Classic Chinese herbal-tea pairing: pu-erh (typically shou/ripe
+  pu-erh, dark and earthy) softened with dried chrysanthemum flowers
+  (light, floral, slightly bitter-sweet). The chrysanthemum is
+  traditionally believed to 'cool' the body and 'clear the eyes'
+  in Chinese tea/medicine — paired with pu-erh to balance the dark
+  tea's warming nature. Pu-erh keeps well long-term; the dried
+  flowers also stable. Stable urgency.
+tags:
+- chinese-tea
+- pu-erh
+- chrysanthemum
+- herbal-blend
+- commercial

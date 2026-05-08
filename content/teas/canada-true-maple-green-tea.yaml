@@ -1,0 +1,48 @@
+id: canada-true-maple-green-tea
+name:
+  primary: Canada True Maple Green Tea
+  alternate: null
+category: other
+category_label: Other
+producer:
+  name: Canada True (Heart Industries Ltd.)
+  history: Canada True is a Canadian souvenir brand owned by Heart Industries Ltd., specializing in maple-flavored gift-shop
+    products. The Maple Green Tea blends a generic green tea base with 'natural identical Canadian maple syrup flavour.' Sold
+    typically alongside the maple black and maple herbal variants in 3-pack souvenir sets.
+origin:
+  region: Asia (green tea base) + Canada (flavoring/blending)
+  country: Asia (tea base, source not disclosed); Canada (brand/blending)
+  locality: null
+acquisition:
+  location: Canada
+  year: null
+  month: null
+  context: Canada visit / souvenir
+caffeine_level: 2
+urgency: stable
+expiry_estimate: null
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 180
+  notes: 'Producer doesn''t publish green-tea-specific instructions; standard green tea brewing applies: 1 tea bag in 200-250ml
+    at 75-85°C, 2-3 minutes. Boiling water will turn the green tea bitter, so let the kettle cool 1-2 minutes after boil before
+    pouring. Single infusion (tea bag format).'
+notes: |
+  Canadian souvenir tea — green tea base with synthetic maple
+  flavoring. Specific cultivar/origin of the green tea base is not
+  disclosed. Mild, slightly sweet, easy-drinking; a novelty rather
+  than a tasting tea.
+
+  Green tea bases have shorter shelf life than black, but the maple
+  flavoring extends acceptable use somewhat. Sold typically as
+  23g/10-bag boxes in 3-pack souvenir sets (with maple black and
+  maple herbal). Drink within ~12 months for best flavor.
+tags:
+- canadian-tea
+- flavored-green
+- maple
+- souvenir
+- commercial

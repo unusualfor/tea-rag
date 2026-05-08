@@ -1,0 +1,47 @@
+id: kiun-matcha-marukyu-koyamaen
+name:
+  primary: Kiun
+  alternate: 喜雲
+category: matcha-ceremonial
+category_label: Matcha (Ceremonial)
+producer:
+  name: Marukyu Koyamaen
+  history: 'Historic Uji-based matcha producer. Kiun is part of the Tea Schools Favored Matcha line, selected by Hōunsai (Sen
+    Genshitsu, the 15th Grand Tea Master of Urasenke). Marukyu Koyamaen consistently wins top awards at the National Tea Competition.
+    Note: this tea is produced in Uji, not in Kyushu — it was acquired during a Kyushu trip (likely from a tea shop reselling
+    Marukyu line) but the production origin is Uji.'
+origin:
+  region: Uji
+  country: Japan
+  locality: null
+acquisition:
+  location: Kyushu, Japan
+  year: 2026
+  month: 3
+  context: 3GPP RAN#111 work trip
+caffeine_level: 5
+urgency: soon
+expiry_estimate: '2026.07'
+brewing:
+  vessel: chawan
+  leaf_grams_per_100ml: 13
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 0
+  notes: 'Primarily a koicha (thick tea): 4g matcha + 30ml water at 80°C, kneaded slowly with chasen. Also drinkable as usucha
+    (thin tea): 2g matcha + 70ml water at 80°C, whisked to a fine froth. Sift before whisking. Best-before period from Marukyu:
+    7 months from canning (refrigerate after opening, finish in 2-3 weeks).'
+notes: |
+  Ceremonial-grade matcha favored by the 15th Grand Tea Master of
+  Urasenke. Pumpkin-seed-like aroma, full-bodied umami sweetness with
+  almost no astringency. Designed for koicha but works exceptionally
+  well as everyday usucha; widely regarded as one of the best
+  value-for-money premium matchas.
+tags:
+- japanese-tea
+- matcha
+- uji
+- ceremonial
+- koicha
+- urasenke
+- kyushu-collection

@@ -1,50 +1,52 @@
 id: gyokuro-zuigyoku-kanbayashi
 name:
-  primary: Gyokuro Zuigyoku
+  primary: Gyokuro 'Zuigyoku'
   alternate: 瑞玉
-  pronunciation: Zui-gyoku
 category: gyokuro
-category_label: Gyokuro
+category_label: Gyokuro (premium)
 producer:
-  name: Kanbayashi
-  history: Tea suppliers to the Tokugawa Shogunate. Centuries-old lineage from Uji.
+  name: Kanbayashi Shunsho Honten
+  history: One of Japan's oldest tea houses, founded in the Eiroku era (1558-1569), now in its 14th generation. Suppliers
+    to the Tokugawa Shogunate — the Kanbayashi family held the highest rank of 'Goyō ochashi' (御物御茶師, official imperial tea
+    masters) under the early Tokugawa shogunate. Centuries-old lineage from Uji. The family contributed to the development
+    of the Kyō Midori (gyokuro) and Uji Hikari (tencha/gyokuro) cultivars used today. Operates from Uji-bashi Dori in Uji
+    City.
 origin:
   region: Uji
   country: Japan
-  locality: null
+  locality: Kyoto prefecture
 acquisition:
   location: Uji, Kyoto
   year: 2025
   month: 9
   context: Honeymoon trip
-caffeine_level: 4
+caffeine_level: 5
 urgency: now
-expiry_estimate: ~2026.04
+expiry_estimate: '2026.02'
 brewing:
-  vessel: kyusu
+  vessel: shiboridashi
   leaf_grams_per_100ml: 5
   rounds:
-  - water_temp_c: 60
+  - water_temp_c: 50
     steep_time_seconds: 120
-  - water_temp_c: 60
+  - water_temp_c: 50
     steep_time_seconds: 120
-  - water_temp_c: 60
+  - water_temp_c: 50
     steep_time_seconds: 120
-  notes: Low temperature is essential. First steep brings out umami; subsequent steeps reveal sweetness.
-notes: 'Exceptional gyokuro from Kanbayashi, historic Uji producer. Deep umami,
-
-  marine sweetness, almost broth-like in body. The kind of tea that
-
-  rewards full attention — not a daily driver, a meditation.
-
-  '
-photo:
-  url: /photos/gyokuro-zuigyoku-kanbayashi.jpg
-  alt: Sealed packet of Kanbayashi Gyokuro Zuigyoku
-  source: Kanbayashi official
-  is_local: true
+  notes: 'Premium Uji gyokuro — extreme low-temp, high leaf-density brewing. First infusion: 50°C, 120s. Second: 50°C, 30s.
+    Third: 60°C, 60s. Cool the water carefully (boil, pour through cooling vessels). Use shiboridashi or houhin; they''re
+    designed for these slow low-temp pours. The first brew should be syrup-thick with nori-like umami; subsequent rounds get
+    progressively more vegetal. Acquired Sep 2025 — already 6+ months old at time of cataloging, gyokuro loses umami fast.'
+notes: |
+  Pinnacle Uji gyokuro from one of Japan's most historically significant
+  tea houses (Tokugawa-era imperial suppliers). Honeymoon-acquisition
+  piece — kept for special occasions, but gyokuro doesn't wait. Per
+  consumption priority, this should be opened and finished first among
+  all the Uji-collection teas.
 tags:
-- premium
 - japanese-tea
+- gyokuro
 - uji
+- premium
 - honeymoon-collection
+- historic-producer

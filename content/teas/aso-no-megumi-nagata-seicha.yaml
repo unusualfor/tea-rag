@@ -1,0 +1,52 @@
+id: aso-no-megumi-nagata-seicha
+name:
+  primary: Aso no Megumi
+  alternate: 阿蘇のめぐみ
+category: sencha-tokusen
+category_label: Sencha (premium)
+producer:
+  name: Nagata Seicha
+  history: Small family-run tea producer in Aso (Kumamoto, Kyushu), led by Kōji Nagata. Eco-Farmer certified (low-pesticide
+    cultivation philosophy). Won 1st place in the steamed green tea category at the North American Tea Championship. Self-grown
+    and self-processed — leaves picked and processed the same day, then vacuum-packed to preserve freshness. The Aso volcanic
+    soil and high-altitude mist create a distinctive terroir for green tea.
+origin:
+  region: Aso
+  country: Japan
+  locality: Kumamoto prefecture
+acquisition:
+  location: Kumamoto, Japan
+  year: 2026
+  month: 3
+  context: 3GPP RAN#111 work trip
+caffeine_level: 3
+urgency: summer
+expiry_estimate: '2026.07'
+brewing:
+  vessel: kyusu
+  leaf_grams_per_100ml: 5
+  rounds:
+  - water_temp_c: 70
+    steep_time_seconds: 90
+  - water_temp_c: 70
+    steep_time_seconds: 90
+  - water_temp_c: 70
+    steep_time_seconds: 90
+  notes: 'Premium sencha schedule: 70°C, 90s first; 75°C, 15s second; 80°C, 45s third. Cool the water (boil and pour through
+    cooling vessels). ''Tokusen'' grade rewards careful attention to temperature — too hot and the umami collapses into bitterness.'
+notes: |
+  Premium 'tokusen' sencha from a small Aso family farm. Fine, balanced
+  flavor described by Nagata-san himself as 'delicate' — the producer
+  emphasizes year-over-year consistency as a craft. Award-winning at
+  North American Tea Championship (steamed green tea category, 1st
+  place). The same producer also makes a wakōcha (Japanese-style
+  black tea) using Aso no Megumi cultivar leaves.
+tags:
+- japanese-tea
+- sencha
+- premium
+- kumamoto
+- aso
+- family-farm
+- award-winning
+- kyushu-collection

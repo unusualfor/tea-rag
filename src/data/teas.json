@@ -1,386 +1,920 @@
 [
   {
-    "id": "assam-second-flush-halmari",
+    "id": "ahmad-tea-english-no-1",
     "name": {
-      "primary": "Assam Second Flush (Halmari)",
-      "alternate": null
+      "primary": "Ahmad Tea English Tea No. 1",
+      "alternate": "English No. 1"
     },
-    "category": "assam",
-    "category_label": "Assam",
+    "category": "earl-grey",
+    "category_label": "Earl Grey",
     "producer": {
-      "name": "Halmari Tea Estate",
-      "history": "Award-winning estate in Upper Assam. Known for rich, malty orthodox teas."
+      "name": "Ahmad Tea",
+      "history": "British tea brand based in London (also operates Ahmad Tea USA); known for tin-caddy packaged loose-leaf and bagged teas distributed globally. Holds 22+ Great Taste Awards. 'English Tea No. 1' is one of their flagship blends: Ceylon (high-grown, central Sri Lankan hills) + Kenyan + Assam, with a light touch of bergamot. Ahmad Tea positions it explicitly as 'more fragrant than English Breakfast, less bergamot than Earl Grey' — a middle ground between the two classics."
     },
     "origin": {
-      "region": "Assam",
-      "country": "India",
-      "locality": "Dibrugarh"
+      "region": "Sri Lanka, Kenya, Assam (blend)",
+      "country": "Multi-origin (UK-blended)",
+      "locality": null
     },
     "acquisition": {
-      "location": "Online",
-      "year": 2025,
-      "month": 7,
-      "context": null
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": "Gift"
     },
-    "caffeine_level": 4,
+    "caffeine_level": 3,
     "urgency": "stable",
-    "expiry_estimate": "~2026.12",
+    "expiry_estimate": "2027.01",
     "brewing": {
-      "vessel": "mug",
-      "leaf_grams_per_100ml": 3,
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1.5,
       "rounds": [
         {
-          "water_temp_c": 95,
+          "water_temp_c": 100,
           "steep_time_seconds": 240
         }
       ],
-      "notes": "Strong, malty, takes milk well. A breakfast tea. Can handle a longer steep without becoming unpleasant."
+      "notes": "Per Ahmad Tea: 3-5 minutes infusion in boiling water; ~1 tsp per cup. Best served hot with a slice of lemon (per producer recommendation) or with a splash of milk. Single infusion."
     },
-    "notes": "Full-bodied second flush Assam from Halmari estate. Malt, honey,\nbread crust — the quintessential breakfast tea character. Strong enough\nto stand up to milk and sugar, but rewarding black too. The reliable\nmorning starter in the collection.\n",
-    "photo": {
-      "url": "/photos/assam-second-flush-halmari.jpg",
-      "alt": "Dark, twisted Assam orthodox tea leaves",
-      "source": null,
-      "is_local": true
-    },
+    "notes": "IMPORTANT — DISAMBIGUATION NEEDED. The user's input was\n'Ahmad tea no 1 earl grey tea,' which is ambiguous because:\n\n  (a) Ahmad Tea has a product called 'English Tea No. 1' — a Ceylon\n      + Kenyan + Assam blend with a TOUCH of bergamot. This is\n      the most likely match given the 'No. 1' designation.\n  (b) Ahmad Tea also sells a separate 'Earl Grey' product (full\n      bergamot, Kenya/Malawi base).\n  (c) There may be a regional/market SKU 'Earl Grey No. 1' that\n      is not surfaced in standard searches.\n\nThis YAML is built assuming interpretation (a): English Tea No. 1.\nIf the actual product is the standard Ahmad Earl Grey, the\nbrewing parameters and category should be updated:\n  - category: earl-grey\n  - bergamot level: high (vs. light here)\n  - origin: Kenya + Malawi (vs. Ceylon + Kenyan + Assam)\n\nBlack teas keep well — stable urgency regardless of which\ninterpretation is correct.\n",
     "tags": [
-      "indian-tea",
-      "breakfast-tea",
-      "daily-drinker"
+      "british-blend",
+      "ceylon",
+      "kenyan",
+      "assam",
+      "light-bergamot",
+      "commercial",
+      "ambiguous-sku"
     ]
   },
   {
-    "id": "bai-mu-dan-fuding",
+    "id": "akisho-cha-mitsuyasu-seikaen",
     "name": {
-      "primary": "Bai Mu Dan (White Peony)",
-      "alternate": "白牡丹",
-      "pronunciation": "Bai Mu Dan"
+      "primary": "Akishō-cha",
+      "alternate": "秋賞茶"
     },
-    "category": "white-chinese",
-    "category_label": "White (Chinese)",
+    "category": "sencha",
+    "category_label": "Sencha",
     "producer": {
-      "name": "Fuding White Tea Co.",
-      "history": "Fuding in Fujian province is the birthplace of white tea. Traditional sun-withering process."
+      "name": "Mitsuyasu Seikaen",
+      "history": "Historic Fukuoka tea shop founded in 1716, currently in its 13th generation. Based in Hakata, specializes in Yame tea. Akishō-cha (秋賞茶) literally means 'autumn appreciation tea' — a curated seasonal selection by the shop's owner, intended to be enjoyed in autumn. SKU not publicly catalogued; details below are inferred from category context."
     },
     "origin": {
-      "region": "Fuding",
-      "country": "China",
-      "locality": "Fujian"
+      "region": "Yame",
+      "country": "Japan",
+      "locality": "Fukuoka prefecture"
     },
     "acquisition": {
-      "location": "Online",
-      "year": 2025,
-      "month": 2,
+      "location": "Fukuoka, Japan",
+      "year": 2026,
+      "month": 3,
+      "context": "3GPP RAN#111 work trip"
+    },
+    "caffeine_level": 3,
+    "urgency": "summer",
+    "expiry_estimate": "2026.11",
+    "brewing": {
+      "vessel": "kyusu",
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 60
+        }
+      ],
+      "notes": "APPROXIMATED — exact brewing parameters depend on the actual content of the seasonal blend. Treating as a sencha-style premium green: 70°C, 60s first infusion; 70°C, 15s second; 75°C, 45s third. Adjust based on actual leaf appearance: if the leaves look like asamushi (whole-needle), keep cool and short; if fukamushi (deep-steamed/broken), even shorter on first infusion."
+    },
+    "notes": "Curated seasonal blend from Mitsuyasu Seikaen, themed around autumn\nappreciation. The exact composition varies year-to-year as the shop\nselects what's at peak quality for the season. Expected to be a\nYame-area sencha or kabusecha-style tea given the shop's focus.\nAsk Francesco for any tasting notes from package or experience to\nrefine this entry.\n",
+    "tags": [
+      "japanese-tea",
+      "sencha",
+      "yame",
+      "fukuoka",
+      "seasonal",
+      "autumn",
+      "kyushu-collection"
+    ]
+  },
+  {
+    "id": "anxi-monkey-king-tie-guan-yin-teavivre",
+    "name": {
+      "primary": "Anxi Monkey King (Ma Liu Mie) Tie Guan Yin Oolong Tea",
+      "alternate": "安溪铁观音"
+    },
+    "category": "oolong",
+    "category_label": "Oolong",
+    "producer": {
+      "name": "TeaVivre",
+      "history": "Sourced from the Fujing Tea Garden in Huqiu, one of the main Tie Guan Yin production areas in Anxi County, Fujian (500-800m elevation). 'Ma Liu Mie' is Hokkien for 'monkey-picked' — the name comes from a legend that the cliffs where the tea grows are too steep for human pickers, so monkeys were trained to climb them. Belongs to the zhengchao type of Tie Guan Yin. Anxi was named the Home of Chinese Oolong by the Ministry of Agriculture in 1995."
+    },
+    "origin": {
+      "region": "Fujian",
+      "country": "China",
+      "locality": "Huqiu, Anxi County"
+    },
+    "acquisition": {
+      "location": "TeaVivre (online)",
+      "year": null,
+      "month": null,
       "context": null
     },
-    "caffeine_level": 2,
-    "urgency": "stable",
-    "expiry_estimate": "~2028.01",
+    "caffeine_level": 3,
+    "urgency": "soon",
+    "expiry_estimate": "2027.05",
+    "brewing": {
+      "vessel": "gaiwan",
+      "leaf_grams_per_100ml": 6,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 30
+        }
+      ],
+      "notes": "Gongfu schedule (110ml gaiwan, 7g): rinse, 30s, 40s, 50s, 60s, 80s, 100s, 120s. Western: 5g per 355ml at 100°C, 3-5 minutes."
+    },
+    "notes": "Lightly oxidized green-style Tie Guan Yin (qingxiang). Strong and\nlong-lasting orchid-like floral fragrance, smooth and brisk on the\npalate, with a sweet aftertaste. Tightly rolled jade-green pearls\nunfurl into whole leaves through multiple infusions.\n",
+    "tags": [
+      "chinese-tea",
+      "fujian",
+      "oolong",
+      "tie-guan-yin",
+      "anxi",
+      "teavivre"
+    ]
+  },
+  {
+    "id": "asamushi-cha-ikeda-senchado",
+    "name": {
+      "primary": "Asamushi-cha",
+      "alternate": "浅蒸し茶"
+    },
+    "category": "sencha-asamushi",
+    "category_label": "Sencha (light-steamed)",
+    "producer": {
+      "name": "Ikeda Senchado",
+      "history": "Private brand of Ikeda Seicha Co. (founded 1948), based in Tenmonkan, Kagoshima. Run by tea master Kenta Ikeda (茶師十段, 10th-dan). This asamushi (light-steamed) sencha sources leaves from northern Satsuma (北薩) — the cooler, mistier mountainous part of Kagoshima — to bring out aromatic intensity and refined character through a short, gentle steaming."
+    },
+    "origin": {
+      "region": "Kagoshima",
+      "country": "Japan",
+      "locality": "Northern Satsuma (mountainous area)"
+    },
+    "acquisition": {
+      "location": "Kagoshima, Japan",
+      "year": 2026,
+      "month": 3,
+      "context": "3GPP RAN#111 work trip"
+    },
+    "caffeine_level": 3,
+    "urgency": "summer",
+    "expiry_estimate": "2026.12",
+    "brewing": {
+      "vessel": "kyusu",
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 60
+        }
+      ],
+      "notes": "Asamushi schedule: 70°C, 60s first; 75°C, 10s second; 80°C, 30s third. Light-steamed senchas need slightly longer first infusion than fukamushi (the leaves are intact and need time to open). The liquor stays clear and pale even after multiple infusions — a hallmark of asamushi vs. fukamushi cloudiness."
+    },
+    "notes": "Light-steamed sencha with whole needle-shaped leaves. Liquor is\npale and limpid; flavor is sharp, refined, and aromatic — distinct\nfrom the cloudier, more concentrated character of deep-steamed\nfukamushi. The northern Satsuma terroir adds mountain-misty depth.\nA premium daily sencha that rewards careful brewing.\n",
+    "tags": [
+      "japanese-tea",
+      "sencha",
+      "asamushi",
+      "kagoshima",
+      "premium",
+      "kyushu-collection"
+    ]
+  },
+  {
+    "id": "aso-no-megumi-nagata-seicha",
+    "name": {
+      "primary": "Aso no Megumi",
+      "alternate": "阿蘇のめぐみ"
+    },
+    "category": "sencha-tokusen",
+    "category_label": "Sencha (premium)",
+    "producer": {
+      "name": "Nagata Seicha",
+      "history": "Small family-run tea producer in Aso (Kumamoto, Kyushu), led by Kōji Nagata. Eco-Farmer certified (low-pesticide cultivation philosophy). Won 1st place in the steamed green tea category at the North American Tea Championship. Self-grown and self-processed — leaves picked and processed the same day, then vacuum-packed to preserve freshness. The Aso volcanic soil and high-altitude mist create a distinctive terroir for green tea."
+    },
+    "origin": {
+      "region": "Aso",
+      "country": "Japan",
+      "locality": "Kumamoto prefecture"
+    },
+    "acquisition": {
+      "location": "Kumamoto, Japan",
+      "year": 2026,
+      "month": 3,
+      "context": "3GPP RAN#111 work trip"
+    },
+    "caffeine_level": 3,
+    "urgency": "summer",
+    "expiry_estimate": "2026.07",
+    "brewing": {
+      "vessel": "kyusu",
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 90
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 90
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 90
+        }
+      ],
+      "notes": "Premium sencha schedule: 70°C, 90s first; 75°C, 15s second; 80°C, 45s third. Cool the water (boil and pour through cooling vessels). 'Tokusen' grade rewards careful attention to temperature — too hot and the umami collapses into bitterness."
+    },
+    "notes": "Premium 'tokusen' sencha from a small Aso family farm. Fine, balanced\nflavor described by Nagata-san himself as 'delicate' — the producer\nemphasizes year-over-year consistency as a craft. Award-winning at\nNorth American Tea Championship (steamed green tea category, 1st\nplace). The same producer also makes a wakōcha (Japanese-style\nblack tea) using Aso no Megumi cultivar leaves.\n",
+    "tags": [
+      "japanese-tea",
+      "sencha",
+      "premium",
+      "kumamoto",
+      "aso",
+      "family-farm",
+      "award-winning",
+      "kyushu-collection"
+    ]
+  },
+  {
+    "id": "award-winning-premium-dragon-well-long-jing-teavivre",
+    "name": {
+      "primary": "Award Winning Premium Dragon Well Long Jing Green Tea",
+      "alternate": "西湖龙井"
+    },
+    "category": "green-chinese",
+    "category_label": "Chinese Green",
+    "producer": {
+      "name": "TeaVivre",
+      "history": "From the Long Jing Village Tea Garden in Xihu (West Lake), Hangzhou, Zhejiang — the original protected appellation for Xihu Long Jing. Uses the Longjing #43 cultivar, certified as a National Improved Variety in 1987 (GSCT 37). Long Jing was favored as imperial tribute by Emperor Shunzhi during the Qing Dynasty. The flat, smooth leaf shape is the result of pan-firing by hand against a hot wok."
+    },
+    "origin": {
+      "region": "Zhejiang",
+      "country": "China",
+      "locality": "Xihu (West Lake), Hangzhou"
+    },
+    "acquisition": {
+      "location": "TeaVivre (online)",
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 3,
+    "urgency": "now",
+    "expiry_estimate": "2026.10",
     "brewing": {
       "vessel": "gaiwan",
       "leaf_grams_per_100ml": 4,
       "rounds": [
         {
-          "water_temp_c": 90,
-          "steep_time_seconds": 60
+          "water_temp_c": 85,
+          "steep_time_seconds": 20
         },
         {
-          "water_temp_c": 90,
-          "steep_time_seconds": 60
+          "water_temp_c": 85,
+          "steep_time_seconds": 20
         },
         {
-          "water_temp_c": 90,
-          "steep_time_seconds": 60
+          "water_temp_c": 85,
+          "steep_time_seconds": 20
         },
         {
-          "water_temp_c": 90,
-          "steep_time_seconds": 60
-        },
-        {
-          "water_temp_c": 90,
-          "steep_time_seconds": 60
+          "water_temp_c": 85,
+          "steep_time_seconds": 20
         }
       ],
-      "notes": "White tea is forgiving. Can also cold-brew overnight for a different character — sweet and clean."
+      "notes": "Gongfu schedule (110ml gaiwan, 4g): rinse, 20s, 30s, 40s, 60s. Western: 2g per 250ml at 85°C, 3-5 minutes. Many tasters use slightly lower temp (~80°C) and longer single steep for western-style cup."
     },
-    "notes": "White Peony from Fuding — a mix of buds and young leaves, minimally\nprocessed. Honey sweetness, hay-like aroma, delicate stone fruit notes.\nImproves with age (white tea ages well). Currently drinking young and fresh,\nbut could be set aside for a year or two for more depth.\n",
-    "photo": {
-      "url": "/photos/bai-mu-dan-fuding.jpg",
-      "alt": "White and green Bai Mu Dan leaves with silver buds",
-      "source": null,
-      "is_local": true
-    },
+    "notes": "Premium-grade Xihu Long Jing — one of China's top ten teas. Flat,\nsmooth, yellow-green leaves with a bean/chestnut aroma and clean\nsweetness. Lighter and more delicate than the standard Dragon Well;\nnot as expensive as the Ming Qian Nonpareil grade but holds up well\nfor daily drinking. Spring harvest only; like all green teas, freshness\nmatters and flavor degrades within 6-12 months of harvest.\n",
     "tags": [
       "chinese-tea",
-      "white",
-      "ages-well"
+      "zhejiang",
+      "premium",
+      "award-winning",
+      "spring-tea",
+      "long-jing",
+      "teavivre"
     ]
   },
   {
-    "id": "ceylon-uva-highlands",
+    "id": "biwa-cha-is-farm-nagasaki",
     "name": {
-      "primary": "Ceylon Uva Highlands",
-      "alternate": null
+      "primary": "Biwa-cha",
+      "alternate": "びわ茶"
     },
-    "category": "ceylon",
-    "category_label": "Ceylon",
+    "category": "herbal",
+    "category_label": "Herbal",
     "producer": {
-      "name": "Uva Highlands Estate",
-      "history": "High-altitude estate in Sri Lanka's Uva province. The elevation and eastern monsoon winds create a distinctive menthol character."
+      "name": "Nagasaki I's Farm",
+      "history": "Small Nagasaki-based farm. Nagasaki is one of Japan's two main loquat (biwa) production regions alongside Chiba; the smaller 'Mogi' loquat variety is native to Nagasaki City. Biwa-cha is made from the leaves (not the fruit) of the loquat tree, traditionally used in Japanese folk medicine and listed in the Pharmacopoeia of Japan since 1886. Caffeine-free."
     },
     "origin": {
-      "region": "Uva",
-      "country": "Sri Lanka",
+      "region": "Nagasaki",
+      "country": "Japan",
       "locality": null
     },
     "acquisition": {
-      "location": "Online",
-      "year": 2024,
-      "month": 9,
-      "context": null
+      "location": "Nagasaki, Japan",
+      "year": 2026,
+      "month": 3,
+      "context": "3GPP RAN#111 work trip"
     },
-    "caffeine_level": 4,
+    "caffeine_level": 1,
     "urgency": "calm",
-    "expiry_estimate": "~2026.08",
+    "expiry_estimate": null,
     "brewing": {
-      "vessel": "mug",
-      "leaf_grams_per_100ml": 3,
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1,
+      "rounds": [
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 300
+        }
+      ],
+      "notes": "Decoction-style brewing typical of Japanese herbal tisanes: 5g leaves in 500ml of near-boiling water, simmer or steep 3-5 minutes. Liquor turns reddish-brown / honey-colored. Can be re-steeped for a lighter second cup. Drinkable hot or cold-brewed; cold brew works well as a summer beverage. Caffeine-free, suitable for evening or for those avoiding caffeine."
+    },
+    "notes": "Not strictly tea (Camellia sinensis) — a tisane made from loquat\n(Eriobotrya japonica) leaves. Earthy, slightly sweet, light fruity\nfinish. Traditionally consumed for its claimed digestive and\nrespiratory benefits, though Francesco can decide whether to keep\nany health claims out of the public catalog. Very stable: dried\nleaves don't degrade quickly. Good caffeine-free option.\n",
+    "tags": [
+      "japanese-tea",
+      "herbal-tisane",
+      "biwa-cha",
+      "nagasaki",
+      "caffeine-free",
+      "ages-well",
+      "kyushu-collection"
+    ]
+  },
+  {
+    "id": "boston-tea-party-lapsang-souchong",
+    "name": {
+      "primary": "Lapsang Souchong (Boston Tea Party historical collection)",
+      "alternate": "正山小种 (Zhèngshān Xiǎozhǒng)"
+    },
+    "category": "black-chinese",
+    "category_label": "Chinese Black",
+    "producer": {
+      "name": "Oliver Pluff & Co. (for Boston Tea Party Ships & Museum)",
+      "history": "Hand-packaged by Oliver Pluff & Co. (Charleston, South Carolina) for the Boston Tea Party Ships & Museum gift shop. Sold as part of the 'Teas of the Boston Tea Party Collection,' a 5-tube set (~9-15g each) representing the five teas thrown overboard during the 1773 Boston Tea Party: Bohea, Congou, Lapsang Souchong, Singlo, and Hyson (per the museum's historical research). The original 1773 cargo included 10 chests of Souchong (~684 lbs total). Souchong itself originates from the Wuyi Mountains of Fujian, China — the term derives from Hokkien 正山小种 zhèngshān xiǎozhǒng meaning 'small-leaf cultivar from the original mountain.' Modern souchong exports are typically pinewood-smoked (Lapsang Souchong); 18th-century souchong would have had only a faint smoky character from the drying process."
+    },
+    "origin": {
+      "region": "Wuyi Mountains (original tea); packaged in Charleston, SC",
+      "country": "China (origin); USA (packager)",
+      "locality": "Fujian province"
+    },
+    "acquisition": {
+      "location": "Boston Tea Party Ships & Museum gift shop",
+      "year": 2025,
+      "month": 5,
+      "context": "Red Hat Summit Boston work trip"
+    },
+    "caffeine_level": 3,
+    "urgency": "stable",
+    "expiry_estimate": "2027.05",
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 240
+        }
+      ],
+      "notes": "Western brewing: 1-2 tsp (2-3g) per 250ml boiling water, 3-5 minutes. Lapsang Souchong is a polarizing tea — its pinewood smoke aroma is reminiscent of campfire, bacon, or Islay whisky. Single infusion mostly; the smoke fades quickly on second steep. Pairs well with strong-flavored foods (smoked meats, blue cheese) and whisky. Adding milk is unconventional but works for a 'smoked breakfast tea' effect."
+    },
+    "notes": "Smoky black tea from Fujian's Wuyi Mountains, sold here as a\nhistorical commemorative item. The museum collection includes\nthis in a 5-tube set with the other teas thrown overboard in 1773.\nModern Lapsang is more aggressively smoked than its 18th-century\npredecessor. Black teas keep extremely well — stable urgency.\n\nNote: this is a souvenir-grade tea, not a premium artisanal Lapsang.\nFor comparison: Wuyi Star or Yunshen brands offer higher-grade\nunsmoked or lightly-smoked Zhengshan Xiaozhong that emphasize\nthe original tea character (longan/dried fruit notes) rather\nthan the heavy modern smoke.\n",
+    "tags": [
+      "chinese-tea",
+      "black-tea",
+      "lapsang-souchong",
+      "smoked",
+      "fujian",
+      "wuyi",
+      "museum-souvenir",
+      "historical",
+      "commercial"
+    ]
+  },
+  {
+    "id": "canada-true-maple-black-tea",
+    "name": {
+      "primary": "Canada True Maple Black Tea",
+      "alternate": null
+    },
+    "category": "other",
+    "category_label": "Other",
+    "producer": {
+      "name": "Canada True (Heart Industries Ltd.)",
+      "history": "Canada True is a Canadian souvenir brand owned by Heart Industries Ltd., specializing in maple-flavored gift-shop products: tea, cookies, fudge, and pure maple syrup. Their tea range targets the Canadian souvenir market with maple-flavored variants on standard tea bases (black, green, herbal, blueberry, ice wine). The Maple Black Tea uses 'high-grown Ceylon' leaves with 'natural identical Canadian maple syrup flavour.'"
+    },
+    "origin": {
+      "region": "Sri Lanka (tea base) + Canada (flavoring/blending)",
+      "country": "Sri Lanka (tea); Canada (brand/blending)",
+      "locality": "High-grown Ceylon"
+    },
+    "acquisition": {
+      "location": "Canada",
+      "year": null,
+      "month": null,
+      "context": "Canada visit / souvenir"
+    },
+    "caffeine_level": 3,
+    "urgency": "stable",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 240
+        }
+      ],
+      "notes": "Per Canada True instructions: 1 tea bag per cup, boiling water, 3-5 minutes hot. For iced: brew 1 bag with 1/3 cup boiling water, steep 3-5 min, remove bag, top with cold water and ice. Single infusion (tea bag format)."
+    },
+    "notes": "Canadian souvenir tea — high-grown Ceylon black base with synthetic\nmaple flavoring (the label specifies 'natural identical' flavor,\ni.e., a flavoring chemically identical to natural maple compounds\nbut not derived from actual maple syrup). Sweetish, mild, easy-drinking;\nnot a serious tasting tea.\n\nSold typically as 23g/10-bag boxes or 50g/25-bag tins or 60g/30-bag\ntins. Shelf-stable. Pairs well with breakfast pastries and\nCanadian-themed gifting contexts.\n",
+    "tags": [
+      "canadian-tea",
+      "flavored-black",
+      "maple",
+      "ceylon-base",
+      "souvenir",
+      "commercial"
+    ]
+  },
+  {
+    "id": "canada-true-maple-green-tea",
+    "name": {
+      "primary": "Canada True Maple Green Tea",
+      "alternate": null
+    },
+    "category": "other",
+    "category_label": "Other",
+    "producer": {
+      "name": "Canada True (Heart Industries Ltd.)",
+      "history": "Canada True is a Canadian souvenir brand owned by Heart Industries Ltd., specializing in maple-flavored gift-shop products. The Maple Green Tea blends a generic green tea base with 'natural identical Canadian maple syrup flavour.' Sold typically alongside the maple black and maple herbal variants in 3-pack souvenir sets."
+    },
+    "origin": {
+      "region": "Asia (green tea base) + Canada (flavoring/blending)",
+      "country": "Asia (tea base, source not disclosed); Canada (brand/blending)",
+      "locality": null
+    },
+    "acquisition": {
+      "location": "Canada",
+      "year": null,
+      "month": null,
+      "context": "Canada visit / souvenir"
+    },
+    "caffeine_level": 2,
+    "urgency": "stable",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 180
+        }
+      ],
+      "notes": "Producer doesn't publish green-tea-specific instructions; standard green tea brewing applies: 1 tea bag in 200-250ml at 75-85°C, 2-3 minutes. Boiling water will turn the green tea bitter, so let the kettle cool 1-2 minutes after boil before pouring. Single infusion (tea bag format)."
+    },
+    "notes": "Canadian souvenir tea — green tea base with synthetic maple\nflavoring. Specific cultivar/origin of the green tea base is not\ndisclosed. Mild, slightly sweet, easy-drinking; a novelty rather\nthan a tasting tea.\n\nGreen tea bases have shorter shelf life than black, but the maple\nflavoring extends acceptable use somewhat. Sold typically as\n23g/10-bag boxes in 3-pack souvenir sets (with maple black and\nmaple herbal). Drink within ~12 months for best flavor.\n",
+    "tags": [
+      "canadian-tea",
+      "flavored-green",
+      "maple",
+      "souvenir",
+      "commercial"
+    ]
+  },
+  {
+    "id": "canada-true-maple-herbal-tea",
+    "name": {
+      "primary": "Canada True Maple Herbal Tea",
+      "alternate": null
+    },
+    "category": "herbal",
+    "category_label": "Herbal",
+    "producer": {
+      "name": "Canada True (Heart Industries Ltd.)",
+      "history": "Canada True is a Canadian souvenir brand owned by Heart Industries Ltd. The Maple Herbal Tea is a caffeine-free herbal blend with maple flavoring. Per the Amazon allergen warning, the blend potentially contains: ginger, lemongrass, orange peel, cardamom, hibiscus, safflower, turmeric, honey, rose hip, lemon peel — though the exact ingredient list per box may vary. No actual Camellia sinensis tea leaves; classifies as a tisane."
+    },
+    "origin": {
+      "region": "Multiple (herbal blend)",
+      "country": "Various herbs; Canada (brand/blending)",
+      "locality": null
+    },
+    "acquisition": {
+      "location": "Canada",
+      "year": null,
+      "month": null,
+      "context": "Canada visit / souvenir"
+    },
+    "caffeine_level": 1,
+    "urgency": "stable",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 300
+        }
+      ],
+      "notes": "Standard herbal tisane brewing: 1 tea bag per 200-250ml, boiling water, 5-7 minutes (longer than black tea — herbs and dried flowers need extended time to release their volatiles). Caffeine-free, suitable for evening drinking. Single infusion."
+    },
+    "notes": "Canadian souvenir tisane — caffeine-free herbal blend with maple\nflavoring. The exact herb mix isn't specified on standard product\npages, but the allergen warning suggests it likely contains a mix\nincluding hibiscus (for color and tartness), lemongrass and citrus\npeels (brightness), ginger/cardamom (warmth), and honey/rose hip\n(sweetness/body) — a relatively standard 'gift shop herbal' base\ncustomized with maple flavoring.\n\nCaffeine-free → suitable for evening or anytime use. Stable shelf\nlife thanks to dried herbs/flowers — no urgency.\n",
+    "tags": [
+      "canadian-tea",
+      "herbal-tisane",
+      "maple",
+      "caffeine-free",
+      "souvenir",
+      "commercial"
+    ]
+  },
+  {
+    "id": "canopy-hilton-osaka-original-blend",
+    "name": {
+      "primary": "Canopy by Hilton Osaka Umeda — The Original Blend Tea",
+      "alternate": null
+    },
+    "category": "other",
+    "category_label": "Other",
+    "producer": {
+      "name": "Canopy by Hilton Osaka Umeda",
+      "history": "Hotel-exclusive blend from Canopy by Hilton Osaka Umeda, located in the Grand Green Osaka complex next to Umekita Park near Osaka Station. The blend is described on its enclosed card as 'inspired by the beautiful scenery of Umekita Park': a sophisticated mix of black tea (subtly infused with grape aroma), Japanese green tea, and violet petals. Hotel-branded souvenir; the actual tea blender is not credited."
+    },
+    "origin": {
+      "region": "Osaka",
+      "country": "Japan",
+      "locality": "Umeda district"
+    },
+    "acquisition": {
+      "location": "Osaka, Japan",
+      "year": 2025,
+      "month": null,
+      "context": "Hotel souvenir during Osaka stay"
+    },
+    "caffeine_level": 2,
+    "urgency": "stable",
+    "expiry_estimate": "~2026.01",
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1,
       "rounds": [
         {
           "water_temp_c": 95,
           "steep_time_seconds": 240
         }
       ],
-      "notes": "Standard Western brew. Takes milk if you want, but interesting enough black."
+      "notes": "Western-style brewing (the natural fit for a flavored blend): ~3g per 250ml at 95°C, 3-5 minutes. Black tea base sets the temperature; the green tea component is added to the blend in proportion that doesn't require lower temp. Single infusion — flavored blends with petals and aromatics generally don't re-steep meaningfully."
     },
-    "notes": "High-grown Ceylon from Uva province. Brisk, slightly mentholated,\nwith a crisp astringency that works well in the afternoon. Not the most\ncomplex tea in the collection, but reliable and versatile. Considering\ngifting — it's a crowd-pleaser without requiring specialized brewing knowledge.\n",
-    "photo": {
-      "url": "/photos/ceylon-uva-highlands.jpg",
-      "alt": "Wiry black Ceylon tea leaves",
-      "source": null,
-      "is_local": true
-    },
+    "notes": "Hotel souvenir blend. Sophisticated marketing premise — black tea\nwith grape aroma + Japanese green tea + violet petals, intended to\nevoke the scenery of Umekita Park. Not a traditional category,\ncloser to a Western-style aromatic blend than a Japanese tea.\nStable shelf life: dried petals and aromatic blends keep well for\nmany months sealed. Probably best as an afternoon/casual tea or\nconversation piece rather than a serious tasting tea.\n",
     "tags": [
-      "ceylon",
-      "afternoon-tea",
-      "gift-candidate"
+      "japanese-tea",
+      "blended-tea",
+      "flavored",
+      "souvenir",
+      "hotel-blend",
+      "osaka"
     ]
   },
   {
-    "id": "da-hong-pao-wuyi",
+    "id": "caykur-tomurcuk-earl-grey",
     "name": {
-      "primary": "Da Hong Pao",
-      "alternate": "大红袍",
-      "pronunciation": "Da Hong Pao"
+      "primary": "Çaykur Tomurcuk Earl Grey",
+      "alternate": "Tomurcuk Çayı"
     },
-    "category": "oolong",
-    "category_label": "Oolong (Wuyi Rock)",
+    "category": "earl-grey",
+    "category_label": "Earl Grey (flavored black tea, Turkish)",
     "producer": {
-      "name": "Wuyi Mountain Farm",
-      "history": "Wuyi mountains in Fujian, birthplace of rock oolongs. Mineral-rich volcanic soil gives the characteristic 'yan yun' (rock rhyme)."
+      "name": "Çaykur",
+      "history": "Çay-Kur is the Turkish state-owned tea producer (full name Çay İşletmeleri Genel Müdürlüğü), founded in 1971 and headquartered in Rize, on the Black Sea coast. Turkey is one of the world's largest tea consumers per capita, and Çaykur is the dominant domestic producer. 'Tomurcuk' means 'bud' in Turkish — the Tomurcuk line is positioned as a higher-grade product using fresh tea buds. The Earl Grey variant blends Çaykur's Black Sea-grown black tea with natural bergamot essence."
     },
     "origin": {
-      "region": "Wuyi",
-      "country": "China",
-      "locality": "Fujian"
+      "region": "Rize, Black Sea coast",
+      "country": "Turkey",
+      "locality": "Eastern Black Sea region (Karadeniz)"
     },
     "acquisition": {
-      "location": "Online",
-      "year": 2025,
-      "month": 4,
-      "context": null
+      "location": "Istanbul",
+      "year": 2024,
+      "month": 12,
+      "context": "Trip with Federica"
     },
     "caffeine_level": 3,
     "urgency": "stable",
-    "expiry_estimate": "~2028.01",
+    "expiry_estimate": "2027.06",
     "brewing": {
-      "vessel": "gaiwan",
-      "leaf_grams_per_100ml": 8,
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1.5,
       "rounds": [
         {
-          "water_temp_c": 98,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 98,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 98,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 98,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 98,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 98,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 98,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 98,
-          "steep_time_seconds": 20
+          "water_temp_c": 100,
+          "steep_time_seconds": 240
         }
       ],
-      "notes": "Very short first steeps (10-15s), extending gradually. The minerality emerges on later steeps."
+      "notes": "Per Çaykur instructions: 1 tsp per 8oz (240ml) boiling water, 3-5 minutes. Traditional Turkish preparation uses a double-pot (çaydanlık): brew concentrated tea in upper pot, dilute with hot water from lower pot to taste. For Western-style: brew at full concentration. The bergamot is gentler than UK Earl Greys (Twinings, Ahmad), making it a softer entry into the style."
     },
-    "notes": "Wuyi rock oolong — heavily roasted, complex, with the distinctive mineral\nbackbone ('rock rhyme') that defines this style. Dark fruit, charcoal,\nroasted nuts in the first steeps, transitioning to a sweet mineral finish.\nRewards patience and multiple infusions. A tea with genuine depth.\n",
-    "photo": {
-      "url": "/photos/da-hong-pao-wuyi.jpg",
-      "alt": "Dark twisted Da Hong Pao oolong leaves",
-      "source": null,
-      "is_local": true
-    },
+    "notes": "Turkish-style Earl Grey: the base is Black Sea-grown Camellia sinensis\n(a different terroir than Sri Lankan or Kenyan teas, with a more\nvegetal, slightly tannic character), perfumed with natural bergamot.\nLighter and brighter than UK Earl Greys, less full-bodied. Black\nteas are very shelf-stable; bergamot oil aroma fades over time but\nthe tea itself keeps fine.\n\nAvailable formats: 125g, 200g, 500g loose-leaf tins; also as tea\nbags (40 sachets / 200g). Çaykur claims pesticide-free cultivation.\n",
     "tags": [
-      "chinese-tea",
-      "oolong",
-      "gongfu",
-      "wuyi",
-      "premium"
+      "turkish-tea",
+      "earl-grey",
+      "bergamot",
+      "flavored-black-tea",
+      "rize",
+      "black-sea",
+      "commercial"
     ]
   },
   {
-    "id": "darjeeling-first-flush-makaibari",
+    "id": "chunyuan-chrysanthemum-puerh",
     "name": {
-      "primary": "Darjeeling First Flush",
-      "alternate": null
+      "primary": "Chrysanthemum Puerh Tea",
+      "alternate": "菊花普洱茶"
     },
-    "category": "darjeeling",
-    "category_label": "Darjeeling",
+    "category": "puer-shou",
+    "category_label": "Shou Pu-erh",
     "producer": {
-      "name": "Makaibari",
-      "history": "World's first tea factory (1859). Pioneer of biodynamic tea cultivation in Darjeeling."
+      "name": "Chunyuan Tea Houses",
+      "history": "Chunyuan Tea Houses (椿源居) is a Chinese tea brand distributed primarily through Asian groceries in North America. Limited public information about the parent company; positioned as a value-tier brand for everyday Chinese tea drinkers. Range includes oolong, herbal blends (chrysanthemum, longan/jujube), and pu-erh products. Often sold pre-portioned in tea bags rather than loose-leaf."
     },
     "origin": {
-      "region": "Darjeeling",
-      "country": "India",
-      "locality": "West Bengal"
-    },
-    "acquisition": {
-      "location": "Online",
-      "year": 2025,
-      "month": 4,
-      "context": "Spring first flush season"
-    },
-    "caffeine_level": 3,
-    "urgency": "now",
-    "expiry_estimate": "~2026.01",
-    "brewing": {
-      "vessel": "porcelain cup",
-      "leaf_grams_per_100ml": 3,
-      "rounds": [
-        {
-          "water_temp_c": 85,
-          "steep_time_seconds": 180
-        },
-        {
-          "water_temp_c": 85,
-          "steep_time_seconds": 180
-        }
-      ],
-      "notes": "Lower temperature than you'd expect for a 'black' tea. First flush is closer to oolong in character."
-    },
-    "notes": "Spring first flush Darjeeling from Makaibari estate. Muscatel grape notes,\nfloral brightness, light body. More like a green tea than a typical black —\nfirst flush Darjeeling is its own category. Drink fresh; it doesn't improve\nwith age. The champagne of teas, as the cliché goes (but it's true).\n",
-    "photo": {
-      "url": "/photos/darjeeling-first-flush-makaibari.jpg",
-      "alt": "Light, wiry first flush Darjeeling leaves with green tips",
-      "source": null,
-      "is_local": true
-    },
-    "tags": [
-      "indian-tea",
-      "darjeeling",
-      "spring-harvest",
-      "premium"
-    ]
-  },
-  {
-    "id": "earl-grey-rare-tea-company",
-    "name": {
-      "primary": "Earl Grey (Rare Tea)",
-      "alternate": null
-    },
-    "category": "earl-grey",
-    "category_label": "Earl Grey",
-    "producer": {
-      "name": "Rare Tea Company",
-      "history": "London-based, sources directly from estates. Known for whole-leaf quality in a category dominated by bags."
-    },
-    "origin": {
-      "region": "Yunnan",
+      "region": "China (specific region not stated)",
       "country": "China",
       "locality": null
     },
     "acquisition": {
-      "location": "London",
-      "year": 2024,
-      "month": 10,
-      "context": "Work trip"
+      "location": "New York",
+      "year": 2025,
+      "month": 3,
+      "context": "Trip with Federica"
+    },
+    "caffeine_level": 2,
+    "urgency": "stable",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 240
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 240
+        }
+      ],
+      "notes": "Western brewing: 1 tea bag (or 2-3g loose) per 200-250ml, boiling water, 3-5 minutes. The chrysanthemum cools/balances the earthy pu-erh and adds floral notes. For loose-leaf gongfu (if format allows): rinse the pu-erh leaves with boiling water for 5s and discard, then steep 100°C, 15-30s, 30s, 45s. Chrysanthemum tolerates re-steeping."
+    },
+    "notes": "Classic Chinese herbal-tea pairing: pu-erh (typically shou/ripe\npu-erh, dark and earthy) softened with dried chrysanthemum flowers\n(light, floral, slightly bitter-sweet). The chrysanthemum is\ntraditionally believed to 'cool' the body and 'clear the eyes'\nin Chinese tea/medicine — paired with pu-erh to balance the dark\ntea's warming nature. Pu-erh keeps well long-term; the dried\nflowers also stable. Stable urgency.\n",
+    "tags": [
+      "chinese-tea",
+      "pu-erh",
+      "chrysanthemum",
+      "herbal-blend",
+      "commercial"
+    ]
+  },
+  {
+    "id": "chunyuan-oolong",
+    "name": {
+      "primary": "Organic Oolong Tea",
+      "alternate": "椿源居有机乌龙茶"
+    },
+    "category": "oolong",
+    "category_label": "Oolong",
+    "producer": {
+      "name": "Chunyuan Tea Houses",
+      "history": "Chunyuan Tea Houses (椿源居) is a Chinese tea brand distributed mainly via Asian groceries in North America. Their organic oolong is sold in 100-tea-bag boxes (~168g total, ~1.7g per bag) — a value/everyday-tier product rather than a traditional gongfu single-origin oolong. Producer claims hand-picked organic leaves from 'tea gardens nestled in the heart of Asia,' but specific origin (Fujian, Taiwan, etc.) is not disclosed."
+    },
+    "origin": {
+      "region": "China (region not specified)",
+      "country": "China",
+      "locality": null
+    },
+    "acquisition": {
+      "location": "New York",
+      "year": 2025,
+      "month": 3,
+      "context": "Trip with Federica"
     },
     "caffeine_level": 3,
     "urgency": "stable",
-    "expiry_estimate": "~2026.06",
+    "expiry_estimate": null,
     "brewing": {
-      "vessel": "mug",
-      "leaf_grams_per_100ml": 3,
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1,
       "rounds": [
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 210
+        },
         {
           "water_temp_c": 95,
           "steep_time_seconds": 210
         }
       ],
-      "notes": "Standard Western brewing. The bergamot is real oil, not artificial flavoring."
+      "notes": "Per producer instructions: 1 tea bag in 250ml boiling water, steep 3-4 minutes. Boiling water is appropriate for oolong but in this product the leaf grade and roasting level are unspecified, so brewing is approximated as a moderately oxidized 'standard' oolong. A second steep is feasible but will be lighter than the first. Don't compare to gongfu-style preparations of premium oolongs (Tie Guan Yin, Da Hong Pao, etc.) — this is a different category."
     },
-    "notes": "A proper Earl Grey — whole-leaf Chinese black tea with natural bergamot\noil. The base tea has enough body to carry the citrus without being\noverwhelmed. A reminder that this classic can be much more than\nthe supermarket teabag version. Afternoon staple.\n",
+    "notes": "Generic commercial oolong in tea-bag format. Without disclosed\ncultivar, oxidation level, or roast profile, expect a middle-of-\nthe-road semi-oxidized green/amber liquor with light floral and\nhoney notes. Stable shelf life; oolong is more forgiving than\ngreen tea on storage. Best treated as an everyday/utility tea\nrather than a tasting tea.\n",
+    "tags": [
+      "chinese-tea",
+      "oolong",
+      "commercial",
+      "tea-bag",
+      "organic"
+    ]
+  },
+  {
+    "id": "demmers",
+    "name": {
+      "primary": "Waldkräutermischung",
+      "alternate": "Kräuter Tee"
+    },
+    "category": "herbal",
+    "category_label": "Herbal",
+    "producer": {
+      "name": "Demmers Teehaus",
+      "history": null
+    },
+    "origin": {
+      "region": "Austria",
+      "country": "Austria",
+      "locality": null
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 1,
+    "urgency": "stable",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 3,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 420
+        }
+      ],
+      "notes": "Full boiling water recommended for herbal blends."
+    },
+    "notes": "Austrian herbal infusion blend (\"forest herb mix\") containing assorted\nherbs, flowers and berries. Naturally caffeine-free and intended for\nrelaxing evening consumption. The packaging has the reassuring aesthetic\nof a wise alpine grandmother who definitely knows which mushroom not to eat.\n",
     "photo": {
-      "url": "/photos/earl-grey-rare-tea-company.jpg",
-      "alt": "Dark tea leaves with visible bergamot oil sheen",
+      "url": "/photos/demmers-teehaus-waldkraeutermischung.jpg",
+      "alt": "Paper bag of Demmers Teehaus Waldkräutermischung herbal tea",
       "source": null,
       "is_local": true
     },
     "tags": [
-      "western-blend",
-      "afternoon-tea",
-      "london"
+      "herbal-tea",
+      "caffeine-free",
+      "austrian-tea",
+      "evening-tea"
     ]
   },
   {
-    "id": "genmaicha-ippodo",
+    "id": "golden-bridge-west-lake-longjing",
     "name": {
-      "primary": "Genmaicha",
-      "alternate": "玄米茶"
+      "primary": "West Lake Longjing (Dragon Well)",
+      "alternate": "西湖龙井 (Xī Hú Lóng Jǐng)"
     },
-    "category": "genmaicha",
-    "category_label": "Genmaicha",
+    "category": "green-chinese",
+    "category_label": "Chinese Green",
     "producer": {
-      "name": "Ippodo",
-      "history": "Founded 1717 in Kyoto. Imperial warrant holder, supplying tea to the Japanese court for centuries."
+      "name": "Golden Bridge brand",
+      "history": "Generic Chinese export brand; specific producing entity not well-documented in English-language sources. Multiple Chinese tea exporters use 'Golden Bridge' or '金桥' branding for value-tier teas distributed via Asian grocery channels. The product is a 'West Lake Longjing' (Xī Hú Lóng Jǐng), one of China's Ten Famous Teas, traditionally produced around West Lake in Hangzhou, Zhejiang province. Authentic core-area Longjing requires anti-counterfeiting certification per the Hangzhou West Lake Longjing Tea Industry Association (since 2020) — an unbranded export tea labelled 'West Lake Longjing' may or may not actually originate from the protected core area."
     },
     "origin": {
-      "region": "Kyoto",
+      "region": "Hangzhou (West Lake area, claimed)",
+      "country": "China",
+      "locality": "Zhejiang province"
+    },
+    "acquisition": {
+      "location": "New York",
+      "year": 2025,
+      "month": 3,
+      "context": "Trip with Federica"
+    },
+    "caffeine_level": 3,
+    "urgency": "now",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "glass",
+      "leaf_grams_per_100ml": 1.5,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 120
+        },
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 120
+        },
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 120
+        }
+      ],
+      "notes": "Western/Chinese-style: 3g per 150ml at 80-85°C, 2-3 minutes (or 'wait 10 minutes' per some packaging). Use a tall glass to watch leaves dance and unfurl — Longjing is traditionally appreciated visually. Gongfu schedule alternative: 4g/100ml in gaiwan, 80°C, 30s/45s/60s. Chestnut/bean notes; should not be bitter. If bitter, lower the temperature."
+    },
+    "notes": "Likely a value-tier Longjing of unverified core-area origin.\nStandard pan-fired Chinese green tea: flat blade-shaped leaves,\npale jade liquor, chestnut/bean fragrance. Premium Longjing\n(Mingqian or pre-Qingming) commands prices of $200+/kg from\ncertified core-area producers; value-tier export brands typically\nsource from outer West Lake areas or Yuezhou/Qiantang regions.\nGreen teas have short shelf life (12-18 months max); urgency 'now'\nunless acquisition was very recent.\n",
+    "tags": [
+      "chinese-tea",
+      "longjing",
+      "dragon-well",
+      "green-tea",
+      "hangzhou",
+      "zhejiang",
+      "commercial"
+    ]
+  },
+  {
+    "id": "gyokuro-hojicha-ikeda-senchado",
+    "name": {
+      "primary": "Gyokuro Hōjicha",
+      "alternate": "玉露焙じ茶"
+    },
+    "category": "hojicha-from-gyokuro",
+    "category_label": "Hojicha (from Gyokuro)",
+    "producer": {
+      "name": "Ikeda Senchado",
+      "history": "Private brand of Ikeda Seicha Co. (founded 1948), Tenmonkan, Kagoshima. Run by tea master Kenta Ikeda (茶師十段). This premium hōjicha is made by roasting gyokuro leaves (rather than bancha or stems) over the shop's signature 'lit-flame' (烈火) high-heat roasting process. The roasting preserves residual umami from the shaded gyokuro base while developing nutty, toasted notes."
+    },
+    "origin": {
+      "region": "Kagoshima",
       "country": "Japan",
       "locality": null
     },
     "acquisition": {
-      "location": "Kyoto",
-      "year": 2025,
-      "month": 9,
-      "context": "Honeymoon trip"
+      "location": "Kagoshima, Japan",
+      "year": 2026,
+      "month": 3,
+      "context": "3GPP RAN#111 work trip"
     },
     "caffeine_level": 2,
     "urgency": "calm",
-    "expiry_estimate": "~2026.09",
+    "expiry_estimate": "2027.02",
     "brewing": {
       "vessel": "kyusu",
-      "leaf_grams_per_100ml": 4,
+      "leaf_grams_per_100ml": 5,
       "rounds": [
         {
           "water_temp_c": 90,
@@ -391,430 +925,291 @@
           "steep_time_seconds": 30
         }
       ],
-      "notes": "Hot water, quick steep. The toasted rice puffs up beautifully. Good with food."
+      "notes": "Premium hōjicha brewing — slightly lower temp than standard hōjicha to preserve residual umami from the gyokuro base. First infusion: 90°C, 30s. Second: 95°C, 15s. Standard hōjicha can take full-boil water but this gyokuro-base version benefits from gentler treatment."
     },
-    "notes": "Green tea blended with toasted rice from Ippodo. The rice adds a warm,\npopcorn-like aroma and nutty flavor that complements the grassy base.\nUnpretentious, satisfying, pairs well with meals. A daily-drinking tea\nwith zero pretension and genuine charm.\n",
-    "photo": {
-      "url": "/photos/genmaicha-ippodo.jpg",
-      "alt": "Ippodo genmaicha with visible toasted rice grains",
-      "source": null,
-      "is_local": true
-    },
+    "notes": "Luxury hōjicha made from roasted gyokuro leaves, not bancha. Carries\na deeper sweetness and residual umami that regular hōjicha lacks.\nThe roasted character makes it more stable than other Kagoshima teas\nin this collection — degrades slowly, no rush to open. A natural\nend-of-day or after-dinner tea (low caffeine, comforting, warming).\nNote: distinct from Kanbayashi's Hojicha-from-Gyokuro (Uji-based)\nin the existing collection — Ikeda's version uses Kagoshima base\nand a more aggressive roast.\n",
     "tags": [
       "japanese-tea",
-      "kyoto",
-      "daily-drinker",
-      "honeymoon-collection"
+      "hojicha",
+      "hojicha-from-gyokuro",
+      "kagoshima",
+      "premium",
+      "ages-well",
+      "kyushu-collection"
+    ]
+  },
+  {
+    "id": "gyokuro-mitsuyasu-seikaen",
+    "name": {
+      "primary": "Gyokuro",
+      "alternate": "玉露"
+    },
+    "category": "gyokuro",
+    "category_label": "Gyokuro",
+    "producer": {
+      "name": "Mitsuyasu Seikaen",
+      "history": "Historic Fukuoka tea shop founded in 1716, currently in its 13th generation. Based in Hakata (Fukuoka City), specializes in Yame tea. Yame (Fukuoka prefecture) is one of Japan's premier gyokuro production regions and accounts for approximately half of Japan's gyokuro output. The shop runs an adjoining tea house (Chayu Seika) and supplies traditional tea ceremony practitioners."
+    },
+    "origin": {
+      "region": "Yame",
+      "country": "Japan",
+      "locality": "Fukuoka prefecture"
+    },
+    "acquisition": {
+      "location": "Fukuoka, Japan",
+      "year": 2026,
+      "month": 3,
+      "context": "3GPP RAN#111 work trip"
+    },
+    "caffeine_level": 5,
+    "urgency": "summer",
+    "expiry_estimate": "2026.11",
+    "brewing": {
+      "vessel": "shiboridashi",
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 50,
+          "steep_time_seconds": 120
+        },
+        {
+          "water_temp_c": 50,
+          "steep_time_seconds": 120
+        },
+        {
+          "water_temp_c": 50,
+          "steep_time_seconds": 120
+        }
+      ],
+      "notes": "Yame-style gyokuro brewing: very low temperature, high leaf-to-water ratio. First infusion: 50°C, 120s. Second: 50°C, 30s. Third: 60°C, 60s. Cool the water (boil and let cool, or pour through cooling vessels). Use shiboridashi or houhin for low-temperature pours; kyusu also works. Yame gyokuro often takes a slightly higher temperature than Uji gyokuro."
+    },
+    "notes": "Authentic Yame gyokuro from a 300+ year old tea shop. Yame is regarded\nas Japan's top gyokuro region alongside Uji; its gyokuro tends to be\nfull-bodied with strong umami. Shaded for ~20 days before harvest to\ndevelop the characteristic L-theanine sweetness. Ideal companion: a\nsmall piece of wagashi to balance the intense umami.\n",
+    "tags": [
+      "japanese-tea",
+      "gyokuro",
+      "yame",
+      "fukuoka",
+      "kyushu-collection",
+      "premium"
     ]
   },
   {
     "id": "gyokuro-zuigyoku-kanbayashi",
     "name": {
-      "primary": "Gyokuro Zuigyoku",
-      "alternate": "瑞玉",
-      "pronunciation": "Zui-gyoku"
+      "primary": "Gyokuro 'Zuigyoku'",
+      "alternate": "瑞玉"
     },
     "category": "gyokuro",
-    "category_label": "Gyokuro",
+    "category_label": "Gyokuro (premium)",
     "producer": {
-      "name": "Kanbayashi",
-      "history": "Tea suppliers to the Tokugawa Shogunate. Centuries-old lineage from Uji."
+      "name": "Kanbayashi Shunsho Honten",
+      "history": "One of Japan's oldest tea houses, founded in the Eiroku era (1558-1569), now in its 14th generation. Suppliers to the Tokugawa Shogunate — the Kanbayashi family held the highest rank of 'Goyō ochashi' (御物御茶師, official imperial tea masters) under the early Tokugawa shogunate. Centuries-old lineage from Uji. The family contributed to the development of the Kyō Midori (gyokuro) and Uji Hikari (tencha/gyokuro) cultivars used today. Operates from Uji-bashi Dori in Uji City."
     },
     "origin": {
       "region": "Uji",
       "country": "Japan",
-      "locality": null
+      "locality": "Kyoto prefecture"
     },
     "acquisition": {
       "location": "Uji, Kyoto",
-      "year": 2025,
-      "month": 9,
-      "context": "Honeymoon trip"
-    },
-    "caffeine_level": 4,
-    "urgency": "now",
-    "expiry_estimate": "~2026.04",
-    "brewing": {
-      "vessel": "kyusu",
-      "leaf_grams_per_100ml": 5,
-      "rounds": [
-        {
-          "water_temp_c": 60,
-          "steep_time_seconds": 120
-        },
-        {
-          "water_temp_c": 60,
-          "steep_time_seconds": 120
-        },
-        {
-          "water_temp_c": 60,
-          "steep_time_seconds": 120
-        }
-      ],
-      "notes": "Low temperature is essential. First steep brings out umami; subsequent steeps reveal sweetness."
-    },
-    "notes": "Exceptional gyokuro from Kanbayashi, historic Uji producer. Deep umami,\nmarine sweetness, almost broth-like in body. The kind of tea that\nrewards full attention — not a daily driver, a meditation.\n",
-    "photo": {
-      "url": "/photos/gyokuro-zuigyoku-kanbayashi.jpg",
-      "alt": "Sealed packet of Kanbayashi Gyokuro Zuigyoku",
-      "source": "Kanbayashi official",
-      "is_local": true
-    },
-    "tags": [
-      "premium",
-      "japanese-tea",
-      "uji",
-      "honeymoon-collection"
-    ]
-  },
-  {
-    "id": "hojicha-from-gyokuro-kanbayashi",
-    "name": {
-      "primary": "Hojicha from Gyokuro",
-      "alternate": "雁が音ほうじ茶"
-    },
-    "category": "hojicha-from-gyokuro",
-    "category_label": "Hojicha (from Gyokuro)",
-    "producer": {
-      "name": "Kanbayashi",
-      "history": "Tea suppliers to the Tokugawa Shogunate. Centuries-old lineage from Uji."
-    },
-    "origin": {
-      "region": "Uji",
-      "country": "Japan",
-      "locality": null
-    },
-    "acquisition": {
-      "location": "Uji, Kyoto",
-      "year": 2025,
-      "month": 9,
-      "context": "Honeymoon trip"
-    },
-    "caffeine_level": 2,
-    "urgency": "soon",
-    "expiry_estimate": "~2026.06",
-    "brewing": {
-      "vessel": "kyusu",
-      "leaf_grams_per_100ml": 5,
-      "rounds": [
-        {
-          "water_temp_c": 90,
-          "steep_time_seconds": 30
-        },
-        {
-          "water_temp_c": 90,
-          "steep_time_seconds": 30
-        }
-      ],
-      "notes": "More delicate than standard hojicha. Slightly lower temp brings out the residual umami from the gyokuro stems."
-    },
-    "notes": "Premium hojicha made from roasted gyokuro stems (karigane). Carries a\ndeeper sweetness and residual umami that regular hojicha lacks. The\nroasting is lighter, preserving some of the shaded character. A bridge\nbetween the intensity of gyokuro and the comfort of hojicha.\n",
-    "photo": {
-      "url": "/photos/hojicha-from-gyokuro-kanbayashi.jpg",
-      "alt": "Light brown roasted gyokuro stems",
-      "source": null,
-      "is_local": true
-    },
-    "tags": [
-      "japanese-tea",
-      "uji",
-      "premium",
-      "honeymoon-collection"
-    ]
-  },
-  {
-    "id": "hojicha-kanbayashi",
-    "name": {
-      "primary": "Hojicha",
-      "alternate": "ほうじ茶"
-    },
-    "category": "hojicha",
-    "category_label": "Hojicha",
-    "producer": {
-      "name": "Kanbayashi",
-      "history": "Tea suppliers to the Tokugawa Shogunate. Centuries-old lineage from Uji."
-    },
-    "origin": {
-      "region": "Uji",
-      "country": "Japan",
-      "locality": null
-    },
-    "acquisition": {
-      "location": "Uji, Kyoto",
-      "year": 2025,
-      "month": 9,
-      "context": "Honeymoon trip"
-    },
-    "caffeine_level": 1,
-    "urgency": "calm",
-    "expiry_estimate": "~2026.09",
-    "brewing": {
-      "vessel": "kyusu",
-      "leaf_grams_per_100ml": 4,
-      "rounds": [
-        {
-          "water_temp_c": 95,
-          "steep_time_seconds": 30
-        },
-        {
-          "water_temp_c": 95,
-          "steep_time_seconds": 30
-        }
-      ],
-      "notes": "Boiling water is fine. Quick steep for roasty sweetness. Good evening tea — low caffeine."
-    },
-    "notes": "Roasted green tea from Kanbayashi. Warm, nutty, caramel-like sweetness\nwithout bitterness. Comforting rather than complex. A perfect evening tea\nor post-meal palate cleanser. The roasting process reduces caffeine significantly.\n",
-    "photo": {
-      "url": "/photos/hojicha-kanbayashi.jpg",
-      "alt": "Brown roasted hojicha leaves from Kanbayashi",
-      "source": null,
-      "is_local": true
-    },
-    "tags": [
-      "japanese-tea",
-      "uji",
-      "evening-tea",
-      "honeymoon-collection"
-    ]
-  },
-  {
-    "id": "kukicha-ippodo",
-    "name": {
-      "primary": "Kukicha",
-      "alternate": "茎茶"
-    },
-    "category": "kukicha",
-    "category_label": "Kukicha",
-    "producer": {
-      "name": "Ippodo",
-      "history": "Founded 1717 in Kyoto. Imperial warrant holder, supplying tea to the Japanese court for centuries."
-    },
-    "origin": {
-      "region": "Kyoto",
-      "country": "Japan",
-      "locality": null
-    },
-    "acquisition": {
-      "location": "Kyoto",
-      "year": 2025,
-      "month": 9,
-      "context": "Honeymoon trip"
-    },
-    "caffeine_level": 1,
-    "urgency": "calm",
-    "expiry_estimate": "~2026.12",
-    "brewing": {
-      "vessel": "kyusu",
-      "leaf_grams_per_100ml": 5,
-      "rounds": [
-        {
-          "water_temp_c": 80,
-          "steep_time_seconds": 60
-        },
-        {
-          "water_temp_c": 80,
-          "steep_time_seconds": 60
-        },
-        {
-          "water_temp_c": 80,
-          "steep_time_seconds": 60
-        }
-      ],
-      "notes": "Stems are forgiving — hard to over-steep. Good for casual brewing."
-    },
-    "notes": "Twig tea from Ippodo — made from stems and stalks rather than leaves.\nLight, sweet, slightly nutty with almost no astringency. Very low caffeine.\nA gentle, easygoing tea for any time of day. The stalks give it a\ndistinctive appearance and a clean, uncomplicated character.\n",
-    "photo": {
-      "url": "/photos/kukicha-ippodo.jpg",
-      "alt": "Pale green kukicha stems and twigs",
-      "source": null,
-      "is_local": true
-    },
-    "tags": [
-      "japanese-tea",
-      "kyoto",
-      "low-caffeine",
-      "honeymoon-collection"
-    ]
-  },
-  {
-    "id": "longjing-west-lake",
-    "name": {
-      "primary": "Longjing (Dragon Well)",
-      "alternate": "龙井",
-      "pronunciation": "Long-jing"
-    },
-    "category": "green-chinese",
-    "category_label": "Green (Chinese)",
-    "producer": {
-      "name": "West Lake Tea Village",
-      "history": "Longjing village near Hangzhou. One of China's Ten Famous Teas, cultivated here since the Tang dynasty."
-    },
-    "origin": {
-      "region": "Hangzhou",
-      "country": "China",
-      "locality": "Zhejiang"
-    },
-    "acquisition": {
-      "location": "Online",
-      "year": 2025,
-      "month": 5,
-      "context": null
-    },
-    "caffeine_level": 3,
-    "urgency": "now",
-    "expiry_estimate": "~2026.02",
-    "brewing": {
-      "vessel": "glass cup",
-      "leaf_grams_per_100ml": 4,
-      "rounds": [
-        {
-          "water_temp_c": 80,
-          "steep_time_seconds": 60
-        },
-        {
-          "water_temp_c": 80,
-          "steep_time_seconds": 60
-        },
-        {
-          "water_temp_c": 80,
-          "steep_time_seconds": 60
-        }
-      ],
-      "notes": "Glass cup recommended to watch leaves unfurl. First steep is the sweetest. Don't over-steep."
-    },
-    "notes": "Pre-Qingming (early spring) Dragon Well from the West Lake area.\nFlat, pan-fired leaves with a chestnut aroma and sweet, vegetal flavor.\nNo astringency when brewed correctly. One of the great Chinese greens —\nsubtle, elegant, and best consumed young. Drink before spring ends.\n",
-    "photo": {
-      "url": "/photos/longjing-west-lake.jpg",
-      "alt": "Flat green Longjing tea leaves",
-      "source": null,
-      "is_local": true
-    },
-    "tags": [
-      "chinese-tea",
-      "green",
-      "premium",
-      "spring-harvest"
-    ]
-  },
-  {
-    "id": "masala-chai-blend",
-    "name": {
-      "primary": "Masala Chai",
-      "alternate": null
-    },
-    "category": "masala-chai",
-    "category_label": "Masala Chai",
-    "producer": {
-      "name": "Homemade blend",
-      "history": null
-    },
-    "origin": {
-      "region": "Assam",
-      "country": "India",
-      "locality": null
-    },
-    "acquisition": {
-      "location": "Home (blended)",
-      "year": 2025,
-      "month": 1,
-      "context": "Personal spice blend"
-    },
-    "caffeine_level": 4,
-    "urgency": "stable",
-    "expiry_estimate": "~2026.06",
-    "brewing": {
-      "vessel": "saucepan",
-      "leaf_grams_per_100ml": 5,
-      "rounds": [
-        {
-          "water_temp_c": 100,
-          "steep_time_seconds": 300
-        }
-      ],
-      "notes": "Simmer tea and spices in water+milk (1:1) for 5 minutes. Strain. Sweeten to taste. This is cooking, not infusion."
-    },
-    "notes": "Personal masala chai blend — strong CTC Assam base with cardamom,\nginger, cinnamon, black pepper, cloves. Mixed at home to personal\nratios. The recipe changes slightly each time. A comforting,\nspice-forward drink for cold mornings or afternoon crashes.\n",
-    "photo": {
-      "url": "/photos/masala-chai-blend.jpg",
-      "alt": "Chai spices and tea leaves in a mixing bowl",
-      "source": null,
-      "is_local": true
-    },
-    "tags": [
-      "indian-tea",
-      "spiced",
-      "comfort",
-      "homemade"
-    ]
-  },
-  {
-    "id": "matcha-everyday-marukyu",
-    "name": {
-      "primary": "Wako Matcha",
-      "alternate": "和光"
-    },
-    "category": "matcha-everyday",
-    "category_label": "Matcha (Everyday)",
-    "producer": {
-      "name": "Marukyu Koyamaen",
-      "history": "Founded 1704 in Uji. One of the most respected tea houses in Japan, seven generations of expertise."
-    },
-    "origin": {
-      "region": "Uji",
-      "country": "Japan",
-      "locality": null
-    },
-    "acquisition": {
-      "location": "Kyoto",
       "year": 2025,
       "month": 9,
       "context": "Honeymoon trip"
     },
     "caffeine_level": 5,
-    "urgency": "stable",
-    "expiry_estimate": "~2026.06",
+    "urgency": "now",
+    "expiry_estimate": "2026.02",
     "brewing": {
-      "vessel": "chawan",
-      "leaf_grams_per_100ml": 2,
+      "vessel": "shiboridashi",
+      "leaf_grams_per_100ml": 5,
       "rounds": [
         {
-          "water_temp_c": 80,
-          "steep_time_seconds": 15
+          "water_temp_c": 50,
+          "steep_time_seconds": 120
+        },
+        {
+          "water_temp_c": 50,
+          "steep_time_seconds": 120
+        },
+        {
+          "water_temp_c": 50,
+          "steep_time_seconds": 120
         }
       ],
-      "notes": "Good as daily matcha. Slightly more bitter than ceremonial grade — works well as latte base too."
+      "notes": "Premium Uji gyokuro — extreme low-temp, high leaf-density brewing. First infusion: 50°C, 120s. Second: 50°C, 30s. Third: 60°C, 60s. Cool the water carefully (boil, pour through cooling vessels). Use shiboridashi or houhin; they're designed for these slow low-temp pours. The first brew should be syrup-thick with nori-like umami; subsequent rounds get progressively more vegetal. Acquired Sep 2025 — already 6+ months old at time of cataloging, gyokuro loses umami fast."
     },
-    "notes": "Everyday-grade matcha from Marukyu Koyamaen. Not as refined as their\nceremonial offerings, but reliably good for daily preparation. Balanced\nbetween bitter and sweet, with enough body to stand up to milk if desired.\nThe workhorse matcha in the collection.\n",
-    "photo": {
-      "url": "/photos/matcha-everyday-marukyu.jpg",
-      "alt": "Small tin of Marukyu Koyamaen Wako matcha",
-      "source": null,
-      "is_local": true
-    },
+    "notes": "Pinnacle Uji gyokuro from one of Japan's most historically significant\ntea houses (Tokugawa-era imperial suppliers). Honeymoon-acquisition\npiece — kept for special occasions, but gyokuro doesn't wait. Per\nconsumption priority, this should be opened and finished first among\nall the Uji-collection teas.\n",
     "tags": [
       "japanese-tea",
+      "gyokuro",
       "uji",
-      "daily-drinker",
-      "honeymoon-collection"
+      "premium",
+      "honeymoon-collection",
+      "historic-producer"
     ]
   },
   {
-    "id": "matcha-uji-hikari-kanbayashi",
+    "id": "harrods-no-14-english-breakfast",
     "name": {
-      "primary": "Hikari Matcha",
-      "alternate": "光",
-      "pronunciation": "Hi-ka-ri"
+      "primary": "Harrods No. 14 English Breakfast",
+      "alternate": null
+    },
+    "category": "english-breakfast",
+    "category_label": "English Breakfast",
+    "producer": {
+      "name": "Harrods",
+      "history": "Harrods is a luxury department store in Knightsbridge, London, founded in 1849. No. 14 English Breakfast is described by Harrods as their 'best-selling' tea: a 4-region blend of full-bodied Assam, crisp Ceylon, floral Darjeeling, and bright Kenyan, formulated to hold its strength when served with milk. Available in both loose-leaf (125g, 200g caddies) and tea-bag formats."
+    },
+    "origin": {
+      "region": "India (Assam, Darjeeling), Sri Lanka, Kenya",
+      "country": "Multi-origin (UK-blended)",
+      "locality": null
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 4,
+    "urgency": "stable",
+    "expiry_estimate": "2025.11",
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1.5,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 240
+        }
+      ],
+      "notes": "Western brewing: 1 tsp (~3g) per 250ml boiling water, 3-5 minutes. Designed to take milk well — add a splash after brewing. Slightly higher leaf-to-water ratio than afternoon teas because the blend is built for strength. Single infusion."
+    },
+    "notes": "Classic 4-region English Breakfast blend. Punchy, full-bodied,\nwith a malty-bright character that holds up to milk and sugar.\nDesigned as a morning tea, traditionally served with a full\nEnglish breakfast or as a wake-up brew. Higher caffeine than\nthe Afternoon Ceylon (No. 16) due to the Assam component.\n\nBlack tea — stable shelf life. Available format: 125g, 200g loose-leaf\ncaddies, plus 50-bag and 100-bag tin formats.\n",
+    "tags": [
+      "british-blend",
+      "harrods",
+      "english-breakfast",
+      "assam",
+      "ceylon",
+      "darjeeling",
+      "kenyan",
+      "morning-tea",
+      "luxury-souvenir"
+    ]
+  },
+  {
+    "id": "harrods-no-16-afternoon-ceylon",
+    "name": {
+      "primary": "Harrods No. 16 Afternoon Ceylon",
+      "alternate": null
+    },
+    "category": "ceylon",
+    "category_label": "Ceylon",
+    "producer": {
+      "name": "Harrods",
+      "history": "Harrods is a luxury department store in Knightsbridge, London, founded in 1849 by Charles Henry Harrod. The Harrods tea range is one of its iconic food-hall offerings, with each blend assigned a numbered identifier. No. 16 Afternoon Ceylon is positioned as a single-origin afternoon tea: 'a single origin tea from the pristine mountains of Sri Lanka,' marketed as light and refreshing for daytime drinking."
+    },
+    "origin": {
+      "region": "Sri Lanka (highlands)",
+      "country": "Sri Lanka",
+      "locality": "Pristine mountains (specific estate not disclosed)"
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 3,
+    "urgency": "stable",
+    "expiry_estimate": "2025.11",
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1.5,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 240
+        }
+      ],
+      "notes": "Western brewing: 1 tsp per 250ml boiling water, 3-5 minutes. Per Harrods: also excellent iced — brew per instructions, add honey to taste, cool to room temperature, pour over ice. Single-origin Ceylon doesn't take milk as well as breakfast blends; it's best appreciated black with a slice of lemon."
+    },
+    "notes": "Single-origin highland Ceylon, positioned as an 'afternoon' tea\n(lighter and brighter than morning breakfast blends). Sweet amber\nliquor with citrus tints; characteristic Ceylon brisk-but-not-tannic\nprofile. Marketed for use with afternoon-tea service.\n\nAvailable format: 125g loose-leaf tin caddy (and likely 50-bag\ntea-bag tin). Black tea — stable shelf life.\n",
+    "tags": [
+      "british-blend",
+      "harrods",
+      "ceylon",
+      "single-origin",
+      "sri-lanka",
+      "afternoon-tea",
+      "luxury-souvenir"
+    ]
+  },
+  {
+    "id": "harrods-no-42-earl-grey",
+    "name": {
+      "primary": "Harrods No. 42 Earl Grey",
+      "alternate": null
+    },
+    "category": "earl-grey",
+    "category_label": "Earl Grey (flavored black tea)",
+    "producer": {
+      "name": "Harrods",
+      "history": "Harrods is a luxury department store in Knightsbridge, London, founded in 1849. No. 42 Earl Grey is a high-bergamot Earl Grey blending East African (predominantly Kenyan) and Indian black teas. Per Harrods: 'high proportion of quality Kenyan leaves to give the brew its lively, brisk flavour' complemented with 'exotic citrus from our exclusive bergamot flavouring.'"
+    },
+    "origin": {
+      "region": "Kenya (primarily) + India",
+      "country": "Multi-origin (UK-blended)",
+      "locality": null
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 3,
+    "urgency": "stable",
+    "expiry_estimate": "2025.11",
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1.5,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 240
+        }
+      ],
+      "notes": "Western brewing: 1 tsp per 250ml boiling water, 3-5 minutes. Earl Grey is traditionally taken black or with lemon (not milk) — milk dampens the bergamot character. Single infusion."
+    },
+    "notes": "High-bergamot Earl Grey on a Kenyan-dominant base. Brighter and\nlivelier than UK-classic blends that lean on Ceylon or Indian\nbases — Kenyan tea provides a notably brisk, almost citrusy\nblack-tea backbone that complements the bergamot oil.\n\nAvailable formats: 125g, 200g loose-leaf caddies, plus 50-bag\nand 100-bag tea-bag tins. Black tea — stable shelf life;\nbergamot oil aroma fades over months but the tea itself holds\nup indefinitely.\n",
+    "tags": [
+      "british-blend",
+      "harrods",
+      "earl-grey",
+      "bergamot",
+      "kenyan",
+      "flavored-black-tea",
+      "luxury-souvenir"
+    ]
+  },
+  {
+    "id": "hatsu-no-mukashi-nakamura-tokichi",
+    "name": {
+      "primary": "Matcha 'Hatsu no Mukashi'",
+      "alternate": "初の昔"
     },
     "category": "matcha-ceremonial",
     "category_label": "Matcha (Ceremonial)",
     "producer": {
-      "name": "Kanbayashi",
-      "history": "Tea suppliers to the Tokugawa Shogunate. Centuries-old lineage from Uji."
+      "name": "Nakamura Tokichi Honten",
+      "history": "Established in Uji in 1854. The main store buildings are designated as Important Cultural Landscapes by the Japanese government (Meiji-era tea merchant architecture). The Nakamura family contributed to developing the Kyōmidori (gyokuro) and Ujihikari (tencha/gyokuro) cultivars at the Kyoto Prefectural Tea Research Institute. Hatsu no Mukashi (初の昔, 'First of Old') is the top-tier in their 'Mukashi' line of poetic-named matchas; aged 1-2 years before sale to develop full umami. Curated in collaboration with the Urasenke Grand Tea Master."
     },
     "origin": {
       "region": "Uji",
       "country": "Japan",
-      "locality": null
+      "locality": "Kyoto prefecture"
     },
     "acquisition": {
       "location": "Uji, Kyoto",
@@ -824,107 +1219,880 @@
     },
     "caffeine_level": 5,
     "urgency": "now",
-    "expiry_estimate": "~2026.03",
+    "expiry_estimate": "2026.03",
     "brewing": {
       "vessel": "chawan",
-      "leaf_grams_per_100ml": 2,
+      "leaf_grams_per_100ml": 13,
       "rounds": [
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 0
         }
       ],
-      "notes": "Sift before whisking. Use chasen vigorously for 15 seconds until frothy."
+      "notes": "Designed primarily for koicha (thick tea): 4g matcha + 30ml water at 80°C, kneaded slowly with chasen until smooth and syrupy (no foam). Also drinkable as usucha (thin tea): 2g + 70ml at 80°C, whisked to a fine froth. Sift before whisking to avoid lumps. Matcha at 6+ months from canning is past peak — consume promptly. Once opened, finish in 2-3 weeks; refrigerate sealed in original tin."
     },
-    "notes": "Ceremonial grade matcha from Kanbayashi. Vibrant green, minimal bitterness,\npronounced umami with a clean finish. Best prepared as usucha (thin tea)\nfor daily ritual. The color is remarkable — electric green.\n",
-    "photo": {
-      "url": "/photos/matcha-uji-hikari-kanbayashi.jpg",
-      "alt": "Tin of Kanbayashi Hikari ceremonial matcha",
-      "source": "Kanbayashi official",
-      "is_local": true
-    },
+    "notes": "Top-tier ceremonial matcha from a 170+ year-old Uji tea house.\nVelvety mouthfeel, deep umami sweetness, almost no astringency,\nvibrant jade color — hallmarks of a premium koicha-grade matcha.\nAcquired Sep 2025 honeymoon — the powder oxidizes faster than other\nforms of tea, so this is one of the highest-priority items in the\ncollection to consume.\n",
     "tags": [
-      "premium",
       "japanese-tea",
+      "matcha",
       "uji",
+      "ceremonial",
+      "koicha",
+      "premium",
       "honeymoon-collection",
-      "daily-ritual"
+      "historic-producer"
     ]
   },
   {
-    "id": "moroccan-mint-traditional",
+    "id": "japanese-black-tea-nero-giappone",
     "name": {
-      "primary": "Moroccan Mint",
-      "alternate": null
+      "primary": "Japanese Black Tea",
+      "alternate": "Tè Nero Giappone"
     },
-    "category": "moroccan-mint",
-    "category_label": "Moroccan Mint",
+    "category": "wakocha",
+    "category_label": "Wakocha (Japanese Black)",
     "producer": {
-      "name": "Market blend",
+      "name": "Unknown",
       "history": null
     },
     "origin": {
-      "region": "Marrakech",
-      "country": "Morocco",
+      "region": "Unknown",
+      "country": "Japan",
       "locality": null
     },
     "acquisition": {
-      "location": "Marrakech",
-      "year": 2024,
-      "month": 6,
-      "context": "Holiday"
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
     },
-    "caffeine_level": 2,
+    "caffeine_level": 3,
     "urgency": "calm",
-    "expiry_estimate": "~2026.06",
+    "expiry_estimate": null,
     "brewing": {
-      "vessel": "Moroccan teapot",
-      "leaf_grams_per_100ml": 5,
+      "vessel": "kyusu",
+      "leaf_grams_per_100ml": 3,
       "rounds": [
         {
-          "water_temp_c": 100,
-          "steep_time_seconds": 180
+          "water_temp_c": 90,
+          "steep_time_seconds": 150
+        },
+        {
+          "water_temp_c": 90,
+          "steep_time_seconds": 150
         }
       ],
-      "notes": "Add fresh mint and sugar generously. Pour from height to aerate. The ritual matters."
+      "notes": "Japanese black teas are often lighter and smoother than Indian or Ceylon styles."
     },
-    "notes": "Chinese gunpowder green tea base, intended for Moroccan mint tea\npreparation. The tea itself is secondary to the ritual — fresh mint,\ngenerous sugar, poured from height into small glasses. Bought in the\nMarrakech souk. Might gift to someone who'd enjoy the ritual.\n",
+    "notes": "Loose-leaf Japanese black tea stored in a labelled plastic bag. Specific\ncultivar and producer unknown. Likely a wakoucha-style tea with softer,\nsweeter and less tannic characteristics than typical Western black teas.\nModest bag, potentially excellent tea — the tea equivalent of a jazz musician in an unmarked basement bar.\n",
     "photo": {
-      "url": "/photos/moroccan-mint-traditional.jpg",
-      "alt": "Moroccan mint tea being poured from ornate teapot",
+      "url": "/photos/japanese-black-tea-nero-giappone.jpg",
+      "alt": "Loose-leaf Japanese black tea in a plastic storage bag",
       "source": null,
       "is_local": true
     },
     "tags": [
-      "moroccan-tea",
-      "cultural",
-      "gift-candidate"
+      "japanese-tea",
+      "black-tea",
+      "wakoucha",
+      "loose-leaf"
     ]
   },
   {
-    "id": "puer-sheng-yiwu-2019",
+    "id": "jasmine-dragon-pearls-green-tea-teavivre",
     "name": {
-      "primary": "Yiwu Sheng Pu'er 2019",
-      "alternate": "易武生普"
+      "primary": "Jasmine Dragon Pearls Green Tea",
+      "alternate": "茉莉龙珠"
     },
-    "category": "puer-sheng",
-    "category_label": "Pu'er (Sheng/Raw)",
+    "category": "green-chinese",
+    "category_label": "Chinese Green",
     "producer": {
-      "name": "Yiwu Mountain Tea",
-      "history": "Yiwu is one of the six ancient tea mountains in Yunnan. Historically a starting point for the ancient tea-horse road."
+      "name": "TeaVivre",
+      "history": "Online Chinese tea retailer founded in 2011, sourcing directly from tea gardens. This blend uses high-mountain Jinggu Dabai Cha leaves from the Wen Shan tea garden in Jinggu County, Yunnan (~1800m altitude), hand-rolled into pearls and scented with jasmine flowers from Hengxian, Guangxi (China's primary jasmine production region). Three rounds of scenting plus a final 'tihua' top-scenting (三窨一提)."
     },
     "origin": {
-      "region": "Yiwu",
+      "region": "Yunnan / Guangxi",
       "country": "China",
-      "locality": "Yunnan"
+      "locality": "Jinggu (tea base), Hengxian (jasmine)"
     },
     "acquisition": {
-      "location": "Online (white2tea)",
-      "year": 2024,
-      "month": 11,
+      "location": "TeaVivre (online)",
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 3,
+    "urgency": "soon",
+    "expiry_estimate": "2028.05",
+    "brewing": {
+      "vessel": "gaiwan",
+      "leaf_grams_per_100ml": 4,
+      "rounds": [
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        }
+      ],
+      "notes": "Gongfu schedule (110ml gaiwan, 4g): rinse, 40s, 40s, 40s, 40s, 50s, 60s, 80s, 100s, 120s, 150s. Western: 3g per 250ml at 85°C, 3-5 minutes."
+    },
+    "notes": "Yunnan-base jasmine pearls. Sweeter and more delicate than Fujian-base\nversions, with an intense jasmine fragrance and lingering aftertaste.\nBrews many infusions before fading. Distinguishable from the Long Zhu\nvariant (Fujian-base) by the deeper, fuller tea body underneath the\njasmine layer.\n",
+    "tags": [
+      "chinese-tea",
+      "yunnan",
+      "scented-tea",
+      "jasmine",
+      "teavivre"
+    ]
+  },
+  {
+    "id": "jasmine-dragon-pearls-long-zhu-teavivre",
+    "name": {
+      "primary": "Jasmine Dragon Pearls Long Zhu Green Tea",
+      "alternate": "茉莉龙珠"
+    },
+    "category": "green-chinese",
+    "category_label": "Chinese Green",
+    "producer": {
+      "name": "TeaVivre",
+      "history": "Online Chinese tea retailer founded in 2011. Long Zhu pearls produced at the Wengxi Tea Garden in Fuding, Fujian. Tea base picked one bud + one or two leaves; hand-rolled into pearls. Crafted by Mr. Chen, a tea master with 40+ years of jasmine tea experience. Five rounds of scenting plus a final 'yi-ti' top-scenting using first-grade jasmine flowers (6-8 hours, 6-8kg flowers per 100kg of tea)."
+    },
+    "origin": {
+      "region": "Fujian / Guangxi",
+      "country": "China",
+      "locality": "Fuding (tea base), Hengxian (jasmine)"
+    },
+    "acquisition": {
+      "location": "TeaVivre (online)",
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 3,
+    "urgency": "soon",
+    "expiry_estimate": "2028.06",
+    "brewing": {
+      "vessel": "gaiwan",
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 40
+        }
+      ],
+      "notes": "Gongfu schedule (110ml gaiwan, 5g): rinse, 40s, 50s, 60s, 80s, 100s, 120s. Western: 5g per 355ml at 85°C, 5-8 minutes."
+    },
+    "notes": "Fujian-base jasmine pearls, distinct from the Yunnan version. Refreshing,\nsoft and sweet; resists bitterness even when brewed at high temperature\nor for long durations. The \"Long Zhu\" in the name is literally\n\"Dragon Pearls\" — the redundancy is part of the SKU naming convention.\nLess of a deep-mountain character than the Yunnan version; more polished\njasmine intensity due to the extra 'yi-ti' final scenting step.\n",
+    "tags": [
+      "chinese-tea",
+      "fujian",
+      "scented-tea",
+      "jasmine",
+      "teavivre"
+    ]
+  },
+  {
+    "id": "kiun-matcha-marukyu-koyamaen",
+    "name": {
+      "primary": "Kiun",
+      "alternate": "喜雲"
+    },
+    "category": "matcha-ceremonial",
+    "category_label": "Matcha (Ceremonial)",
+    "producer": {
+      "name": "Marukyu Koyamaen",
+      "history": "Historic Uji-based matcha producer. Kiun is part of the Tea Schools Favored Matcha line, selected by Hōunsai (Sen Genshitsu, the 15th Grand Tea Master of Urasenke). Marukyu Koyamaen consistently wins top awards at the National Tea Competition. Note: this tea is produced in Uji, not in Kyushu — it was acquired during a Kyushu trip (likely from a tea shop reselling Marukyu line) but the production origin is Uji."
+    },
+    "origin": {
+      "region": "Uji",
+      "country": "Japan",
+      "locality": null
+    },
+    "acquisition": {
+      "location": "Kyushu, Japan",
+      "year": 2026,
+      "month": 3,
+      "context": "3GPP RAN#111 work trip"
+    },
+    "caffeine_level": 5,
+    "urgency": "soon",
+    "expiry_estimate": "2026.07",
+    "brewing": {
+      "vessel": "chawan",
+      "leaf_grams_per_100ml": 13,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 0
+        }
+      ],
+      "notes": "Primarily a koicha (thick tea): 4g matcha + 30ml water at 80°C, kneaded slowly with chasen. Also drinkable as usucha (thin tea): 2g matcha + 70ml water at 80°C, whisked to a fine froth. Sift before whisking. Best-before period from Marukyu: 7 months from canning (refrigerate after opening, finish in 2-3 weeks)."
+    },
+    "notes": "Ceremonial-grade matcha favored by the 15th Grand Tea Master of\nUrasenke. Pumpkin-seed-like aroma, full-bodied umami sweetness with\nalmost no astringency. Designed for koicha but works exceptionally\nwell as everyday usucha; widely regarded as one of the best\nvalue-for-money premium matchas.\n",
+    "tags": [
+      "japanese-tea",
+      "matcha",
+      "uji",
+      "ceremonial",
+      "koicha",
+      "urasenke",
+      "kyushu-collection"
+    ]
+  },
+  {
+    "id": "lidl-lychee",
+    "name": {
+      "primary": "Flavoured Black Tea",
+      "alternate": "Lychee Raspberry and Rose Flavour"
+    },
+    "category": "other",
+    "category_label": "Other",
+    "producer": {
+      "name": "Lidl",
+      "history": null
+    },
+    "origin": {
+      "region": "Unknown",
+      "country": "Unknown",
+      "locality": null
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 3,
+    "urgency": "calm",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 2,
+      "rounds": [
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 180
+        },
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 180
+        }
+      ],
+      "notes": "Longer steeps will emphasize the floral rose character."
+    },
+    "notes": "Aromatic flavoured black tea blending lychee sweetness, raspberry fruit\ncharacter and floral rose notes. Likely designed as a fragrant dessert-style\ntea with a smooth black tea base.\n",
+    "photo": {
+      "url": "/photos/flavoured-black-tea-lychee-raspberry-rose.jpg",
+      "alt": "Black tin of flavoured black tea with lychee raspberry and rose flavour",
+      "source": null,
+      "is_local": true
+    },
+    "tags": [
+      "black-tea",
+      "flavoured-tea",
+      "floral",
+      "fruity"
+    ]
+  },
+  {
+    "id": "lidl-pineapple",
+    "name": {
+      "primary": "Flavoured Green Tea",
+      "alternate": "Pineapple Lemon Ginger Flavours"
+    },
+    "category": "other",
+    "category_label": "Other",
+    "producer": {
+      "name": "Lidl",
+      "history": null
+    },
+    "origin": {
+      "region": "Unknown",
+      "country": "Unknown",
+      "locality": null
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 2,
+    "urgency": "calm",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 2,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 120
+        },
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 120
+        }
+      ],
+      "notes": "Avoid boiling water to preserve the fruit aromas and prevent bitterness."
+    },
+    "notes": "Flavoured green tea blend combining pineapple, lime and ginger notes.\nIntended as a bright, tropical everyday tea with a refreshing citrus\nprofile and mild spice finish.\n",
+    "photo": {
+      "url": "/photos/flavoured-green-tea-pineapple-lemon-ginger.jpg",
+      "alt": "Black tin of flavoured green tea with pineapple lemon ginger flavours",
+      "source": null,
+      "is_local": true
+    },
+    "tags": [
+      "green-tea",
+      "flavoured-tea",
+      "tropical",
+      "ginger"
+    ]
+  },
+  {
+    "id": "matcha-ikeda-senchado",
+    "name": {
+      "primary": "Matcha",
+      "alternate": "抹茶"
+    },
+    "category": "matcha-ceremonial",
+    "category_label": "Matcha (Ceremonial)",
+    "producer": {
+      "name": "Ikeda Senchado",
+      "history": "Private brand of Ikeda Seicha Co. (founded 1948), based in Tenmonkan, Kagoshima. Run by tea master Kenta Ikeda — 茶師十段 (10th-dan tea master), a rare top-level certification. Distinctive 'lit-flame' (烈火) roasting and blending style. Kagoshima-grown matcha is rare; Ikeda Senchado is one of the few producers offering certified-organic Kagoshima matcha. Specializes in showcasing Kagoshima's tea character (mellow southern-plain teas vs. aromatic northern-mountain teas)."
+    },
+    "origin": {
+      "region": "Kagoshima",
+      "country": "Japan",
+      "locality": null
+    },
+    "acquisition": {
+      "location": "Kagoshima, Japan",
+      "year": 2026,
+      "month": 3,
+      "context": "3GPP RAN#111 work trip"
+    },
+    "caffeine_level": 5,
+    "urgency": "soon",
+    "expiry_estimate": "2026.11",
+    "brewing": {
+      "vessel": "chawan",
+      "leaf_grams_per_100ml": 3,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 0
+        }
+      ],
+      "notes": "Usucha-style: 2g matcha + 70ml water at 80°C, whisked with chasen in a zigzag motion until a fine froth forms. Sift before whisking. For koicha: 4g + 30ml at 80°C, kneaded slowly. Refrigerate after opening, finish within 2-3 weeks for optimal freshness."
+    },
+    "notes": "Single-origin Kagoshima matcha — fresher and sweeter than typical\nUji matchas, with the distinctive character of Kyushu southern teas.\nKagoshima sees earlier spring harvests than Uji (warmer climate),\nwhich can give a slightly different umami profile. A great\ncounterpoint to Uji-centric matcha collections.\n",
+    "tags": [
+      "japanese-tea",
+      "matcha",
+      "kagoshima",
+      "ceremonial",
+      "single-origin",
+      "kyushu-collection"
+    ]
+  },
+  {
+    "id": "matcha-kuwari-samidori-ujitawara",
+    "name": {
+      "primary": "Matcha Uji 'Kuwari'",
+      "alternate": "さみどり"
+    },
+    "category": "matcha-single-cultivar",
+    "category_label": "Matcha (single-cultivar)",
+    "producer": {
+      "name": "Unknown (Ujitawara)",
+      "history": "Producer: small Ujitawara producer (specific name not recorded — Ujitawara is a small town in Tsuzuki District, Kyoto, considered the historical birthplace of Japanese sencha and an important matcha-growing area). 'Kuwari' is a labeling/grade term used by the producer. The defining feature: the matcha is single-cultivar Samidori (さみどり), a classic Uji cultivar prized for koicha — vivid green color, high amino-acid content, smooth umami. Most matchas are blended; single-cultivar matcha is a connoisseur's choice."
+    },
+    "origin": {
+      "region": "Ujitawara",
+      "country": "Japan",
+      "locality": "Kyoto prefecture"
+    },
+    "acquisition": {
+      "location": "Ujitawara, Kyoto",
+      "year": 2025,
+      "month": 9,
+      "context": "Honeymoon trip"
+    },
+    "caffeine_level": 5,
+    "urgency": "now",
+    "expiry_estimate": "2026.07",
+    "brewing": {
+      "vessel": "chawan",
+      "leaf_grams_per_100ml": 3,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 0
+        }
+      ],
+      "notes": "Single-cultivar Samidori — try both usucha (2g + 70ml at 80°C, whisked) and koicha (4g + 30ml at 80°C, kneaded) to taste the cultivar's character without blending. Samidori is traditionally a koicha-leaning cultivar but works in both. Sift before whisking. Same freshness caveats as other honeymoon-acquired matchas: 6+ months from canning, consume promptly."
+    },
+    "notes": "Single-cultivar Samidori matcha — a connoisseur piece. Most matchas\nare intentional blends to balance umami, sweetness, and astringency;\nsingle-cultivar versions let you taste one cultivar's specific\ncharacter, which is rare and didactic for a matcha enthusiast.\nSamidori is one of the classic Uji cultivars, paired with the more\nmodern Goko and Asahi for premium tencha. The 'Kuwari' designation\non the producer's labeling is not a widely-catalogued term — Francesco\nmay have additional context from purchase.\n",
+    "tags": [
+      "japanese-tea",
+      "matcha",
+      "ujitawara",
+      "kyoto",
+      "single-cultivar",
+      "samidori",
+      "premium",
+      "honeymoon-collection"
+    ]
+  },
+  {
+    "id": "matcha-love",
+    "name": {
+      "primary": "Japanese Culinary Matcha",
+      "alternate": null
+    },
+    "category": "matcha-culinary",
+    "category_label": "Matcha (Culinary)",
+    "producer": {
+      "name": "Matcha Love",
+      "history": null
+    },
+    "origin": {
+      "region": "Unknown",
+      "country": "Japan",
+      "locality": null
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
       "context": null
     },
     "caffeine_level": 4,
+    "urgency": "calm",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "matcha bowl",
+      "leaf_grams_per_100ml": 2,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 0
+        }
+      ],
+      "notes": "Designed primarily for lattes, smoothies and baking rather than traditional usucha preparation."
+    },
+    "notes": "Unsweetened Japanese culinary-grade matcha powder marketed for baking,\nsmoothies and lattes. Likely blended for versatility and stronger flavor\nretention in milk-based or sweet preparations rather than ceremonial\ndrinking. The packaging screams 'I can become ice cream at any moment.'\n",
+    "photo": {
+      "url": "/photos/matcha-love-japanese-culinary-matcha.jpg",
+      "alt": "Container of Matcha Love Japanese Culinary Matcha",
+      "source": null,
+      "is_local": true
+    },
+    "tags": [
+      "matcha",
+      "japanese-tea",
+      "culinary-grade",
+      "latte",
+      "baking"
+    ]
+  },
+  {
+    "id": "matcha-shan-wa",
+    "name": {
+      "primary": "Matcha Tea",
+      "alternate": "抹茶"
+    },
+    "category": "matcha-everyday",
+    "category_label": "Matcha (Everyday)",
+    "producer": {
+      "name": "Shan Wa",
+      "history": null
+    },
+    "origin": {
+      "region": "Unknown",
+      "country": "Japan",
+      "locality": null
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 4,
+    "urgency": "calm",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "matcha bowl",
+      "leaf_grams_per_100ml": 2,
+      "rounds": [
+        {
+          "water_temp_c": 75,
+          "steep_time_seconds": 0
+        }
+      ],
+      "notes": "Potential entry-level matcha. Lower temperatures help reduce bitterness."
+    },
+    "notes": "Tin-labelled matcha tea with Chinese/Japanese branding elements. Exact\norigin and grade unclear from the packaging alone. Likely intended for\neveryday consumption or culinary use rather than formal tea ceremony.\nThe tin, however, has excellent 'mysterious tea shop found during a rainy side quest' energy.\n",
+    "photo": {
+      "url": "/photos/shan-wa-matcha-tea.jpg",
+      "alt": "Green tin of Matcha Tea with Asian characters",
+      "source": null,
+      "is_local": true
+    },
+    "tags": [
+      "matcha",
+      "powdered-tea",
+      "everyday-tea"
+    ]
+  },
+  {
+    "id": "mighty-leaf-organic-matcha",
+    "name": {
+      "primary": "Mighty Leaf Organic Matcha",
+      "alternate": null
+    },
+    "category": "matcha-ceremonial",
+    "category_label": "Matcha (ceremonial grade, organic)",
+    "producer": {
+      "name": "Mighty Leaf",
+      "history": "Mighty Leaf is a US tea brand founded in 1996 in Mill Valley, California; acquired in 2014 by Peet's Coffee (now part of JDE Peet's). Their organic matcha is sourced from Kagoshima and Shizuoka prefectures in Japan, stone-milled in temperature-controlled, sealed production rooms to preserve freshness. The leaves are tencha (shade-grown for ~3 weeks before harvest, de-veined, and powdered). Marketed as ceremonial grade — bright emerald, creamy, with bittersweet floral notes. Standard fine usucha-grade powder rather than a koicha-tier specialty."
+    },
+    "origin": {
+      "region": "Kagoshima + Shizuoka",
+      "country": "Japan",
+      "locality": "Multi-prefecture sourcing"
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 4,
+    "urgency": "now",
+    "expiry_estimate": "2028.04",
+    "brewing": {
+      "vessel": "chawan",
+      "leaf_grams_per_100ml": 1.5,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 0
+        }
+      ],
+      "notes": "Usucha-style preparation: 1 tsp (~2g) sifted matcha + 60-70ml hot water (~80°C, just below boiling), whisk briskly with a chasen in W or M motion until light froth forms (~20-30 seconds). Mighty Leaf packaging suggests 1 tsp + 8oz hot water — that's a Western 'matcha tea' style, more dilute than traditional usucha. For a latte: same matcha with steamed milk, optional sweetener."
+    },
+    "notes": "US-blended ceremonial-grade matcha sourced from two of Japan's\nmajor tea regions. Quality is decent for a US grocery channel\nbrand but won't match Uji single-cultivar matchas (Marukyu Koyamaen,\nIppodo, Nakamura Tokichi). Suitable for usucha, lattes, and culinary\nuse; not ideal for koicha (thick tea) which needs higher grades.\n\nMatcha has VERY short shelf life once opened — finish within 2-3\nweeks for best flavor and color. Refrigerate sealed; keep away\nfrom light, heat, and moisture. Urgency 'now' applies as soon as\nthe tin is opened.\n",
+    "tags": [
+      "japanese-tea",
+      "matcha",
+      "organic",
+      "ceremonial",
+      "kagoshima",
+      "shizuoka",
+      "us-brand",
+      "commercial"
+    ]
+  },
+  {
+    "id": "miyako-no-tatsumi-nakamura-tokichi",
+    "name": {
+      "primary": "Sencha 'Miyako no Tatsumi'",
+      "alternate": "都の巽"
+    },
+    "category": "sencha",
+    "category_label": "Sencha",
+    "producer": {
+      "name": "Nakamura Tokichi Honten",
+      "history": "Established in Uji in 1854. Main store designated as Important Cultural Landscape. 'Miyako no Tatsumi' (都の巽, 'Southeast of the Capital') refers to Uji's geographic position relative to old Kyoto (the imperial capital). Uji-style sencha is more delicate and umami-forward than typical Shizuoka-style senchas — closer in character to gyokuro than to fukamushi-style senchas, often with slight shading."
+    },
+    "origin": {
+      "region": "Uji",
+      "country": "Japan",
+      "locality": "Kyoto prefecture"
+    },
+    "acquisition": {
+      "location": "Uji, Kyoto",
+      "year": 2025,
+      "month": 9,
+      "context": "Honeymoon trip"
+    },
+    "caffeine_level": 3,
+    "urgency": "now",
+    "expiry_estimate": "2026.03",
+    "brewing": {
+      "vessel": "kyusu",
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 90
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 90
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 90
+        }
+      ],
+      "notes": "Uji-style sencha is delicate — keep water cool to preserve umami. First infusion: 70°C, 90s. Second: 75°C, 15s. Third: 80°C, 45s. If the leaves look slightly shaded (kabusecha-influenced), drop the first temp to 65°C. 6+ months from purchase — sencha holds up better than matcha but is still declining; consume in the next few weeks."
+    },
+    "notes": "Uji-style sencha from Nakamura Tokichi — delicate, umami-forward,\nkabusecha-adjacent character (likely with some shading before\nharvest). Stylistically closer to gyokuro than to standard sencha\nin temperament. Best brewed gently to avoid extracting bitterness.\nHoneymoon-purchase, 6+ months old at cataloging — flavor still\ngood but declining; finish in coming weeks.\n",
+    "tags": [
+      "japanese-tea",
+      "sencha",
+      "uji-sencha",
+      "uji",
+      "premium",
+      "honeymoon-collection",
+      "historic-producer"
+    ]
+  },
+  {
+    "id": "nonpareil-te-gong-huang-shan-mao-feng-teavivre",
+    "name": {
+      "primary": "Nonpareil Te Gong Huang Shan Mao Feng Green Tea",
+      "alternate": "特贡黄山毛峰"
+    },
+    "category": "green-chinese",
+    "category_label": "Chinese Green",
+    "producer": {
+      "name": "TeaVivre",
+      "history": "Pre-Qing Ming spring harvest from high-altitude tea trees on Mt. Huangshan in Shexian County, Anhui Province. Made by Mr. Ke at Dailing Tea Garden, a tea master with 40+ years of experience specializing in traditional Mao Feng craftsmanship. 'Te Gong' (特贡) marks the highest grade — historically used as imperial tribute. Sparrow-tongue shaped buds from Huangshan large-leaf cultivar."
+    },
+    "origin": {
+      "region": "Anhui",
+      "country": "China",
+      "locality": "Shexian County, Mt. Huangshan"
+    },
+    "acquisition": {
+      "location": "TeaVivre (online)",
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 3,
+    "urgency": "now",
+    "expiry_estimate": "2026.10",
+    "brewing": {
+      "vessel": "gaiwan",
+      "leaf_grams_per_100ml": 4,
+      "rounds": [
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 30
+        }
+      ],
+      "notes": "APPROXIMATED from standard Huang Shan Mao Feng parameters — TeaVivre does not publish gongfu schedule for the Te Gong nonpareil grade. Gongfu schedule (110ml gaiwan, 4g): rinse, 30s, 45s, 70s, 100s. Western: 2g per 250ml at 85°C, 3-5 minutes. Pre-ming green teas are delicate; consider lower temp (~80°C) and shorter first steep if bitterness develops."
+    },
+    "notes": "Pre-Qing Ming (early spring, before April 5) harvest, considered the\nmost precious window for green tea. Bird-tongue (sparrow-tongue) shape:\nthe leaves stand vertically when brewed in glass, then slowly sink.\nSmooth and sweet with orchid-like floral aroma, hints of chestnut and\ntoasted rice. One of China's top ten green teas. Best consumed within\n6-12 months of harvest while the freshness peaks.\n",
+    "tags": [
+      "chinese-tea",
+      "anhui",
+      "premium",
+      "pre-ming",
+      "spring-tea",
+      "teavivre"
+    ]
+  },
+  {
+    "id": "republic-of-tea-organic-ceremonial-matcha",
+    "name": {
+      "primary": "The Republic of Tea Organic Ceremonial Matcha",
+      "alternate": null
+    },
+    "category": "matcha-ceremonial",
+    "category_label": "Matcha (ceremonial grade, organic)",
+    "producer": {
+      "name": "The Republic of Tea",
+      "history": "The Republic of Tea is a US tea brand founded in 1992 in Northern California by Mel and Patricia Ziegler (Banana Republic founders) and Bill Rosenzweig. Their Organic Ceremonial Matcha is described as 'organic shade-grown tea made from young tencha leaves and stone-ground into a fine powder' — Japan-sourced tencha, US-distributed. Sold in small tins (4 servings each) and as part of multi-matcha gift sets including flavored variants (Sweet Vanilla, Dubai Chocolate, Strawberry, Lavender)."
+    },
+    "origin": {
+      "region": "Japan (specific prefecture not disclosed)",
+      "country": "Japan",
+      "locality": "Tencha leaves, shade-grown"
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 4,
+    "urgency": "now",
+    "expiry_estimate": "2027.10",
+    "brewing": {
+      "vessel": "chawan",
+      "leaf_grams_per_100ml": 2.5,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 0
+        }
+      ],
+      "notes": "Per producer: ½-1 tsp matcha + 6oz (180ml) of just-short-of-boiling water (~175°F / 80°C); whisk for 1-2 minutes until well blended. NOTE: producer says 'just below boiling' which is somewhat vague — at >85°C matcha turns bitter, so aim for 75-80°C, not actually approaching 100°C. For traditional usucha use closer to 70°C and a thicker concentration (2g + 60ml). Iced/latte: blend ½-1 tsp with 8oz cold water or milk."
+    },
+    "notes": "US-distributed ceremonial-grade matcha made from Japanese tencha\nleaves. Stone-ground; smooth, mellow, vegetal sweetness, deep\ngreen color. Comparable in tier to Mighty Leaf's organic matcha\n— competent grocery-channel ceremonial-grade, suitable for usucha\nand lattes but not for koicha or formal tea ceremony.\n\nMatcha shelf life: short. Finish within 2-3 weeks once opened;\nrefrigerate sealed. Urgency 'now' applies as soon as the tin is\nopened. Republic of Tea also sells flavored matcha variants under\nthe same brand line — the unflavored 'Organic Ceremonial' is the\ncleanest and most versatile.\n",
+    "tags": [
+      "japanese-tea",
+      "matcha",
+      "organic",
+      "ceremonial",
+      "tencha",
+      "us-brand",
+      "commercial"
+    ]
+  },
+  {
+    "id": "satsuki-tsuyu-kusano-seichaen",
+    "name": {
+      "primary": "Satsuki Tsuyu",
+      "alternate": "さつき露"
+    },
+    "category": "tamaryokucha",
+    "category_label": "Tamaryokucha (curled green)",
+    "producer": {
+      "name": "Kusano Seichaen",
+      "history": "Tea producer and shop in Ureshino Onsen, Saga prefecture (Kyushu). 'Satsuki Tsuyu' (さつき露, 'May Dew') is one of their signature tamaryokucha products, marketed under the regional moniker 'Yushuku Meicha' (湯宿銘茶, 'famous tea of the hot-spring inn town' — Yushuku being a poetic reference to Ureshino's onsen-town identity). Kusano's 'Tsuyukabuse' tea has won the Fine Product Award at the National Japanese Tea Competition. Ureshino is one of the few Japanese regions still producing tamaryokucha at scale — a curled-leaf style predating the modern needle-shaped sencha."
+    },
+    "origin": {
+      "region": "Ureshino",
+      "country": "Japan",
+      "locality": "Saga prefecture"
+    },
+    "acquisition": {
+      "location": "Ureshino, Saga, Japan",
+      "year": 2026,
+      "month": 3,
+      "context": "3GPP RAN#111 work trip"
+    },
+    "caffeine_level": 3,
+    "urgency": "calm",
+    "expiry_estimate": "2027.03",
+    "brewing": {
+      "vessel": "kyusu",
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 75,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 75,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 75,
+          "steep_time_seconds": 60
+        }
+      ],
+      "notes": "Tamaryokucha schedule: 75°C, 60s first; 80°C, 15s second; 80°C, 45s third. Tamaryokucha tolerates slightly hotter water than premium sencha — the curled leaves open more slowly. Tends to give a richer, rounder profile than needle-rolled sencha; less astringent."
+    },
+    "notes": "Ureshino-style tamaryokucha — leaves curled into comma shapes (no\nfinal rolling step), giving a softer, rounder, less astringent\nprofile than standard sencha. Buttery, marine, vegetal notes are\ncommon. Tamaryokucha is more forgiving and shelf-stable than\npremium sencha, which is why it falls in the 'calma' urgency tier\neven though it's a green tea.\n\nNote: this entry replaces the previous 'yushuku-meicha-kusano-seichaen'\nfile. After photo inspection, the SKU name on the packaging is\n'Satsuki Tsuyu' and 'Yushuku Meicha' is the regional brand label,\nnot the product name itself.\n",
+    "tags": [
+      "japanese-tea",
+      "tamaryokucha",
+      "saga",
+      "ureshino",
+      "yushuku-meicha",
+      "kyushu-collection"
+    ]
+  },
+  {
+    "id": "tangerine-peel-chen-pi-liu-bao-cha-teavivre",
+    "name": {
+      "primary": "Tangerine Peel (Chen Pi) Liu Bao Cha Dark Tea",
+      "alternate": "陈皮六堡茶"
+    },
+    "category": "puer-shou",
+    "category_label": "Shou Pu-erh",
+    "producer": {
+      "name": "TeaVivre",
+      "history": "Blend of 2013 Liu Bao tea (Wuzhou, Guangxi) with aged Xinhui mandarin peel (chenpi) from Guangdong. Liu Bao is a fermented dark tea named after Liu Bao Xiang in Guangxi, with pile-fermentation processing similar to ripe pu-erh. Xinhui is the most famous origin for chenpi — Citrus reticulata Blanco cv. Chachiensis — valued in Traditional Chinese Medicine for digestive properties. The combination is a classic post-meal tea in southern China."
+    },
+    "origin": {
+      "region": "Guangxi / Guangdong",
+      "country": "China",
+      "locality": "Wuzhou (Liu Bao base), Xinhui (chenpi)"
+    },
+    "acquisition": {
+      "location": "TeaVivre (online)",
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 2,
     "urgency": "stable",
     "expiry_estimate": null,
     "brewing": {
@@ -933,438 +2101,550 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 5
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 5
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 5
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 5
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 5
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 5
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 5
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 5
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 5
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 5
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 5
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 5
         }
       ],
-      "notes": "Boiling water, very short steeps. Rinse first. This tea will evolve over 10+ steeps. Don't rush it."
+      "notes": "APPROXIMATED from TeaVivre's Bing Lang Xiang Liu Bao Cha 2014 (closest match — same producer, same category, same vintage range). Gongfu schedule (110ml gaiwan, 8g): rinse, 5s, 5s, 10s, 10s, 20s, 20s, 30s, 40s, 50s, 70s, 90s, 120s. Western: 4g per 355ml at 100°C, 5-8 minutes. Always rinse first to wake the leaf; use full-boil water for proper extraction."
     },
-    "notes": "Young sheng pu'er from Yiwu, pressed in 2019. Still evolving — some\nbitterness that will mellow with age, but already showing Yiwu's\ncharacteristic honey sweetness and floral notes. Bought to age alongside\nthe collection. Check back in 2027 for more complexity.\n",
-    "photo": {
-      "url": "/photos/puer-sheng-yiwu-2019.jpg",
-      "alt": "Compressed pu'er cake with wrapper showing Yiwu origin",
-      "source": null,
-      "is_local": true
-    },
+    "notes": "Aged dark tea (heicha) blended with chenpi. Years of fermentation\ngive the Liu Bao base a deep earthy/woody profile; the aged Xinhui\npeel adds a bright tangy citrus layer that balances the earthiness\nwith a sweet aftertaste. Mellower than ripe pu-erh — gentler on the\nstomach. Improves with further aging; no urgency to consume quickly.\nExcellent autumn/winter tea and traditional digestive after heavy meals.\n",
     "tags": [
       "chinese-tea",
-      "puer",
+      "guangxi",
+      "dark-tea",
+      "hei-cha",
+      "liu-bao",
+      "aged",
+      "scented-with-peel",
       "ages-well",
-      "yunnan"
+      "teavivre"
     ]
   },
   {
-    "id": "puer-shou-menghai-2018",
-    "name": {
-      "primary": "Menghai Shou Pu'er 2018",
-      "alternate": "勐海熟普"
-    },
-    "category": "puer-shou",
-    "category_label": "Pu'er (Shou/Ripe)",
-    "producer": {
-      "name": "Menghai Tea Factory",
-      "history": "The original factory that developed the shou (ripe) pu'er process in the 1970s. Benchmark for the style."
-    },
-    "origin": {
-      "region": "Menghai",
-      "country": "China",
-      "locality": "Yunnan"
-    },
-    "acquisition": {
-      "location": "Online",
-      "year": 2024,
-      "month": 12,
-      "context": null
-    },
-    "caffeine_level": 3,
-    "urgency": "calm",
-    "expiry_estimate": null,
-    "brewing": {
-      "vessel": "gaiwan",
-      "leaf_grams_per_100ml": 7,
-      "rounds": [
-        {
-          "water_temp_c": 100,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 100,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 100,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 100,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 100,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 100,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 100,
-          "steep_time_seconds": 20
-        },
-        {
-          "water_temp_c": 100,
-          "steep_time_seconds": 20
-        }
-      ],
-      "notes": "Rinse twice to wake the leaves. Dark, inky liquor. Smooth and grounding."
-    },
-    "notes": "Ripe pu'er from Menghai — the factory that invented the accelerated\nfermentation process. Earth, dark chocolate, dried dates. Smooth,\nthick mouthfeel with no rough edges. A winter evening tea, meditative\nand warming. Already well-aged enough to drink now without any pile taste.\n",
-    "photo": {
-      "url": "/photos/puer-shou-menghai-2018.jpg",
-      "alt": "Dark compressed shou pu'er brick",
-      "source": null,
-      "is_local": true
-    },
-    "tags": [
-      "chinese-tea",
-      "puer",
-      "yunnan",
-      "evening-tea"
-    ]
-  },
-  {
-    "id": "sencha-asatsuyu-marukyu-koyamaen",
-    "name": {
-      "primary": "Sencha Asatsuyu",
-      "alternate": "朝露",
-      "pronunciation": "A-sa-tsu-yu"
-    },
-    "category": "sencha",
-    "category_label": "Sencha",
-    "producer": {
-      "name": "Marukyu Koyamaen",
-      "history": "Founded 1704 in Uji. One of the most respected tea houses in Japan, seven generations of expertise."
-    },
-    "origin": {
-      "region": "Uji",
-      "country": "Japan",
-      "locality": null
-    },
-    "acquisition": {
-      "location": "Kyoto",
-      "year": 2025,
-      "month": 9,
-      "context": "Honeymoon trip"
-    },
-    "caffeine_level": 3,
-    "urgency": "soon",
-    "expiry_estimate": "~2026.06",
-    "brewing": {
-      "vessel": "kyusu",
-      "leaf_grams_per_100ml": 4,
-      "rounds": [
-        {
-          "water_temp_c": 70,
-          "steep_time_seconds": 60
-        },
-        {
-          "water_temp_c": 70,
-          "steep_time_seconds": 60
-        },
-        {
-          "water_temp_c": 70,
-          "steep_time_seconds": 60
-        }
-      ],
-      "notes": "First steep at 70°C for umami. Second at 80°C for sweetness. Third at 90°C for astringency and finish."
-    },
-    "notes": "Premium sencha from Marukyu Koyamaen. Asatsuyu means \"morning dew\" — apt for\na tea this clean and refreshing. Vegetal sweetness, light marine notes,\nexcellent balance. A reliable choice for afternoon sessions.\n",
-    "photo": {
-      "url": "/photos/sencha-asatsuyu-marukyu-koyamaen.jpg",
-      "alt": "Green packet of Marukyu Koyamaen Asatsuyu sencha",
-      "source": null,
-      "is_local": true
-    },
-    "tags": [
-      "japanese-tea",
-      "uji",
-      "honeymoon-collection"
-    ]
-  },
-  {
-    "id": "sencha-fukamushi-yame",
-    "name": {
-      "primary": "Fukamushi Sencha Yame",
-      "alternate": "深蒸し煎茶",
-      "pronunciation": "Fu-ka-mu-shi"
-    },
-    "category": "sencha-fukamushi",
-    "category_label": "Sencha (Fukamushi)",
-    "producer": {
-      "name": "Yame Tea Cooperative",
-      "history": "Yame region in Fukuoka prefecture, known for premium shaded teas and deep-steamed senchas."
-    },
-    "origin": {
-      "region": "Yame",
-      "country": "Japan",
-      "locality": "Fukuoka"
-    },
-    "acquisition": {
-      "location": "Online (Yunomi)",
-      "year": 2025,
-      "month": 6,
-      "context": null
-    },
-    "caffeine_level": 4,
-    "urgency": "soon",
-    "expiry_estimate": "~2026.03",
-    "brewing": {
-      "vessel": "kyusu",
-      "leaf_grams_per_100ml": 4,
-      "rounds": [
-        {
-          "water_temp_c": 70,
-          "steep_time_seconds": 45
-        },
-        {
-          "water_temp_c": 70,
-          "steep_time_seconds": 45
-        },
-        {
-          "water_temp_c": 70,
-          "steep_time_seconds": 45
-        }
-      ],
-      "notes": "Deep-steamed leaves break down easily. Use a fine mesh kyusu. Shorter steep than regular sencha."
-    },
-    "notes": "Deep-steamed sencha from Yame, Fukuoka. The extended steaming breaks down\nleaf structure, producing a richer, more opaque brew with full body and\nreduced astringency. Sweet, slightly creamy, with a vegetal depth that\nlighter senchas lack. Daily-driver quality.\n",
-    "photo": {
-      "url": "/photos/sencha-fukamushi-yame.jpg",
-      "alt": "Deep green fukamushi sencha leaves, finely broken",
-      "source": null,
-      "is_local": true
-    },
-    "tags": [
-      "japanese-tea",
-      "yame",
-      "daily-drinker"
-    ]
-  },
-  {
-    "id": "tamaryokucha-sonogi",
-    "name": {
-      "primary": "Tamaryokucha Sonogi",
-      "alternate": "玉緑茶",
-      "pronunciation": "Ta-ma-ryo-ku-cha"
-    },
-    "category": "tamaryokucha",
-    "category_label": "Tamaryokucha",
-    "producer": {
-      "name": "Sonogi Tea Farmers",
-      "history": "Sonogi in Nagasaki prefecture. Small-scale production influenced by nearby Chinese tea-making, producing a unique curly-leaf green."
-    },
-    "origin": {
-      "region": "Sonogi",
-      "country": "Japan",
-      "locality": "Nagasaki"
-    },
-    "acquisition": {
-      "location": "Online (Yunomi)",
-      "year": 2025,
-      "month": 5,
-      "context": null
-    },
-    "caffeine_level": 3,
-    "urgency": "soon",
-    "expiry_estimate": "~2026.04",
-    "brewing": {
-      "vessel": "kyusu",
-      "leaf_grams_per_100ml": 4,
-      "rounds": [
-        {
-          "water_temp_c": 70,
-          "steep_time_seconds": 90
-        },
-        {
-          "water_temp_c": 70,
-          "steep_time_seconds": 90
-        },
-        {
-          "water_temp_c": 70,
-          "steep_time_seconds": 90
-        }
-      ],
-      "notes": "Treat like a sencha but with slightly longer steep. The curly leaves need time to unfurl."
-    },
-    "notes": "Tamaryokucha ('curly green tea') from Sonogi — pan-fired rather than\nsteamed, giving it a rounder, slightly sweeter profile than standard\nsencha. The Chinese influence is visible in the curled leaf shape and\nthe toasty-sweet character. An unusual Japanese green worth exploring.\nCurrently in tasting mode — deciding if it earns a permanent spot.\n",
-    "photo": {
-      "url": "/photos/tamaryokucha-sonogi.jpg",
-      "alt": "Curled green tamaryokucha leaves",
-      "source": null,
-      "is_local": true
-    },
-    "tags": [
-      "japanese-tea",
-      "unusual",
-      "nagasaki"
-    ]
-  },
-  {
-    "id": "tieguanyin-jinjiang-yuan",
+    "id": "tieguanyin-jinjiang-yuan-anxi",
     "name": {
       "primary": "Tieguanyin",
-      "alternate": "铁观音",
-      "pronunciation": "Tie-guan-yin"
+      "alternate": "铁观音"
     },
     "category": "oolong",
     "category_label": "Oolong",
     "producer": {
       "name": "Jinjiang Yuan",
-      "history": "Small family producer in Anxi county, Fujian. Three generations of oolong craft."
+      "history": "Chinese tea brand (晋江源茶业, 'Jinjiang Source Tea Company'), based in or near Jinjiang/Anxi, Fujian Province. Anxi County in southern Fujian is the historic birthplace of Tieguanyin and was named the 'Home of Chinese Oolong Tea' by the Ministry of Agriculture in 1995. Producer details limited — Francesco can confirm packaging notes if available. The Tieguanyin cultivar is grown across Anxi (Inner Anxi at 800-1000m+ for premium grades; Outer Anxi at lower altitudes for everyday grades)."
     },
     "origin": {
       "region": "Anxi",
       "country": "China",
-      "locality": "Fujian"
+      "locality": "Fujian province"
     },
     "acquisition": {
-      "location": "Online",
+      "location": "Japan",
       "year": 2025,
-      "month": 3,
-      "context": null
+      "month": null,
+      "context": "Acquired during 2025 Japan trip"
     },
     "caffeine_level": 3,
     "urgency": "stable",
-    "expiry_estimate": "~2027.01",
+    "expiry_estimate": null,
     "brewing": {
       "vessel": "gaiwan",
-      "leaf_grams_per_100ml": 7,
+      "leaf_grams_per_100ml": 6,
       "rounds": [
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 15
         },
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 15
         },
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 15
         },
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 15
         },
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 15
         },
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 15
+        },
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 15
         }
       ],
-      "notes": "Gongfu style. Short steeps, many rounds. The tea evolves beautifully across infusions — floral to mineral to sweet."
+      "notes": "Gongfu schedule for qingxiang-style (lightly oxidized 'green' Tieguanyin): 95°C, flash steeps. Rinse first. First infusion: 95°C, 15s. Then 25s, 35s, 45s, 55s, 75s, 85s. For traditional roasted (nongxiang) style, use 100°C and similar timing. The packaging style determines: tightly rolled jade-green pearls = qingxiang; darker, twisted leaf = nongxiang."
     },
-    "notes": "Classic Tieguanyin from Anxi, lightly oxidized (jade style). Orchid\nfragrance, clean floral sweetness, with a lingering mineral finish.\nThe rolled leaves unfurl slowly across steeps, releasing new dimensions.\nA great introduction to Chinese oolong tradition.\n",
-    "photo": {
-      "url": "/photos/tieguanyin-jinjiang-yuan.jpg",
-      "alt": "Tightly rolled green Tieguanyin oolong balls",
-      "source": null,
-      "is_local": true
-    },
+    "notes": "Anxi Tieguanyin acquired in Japan (likely from a Chinese tea retailer\nor Japanese tea shop with Chinese selection). Style (qingxiang/light\nvs. nongxiang/roasted) not specified — Francesco's note 'gongfu 95°C\nflash' suggests qingxiang style. Oolongs are semi-oxidized and\ngenerally stable; qingxiang versions degrade faster than roasted\nversions but still keep well for many months when sealed.\n",
     "tags": [
       "chinese-tea",
       "oolong",
-      "gongfu",
-      "anxi"
+      "tie-guan-yin",
+      "anxi",
+      "fujian",
+      "gongfu"
     ]
   },
   {
-    "id": "turkish-black-rize",
+    "id": "uji-no-mukashi-nakamura-tokichi",
     "name": {
-      "primary": "Rize Çay",
-      "alternate": null,
-      "pronunciation": "Ri-zeh Chai"
+      "primary": "Matcha 'Uji no Mukashi'",
+      "alternate": "宇治の昔"
     },
-    "category": "turkish",
-    "category_label": "Turkish Black",
+    "category": "matcha-ceremonial",
+    "category_label": "Matcha (Ceremonial)",
     "producer": {
-      "name": "Çaykur",
-      "history": "State tea enterprise of Turkey, founded 1947. Sources from the steep hillside gardens of Rize province on the Black Sea coast."
+      "name": "Nakamura Tokichi Honten",
+      "history": "Established in Uji in 1854. Main store designated as Important Cultural Landscape (Meiji-era tea merchant architecture). 'Uji no Mukashi' (宇治の昔, 'Old Days of Uji') sits one tier below Hatsu no Mukashi in the Mukashi line, but is still a top-shelf ceremonial matcha. Like all tencha-based matchas from Nakamura Tokichi, leaves are stone-milled at slow speed to avoid heat-induced flavor loss."
     },
     "origin": {
-      "region": "Rize",
-      "country": "Turkey",
-      "locality": "Black Sea coast"
+      "region": "Uji",
+      "country": "Japan",
+      "locality": "Kyoto prefecture"
     },
     "acquisition": {
-      "location": "Istanbul",
-      "year": 2024,
-      "month": 8,
-      "context": "Holiday"
+      "location": "Uji, Kyoto",
+      "year": 2025,
+      "month": 9,
+      "context": "Honeymoon trip"
     },
-    "caffeine_level": 3,
-    "urgency": "stable",
-    "expiry_estimate": "~2027.01",
+    "caffeine_level": 5,
+    "urgency": "now",
+    "expiry_estimate": "2026.03",
     "brewing": {
-      "vessel": "çaydanlık (double teapot)",
+      "vessel": "chawan",
+      "leaf_grams_per_100ml": 3,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 0
+        }
+      ],
+      "notes": "Versatile matcha — works well both as usucha and koicha. Usucha: 2g + 70ml water at 80°C, whisked. Koicha: 4g + 30ml at 80°C, kneaded. Sift before whisking. Same caveats as Hatsu no Mukashi: 6+ months from canning, finish in 2-3 weeks once opened, refrigerate sealed."
+    },
+    "notes": "Ceremonial matcha from Nakamura Tokichi, one tier below Hatsu no\nMukashi but still excellent. Slightly more accessible price point\nwhile maintaining the umami-forward, low-bitterness Nakamura\nsignature. Use this for daily ceremonial-style preparation while\nsaving Hatsu no Mukashi for special occasions — but consume both\npromptly given honeymoon-acquisition timing.\n",
+    "tags": [
+      "japanese-tea",
+      "matcha",
+      "uji",
+      "ceremonial",
+      "premium",
+      "honeymoon-collection",
+      "historic-producer"
+    ]
+  },
+  {
+    "id": "uji-no-omatcha-anonymous",
+    "name": {
+      "primary": "Uji no Omatcha",
+      "alternate": "宇治のお抹茶"
+    },
+    "category": "matcha-everyday",
+    "category_label": "Matcha (everyday-grade)",
+    "producer": {
+      "name": "Unknown",
+      "history": "Producer not identified from packaging. Sold as a generic 'Uji matcha' SKU — typical of small Uji tea shops that distribute everyday-grade matcha in plain canisters without prominent branding. Uji (Kyoto prefecture) has been Japan's most prestigious matcha-producing region for centuries, but not every tea sold there is premium ceremonial grade — many shops offer affordable everyday matcha for daily use, lattes, or culinary purposes."
+    },
+    "origin": {
+      "region": "Uji",
+      "country": "Japan",
+      "locality": "Kyoto prefecture"
+    },
+    "acquisition": {
+      "location": "Uji, Kyoto",
+      "year": 2026,
+      "month": 9,
+      "context": "Kyushu trip"
+    },
+    "caffeine_level": 4,
+    "urgency": "soon",
+    "expiry_estimate": "2027.02",
+    "brewing": {
+      "vessel": "chawan",
+      "leaf_grams_per_100ml": 3,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 0
+        }
+      ],
+      "notes": "Daily-use matcha — works well for usucha (2g + 70ml at 80°C, whisked) but its character is more straightforward than premium ceremonial grades; fine for matcha lattes, daily preparation, or as the user note suggests, even Keurig-style brewing. Sift before whisking. Once opened, finish in 2-3 weeks; refrigerate sealed."
+    },
+    "notes": "Anonymous everyday-grade Uji matcha. Per Francesco's own consumption\nplan: 'if giving away, do it soon; if keeping, use as daily (Keurig).'\nThis positions it as an everyday/utility matcha rather than a special\noccasion piece — perfect for warming up with a quick bowl during the\nworkday or for matcha latte preparation. The 6+ months from honeymoon\nacquisition mean the powder is past peak; consume promptly.\n",
+    "tags": [
+      "japanese-tea",
+      "matcha",
+      "uji",
+      "everyday",
+      "daily-use",
+      "honeymoon-collection"
+    ]
+  },
+  {
+    "id": "vahdam-mint-melody",
+    "name": {
+      "primary": "Vahdam Mint Melody Green Tea",
+      "alternate": null
+    },
+    "category": "other",
+    "category_label": "Other",
+    "producer": {
+      "name": "Vahdam India",
+      "history": "Vahdam India is a Delhi-based direct-to-consumer tea brand founded in 2015 by Bala Sarda. They source from over 150 plantations across India's main tea regions (Darjeeling, Assam, Nilgiri, Kangra, Sikkim) and ship globally. Certified carbon-neutral and plastic-neutral, they donate 1% of revenue to tea-grower children's education through their 'Teach Me' initiative. Mint Melody is one of their flagship green-tea blends: high-grown Himalayan green tea (50%) + spearmint (25%) + peppermint (25%)."
+    },
+    "origin": {
+      "region": "Himalayan foothills (green tea base)",
+      "country": "India",
+      "locality": "Multi-region; high-grown"
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 2,
+    "urgency": "soon",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1,
+      "rounds": [
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 240
+        }
+      ],
+      "notes": "Per Vahdam: 1 tea bag (or 2g loose) per 200ml, 3-5 minutes. The mint leaves are tolerant of slightly hotter water than pure green tea, so 80-90°C works (vs. the 70-75°C ideal for premium pure green tea). Can be enjoyed hot or iced; especially refreshing as a cold brew (4-6 hours in fridge with cold water, 1 bag/200ml). Single infusion in tea-bag format; loose-leaf tolerates a second steep."
+    },
+    "notes": "Indian high-grown green tea blended with both spearmint (sweeter,\nrounded) and peppermint (sharper, more cooling). The 50/50 mint\nratio is generous — this is firmly a mint-forward blend, not just\na 'hint of mint.' Pleasant cold-brewed; works as an iced tea base.\n\nAvailable formats: loose-leaf (3.53oz / 100g resealable pouch),\npyramid tea bags (15ct or 30ct or 100ct, plant-based or nylon).\nVahdam claims 3-year shelf life from harvest date. Mint volatiles\nfade over months — drink within ~12 months for best aroma.\n",
+    "tags": [
+      "indian-tea",
+      "vahdam",
+      "flavored-green",
+      "mint",
+      "peppermint",
+      "spearmint",
+      "himalayan",
+      "commercial"
+    ]
+  },
+  {
+    "id": "white-peony-bai-mu-dan-teavivre",
+    "name": {
+      "primary": "White Peony (Bai Mu Dan) Tea",
+      "alternate": "白牡丹"
+    },
+    "category": "white-chinese",
+    "category_label": "White",
+    "producer": {
+      "name": "TeaVivre",
+      "history": "Sourced from the Nanguang Tea Garden west of Mt. Taimu in Panxi, Fuding, Fujian (600-900m elevation, 80% forested). Made from Fuding Dabaihao cultivar (national tea plant variety since 1985). Lightly oxidized white tea, processed via natural withering — same technique as Silver Needle, but using one bud + opened leaves rather than buds only. White Peony was first produced in the Shuiji area of Zhenghe county, Fujian, in the 1870s."
+    },
+    "origin": {
+      "region": "Fujian",
+      "country": "China",
+      "locality": "Panxi, Fuding"
+    },
+    "acquisition": {
+      "location": "TeaVivre (online)",
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 2,
+    "urgency": "calm",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "gaiwan",
       "leaf_grams_per_100ml": 5,
       "rounds": [
         {
-          "water_temp_c": 100,
-          "steep_time_seconds": 300
+          "water_temp_c": 85,
+          "steep_time_seconds": 25
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 25
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 25
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 25
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 25
         }
       ],
-      "notes": "Traditional double-teapot method: strong concentrate on top, diluted with water from below. Served in tulip glasses."
+      "notes": "Gongfu schedule (110ml gaiwan, 5g): rinse, 25s, 45s, 70s, 90s, 150s. Western: 2g per 355ml at 85°C, 5-8 minutes. Some sources recommend slightly hotter water (90°C) for entry-level Bai Mu Dan; experiment per palate."
     },
-    "notes": "Turkish black tea from Rize, the heartland of Turkish tea culture.\nStrong, tannic, meant to be sipped throughout the day from small tulip\nglasses. Not subtle — bold and functional. Pairs with sugar cubes\nand conversation. A cultural experience more than a connoisseur tea.\n",
-    "photo": {
-      "url": "/photos/turkish-black-rize.jpg",
-      "alt": "Tulip glass of dark Turkish tea with sugar cubes",
-      "source": null,
-      "is_local": true
-    },
+    "notes": "Entry-level white tea — a balance between the fresh delicacy of Silver\nNeedle and the fuller character of older white tea grades. Apricot-yellow\nliquor when brewed, with a soft, mellow profile, light floral notes,\nand the characteristic pekoe/hay scent of Fuding white teas. White tea\nages well: aged Bai Mu Dan (3+ years) develops deeper, sweeter, more\ncomplex notes — like aged pu-erh, value increases with proper storage.\n",
     "tags": [
-      "turkish-tea",
-      "daily-drinker",
-      "cultural"
+      "chinese-tea",
+      "fujian",
+      "white-tea",
+      "bai-mu-dan",
+      "fuding",
+      "ages-well",
+      "teavivre"
+    ]
+  },
+  {
+    "id": "yamamotoyama-genmaicha",
+    "name": {
+      "primary": "Yamamotoyama Genmaicha",
+      "alternate": "山本山玄米茶"
+    },
+    "category": "genmaicha",
+    "category_label": "Genmaicha (green tea with roasted rice)",
+    "producer": {
+      "name": "Yamamotoyama",
+      "history": "Japanese tea house founded in 1690 in Nihonbashi, Edo (modern Tokyo) by Kahei Yamamoto. One of Japan's oldest and most established tea companies. Their genmaicha combines steamed green tea leaves with roasted brown rice (some grains pop into puffy white kernels during roasting), historically a poor-person's tea that has become a beloved everyday Japanese tea worldwide."
+    },
+    "origin": {
+      "region": "Japan (multi-region)",
+      "country": "Japan",
+      "locality": "Domestic Japanese tea leaves + roasted rice"
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 2,
+    "urgency": "stable",
+    "expiry_estimate": "2025.09",
+    "brewing": {
+      "vessel": "kyusu",
+      "leaf_grams_per_100ml": 1.5,
+      "rounds": [
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 60
+        }
+      ],
+      "notes": "Per Yamamotoyama: 3-5g per 200-240ml at 80-90°C, 30s-1min. Genmaicha is more forgiving on temperature than premium sencha; the roasted rice tolerates and benefits from heat. Second steep retains the rice toastiness even as the green tea fades. Loose-leaf gives a much better extraction than tea bags."
+    },
+    "notes": "Genmaicha = green tea + roasted rice. Toasty, comforting, vaguely\npopcorn-like aroma; lower caffeine than straight sencha because\nthe rice is non-caffeinated and dilutes the leaf ratio. Yamamotoyama's\nversion is a competent everyday genmaicha — not a specialty\npreparation, but reliable and widely available. Pairs well with\nJapanese rice dishes, tempura, and savory snacks.\n",
+    "tags": [
+      "japanese-tea",
+      "genmaicha",
+      "roasted-rice",
+      "daily-driver",
+      "commercial"
+    ]
+  },
+  {
+    "id": "yamamotoyama-hojicha",
+    "name": {
+      "primary": "Yamamotoyama Hojicha",
+      "alternate": "山本山ほうじ茶"
+    },
+    "category": "hojicha",
+    "category_label": "Hojicha (roasted green tea)",
+    "producer": {
+      "name": "Yamamotoyama",
+      "history": "Japanese tea house founded in 1690 in Nihonbashi, Edo (modern Tokyo) by Kahei Yamamoto. One of Japan's oldest and most established tea companies (335+ years), now operating as Yamamotoyama USA in addition to its Japanese operations. Their hojicha blends two roasting intensities: lightly roasted leaves for a bright top note and deeply roasted leaves for nutty depth. Made from 100% domestically grown Japanese tea leaves."
+    },
+    "origin": {
+      "region": "Japan (multi-region)",
+      "country": "Japan",
+      "locality": "Domestic Japanese tea leaves"
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 1,
+    "urgency": "stable",
+    "expiry_estimate": "2025.09",
+    "brewing": {
+      "vessel": "teapot",
+      "leaf_grams_per_100ml": 1.5,
+      "rounds": [
+        {
+          "water_temp_c": 90,
+          "steep_time_seconds": 45
+        },
+        {
+          "water_temp_c": 90,
+          "steep_time_seconds": 45
+        }
+      ],
+      "notes": "Hojicha tolerates higher water temperatures than most green teas because the roasting has driven off astringent compounds. Per Yamamotoyama's instructions: 3-5g per 200-240ml at 80-90°C, 30s-1min. Second infusion will be lighter but still aromatic. Loose-leaf preferred over teabags; with bags use 30s-1min boiling water. Excellent cold-brewed (4+ hours in fridge)."
+    },
+    "notes": "Roasted (hojicha) green tea — lower caffeine than steamed green\nteas thanks to the roasting process. Aroma profile: toasty,\ncaramelized, nutty, slightly woody. Easy on the stomach, suitable\nfor evening drinking and after meals. Yamamotoyama's standard\nhojicha is a reliable everyday roaster; nothing exceptional but\nconsistently well-made by a 300+ year house.\n",
+    "tags": [
+      "japanese-tea",
+      "hojicha",
+      "roasted",
+      "daily-driver",
+      "low-caffeine",
+      "commercial"
+    ]
+  },
+  {
+    "id": "yame-imafuku-fukamushi-cha-haraguchien",
+    "name": {
+      "primary": "Yame Imafuku Fukamushi-cha",
+      "alternate": "八女今福 深むし茶"
+    },
+    "category": "sencha-fukamushi",
+    "category_label": "Sencha (deep-steamed)",
+    "producer": {
+      "name": "Haraguchien",
+      "history": "Fukuoka-based tea wholesaler (茶問屋) founded in 1936 (Showa 11) by a founder originally from Hoshino Village in Yame. Operates as 'Haraguchien Fusōan' (原口園扶桑庵), with shops at Hakata Station, Fukuoka Airport, and major department stores. Vertically integrated: sources from tea gardens, runs its own hi-ire (firing) factory in Yame, and bags in-house. This SKU uses leaves from the Imafuku Tea Cooperative (今福製茶協同組合) in Yame, processed and finished by Haraguchien — a typical Yame fukamushi-cha collaboration between a producing cooperative and a finishing wholesaler."
+    },
+    "origin": {
+      "region": "Yame",
+      "country": "Japan",
+      "locality": "Imafuku district, Fukuoka prefecture"
+    },
+    "acquisition": {
+      "location": "Fukuoka, Japan",
+      "year": 2026,
+      "month": 3,
+      "context": "3GPP RAN#111 work trip"
+    },
+    "caffeine_level": 3,
+    "urgency": "calm",
+    "expiry_estimate": "2027.02",
+    "brewing": {
+      "vessel": "kyusu",
+      "leaf_grams_per_100ml": 5,
+      "rounds": [
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 30
+        },
+        {
+          "water_temp_c": 70,
+          "steep_time_seconds": 30
+        }
+      ],
+      "notes": "Fukamushi (deep-steamed) schedule: 70°C, 30s first; 75°C, 10s second; 80°C, 30s third. Fukamushi-cha needs shorter first-infusion time than asamushi because the deep-steaming has already broken the leaf cells and extraction is fast. Liquor will be cloudy/opaque green — that's normal for fukamushi (vs. the limpid clarity of asamushi). Use a kyusu with a fine mesh filter, since fine particles are part of the style."
+    },
+    "notes": "Yame deep-steamed sencha. Fukamushi-cha receives 60-90+ seconds of\nsteaming (vs. ~30s for asamushi), which breaks down the leaf\nstructure: shorter brewing time, cloudier/more saturated liquor,\nrounder and sweeter on the palate, less astringent than asamushi.\nYame is one of the premier fukamushi-cha regions alongside Kakegawa\nin Shizuoka. Haraguchien's signature 'gōgumi' (合組, blending)\ntechnique aims to keep the flavor consistent year-over-year despite\nnatural harvest variation.\n",
+    "tags": [
+      "japanese-tea",
+      "sencha",
+      "fukamushi",
+      "yame",
+      "fukuoka",
+      "daily-driver",
+      "kyushu-collection"
+    ]
+  },
+  {
+    "id": "yame-matcha-culinary",
+    "name": {
+      "primary": "Yame Matcha 300g",
+      "alternate": "八女抹茶"
+    },
+    "category": "matcha-culinary",
+    "category_label": "Matcha (culinary grade)",
+    "producer": {
+      "name": "Unknown (Yame)",
+      "history": "Producer not specified. Sourced from the Yame region of Fukuoka prefecture, one of Japan's premier matcha-producing areas. Yame culinary-grade matcha is widely used by Kyushu cafés and confectioners for lattes, sweets, and baking — coarser grind and more astringent than ceremonial grades, but stronger flavor that holds up against milk and sugar."
+    },
+    "origin": {
+      "region": "Yame",
+      "country": "Japan",
+      "locality": "Fukuoka prefecture"
+    },
+    "acquisition": {
+      "location": "Fukuoka, Japan",
+      "year": 2026,
+      "month": 3,
+      "context": "3GPP RAN#111 work trip"
+    },
+    "caffeine_level": 4,
+    "urgency": "calm",
+    "expiry_estimate": "2027.01",
+    "brewing": {
+      "vessel": "any",
+      "leaf_grams_per_100ml": 1,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 0
+        }
+      ],
+      "notes": "Culinary use — not designed for traditional whisking. For matcha latte: 1 tsp (~2g) sifted into a small amount of warm water (60-70°C), whisked into a paste, then add steamed milk. For baking: substitute for cocoa powder ratio in recipes. Storage: refrigerate the bulk bag, transfer small amounts to an airtight container for daily use to limit oxidation. 300g is a lot — open only when ready to use regularly."
+    },
+    "notes": "Bulk culinary-grade matcha (300g pouch). Not for ceremonial preparation —\nthe grind is coarser and the flavor is intentionally stronger and more\nastringent to cut through milk, sugar, and dairy fats. Ideal for\nmatcha lattes, ice cream, baking, smoothies. Once opened, vacuum-seal\nsmall portions or refrigerate in a tight container.\n",
+    "tags": [
+      "japanese-tea",
+      "matcha",
+      "culinary",
+      "yame",
+      "fukuoka",
+      "bulk",
+      "kyushu-collection"
     ]
   }
 ]

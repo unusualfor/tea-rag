@@ -35,6 +35,7 @@ export type TeaCategory =
   // Other regional
   | "turkish"
   | "moroccan-mint"
+  | "wakocha"
   // Non-tea
   | "tisane"
   | "herbal"

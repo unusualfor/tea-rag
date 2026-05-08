@@ -1,0 +1,62 @@
+id: jasmine-dragon-pearls-green-tea-teavivre
+name:
+  primary: Jasmine Dragon Pearls Green Tea
+  alternate: 茉莉龙珠
+category: green-chinese
+category_label: Chinese Green
+producer:
+  name: TeaVivre
+  history: Online Chinese tea retailer founded in 2011, sourcing directly from tea gardens. This blend uses high-mountain
+    Jinggu Dabai Cha leaves from the Wen Shan tea garden in Jinggu County, Yunnan (~1800m altitude), hand-rolled into pearls
+    and scented with jasmine flowers from Hengxian, Guangxi (China's primary jasmine production region). Three rounds of scenting
+    plus a final 'tihua' top-scenting (三窨一提).
+origin:
+  region: Yunnan / Guangxi
+  country: China
+  locality: Jinggu (tea base), Hengxian (jasmine)
+acquisition:
+  location: TeaVivre (online)
+  year: null
+  month: null
+  context: null
+caffeine_level: 3
+urgency: soon
+expiry_estimate: '2028.05'
+brewing:
+  vessel: gaiwan
+  leaf_grams_per_100ml: 4
+  rounds:
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  - water_temp_c: 85
+    steep_time_seconds: 40
+  notes: 'Gongfu schedule (110ml gaiwan, 4g): rinse, 40s, 40s, 40s, 40s, 50s, 60s, 80s, 100s, 120s, 150s. Western: 3g per
+    250ml at 85°C, 3-5 minutes.'
+notes: |
+  Yunnan-base jasmine pearls. Sweeter and more delicate than Fujian-base
+  versions, with an intense jasmine fragrance and lingering aftertaste.
+  Brews many infusions before fading. Distinguishable from the Long Zhu
+  variant (Fujian-base) by the deeper, fuller tea body underneath the
+  jasmine layer.
+tags:
+- chinese-tea
+- yunnan
+- scented-tea
+- jasmine
+- teavivre

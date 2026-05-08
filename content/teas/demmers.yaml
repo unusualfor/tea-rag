@@ -1,0 +1,43 @@
+id: demmers
+name:
+  primary: Waldkräutermischung
+  alternate: Kräuter Tee
+category: herbal
+category_label: Herbal
+producer:
+  name: Demmers Teehaus
+  history: null
+origin:
+  region: Austria
+  country: Austria
+  locality: null
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 1
+urgency: stable
+expiry_estimate: null
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 3
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 420
+  notes: Full boiling water recommended for herbal blends.
+notes: |
+  Austrian herbal infusion blend ("forest herb mix") containing assorted
+  herbs, flowers and berries. Naturally caffeine-free and intended for
+  relaxing evening consumption. The packaging has the reassuring aesthetic
+  of a wise alpine grandmother who definitely knows which mushroom not to eat.
+photo:
+  url: /photos/demmers-teehaus-waldkraeutermischung.jpg
+  alt: Paper bag of Demmers Teehaus Waldkräutermischung herbal tea
+  source: null
+  is_local: true
+tags:
+- herbal-tea
+- caffeine-free
+- austrian-tea
+- evening-tea

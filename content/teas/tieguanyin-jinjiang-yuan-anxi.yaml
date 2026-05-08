@@ -1,0 +1,60 @@
+id: tieguanyin-jinjiang-yuan-anxi
+name:
+  primary: Tieguanyin
+  alternate: 铁观音
+category: oolong
+category_label: Oolong
+producer:
+  name: Jinjiang Yuan
+  history: Chinese tea brand (晋江源茶业, 'Jinjiang Source Tea Company'), based in or near Jinjiang/Anxi, Fujian Province. Anxi
+    County in southern Fujian is the historic birthplace of Tieguanyin and was named the 'Home of Chinese Oolong Tea' by the
+    Ministry of Agriculture in 1995. Producer details limited — Francesco can confirm packaging notes if available. The Tieguanyin
+    cultivar is grown across Anxi (Inner Anxi at 800-1000m+ for premium grades; Outer Anxi at lower altitudes for everyday
+    grades).
+origin:
+  region: Anxi
+  country: China
+  locality: Fujian province
+acquisition:
+  location: Japan
+  year: 2025
+  month: null
+  context: Acquired during 2025 Japan trip
+caffeine_level: 3
+urgency: stable
+expiry_estimate: null
+brewing:
+  vessel: gaiwan
+  leaf_grams_per_100ml: 6
+  rounds:
+  - water_temp_c: 95
+    steep_time_seconds: 15
+  - water_temp_c: 95
+    steep_time_seconds: 15
+  - water_temp_c: 95
+    steep_time_seconds: 15
+  - water_temp_c: 95
+    steep_time_seconds: 15
+  - water_temp_c: 95
+    steep_time_seconds: 15
+  - water_temp_c: 95
+    steep_time_seconds: 15
+  - water_temp_c: 95
+    steep_time_seconds: 15
+  notes: 'Gongfu schedule for qingxiang-style (lightly oxidized ''green'' Tieguanyin): 95°C, flash steeps. Rinse first. First
+    infusion: 95°C, 15s. Then 25s, 35s, 45s, 55s, 75s, 85s. For traditional roasted (nongxiang) style, use 100°C and similar
+    timing. The packaging style determines: tightly rolled jade-green pearls = qingxiang; darker, twisted leaf = nongxiang.'
+notes: |
+  Anxi Tieguanyin acquired in Japan (likely from a Chinese tea retailer
+  or Japanese tea shop with Chinese selection). Style (qingxiang/light
+  vs. nongxiang/roasted) not specified — Francesco's note 'gongfu 95°C
+  flash' suggests qingxiang style. Oolongs are semi-oxidized and
+  generally stable; qingxiang versions degrade faster than roasted
+  versions but still keep well for many months when sealed.
+tags:
+- chinese-tea
+- oolong
+- tie-guan-yin
+- anxi
+- fujian
+- gongfu

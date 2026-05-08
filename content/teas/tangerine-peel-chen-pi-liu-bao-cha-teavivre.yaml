@@ -1,0 +1,72 @@
+id: tangerine-peel-chen-pi-liu-bao-cha-teavivre
+name:
+  primary: Tangerine Peel (Chen Pi) Liu Bao Cha Dark Tea
+  alternate: 陈皮六堡茶
+category: puer-shou
+category_label: Shou Pu-erh
+producer:
+  name: TeaVivre
+  history: Blend of 2013 Liu Bao tea (Wuzhou, Guangxi) with aged Xinhui mandarin peel (chenpi) from Guangdong. Liu Bao is
+    a fermented dark tea named after Liu Bao Xiang in Guangxi, with pile-fermentation processing similar to ripe pu-erh. Xinhui
+    is the most famous origin for chenpi — Citrus reticulata Blanco cv. Chachiensis — valued in Traditional Chinese Medicine
+    for digestive properties. The combination is a classic post-meal tea in southern China.
+origin:
+  region: Guangxi / Guangdong
+  country: China
+  locality: Wuzhou (Liu Bao base), Xinhui (chenpi)
+acquisition:
+  location: TeaVivre (online)
+  year: null
+  month: null
+  context: null
+caffeine_level: 2
+urgency: stable
+expiry_estimate: null
+brewing:
+  vessel: gaiwan
+  leaf_grams_per_100ml: 7
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 5
+  - water_temp_c: 100
+    steep_time_seconds: 5
+  - water_temp_c: 100
+    steep_time_seconds: 5
+  - water_temp_c: 100
+    steep_time_seconds: 5
+  - water_temp_c: 100
+    steep_time_seconds: 5
+  - water_temp_c: 100
+    steep_time_seconds: 5
+  - water_temp_c: 100
+    steep_time_seconds: 5
+  - water_temp_c: 100
+    steep_time_seconds: 5
+  - water_temp_c: 100
+    steep_time_seconds: 5
+  - water_temp_c: 100
+    steep_time_seconds: 5
+  - water_temp_c: 100
+    steep_time_seconds: 5
+  - water_temp_c: 100
+    steep_time_seconds: 5
+  notes: 'APPROXIMATED from TeaVivre''s Bing Lang Xiang Liu Bao Cha 2014 (closest match — same producer, same category, same
+    vintage range). Gongfu schedule (110ml gaiwan, 8g): rinse, 5s, 5s, 10s, 10s, 20s, 20s, 30s, 40s, 50s, 70s, 90s, 120s.
+    Western: 4g per 355ml at 100°C, 5-8 minutes. Always rinse first to wake the leaf; use full-boil water for proper extraction.'
+notes: |
+  Aged dark tea (heicha) blended with chenpi. Years of fermentation
+  give the Liu Bao base a deep earthy/woody profile; the aged Xinhui
+  peel adds a bright tangy citrus layer that balances the earthiness
+  with a sweet aftertaste. Mellower than ripe pu-erh — gentler on the
+  stomach. Improves with further aging; no urgency to consume quickly.
+  Excellent autumn/winter tea and traditional digestive after heavy meals.
+tags:
+- chinese-tea
+- guangxi
+- dark-tea
+- hei-cha
+- liu-bao
+- aged
+- scented-with-peel
+- ages-well
+- teavivre

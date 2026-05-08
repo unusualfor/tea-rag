@@ -1,0 +1,48 @@
+id: canopy-hilton-osaka-original-blend
+name:
+  primary: Canopy by Hilton Osaka Umeda — The Original Blend Tea
+  alternate: null
+category: other
+category_label: Other
+producer:
+  name: Canopy by Hilton Osaka Umeda
+  history: 'Hotel-exclusive blend from Canopy by Hilton Osaka Umeda, located in the Grand Green Osaka complex next to Umekita
+    Park near Osaka Station. The blend is described on its enclosed card as ''inspired by the beautiful scenery of Umekita
+    Park'': a sophisticated mix of black tea (subtly infused with grape aroma), Japanese green tea, and violet petals. Hotel-branded
+    souvenir; the actual tea blender is not credited.'
+origin:
+  region: Osaka
+  country: Japan
+  locality: Umeda district
+acquisition:
+  location: Osaka, Japan
+  year: 2025
+  month: null
+  context: Hotel souvenir during Osaka stay
+caffeine_level: 2
+urgency: stable
+expiry_estimate: ~2026.01
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1
+  rounds:
+  - water_temp_c: 95
+    steep_time_seconds: 240
+  notes: 'Western-style brewing (the natural fit for a flavored blend): ~3g per 250ml at 95°C, 3-5 minutes. Black tea base
+    sets the temperature; the green tea component is added to the blend in proportion that doesn''t require lower temp. Single
+    infusion — flavored blends with petals and aromatics generally don''t re-steep meaningfully.'
+notes: |
+  Hotel souvenir blend. Sophisticated marketing premise — black tea
+  with grape aroma + Japanese green tea + violet petals, intended to
+  evoke the scenery of Umekita Park. Not a traditional category,
+  closer to a Western-style aromatic blend than a Japanese tea.
+  Stable shelf life: dried petals and aromatic blends keep well for
+  many months sealed. Probably best as an afternoon/casual tea or
+  conversation piece rather than a serious tasting tea.
+tags:
+- japanese-tea
+- blended-tea
+- flavored
+- souvenir
+- hotel-blend
+- osaka

@@ -1,0 +1,49 @@
+id: harrods-no-16-afternoon-ceylon
+name:
+  primary: Harrods No. 16 Afternoon Ceylon
+  alternate: null
+category: ceylon
+category_label: Ceylon
+producer:
+  name: Harrods
+  history: 'Harrods is a luxury department store in Knightsbridge, London, founded in 1849 by Charles Henry Harrod. The Harrods
+    tea range is one of its iconic food-hall offerings, with each blend assigned a numbered identifier. No. 16 Afternoon Ceylon
+    is positioned as a single-origin afternoon tea: ''a single origin tea from the pristine mountains of Sri Lanka,'' marketed
+    as light and refreshing for daytime drinking.'
+origin:
+  region: Sri Lanka (highlands)
+  country: Sri Lanka
+  locality: Pristine mountains (specific estate not disclosed)
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 3
+urgency: stable
+expiry_estimate: '2025.11'
+brewing:
+  vessel: teapot
+  leaf_grams_per_100ml: 1.5
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 240
+  notes: 'Western brewing: 1 tsp per 250ml boiling water, 3-5 minutes. Per Harrods: also excellent iced — brew per instructions,
+    add honey to taste, cool to room temperature, pour over ice. Single-origin Ceylon doesn''t take milk as well as breakfast
+    blends; it''s best appreciated black with a slice of lemon.'
+notes: |
+  Single-origin highland Ceylon, positioned as an 'afternoon' tea
+  (lighter and brighter than morning breakfast blends). Sweet amber
+  liquor with citrus tints; characteristic Ceylon brisk-but-not-tannic
+  profile. Marketed for use with afternoon-tea service.
+
+  Available format: 125g loose-leaf tin caddy (and likely 50-bag
+  tea-bag tin). Black tea — stable shelf life.
+tags:
+- british-blend
+- harrods
+- ceylon
+- single-origin
+- sri-lanka
+- afternoon-tea
+- luxury-souvenir

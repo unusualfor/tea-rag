@@ -1,0 +1,57 @@
+id: satsuki-tsuyu-kusano-seichaen
+name:
+  primary: Satsuki Tsuyu
+  alternate: さつき露
+category: tamaryokucha
+category_label: Tamaryokucha (curled green)
+producer:
+  name: Kusano Seichaen
+  history: Tea producer and shop in Ureshino Onsen, Saga prefecture (Kyushu). 'Satsuki Tsuyu' (さつき露, 'May Dew') is one of
+    their signature tamaryokucha products, marketed under the regional moniker 'Yushuku Meicha' (湯宿銘茶, 'famous tea of the
+    hot-spring inn town' — Yushuku being a poetic reference to Ureshino's onsen-town identity). Kusano's 'Tsuyukabuse' tea
+    has won the Fine Product Award at the National Japanese Tea Competition. Ureshino is one of the few Japanese regions still
+    producing tamaryokucha at scale — a curled-leaf style predating the modern needle-shaped sencha.
+origin:
+  region: Ureshino
+  country: Japan
+  locality: Saga prefecture
+acquisition:
+  location: Ureshino, Saga, Japan
+  year: 2026
+  month: 3
+  context: 3GPP RAN#111 work trip
+caffeine_level: 3
+urgency: calm
+expiry_estimate: '2027.03'
+brewing:
+  vessel: kyusu
+  leaf_grams_per_100ml: 5
+  rounds:
+  - water_temp_c: 75
+    steep_time_seconds: 60
+  - water_temp_c: 75
+    steep_time_seconds: 60
+  - water_temp_c: 75
+    steep_time_seconds: 60
+  notes: 'Tamaryokucha schedule: 75°C, 60s first; 80°C, 15s second; 80°C, 45s third. Tamaryokucha tolerates slightly hotter
+    water than premium sencha — the curled leaves open more slowly. Tends to give a richer, rounder profile than needle-rolled
+    sencha; less astringent.'
+notes: |
+  Ureshino-style tamaryokucha — leaves curled into comma shapes (no
+  final rolling step), giving a softer, rounder, less astringent
+  profile than standard sencha. Buttery, marine, vegetal notes are
+  common. Tamaryokucha is more forgiving and shelf-stable than
+  premium sencha, which is why it falls in the 'calma' urgency tier
+  even though it's a green tea.
+
+  Note: this entry replaces the previous 'yushuku-meicha-kusano-seichaen'
+  file. After photo inspection, the SKU name on the packaging is
+  'Satsuki Tsuyu' and 'Yushuku Meicha' is the regional brand label,
+  not the product name itself.
+tags:
+- japanese-tea
+- tamaryokucha
+- saga
+- ureshino
+- yushuku-meicha
+- kyushu-collection

@@ -1,0 +1,51 @@
+id: hatsu-no-mukashi-nakamura-tokichi
+name:
+  primary: Matcha 'Hatsu no Mukashi'
+  alternate: 初の昔
+category: matcha-ceremonial
+category_label: Matcha (Ceremonial)
+producer:
+  name: Nakamura Tokichi Honten
+  history: Established in Uji in 1854. The main store buildings are designated as Important Cultural Landscapes by the Japanese
+    government (Meiji-era tea merchant architecture). The Nakamura family contributed to developing the Kyōmidori (gyokuro)
+    and Ujihikari (tencha/gyokuro) cultivars at the Kyoto Prefectural Tea Research Institute. Hatsu no Mukashi (初の昔, 'First
+    of Old') is the top-tier in their 'Mukashi' line of poetic-named matchas; aged 1-2 years before sale to develop full umami.
+    Curated in collaboration with the Urasenke Grand Tea Master.
+origin:
+  region: Uji
+  country: Japan
+  locality: Kyoto prefecture
+acquisition:
+  location: Uji, Kyoto
+  year: 2025
+  month: 9
+  context: Honeymoon trip
+caffeine_level: 5
+urgency: now
+expiry_estimate: '2026.03'
+brewing:
+  vessel: chawan
+  leaf_grams_per_100ml: 13
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 0
+  notes: 'Designed primarily for koicha (thick tea): 4g matcha + 30ml water at 80°C, kneaded slowly with chasen until smooth
+    and syrupy (no foam). Also drinkable as usucha (thin tea): 2g + 70ml at 80°C, whisked to a fine froth. Sift before whisking
+    to avoid lumps. Matcha at 6+ months from canning is past peak — consume promptly. Once opened, finish in 2-3 weeks; refrigerate
+    sealed in original tin.'
+notes: |
+  Top-tier ceremonial matcha from a 170+ year-old Uji tea house.
+  Velvety mouthfeel, deep umami sweetness, almost no astringency,
+  vibrant jade color — hallmarks of a premium koicha-grade matcha.
+  Acquired Sep 2025 honeymoon — the powder oxidizes faster than other
+  forms of tea, so this is one of the highest-priority items in the
+  collection to consume.
+tags:
+- japanese-tea
+- matcha
+- uji
+- ceremonial
+- koicha
+- premium
+- honeymoon-collection
+- historic-producer
