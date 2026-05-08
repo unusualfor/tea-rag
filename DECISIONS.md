@@ -136,3 +136,45 @@ All 8 test queries from the Phase B spec were run against `wrangler dev --experi
 | 8 | Multi-turn: "What gyokuro?" → "how do I brew it?" | list_teas_by_filter ×2, then get_tea ×2 | ✅ both turns | ✅ | Context preserved, detailed brewing (60°C, 5g/100ml, 120s, 3 rounds) |
 
 **Remaining pattern**: The model consistently uses 2 tool calls per query (one per round in the two-pass loop) even when 1 would suffice. This costs extra neurons but doesn't affect UX noticeably — total latency is acceptable. Could be reduced to `MAX_TOOL_ROUNDS = 1` if neuron budget becomes a concern, at the cost of queries that genuinely need two tools (like search → get_tea).
+
+---
+
+## 2025-05 — Deployment: all-Cloudflare, no external providers
+
+**Choice**: Deploy on Cloudflare Workers with custom domain `tea.francescoforesta.com`. Workers AI for the LLM — no Anthropic, OpenAI, or Google API keys.
+
+**Why**: Zero cost for expected traffic. No API key management, no billing surprises, no external dependency that could change pricing or rate limits. Workers AI's free tier neuron quota is generous enough for a personal site. If the quota is exceeded on a heavy day, chat degrades gracefully (browse mode is unaffected).
+
+**Trade-off**: Workers AI models (Llama 3.3 70B) are weaker at tool calling than Claude or GPT-4. Mitigated by the two-pass tool loop and a strong system prompt.
+
+---
+
+## 2025-05 — No MCP server in this project
+
+**Choice**: tea-rag is a web app only. No MCP server exposing the tea collection.
+
+**Why**: Different architecture from cv-mcp. The tea collection's primary consumer is a web UI with visual elements (gradients, brewing params, inline cards). MCP would strip all that richness. If MCP access is needed later, it's a separate project that queries the same Vectorize index.
+
+---
+
+## 2025-05 — Cloudflare proxy: proxied (orange cloud)
+
+**Choice**: `tea.francescoforesta.com` is proxied through Cloudflare (orange cloud DNS).
+
+**Why**: Free CDN for static assets, basic DDoS protection, Cloudflare analytics. Unlike cv-mcp where long-lived SSE connections were a concern, tea-rag's chat SSE streams are short-lived (single request scope, typically 5-15 seconds) and work fine through Cloudflare's proxy.
+
+---
+
+## 2025-05 — Production Vectorize index: reuse dev index
+
+**Choice**: Reuse the existing `tea-embeddings` Vectorize index for production. No separate dev/prod indexes.
+
+**Why**: The index contains the canonical 23 teas, ingested with the same embedding model used in production. Creating a separate production index would add complexity (duplicate ingest, config branching) for no benefit at this scale. If the collection grows past ~100 items or multiple contributors are involved, revisit.
+
+---
+
+## 2025-05 — Rate limiting: in-memory, per-IP
+
+**Choice**: Simple in-memory rate limiter on `/api/chat`: 5 requests per 60 seconds per IP.
+
+**Why**: Cloudflare WAF rate limiting rules require a paid plan. An in-memory Map with sliding window is sufficient for a personal site. Resets on Worker restart — acceptable since Workers restart infrequently and the threat model is casual abuse, not determined attackers.
