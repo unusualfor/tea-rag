@@ -308,6 +308,41 @@ function fixTeaReferences(text: string): string {
   return text;
 }
 
+/**
+ * Detect when the model outputs a tool call as plain text instead of using
+ * the tool_calls mechanism. Returns parsed tool call or null.
+ */
+function extractToolCallFromText(
+  text: string
+): { name: string; arguments: Record<string, unknown> } | null {
+  // Match patterns like: {"type": "function", "name": "...", "parameters": {...}}
+  // or: {"name": "...", "parameters": {...}}
+  const jsonMatch = text.match(/\{[^{}]*"name"\s*:\s*"([^"]+)"[^{}]*"(?:parameters|arguments)"\s*:\s*(\{[^}]*\})/s);
+  if (jsonMatch) {
+    const name = jsonMatch[1];
+    try {
+      const args = JSON.parse(jsonMatch[2]);
+      if (TOOL_DEFINITIONS.some((t) => t.name === name)) {
+        return { name, arguments: args };
+      }
+    } catch {
+      // ignore parse errors
+    }
+  }
+
+  // Match patterns like: function call should be... list_teas_by_filter({"urgency": "calm"})
+  const funcCallMatch = text.match(/\b(list_categories|list_teas_by_filter|search_teas|get_tea)\s*\((\{[^)]*\})\)/);
+  if (funcCallMatch) {
+    try {
+      return { name: funcCallMatch[1], arguments: JSON.parse(funcCallMatch[2]) };
+    } catch {
+      // ignore
+    }
+  }
+
+  return null;
+}
+
 function streamText(
   text: string,
   controller: ReadableStreamDefaultController,
@@ -370,9 +405,33 @@ chatApp.post("/api/chat", async (c) => {
             }>;
           };
 
-          // If the model chose to respond with text directly, stream it
+          // If the model chose to respond with text directly, check if it's
+          // actually a tool call dumped as text (common 70B quirk)
           if (!response.tool_calls || response.tool_calls.length === 0) {
             if (response.response) {
+              const extractedCall = extractToolCallFromText(response.response);
+              if (extractedCall) {
+                // Model tried to call a tool via text — execute it properly
+                controller.enqueue(
+                  encoder.encode(
+                    sseEvent("tool_call", { tool: extractedCall.name, status: "running" })
+                  )
+                );
+                const result = await executeTool(extractedCall.name, extractedCall.arguments, c.env);
+                messages.push({
+                  role: "tool",
+                  name: extractedCall.name,
+                  content: JSON.stringify(result),
+                });
+                controller.enqueue(
+                  encoder.encode(
+                    sseEvent("tool_result", { tool: extractedCall.name, status: "done" })
+                  )
+                );
+                // Continue to pass 2 (text response with tool results in context)
+                break;
+              }
+
               streamText(fixTeaReferences(response.response), controller, encoder);
             }
             controller.enqueue(encoder.encode(sseEvent("done", {})));
