@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { useChat } from "@/hooks/use-chat";
 import { ChatMessageContent } from "@/components/chat-message-content";
 import { Send, RotateCcw, Loader2, Search } from "lucide-react";
+import { BrewingIndicator } from "@/components/brewing-indicator";
 
 const EXAMPLE_QUERIES = [
   "What should I drink this afternoon?",
@@ -98,17 +99,9 @@ export function ChatView({ onTeaClick }: ChatViewProps) {
                           onTeaClick={onTeaClick}
                         />
                       ) : isStreaming && msg === messages[messages.length - 1] ? (
-                        /* Show tool call indicator or typing cursor */
-                        currentToolCall ? (
-                          <div className="flex items-center gap-2 text-muted-foreground">
-                            <Loader2 className="w-3.5 h-3.5 animate-spin" />
-                            <span className="text-sm">
-                              {TOOL_LABELS[currentToolCall] || "Processing..."}
-                            </span>
-                          </div>
-                        ) : (
-                          <span className="inline-block w-2 h-4 bg-foreground/40 animate-pulse" />
-                        )
+                        <BrewingIndicator
+                          detail={currentToolCall ? (TOOL_LABELS[currentToolCall] || "Processing...") : undefined}
+                        />
                       ) : null}
                     </div>
                   ) : (

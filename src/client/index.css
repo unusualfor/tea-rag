@@ -98,3 +98,28 @@
 .sidebar-scroll:hover {
   scrollbar-color: oklch(var(--border)) transparent;
 }
+
+/* Brewing indicator steam animations */
+@keyframes steam {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scaleX(1);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-6px) scaleX(1.3);
+  }
+}
+
+.animate-steam-1 {
+  animation: steam 2s ease-in-out infinite;
+}
+.animate-steam-2 {
+  animation: steam 2s ease-in-out 0.4s infinite;
+}
+.animate-steam-3 {
+  animation: steam 2s ease-in-out 0.8s infinite;
+}
