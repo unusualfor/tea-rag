@@ -37,11 +37,11 @@ export function TeaCard({ tea, onClick }: TeaCardProps) {
       </div>
 
       <CardContent className="p-4 space-y-3">
-        <div className="flex items-center justify-between">
-          <Badge variant="secondary" className="text-xs font-medium">
+        <div className="flex items-center justify-between gap-2">
+          <Badge variant="secondary" className="text-xs font-medium shrink-0">
             {tea.category_label}
           </Badge>
-          <span className="text-sm text-muted-foreground">
+          <span className="text-sm text-muted-foreground truncate text-right">
             {getCountryFlag(tea.origin.country)} {tea.origin.region}
           </span>
         </div>
