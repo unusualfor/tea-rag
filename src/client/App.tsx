@@ -54,7 +54,7 @@ export function App() {
           <div className="container flex items-center justify-between h-14 px-4 sm:px-6">
             <div>
               <h1 className="text-lg font-semibold tracking-tight">
-                Francesco's Tea Collection
+                It's a journey, not a race: Francesco's Tea Collection
               </h1>
             </div>
             <div className="flex items-center gap-3">
