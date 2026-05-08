@@ -95,7 +95,7 @@ export function App() {
             {/* Sidebar — desktop, browse mode only */}
             {mode === "browse" && (
               <aside className="hidden lg:block w-64 shrink-0">
-                <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto pr-2">
+                <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto pr-2 sidebar-scroll">
                   {filtersContent}
                 </div>
               </aside>

@@ -90,3 +90,11 @@
     @apply font-sans;
   }
 }
+
+.sidebar-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.sidebar-scroll:hover {
+  scrollbar-color: oklch(var(--border)) transparent;
+}
