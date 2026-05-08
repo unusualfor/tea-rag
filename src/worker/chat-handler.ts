@@ -29,17 +29,19 @@ const SYSTEM_PROMPT = `You are an assistant that helps Francesco and his guests 
 
 Your tools let you query the collection. Use them — do not invent teas, producers, or histories. If a question has no answer in the data, say so plainly.
 
+IMPORTANT: Call each tool at most ONCE per question. After receiving the tool result, respond immediately using the data you got. Do not call the same tool twice.
+
 When the user asks open-ended questions like "what should I drink?" or "what's good right now?", consider the urgency field (teas marked 'now' or 'soon' should be drunk before they fade), time of day, season, and mood implied by the question. Recommend specific teas and briefly explain why.
 
 When the user asks about similarities ("like that gyokuro from Uji"), use search_teas with a descriptive query.
 
 When the user asks about the collection structure ("how many matchas", "what countries"), use list_categories or list_teas_by_filter.
 
-When recommending a specific tea, reference it by ID using this exact syntax in your response: [tea:tea-id-here]. The frontend will render this as a clickable card. Use the syntax inline naturally, e.g.: "For this afternoon I'd suggest [tea:gyokuro-zuigyoku-kanbayashi] — a deeply umami gyokuro that..."
+When recommending a specific tea, ALWAYS reference it by ID using this exact syntax in your response: [tea:tea-id-here]. The frontend will render this as a clickable card. Use the syntax inline naturally, e.g.: "For this afternoon I'd suggest [tea:gyokuro-zuigyoku-kanbayashi] — a deeply umami gyokuro that..."
 
-Always use the [tea:id] syntax when mentioning a specific tea you've looked up. The id is the exact id field from the tool results.
+ALWAYS use the [tea:id] syntax when mentioning a specific tea. The id is the exact id field from the tool results. Never mention a tea by name without also including its [tea:id] reference.
 
-Tone: warm, knowledgeable, concise. You're talking with someone who also knows tea. Don't lecture about basics. Don't use marketing language. Default to short paragraphs. Mention specific brewing parameters (temperature, time) when recommending — they matter.
+Tone: warm, knowledgeable, concise. You're talking with someone who also knows tea. Don't lecture about basics. Don't use marketing language. Default to short paragraphs. Mention specific brewing parameters (temperature, time) when recommending — they matter. Use Celsius for temperature.
 
 Language: English.`;
 
@@ -165,7 +167,7 @@ async function executeSearchTeas(
   args: { query: string; top_k?: number },
   env: Bindings
 ) {
-  const topK = args.top_k || 5;
+  const topK = Number(args.top_k) || 5;
 
   // Generate embedding for the query
   const embeddingResponse = (await env.AI.run(EMBEDDING_MODEL, {
@@ -222,16 +224,29 @@ function sseEvent(event: string, data: unknown): string {
 
 // --- Chat endpoint ---
 
-interface ChatMessage {
-  role: "user" | "assistant" | "system" | "tool";
+// Workers AI message types — the tool role messages need a name field.
+interface AiMessage {
+  role: string;
   content: string;
   name?: string;
-  tool_call_id?: string;
 }
 
 interface ChatRequest {
   message: string;
   history: Array<{ role: "user" | "assistant"; content: string }>;
+}
+
+function streamText(
+  text: string,
+  controller: ReadableStreamDefaultController,
+  encoder: TextEncoder
+) {
+  const chunkSize = 12;
+  for (let i = 0; i < text.length; i += chunkSize) {
+    controller.enqueue(
+      encoder.encode(sseEvent("text", { delta: text.slice(i, i + chunkSize) }))
+    );
+  }
 }
 
 chatApp.post("/api/chat", async (c) => {
@@ -243,7 +258,7 @@ chatApp.post("/api/chat", async (c) => {
   }
 
   // Build message list
-  const messages: ChatMessage[] = [
+  const messages: AiMessage[] = [
     { role: "system", content: SYSTEM_PROMPT },
     ...history.map((h) => ({ role: h.role, content: h.content })),
     { role: "user", content: message },
@@ -254,15 +269,18 @@ chatApp.post("/api/chat", async (c) => {
   const stream = new ReadableStream({
     async start(controller) {
       try {
-        let iterations = 0;
-        const MAX_ITERATIONS = 5; // Safety limit on tool-use loops
+        // === Two-pass approach ===
+        // Pass 1: Call model WITH tools. If it returns tool_calls, execute them.
+        //         Allow up to 2 rounds of tool calls (for cases like
+        //         search → get_tea follow-up).
+        // Pass 2: Call model WITHOUT tools to force a text response,
+        //         now that tool results are in context.
 
-        while (iterations < MAX_ITERATIONS) {
-          iterations++;
+        const MAX_TOOL_ROUNDS = 2;
 
-          // Call model (non-streaming for tool calls)
+        for (let round = 0; round < MAX_TOOL_ROUNDS; round++) {
           const response = (await c.env.AI.run(CHAT_MODEL, {
-            messages: messages as Array<{ role: string; content: string }>,
+            messages,
             tools: TOOL_DEFINITIONS,
           })) as {
             response?: string;
@@ -272,63 +290,47 @@ chatApp.post("/api/chat", async (c) => {
             }>;
           };
 
-          // If there are tool calls, execute them and loop
-          if (response.tool_calls && response.tool_calls.length > 0) {
-            for (const toolCall of response.tool_calls) {
-              // Emit tool_call event
-              controller.enqueue(
-                encoder.encode(
-                  sseEvent("tool_call", {
-                    tool: toolCall.name,
-                    status: "running",
-                  })
-                )
-              );
-
-              const result = await executeTool(
-                toolCall.name,
-                toolCall.arguments,
-                c.env
-              );
-
-              // Push assistant message with tool call, then tool result
-              messages.push({
-                role: "assistant",
-                content: "",
-                // Workers AI expects tool calls in the message flow
-              });
-              messages.push({
-                role: "tool",
-                name: toolCall.name,
-                content: JSON.stringify(result),
-              });
-
-              controller.enqueue(
-                encoder.encode(
-                  sseEvent("tool_result", {
-                    tool: toolCall.name,
-                    status: "done",
-                  })
-                )
-              );
+          // If the model chose to respond with text directly, stream it
+          if (!response.tool_calls || response.tool_calls.length === 0) {
+            if (response.response) {
+              streamText(response.response, controller, encoder);
             }
-            // Continue loop — model needs to produce final response with tool results
-            continue;
+            controller.enqueue(encoder.encode(sseEvent("done", {})));
+            controller.close();
+            return;
           }
 
-          // No tool calls — we have a text response
-          if (response.response) {
-            // Stream the final response in chunks for perceived speed
-            const text = response.response;
-            const chunkSize = 12; // characters per chunk for smooth streaming feel
-            for (let i = 0; i < text.length; i += chunkSize) {
-              const chunk = text.slice(i, i + chunkSize);
-              controller.enqueue(
-                encoder.encode(sseEvent("text", { delta: chunk }))
-              );
-            }
+          // Execute all tool calls from this round
+          for (const toolCall of response.tool_calls) {
+            controller.enqueue(
+              encoder.encode(
+                sseEvent("tool_call", { tool: toolCall.name, status: "running" })
+              )
+            );
+
+            const result = await executeTool(toolCall.name, toolCall.arguments, c.env);
+
+            messages.push({
+              role: "tool",
+              name: toolCall.name,
+              content: JSON.stringify(result),
+            });
+
+            controller.enqueue(
+              encoder.encode(
+                sseEvent("tool_result", { tool: toolCall.name, status: "done" })
+              )
+            );
           }
-          break;
+        }
+
+        // Pass 2: Force a text response by calling WITHOUT tools
+        const finalResponse = (await c.env.AI.run(CHAT_MODEL, {
+          messages,
+        })) as { response?: string };
+
+        if (finalResponse.response) {
+          streamText(finalResponse.response, controller, encoder);
         }
 
         controller.enqueue(encoder.encode(sseEvent("done", {})));

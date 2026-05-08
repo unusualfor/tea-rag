@@ -105,3 +105,34 @@ Architectural and design decisions for tea-rag. Updated as the project evolves.
 **Choice**: Chat history lives in React state. Persists across Browse ↔ Ask mode toggles. Lost on page reload.
 
 **Why**: Simplest possible approach for v1. No server-side storage, no cookies, no localStorage. The chat is ephemeral — this matches the use case (quick queries about what to drink, not long research sessions). If persistence is needed later, localStorage is the obvious next step.
+
+---
+
+## 2025-05 — Tool-use loop: two-pass pattern (not iterative)
+
+**Choice**: Instead of an open-ended "call model → execute tools → call model → repeat until text" loop, we use a fixed two-pass approach: up to 2 rounds WITH tools, then 1 final call WITHOUT tools.
+
+**Why**: Llama 3.3 70B on Workers AI tends to keep requesting tool calls even after receiving results. The standard iterative loop (as shown in Cloudflare's own demo) caused the model to call the same tool 5+ times before producing text. The two-pass approach guarantees at most 3 model invocations (2 with tools, 1 without) and always produces a text response.
+
+**Discovery**: The official Cloudflare function calling demo does NOT include an assistant message with `tool_calls` in the history — it just appends `{role: "tool", name, content}` directly. Adding an explicit assistant message with `tool_calls` (as other providers expect) confused Llama 3.3 and caused infinite tool-call loops.
+
+**Also fixed**: Workers AI's LLM returns `top_k` as a string even though the tool schema declares it as `number`. Added `Number()` coercion before passing to Vectorize.
+
+---
+
+## 2025-05 — Phase B test results (8 queries)
+
+All 8 test queries from the Phase B spec were run against `wrangler dev --experimental-vectorize-bind-to-prod` with Workers AI (Llama 3.3 70B) and the production Vectorize index.
+
+| # | Query | Tool(s) used | Bracket syntax | Correct? | Notes |
+|---|-------|-------------|----------------|----------|-------|
+| 1 | "What should I drink this afternoon?" | search_teas ×2 | ✅ `[tea:hojicha-kanbayashi]` | ✅ | Good recommendation, brewing params in °C |
+| 2 | "Find me something similar to the Kanbayashi gyokuro" | search_teas ×2 | ✅ both teas | ✅ | Suggested hojicha-from-gyokuro + hikari matcha (same producer) |
+| 3 | "Which teas are urgent right now?" | list_teas_by_filter ×2 | ✅ all 4 teas | ✅ | Correct count, individual brewing params |
+| 4 | "How many Chinese teas do I have?" | list_teas_by_filter ×2 | — (count only) | ✅ | Concise "You have 7 Chinese teas" |
+| 5 | "Recommend something for a guest who's never had matcha" | search_teas + get_tea | ✅ `[tea:matcha-uji-hikari-kanbayashi]` | ✅ | Good pick, preparation instructions |
+| 6 | "Tell me about Tie Luo Han from Wuyi" | search_teas + get_tea | ✅ suggested Da Hong Pao | ✅ | Honest "not in our collection", proactively suggested related Wuyi tea |
+| 7 | "something earthy" | search_teas ×2 | ✅ `[tea:da-hong-pao-wuyi]` | ✅ | Appropriate pick for vague query |
+| 8 | Multi-turn: "What gyokuro?" → "how do I brew it?" | list_teas_by_filter ×2, then get_tea ×2 | ✅ both turns | ✅ | Context preserved, detailed brewing (60°C, 5g/100ml, 120s, 3 rounds) |
+
+**Remaining pattern**: The model consistently uses 2 tool calls per query (one per round in the two-pass loop) even when 1 would suffice. This costs extra neurons but doesn't affect UX noticeably — total latency is acceptable. Could be reduced to `MAX_TOOL_ROUNDS = 1` if neuron budget becomes a concern, at the cost of queries that genuinely need two tools (like search → get_tea).
