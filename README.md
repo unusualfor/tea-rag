@@ -1,6 +1,6 @@
 # tea-rag
 
-A queryable explorer for Francesco's tea collection. Browse, search, and ask questions about ~23 teas from Japan, China, India, and beyond.
+A queryable explorer for Francesco's tea collection. Browse, search, and ask questions about 50+ teas from Japan, China, India, and beyond.
 
 **Live at [tea.francescoforesta.com](https://tea.francescoforesta.com)**
 
@@ -80,7 +80,7 @@ tea-rag/
 
 ```bash
 # Clone and install
-git clone https://github.com/francescoforesta/tea-rag.git
+git clone https://github.com/unusualfor/tea-rag.git
 cd tea-rag
 npm install
 
@@ -144,7 +144,7 @@ npm run typecheck     # TypeScript type checking
 Everything runs on Cloudflare's free tier:
 
 - **Workers AI**: daily neuron quota (free tier). For a personal site with light traffic, this is more than enough. If you hit the limit, chat responses will fail for the day — browse mode is unaffected.
-- **Vectorize**: free tier covers the small index (23 vectors, 768 dimensions).
+- **Vectorize**: free tier covers the small index (~50 vectors, 768 dimensions).
 - **R2**: free tier covers photo storage at this scale (5 GB storage, 10 GB egress/month).
 - **Workers**: 100,000 requests/day on free tier.
 
@@ -159,10 +159,10 @@ The `/api/chat` endpoint has an in-memory rate limiter: **5 requests per minute 
 See [DECISIONS.md](DECISIONS.md) for the full decision log. Highlights:
 
 - **All-Cloudflare stack**: no external LLM providers — Workers AI keeps everything on one platform with zero API key management.
-- **Two-pass tool loop**: Llama 3.3 70B tends to keep calling tools indefinitely. The chat handler caps at 2 tool rounds, then forces a text response.
+- **Two-pass tool loop**: Llama 3.3 70B tends to keep calling tools indefinitely. The chat handler caps at 1 tool round, then forces a text response. A fallback detects when the model dumps a tool call as plain text instead of using the tool-calling API, intercepts it, and executes it properly.
 - **Four tools, not more**: `search_teas`, `list_teas_by_filter`, `get_tea`, `list_categories`. Clear separation helps the model choose correctly.
-- **Bracket syntax for references**: `[tea:id]` in LLM output → inline clickable cards in the UI.
-- **YAML as source of truth**: diffs are readable, no database to manage for ~40 items.
+- **Bracket syntax for references**: `[tea:id]` in LLM output → inline clickable cards in the UI. A server-side `fixTeaReferences()` post-processor corrects broken IDs and auto-links tea names the model mentions without proper references.
+- **YAML as source of truth**: diffs are readable, no database to manage for ~50 items.
 
 ## Related projects
 
