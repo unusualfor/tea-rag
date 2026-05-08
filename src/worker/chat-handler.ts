@@ -262,26 +262,30 @@ interface ChatRequest {
 // All known tea IDs for reference fixup
 const TEA_IDS = new Set(teas.map((t) => t.id));
 
+// Build a name→id lookup (primary and alternate names, lowercased)
+const TEA_NAME_MAP = new Map<string, string>();
+for (const t of teas) {
+  TEA_NAME_MAP.set(t.name.primary.toLowerCase(), t.id);
+  if (t.name.alternate) TEA_NAME_MAP.set(t.name.alternate.toLowerCase(), t.id);
+}
+// Sort by name length descending so longer names match first
+const TEA_NAMES_SORTED = [...TEA_NAME_MAP.keys()].sort((a, b) => b.length - a.length);
+
 /**
- * Fix broken [tea:id] references from the model.
- * Handles: truncated IDs, [tea.id] syntax, [tea: id] with spaces,
- * and fuzzy-matches partial IDs to real ones.
+ * Fix broken [tea:id] references and auto-link tea names.
  */
 function fixTeaReferences(text: string): string {
-  // Normalize [tea.id] and [tea: id] to [tea:id]
+  // 1. Remove unclosed [tea:... at end of text
+  text = text.replace(/\[tea[.:][a-z0-9-]*$/gi, "");
+
+  // 2. Normalize [tea.id] and [tea: id] to [tea:id]
   text = text.replace(/\[tea[.:]\s*([a-z0-9-]+)\]/gi, (_, id) => `[tea:${id.toLowerCase()}]`);
 
-  // Find all [tea:...] references and fix broken IDs
-  return text.replace(/\[tea:([a-z0-9-]+)\]/g, (_match, id: string) => {
+  // 3. Fix broken IDs in existing [tea:id] references
+  text = text.replace(/\[tea:([a-z0-9-]+)\]/g, (_match, id: string) => {
     if (TEA_IDS.has(id)) return `[tea:${id}]`;
 
-    // Try to find a matching tea by prefix or substring
-    const candidates = teas.filter(
-      (t) => t.id.startsWith(id) || id.startsWith(t.id) || t.id.includes(id) || id.includes(t.id.slice(0, Math.max(10, t.id.length - 5)))
-    );
-    if (candidates.length === 1) return `[tea:${candidates[0].id}]`;
-
-    // Fallback: best Levenshtein-like match by shared prefix length
+    // Best prefix match
     let bestMatch = "";
     let bestScore = 0;
     for (const t of teas) {
@@ -295,12 +299,28 @@ function fixTeaReferences(text: string): string {
         bestMatch = t.id;
       }
     }
-    // Only accept if we matched at least 60% of the shorter string
-    const minLen = Math.min(id.length, bestMatch.length);
-    if (bestScore >= minLen * 0.6) return `[tea:${bestMatch}]`;
-
+    if (bestScore >= 8) return `[tea:${bestMatch}]`;
     return `[tea:${id}]`;
   });
+
+  // 4. Auto-link tea names that aren't already inside a [tea:...] reference
+  //    Only match names that appear as standalone words (not inside existing refs)
+  for (const name of TEA_NAMES_SORTED) {
+    if (name.length < 4) continue; // skip very short names to avoid false positives
+    const id = TEA_NAME_MAP.get(name)!;
+    // Skip if this tea is already referenced
+    if (text.includes(`[tea:${id}]`)) continue;
+
+    // Case-insensitive match, word-boundary-ish (not inside brackets)
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp(`(?<!\\[tea:[a-z0-9-]*)\\b(${escaped})\\b(?![^\\[]*\\])`, "i");
+    const match = text.match(re);
+    if (match) {
+      text = text.replace(re, `[tea:${id}]`);
+    }
+  }
+
+  return text;
 }
 
 function streamText(
