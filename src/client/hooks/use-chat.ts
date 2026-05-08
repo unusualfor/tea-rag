@@ -57,7 +57,9 @@ export function useChat() {
       });
 
       if (!res.ok) {
-        throw new Error(`Server error: ${res.status}`);
+        const errorBody = await res.json().catch(() => null);
+        const msg = (errorBody as { error?: string })?.error ?? `Server error: ${res.status}`;
+        throw new Error(msg);
       }
 
       const reader = res.body?.getReader();
@@ -143,13 +145,14 @@ export function useChat() {
       }
     } catch (err) {
       if ((err as Error).name === "AbortError") return;
+      const errorMsg = (err as Error).message || "Sorry, I couldn't reach the server. Please try again.";
       setMessages((prev) => {
         const updated = [...prev];
         const last = updated[updated.length - 1];
         if (last?.role === "assistant" && !last.content) {
           updated[updated.length - 1] = {
             ...last,
-            content: "Sorry, I couldn't reach the server. Please try again.",
+            content: errorMsg,
           };
         }
         return updated;

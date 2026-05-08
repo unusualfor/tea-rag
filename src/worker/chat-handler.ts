@@ -23,6 +23,23 @@ type Bindings = {
 
 const chatApp = new Hono<{ Bindings: Bindings }>();
 
+// --- Rate limiting ---
+// Simple per-IP rate limiter: 5 requests per 60 seconds on /api/chat.
+// Uses in-memory Map — resets on Worker restart, which is fine for this scale.
+const RATE_LIMIT = 5;
+const RATE_WINDOW_MS = 60_000;
+const rateLimitMap = new Map<string, number[]>();
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now();
+  const timestamps = rateLimitMap.get(ip) ?? [];
+  const recent = timestamps.filter((t) => now - t < RATE_WINDOW_MS);
+  if (recent.length >= RATE_LIMIT) return false;
+  recent.push(now);
+  rateLimitMap.set(ip, recent);
+  return true;
+}
+
 // --- System prompt ---
 
 const SYSTEM_PROMPT = `You are an assistant that helps Francesco and his guests explore a curated tea collection. The collection includes Japanese, Chinese, and other world teas, each with detailed origin, producer, brewing, and tasting information.
@@ -250,6 +267,12 @@ function streamText(
 }
 
 chatApp.post("/api/chat", async (c) => {
+  // Rate limit
+  const ip = c.req.header("cf-connecting-ip") ?? c.req.header("x-forwarded-for") ?? "unknown";
+  if (!checkRateLimit(ip)) {
+    return c.json({ error: "Too many requests. Please wait a moment." }, 429);
+  }
+
   const body = await c.req.json<ChatRequest>();
   const { message, history } = body;
 
