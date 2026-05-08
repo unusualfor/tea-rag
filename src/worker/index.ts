@@ -1,6 +1,7 @@
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { ingestApp } from "./ingest-handler";
+import { chatApp } from "./chat-handler";
 import teasData from "../data/teas.json";
 import type { Tea } from "../shared/types";
 
@@ -18,6 +19,9 @@ app.use("/api/*", cors());
 
 // Mount ingest routes
 app.route("/", ingestApp);
+
+// Mount chat routes
+app.route("/", chatApp);
 
 // Embedding model (must match ingest)
 const EMBEDDING_MODEL = "@cf/baai/bge-base-en-v1.5";

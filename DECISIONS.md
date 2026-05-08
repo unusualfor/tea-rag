@@ -50,3 +50,58 @@ Architectural and design decisions for tea-rag. Updated as the project evolves.
 **Choice**: Structured fields (`urgency`, `category`, `status`, `country`) are metadata filters in Vectorize. Free-text fields (`notes`, `producer.history`, `brewing.notes`) are embedded.
 
 **Why**: Hybrid search. Vector similarity handles semantic queries ("something earthy for a cold evening") while metadata filters handle categorical queries ("show me all Japanese teas" or "what's urgent"). Composing both gives the best UX for the browse + search interface.
+
+---
+
+## 2025-05 — Chat LLM: Workers AI (Llama 3.3 70B)
+
+**Choice**: `@cf/meta/llama-3.3-70b-instruct-fp8-fast` via Cloudflare Workers AI.
+
+**Why**: All-Cloudflare stack, free tier. This is the highest-quality model on Workers AI with explicit function calling support. The `fp8-fast` variant is quantized for speed while retaining strong instruction-following. No external API keys needed — the `AI` binding handles everything.
+
+**Alternatives considered**:
+- Anthropic Claude: best tool-calling quality, but adds a paid external dependency and API key management. Kept out to stay fully on Cloudflare's free tier.
+- Llama 3.1 8B: faster but weaker at multi-tool reasoning and following the bracket reference syntax consistently.
+- Hermes 2 Pro Mistral 7B: the original Workers AI function-calling model, but smaller and older.
+
+**Fallback**: If Llama 3.3 70B proves too slow for the UX or has availability issues, drop to `@cf/meta/llama-3.1-8b-instruct-fast` — same API, just change the model constant.
+
+---
+
+## 2025-05 — Tool design: four tools, clear boundaries
+
+**Choice**: Four tools for the chat assistant:
+1. `list_categories()` — collection overview (no args)
+2. `list_teas_by_filter({category?, country?, urgency?, status?})` — structured filtering
+3. `search_teas({query, top_k?})` — vector similarity search
+4. `get_tea({id})` — full record of one tea
+
+**Why**: Clear separation between semantic queries (search_teas) and structured queries (list_teas_by_filter) helps the model choose the right tool. `get_tea` exists so the model can fetch brewing parameters and detailed notes after an initial search narrows down candidates. `list_categories` answers meta-questions about the collection without loading all data.
+
+**Why not more tools?** Simplicity. The model has to reason about tool selection — more tools means more potential for wrong choices. Four covers every query pattern we've tested. If a new pattern emerges, we add a tool then.
+
+---
+
+## 2025-05 — Inline tea references: bracket syntax `[tea:id]`
+
+**Choice**: The assistant uses `[tea:gyokuro-zuigyoku-kanbayashi]` syntax in its responses. The frontend parses these with a regex and renders inline tea cards.
+
+**Why**: This connects chat output to the browse UI — clicking a reference opens the same detail modal. The bracket syntax is simple for the model to produce (it's a common pattern in LLM outputs) and unambiguous for the parser.
+
+**Implementation**: A regex `/\[tea:([a-z0-9-]+)\]/g` splits streamed text into text segments and tea reference segments. Each reference resolves against the bundled `teas.json` data — no additional API call needed.
+
+---
+
+## 2025-05 — Chat streaming: tool loop non-streaming, final response chunked
+
+**Choice**: The tool-use loop calls Workers AI without streaming. Tool calls are collected, executed, and results fed back. Only the final text response is chunked into SSE events for the frontend.
+
+**Why**: Workers AI's streaming + tool calling don't compose reliably in a single call. The pragmatic pattern: non-streaming for the agentic loop (where we need complete tool call JSON), then simulate streaming by chunking the final text response into small SSE deltas. The user sees tool-call status indicators ("Searching...") while tools execute, then sees text appear progressively.
+
+---
+
+## 2025-05 — Chat persistence: session-only, client-side
+
+**Choice**: Chat history lives in React state. Persists across Browse ↔ Ask mode toggles. Lost on page reload.
+
+**Why**: Simplest possible approach for v1. No server-side storage, no cookies, no localStorage. The chat is ephemeral — this matches the use case (quick queries about what to drink, not long research sessions). If persistence is needed later, localStorage is the obvious next step.
