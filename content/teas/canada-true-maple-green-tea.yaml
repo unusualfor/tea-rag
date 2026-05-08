@@ -10,8 +10,8 @@ producer:
     products. The Maple Green Tea blends a generic green tea base with 'natural identical Canadian maple syrup flavour.' Sold
     typically alongside the maple black and maple herbal variants in 3-pack souvenir sets.
 origin:
-  region: Asia (green tea base) + Canada (flavoring/blending)
-  country: Asia (tea base, source not disclosed); Canada (brand/blending)
+  region: Asia + Canada
+  country: Canada
   locality: null
 acquisition:
   location: Canada

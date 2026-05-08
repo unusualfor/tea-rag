@@ -457,8 +457,8 @@
       "history": "Canada True is a Canadian souvenir brand owned by Heart Industries Ltd., specializing in maple-flavored gift-shop products: tea, cookies, fudge, and pure maple syrup. Their tea range targets the Canadian souvenir market with maple-flavored variants on standard tea bases (black, green, herbal, blueberry, ice wine). The Maple Black Tea uses 'high-grown Ceylon' leaves with 'natural identical Canadian maple syrup flavour.'"
     },
     "origin": {
-      "region": "Sri Lanka (tea base) + Canada (flavoring/blending)",
-      "country": "Sri Lanka (tea); Canada (brand/blending)",
+      "region": "Sri Lanka + Canada",
+      "country": "Canada",
       "locality": "High-grown Ceylon"
     },
     "acquisition": {
@@ -504,8 +504,8 @@
       "history": "Canada True is a Canadian souvenir brand owned by Heart Industries Ltd., specializing in maple-flavored gift-shop products. The Maple Green Tea blends a generic green tea base with 'natural identical Canadian maple syrup flavour.' Sold typically alongside the maple black and maple herbal variants in 3-pack souvenir sets."
     },
     "origin": {
-      "region": "Asia (green tea base) + Canada (flavoring/blending)",
-      "country": "Asia (tea base, source not disclosed); Canada (brand/blending)",
+      "region": "Asia + Canada",
+      "country": "Canada",
       "locality": null
     },
     "acquisition": {
@@ -550,8 +550,8 @@
       "history": "Canada True is a Canadian souvenir brand owned by Heart Industries Ltd. The Maple Herbal Tea is a caffeine-free herbal blend with maple flavoring. Per the Amazon allergen warning, the blend potentially contains: ginger, lemongrass, orange peel, cardamom, hibiscus, safflower, turmeric, honey, rose hip, lemon peel — though the exact ingredient list per box may vary. No actual Camellia sinensis tea leaves; classifies as a tisane."
     },
     "origin": {
-      "region": "Multiple (herbal blend)",
-      "country": "Various herbs; Canada (brand/blending)",
+      "region": "Multiple",
+      "country": "Canada",
       "locality": null
     },
     "acquisition": {
