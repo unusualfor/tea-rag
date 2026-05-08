@@ -407,8 +407,8 @@
       "history": "Hand-packaged by Oliver Pluff & Co. (Charleston, South Carolina) for the Boston Tea Party Ships & Museum gift shop. Sold as part of the 'Teas of the Boston Tea Party Collection,' a 5-tube set (~9-15g each) representing the five teas thrown overboard during the 1773 Boston Tea Party: Bohea, Congou, Lapsang Souchong, Singlo, and Hyson (per the museum's historical research). The original 1773 cargo included 10 chests of Souchong (~684 lbs total). Souchong itself originates from the Wuyi Mountains of Fujian, China — the term derives from Hokkien 正山小种 zhèngshān xiǎozhǒng meaning 'small-leaf cultivar from the original mountain.' Modern souchong exports are typically pinewood-smoked (Lapsang Souchong); 18th-century souchong would have had only a faint smoky character from the drying process."
     },
     "origin": {
-      "region": "Wuyi Mountains (original tea); packaged in Charleston, SC",
-      "country": "China (origin); USA (packager)",
+      "region": "Wuyi Mountains",
+      "country": "China",
       "locality": "Fujian province"
     },
     "acquisition": {

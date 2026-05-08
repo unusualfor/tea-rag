@@ -154,15 +154,10 @@ function teaSummary(tea: Tea) {
   return {
     id: tea.id,
     name: tea.name.primary,
-    alternate_name: tea.name.alternate || null,
-    category: tea.category,
     category_label: tea.category_label,
     country: tea.origin.country,
-    region: tea.origin.region,
     urgency: tea.urgency,
     caffeine_level: tea.caffeine_level,
-    producer: tea.producer.name,
-    brief: tea.notes.split("\n")[0].trim(),
   };
 }
 
@@ -375,6 +370,7 @@ chatApp.post("/api/chat", async (c) => {
           const response = (await c.env.AI.run(CHAT_MODEL, {
             messages,
             tools: TOOL_DEFINITIONS,
+            max_tokens: 2048,
           })) as {
             response?: string;
             tool_calls?: Array<{
@@ -428,6 +424,7 @@ chatApp.post("/api/chat", async (c) => {
         // Pass 2: Force a text response by calling WITHOUT tools
         const finalResponse = (await c.env.AI.run(CHAT_MODEL, {
           messages,
+          max_tokens: 2048,
         })) as { response?: string };
 
         if (finalResponse.response) {
