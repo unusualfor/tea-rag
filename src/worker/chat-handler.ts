@@ -13,7 +13,7 @@ import teasData from "../data/teas.json";
 const teas: Tea[] = teasData as Tea[];
 
 // Best available Workers AI model with function calling
-const CHAT_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
+const CHAT_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
 const EMBEDDING_MODEL = "@cf/baai/bge-base-en-v1.5";
 
 type Bindings = {
