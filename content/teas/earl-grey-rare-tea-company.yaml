@@ -1,0 +1,39 @@
+id: earl-grey-rare-tea-company
+name:
+  primary: "Earl Grey (Rare Tea)"
+  alternate: null
+category: earl-grey
+category_label: "Earl Grey"
+producer:
+  name: "Rare Tea Company"
+  history: "London-based, sources directly from estates. Known for whole-leaf quality in a category dominated by bags."
+origin:
+  region: "Yunnan"
+  country: "China"
+  locality: null
+acquisition:
+  location: "London"
+  year: 2024
+  month: 10
+  context: "Work trip"
+status: keeper
+urgency: stable
+expiry_estimate: "~2026.06"
+brewing:
+  water_temp_c: 95
+  steep_time_seconds: 210
+  leaf_grams_per_100ml: 3
+  vessel: "mug"
+  rounds: 1
+  notes: "Standard Western brewing. The bergamot is real oil, not artificial flavoring."
+notes: |
+  A proper Earl Grey — whole-leaf Chinese black tea with natural bergamot
+  oil. The base tea has enough body to carry the citrus without being
+  overwhelmed. A reminder that this classic can be much more than
+  the supermarket teabag version. Afternoon staple.
+photo:
+  url: "/photos/earl-grey-rare-tea-company.jpg"
+  alt: "Dark tea leaves with visible bergamot oil sheen"
+  source: null
+  is_local: true
+tags: [western-blend, afternoon-tea, london]

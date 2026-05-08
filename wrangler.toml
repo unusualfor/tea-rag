@@ -1,0 +1,27 @@
+name = "tea-rag"
+main = "src/worker/index.ts"
+compatibility_date = "2025-05-01"
+
+[assets]
+directory = "./dist/client"
+
+# Vectorize index for tea embeddings
+[[vectorize]]
+binding = "VECTORIZE"
+index_name = "tea-embeddings"
+
+# R2 bucket for tea photos
+[[r2_buckets]]
+binding = "PHOTOS"
+bucket_name = "tea-photos"
+
+# Workers AI for embeddings
+[ai]
+binding = "AI"
+
+[vars]
+ENVIRONMENT = "production"
+
+# Dev overrides
+[env.dev.vars]
+ENVIRONMENT = "development"

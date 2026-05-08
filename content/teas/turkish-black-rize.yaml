@@ -1,0 +1,40 @@
+id: turkish-black-rize
+name:
+  primary: "Rize Çay"
+  alternate: null
+  pronunciation: "Ri-zeh Chai"
+category: turkish
+category_label: "Turkish Black"
+producer:
+  name: "Çaykur"
+  history: "State tea enterprise of Turkey, founded 1947. Sources from the steep hillside gardens of Rize province on the Black Sea coast."
+origin:
+  region: "Rize"
+  country: "Turkey"
+  locality: "Black Sea coast"
+acquisition:
+  location: "Istanbul"
+  year: 2024
+  month: 8
+  context: "Holiday"
+status: keeper
+urgency: stable
+expiry_estimate: "~2027.01"
+brewing:
+  water_temp_c: 100
+  steep_time_seconds: 300
+  leaf_grams_per_100ml: 5
+  vessel: "çaydanlık (double teapot)"
+  rounds: 1
+  notes: "Traditional double-teapot method: strong concentrate on top, diluted with water from below. Served in tulip glasses."
+notes: |
+  Turkish black tea from Rize, the heartland of Turkish tea culture.
+  Strong, tannic, meant to be sipped throughout the day from small tulip
+  glasses. Not subtle — bold and functional. Pairs with sugar cubes
+  and conversation. A cultural experience more than a connoisseur tea.
+photo:
+  url: "/photos/turkish-black-rize.jpg"
+  alt: "Tulip glass of dark Turkish tea with sugar cubes"
+  source: null
+  is_local: true
+tags: [turkish-tea, daily-drinker, cultural]

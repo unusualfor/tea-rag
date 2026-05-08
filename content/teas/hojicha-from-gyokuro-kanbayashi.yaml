@@ -1,0 +1,39 @@
+id: hojicha-from-gyokuro-kanbayashi
+name:
+  primary: "Hojicha from Gyokuro"
+  alternate: "雁が音ほうじ茶"
+category: hojicha-from-gyokuro
+category_label: "Hojicha (from Gyokuro)"
+producer:
+  name: "Kanbayashi"
+  history: "Tea suppliers to the Tokugawa Shogunate. Centuries-old lineage from Uji."
+origin:
+  region: "Uji"
+  country: "Japan"
+  locality: null
+acquisition:
+  location: "Uji, Kyoto"
+  year: 2025
+  month: 9
+  context: "Honeymoon trip"
+status: keeper
+urgency: soon
+expiry_estimate: "~2026.06"
+brewing:
+  water_temp_c: 90
+  steep_time_seconds: 30
+  leaf_grams_per_100ml: 5
+  vessel: "kyusu"
+  rounds: 2
+  notes: "More delicate than standard hojicha. Slightly lower temp brings out the residual umami from the gyokuro stems."
+notes: |
+  Premium hojicha made from roasted gyokuro stems (karigane). Carries a
+  deeper sweetness and residual umami that regular hojicha lacks. The
+  roasting is lighter, preserving some of the shaded character. A bridge
+  between the intensity of gyokuro and the comfort of hojicha.
+photo:
+  url: "/photos/hojicha-from-gyokuro-kanbayashi.jpg"
+  alt: "Light brown roasted gyokuro stems"
+  source: null
+  is_local: true
+tags: [japanese-tea, uji, premium, honeymoon-collection]
