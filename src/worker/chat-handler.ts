@@ -66,72 +66,84 @@ Language: English.`;
 
 const TOOL_DEFINITIONS = [
   {
-    name: "list_categories",
-    description:
-      "List all tea categories present in the collection, with the count of teas in each. Use this when the user asks about what types of tea are available, how many of a certain kind exist, or wants an overview of the collection structure.",
-    parameters: {
-      type: "object" as const,
-      properties: {},
-      required: [] as string[],
+    type: "function" as const,
+    function: {
+      name: "list_categories",
+      description:
+        "List all tea categories present in the collection, with the count of teas in each. Use this when the user asks about what types of tea are available, how many of a certain kind exist, or wants an overview of the collection structure.",
+      parameters: {
+        type: "object" as const,
+        properties: {},
+        required: [] as string[],
+      },
     },
   },
   {
-    name: "list_teas_by_filter",
-    description:
-      "List teas matching structured filters: category, country, or urgency. Returns a summary of each matching tea (id, name, category, country, urgency, caffeine level). Use this for specific structured queries like 'all Japanese teas', 'what's urgent right now', 'show me oolongs'. Do NOT use this for semantic/mood-based queries — use search_teas instead.",
-    parameters: {
-      type: "object" as const,
-      properties: {
-        category: {
-          type: "string",
-          description: "Filter by tea category (e.g. 'gyokuro', 'oolong', 'matcha-ceremonial').",
+    type: "function" as const,
+    function: {
+      name: "list_teas_by_filter",
+      description:
+        "List teas matching structured filters: category, country, or urgency. Returns a summary of each matching tea (id, name, category, country, urgency, caffeine level). Use this for specific structured queries like 'all Japanese teas', 'what's urgent right now', 'show me oolongs'. Do NOT use this for semantic/mood-based queries — use search_teas instead.",
+      parameters: {
+        type: "object" as const,
+        properties: {
+          category: {
+            type: "string",
+            description: "Filter by tea category (e.g. 'gyokuro', 'oolong', 'matcha-ceremonial').",
+          },
+          country: {
+            type: "string",
+            description: "Filter by country of origin (e.g. 'Japan', 'China', 'India').",
+          },
+          urgency: {
+            type: "string",
+            description:
+              "Filter by urgency level: 'now' (drink immediately), 'soon', 'summer', 'calm' (no rush), 'stable'.",
+          },
         },
-        country: {
-          type: "string",
-          description: "Filter by country of origin (e.g. 'Japan', 'China', 'India').",
-        },
-        urgency: {
-          type: "string",
-          description:
-            "Filter by urgency level: 'now' (drink immediately), 'soon', 'summer', 'calm' (no rush), 'stable'.",
-        },
+        required: [] as string[],
       },
-      required: [] as string[],
     },
   },
   {
-    name: "search_teas",
-    description:
-      "Search for teas using natural language similarity. Use this when the user describes a mood, characteristic, flavor profile, or asks for something 'like X'. Returns ranked matches by relevance. For specific structured queries (all teas of a category, urgent teas), prefer list_teas_by_filter.",
-    parameters: {
-      type: "object" as const,
-      properties: {
-        query: {
-          type: "string",
-          description:
-            "Natural language search query describing what the user wants. E.g. 'earthy and warming', 'something like gyokuro from Uji', 'delicate afternoon tea'.",
+    type: "function" as const,
+    function: {
+      name: "search_teas",
+      description:
+        "Search for teas using natural language similarity. Use this when the user describes a mood, characteristic, flavor profile, or asks for something 'like X'. Returns ranked matches by relevance. For specific structured queries (all teas of a category, urgent teas), prefer list_teas_by_filter.",
+      parameters: {
+        type: "object" as const,
+        properties: {
+          query: {
+            type: "string",
+            description:
+              "Natural language search query describing what the user wants. E.g. 'earthy and warming', 'something like gyokuro from Uji', 'delicate afternoon tea'.",
+          },
+          top_k: {
+            type: "number",
+            description: "Number of results to return. Default 5.",
+          },
         },
-        top_k: {
-          type: "number",
-          description: "Number of results to return. Default 5.",
-        },
+        required: ["query"],
       },
-      required: ["query"],
     },
   },
   {
-    name: "get_tea",
-    description:
-      "Get the full detailed record of a single tea by its ID, including brewing parameters, producer history, full notes, and all metadata. Use this when you want to give the user detailed information about a specific tea, or when you need brewing parameters for a recommendation.",
-    parameters: {
-      type: "object" as const,
-      properties: {
-        id: {
-          type: "string",
-          description: "The unique ID of the tea (kebab-case, e.g. 'gyokuro-zuigyoku-kanbayashi').",
+    type: "function" as const,
+    function: {
+      name: "get_tea",
+      description:
+        "Get the full detailed record of a single tea by its ID, including brewing parameters, producer history, full notes, and all metadata. Use this when you want to give the user detailed information about a specific tea, or when you need brewing parameters for a recommendation.",
+      parameters: {
+        type: "object" as const,
+        properties: {
+          id: {
+            type: "string",
+            description: "The unique ID of the tea (kebab-case, e.g. 'gyokuro-zuigyoku-kanbayashi').",
+          },
         },
+        required: ["id"],
       },
-      required: ["id"],
     },
   },
 ];
@@ -302,8 +314,9 @@ chatApp.post("/api/chat", async (c) => {
           })) as {
             response?: string;
             tool_calls?: Array<{
-              name: string;
-              arguments: Record<string, unknown>;
+              name?: string;
+              arguments?: Record<string, unknown>;
+              function?: { name: string; arguments: Record<string, unknown> | string };
             }>;
           };
 
@@ -318,24 +331,31 @@ chatApp.post("/api/chat", async (c) => {
           }
 
           // Execute all tool calls from this round
-          for (const toolCall of response.tool_calls) {
+          for (const rawCall of response.tool_calls) {
+            // Normalize: some models return {name, arguments}, others {function: {name, arguments}}
+            const toolName = rawCall.name ?? rawCall.function?.name ?? "";
+            let toolArgs: Record<string, unknown> =
+              rawCall.arguments ?? (typeof rawCall.function?.arguments === "string"
+                ? JSON.parse(rawCall.function.arguments)
+                : rawCall.function?.arguments) ?? {};
+
             controller.enqueue(
               encoder.encode(
-                sseEvent("tool_call", { tool: toolCall.name, status: "running" })
+                sseEvent("tool_call", { tool: toolName, status: "running" })
               )
             );
 
-            const result = await executeTool(toolCall.name, toolCall.arguments, c.env);
+            const result = await executeTool(toolName, toolArgs, c.env);
 
             messages.push({
               role: "tool",
-              name: toolCall.name,
+              name: toolName,
               content: JSON.stringify(result),
             });
 
             controller.enqueue(
               encoder.encode(
-                sseEvent("tool_result", { tool: toolCall.name, status: "done" })
+                sseEvent("tool_result", { tool: toolName, status: "done" })
               )
             );
           }
