@@ -1,0 +1,39 @@
+id: gyokuro-zuigyoku-kanbayashi
+name:
+  primary: "Gyokuro Zuigyoku"
+  alternate: "瑞玉"
+  pronunciation: "Zui-gyoku"
+category: gyokuro
+category_label: "Gyokuro"
+producer:
+  name: "Kanbayashi"
+  history: "Tea suppliers to the Tokugawa Shogunate. Centuries-old lineage from Uji."
+origin:
+  region: "Uji"
+  country: "Japan"
+  locality: null
+acquisition:
+  location: "Uji, Kyoto"
+  year: 2025
+  month: 9
+  context: "Honeymoon trip"
+status: keeper
+urgency: now
+expiry_estimate: "~2026.04"
+brewing:
+  water_temp_c: 60
+  steep_time_seconds: 120
+  leaf_grams_per_100ml: 5
+  vessel: "kyusu"
+  rounds: 3
+  notes: "Low temperature is essential. First steep brings out umami; subsequent steeps reveal sweetness."
+notes: |
+  Exceptional gyokuro from Kanbayashi, historic Uji producer. Deep umami,
+  marine sweetness, almost broth-like in body. The kind of tea that
+  rewards full attention — not a daily driver, a meditation.
+photo:
+  url: "/photos/gyokuro-zuigyoku-kanbayashi.jpg"
+  alt: "Sealed packet of Kanbayashi Gyokuro Zuigyoku"
+  source: "Kanbayashi official"
+  is_local: true
+tags: [premium, japanese-tea, uji, honeymoon-collection]

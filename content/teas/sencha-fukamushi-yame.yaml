@@ -1,0 +1,40 @@
+id: sencha-fukamushi-yame
+name:
+  primary: "Fukamushi Sencha Yame"
+  alternate: "深蒸し煎茶"
+  pronunciation: "Fu-ka-mu-shi"
+category: sencha-fukamushi
+category_label: "Sencha (Fukamushi)"
+producer:
+  name: "Yame Tea Cooperative"
+  history: "Yame region in Fukuoka prefecture, known for premium shaded teas and deep-steamed senchas."
+origin:
+  region: "Yame"
+  country: "Japan"
+  locality: "Fukuoka"
+acquisition:
+  location: "Online (Yunomi)"
+  year: 2025
+  month: 6
+  context: null
+status: keeper
+urgency: soon
+expiry_estimate: "~2026.03"
+brewing:
+  water_temp_c: 70
+  steep_time_seconds: 45
+  leaf_grams_per_100ml: 4
+  vessel: "kyusu"
+  rounds: 3
+  notes: "Deep-steamed leaves break down easily. Use a fine mesh kyusu. Shorter steep than regular sencha."
+notes: |
+  Deep-steamed sencha from Yame, Fukuoka. The extended steaming breaks down
+  leaf structure, producing a richer, more opaque brew with full body and
+  reduced astringency. Sweet, slightly creamy, with a vegetal depth that
+  lighter senchas lack. Daily-driver quality.
+photo:
+  url: "/photos/sencha-fukamushi-yame.jpg"
+  alt: "Deep green fukamushi sencha leaves, finely broken"
+  source: null
+  is_local: true
+tags: [japanese-tea, yame, daily-drinker]

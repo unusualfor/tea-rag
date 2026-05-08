@@ -1,0 +1,41 @@
+id: tamaryokucha-sonogi
+name:
+  primary: "Tamaryokucha Sonogi"
+  alternate: "玉緑茶"
+  pronunciation: "Ta-ma-ryo-ku-cha"
+category: tamaryokucha
+category_label: "Tamaryokucha"
+producer:
+  name: "Sonogi Tea Farmers"
+  history: "Sonogi in Nagasaki prefecture. Small-scale production influenced by nearby Chinese tea-making, producing a unique curly-leaf green."
+origin:
+  region: "Sonogi"
+  country: "Japan"
+  locality: "Nagasaki"
+acquisition:
+  location: "Online (Yunomi)"
+  year: 2025
+  month: 5
+  context: null
+status: tasting
+urgency: soon
+expiry_estimate: "~2026.04"
+brewing:
+  water_temp_c: 70
+  steep_time_seconds: 90
+  leaf_grams_per_100ml: 4
+  vessel: "kyusu"
+  rounds: 3
+  notes: "Treat like a sencha but with slightly longer steep. The curly leaves need time to unfurl."
+notes: |
+  Tamaryokucha ('curly green tea') from Sonogi — pan-fired rather than
+  steamed, giving it a rounder, slightly sweeter profile than standard
+  sencha. The Chinese influence is visible in the curled leaf shape and
+  the toasty-sweet character. An unusual Japanese green worth exploring.
+  Currently in tasting mode — deciding if it earns a permanent spot.
+photo:
+  url: "/photos/tamaryokucha-sonogi.jpg"
+  alt: "Curled green tamaryokucha leaves"
+  source: null
+  is_local: true
+tags: [japanese-tea, unusual, nagasaki]

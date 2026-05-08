@@ -1,0 +1,39 @@
+id: genmaicha-ippodo
+name:
+  primary: "Genmaicha"
+  alternate: "玄米茶"
+category: genmaicha
+category_label: "Genmaicha"
+producer:
+  name: "Ippodo"
+  history: "Founded 1717 in Kyoto. Imperial warrant holder, supplying tea to the Japanese court for centuries."
+origin:
+  region: "Kyoto"
+  country: "Japan"
+  locality: null
+acquisition:
+  location: "Kyoto"
+  year: 2025
+  month: 9
+  context: "Honeymoon trip"
+status: keeper
+urgency: calm
+expiry_estimate: "~2026.09"
+brewing:
+  water_temp_c: 90
+  steep_time_seconds: 30
+  leaf_grams_per_100ml: 4
+  vessel: "kyusu"
+  rounds: 2
+  notes: "Hot water, quick steep. The toasted rice puffs up beautifully. Good with food."
+notes: |
+  Green tea blended with toasted rice from Ippodo. The rice adds a warm,
+  popcorn-like aroma and nutty flavor that complements the grassy base.
+  Unpretentious, satisfying, pairs well with meals. A daily-drinking tea
+  with zero pretension and genuine charm.
+photo:
+  url: "/photos/genmaicha-ippodo.jpg"
+  alt: "Ippodo genmaicha with visible toasted rice grains"
+  source: null
+  is_local: true
+tags: [japanese-tea, kyoto, daily-drinker, honeymoon-collection]

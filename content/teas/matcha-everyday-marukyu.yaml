@@ -1,0 +1,39 @@
+id: matcha-everyday-marukyu
+name:
+  primary: "Wako Matcha"
+  alternate: "和光"
+category: matcha-everyday
+category_label: "Matcha (Everyday)"
+producer:
+  name: "Marukyu Koyamaen"
+  history: "Founded 1704 in Uji. One of the most respected tea houses in Japan, seven generations of expertise."
+origin:
+  region: "Uji"
+  country: "Japan"
+  locality: null
+acquisition:
+  location: "Kyoto"
+  year: 2025
+  month: 9
+  context: "Honeymoon trip"
+status: keeper
+urgency: stable
+expiry_estimate: "~2026.06"
+brewing:
+  water_temp_c: 80
+  steep_time_seconds: 15
+  leaf_grams_per_100ml: 2
+  vessel: "chawan"
+  rounds: 1
+  notes: "Good as daily matcha. Slightly more bitter than ceremonial grade — works well as latte base too."
+notes: |
+  Everyday-grade matcha from Marukyu Koyamaen. Not as refined as their
+  ceremonial offerings, but reliably good for daily preparation. Balanced
+  between bitter and sweet, with enough body to stand up to milk if desired.
+  The workhorse matcha in the collection.
+photo:
+  url: "/photos/matcha-everyday-marukyu.jpg"
+  alt: "Small tin of Marukyu Koyamaen Wako matcha"
+  source: null
+  is_local: true
+tags: [japanese-tea, uji, daily-drinker, honeymoon-collection]

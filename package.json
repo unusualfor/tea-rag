@@ -1,0 +1,48 @@
+{
+  "name": "tea-rag",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --mode worker",
+    "build:client": "vite build",
+    "build:worker": "vite build --mode worker",
+    "preview": "wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "ingest": "npx tsx scripts/ingest.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.4.1",
+    "@fontsource-variable/geist": "^5.2.8",
+    "@hono/zod-validator": "^0.4.1",
+    "hono": "^4.6.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "shadcn": "^4.7.0",
+    "tw-animate-css": "^1.4.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.6.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "js-yaml": "^4.1.0",
+    "lucide-react": "^0.460.0",
+    "postcss": "^8.4.49",
+    "tailwind-merge": "^2.6.1",
+    "tailwindcss": "^3.4.15",
+    "tailwindcss-animate": "^1.0.7",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.0",
+    "wrangler": "^3.93.0"
+  }
+}

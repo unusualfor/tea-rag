@@ -1,0 +1,38 @@
+id: hojicha-kanbayashi
+name:
+  primary: "Hojicha"
+  alternate: "ほうじ茶"
+category: hojicha
+category_label: "Hojicha"
+producer:
+  name: "Kanbayashi"
+  history: "Tea suppliers to the Tokugawa Shogunate. Centuries-old lineage from Uji."
+origin:
+  region: "Uji"
+  country: "Japan"
+  locality: null
+acquisition:
+  location: "Uji, Kyoto"
+  year: 2025
+  month: 9
+  context: "Honeymoon trip"
+status: keeper
+urgency: calm
+expiry_estimate: "~2026.09"
+brewing:
+  water_temp_c: 95
+  steep_time_seconds: 30
+  leaf_grams_per_100ml: 4
+  vessel: "kyusu"
+  rounds: 2
+  notes: "Boiling water is fine. Quick steep for roasty sweetness. Good evening tea — low caffeine."
+notes: |
+  Roasted green tea from Kanbayashi. Warm, nutty, caramel-like sweetness
+  without bitterness. Comforting rather than complex. A perfect evening tea
+  or post-meal palate cleanser. The roasting process reduces caffeine significantly.
+photo:
+  url: "/photos/hojicha-kanbayashi.jpg"
+  alt: "Brown roasted hojicha leaves from Kanbayashi"
+  source: null
+  is_local: true
+tags: [japanese-tea, uji, evening-tea, honeymoon-collection]
