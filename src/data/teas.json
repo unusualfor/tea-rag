@@ -742,7 +742,7 @@
       "alternate": "Tomurcuk Çayı"
     },
     "category": "earl-grey",
-    "category_label": "Earl Grey (flavored black tea, Turkish)",
+    "category_label": "Earl Grey",
     "producer": {
       "name": "Çaykur",
       "history": "Çay-Kur is the Turkish state-owned tea producer (full name Çay İşletmeleri Genel Müdürlüğü), founded in 1971 and headquartered in Rize, on the Black Sea coast. Turkey is one of the world's largest tea consumers per capita, and Çaykur is the dominant domestic producer. 'Tomurcuk' means 'bud' in Turkish — the Tomurcuk line is positioned as a higher-grade product using fresh tea buds. The Earl Grey variant blends Çaykur's Black Sea-grown black tea with natural bergamot essence."
@@ -1257,7 +1257,7 @@
       "alternate": null
     },
     "category": "earl-grey",
-    "category_label": "Earl Grey (flavored black tea)",
+    "category_label": "Earl Grey",
     "producer": {
       "name": "Harrods",
       "history": "Harrods is a luxury department store in Knightsbridge, London, founded in 1849. No. 42 Earl Grey is a high-bergamot Earl Grey blending East African (predominantly Kenyan) and Indian black teas. Per Harrods: 'high proportion of quality Kenyan leaves to give the brew its lively, brisk flavour' complemented with 'exotic citrus from our exclusive bergamot flavouring.'"
@@ -1354,7 +1354,7 @@
       "alternate": "Tè Nero Giappone"
     },
     "category": "wakocha",
-    "category_label": "Wakocha (Japanese Black)",
+    "category_label": "Wakocha",
     "producer": {
       "name": "Unknown",
       "history": null
@@ -2174,7 +2174,7 @@
       "alternate": "さつき露"
     },
     "category": "tamaryokucha",
-    "category_label": "Tamaryokucha (curled green)",
+    "category_label": "Tamaryokucha",
     "producer": {
       "name": "Kusano Seichaen",
       "history": "Tea producer and shop in Ureshino Onsen, Saga prefecture (Kyushu). 'Satsuki Tsuyu' (さつき露, 'May Dew') is one of their signature tamaryokucha products, marketed under the regional moniker 'Yushuku Meicha' (湯宿銘茶, 'famous tea of the hot-spring inn town' — Yushuku being a poetic reference to Ureshino's onsen-town identity). Kusano's 'Tsuyukabuse' tea has won the Fine Product Award at the National Japanese Tea Competition. Ureshino is one of the few Japanese regions still producing tamaryokucha at scale — a curled-leaf style predating the modern needle-shaped sencha."
@@ -2602,7 +2602,7 @@
       "alternate": "山本山玄米茶"
     },
     "category": "genmaicha",
-    "category_label": "Genmaicha (green tea with roasted rice)",
+    "category_label": "Genmaicha",
     "producer": {
       "name": "Yamamotoyama",
       "history": "Japanese tea house founded in 1690 in Nihonbashi, Edo (modern Tokyo) by Kahei Yamamoto. One of Japan's oldest and most established tea companies. Their genmaicha combines steamed green tea leaves with roasted brown rice (some grains pop into puffy white kernels during roasting), historically a poor-person's tea that has become a beloved everyday Japanese tea worldwide."
@@ -2652,7 +2652,7 @@
       "alternate": "山本山ほうじ茶"
     },
     "category": "hojicha",
-    "category_label": "Hojicha (roasted green tea)",
+    "category_label": "Hojicha",
     "producer": {
       "name": "Yamamotoyama",
       "history": "Japanese tea house founded in 1690 in Nihonbashi, Edo (modern Tokyo) by Kahei Yamamoto. One of Japan's oldest and most established tea companies (335+ years), now operating as Yamamotoyama USA in addition to its Japanese operations. Their hojicha blends two roasting intensities: lightly roasted leaves for a bright top note and deeply roasted leaves for nutty depth. Made from 100% domestically grown Japanese tea leaves."
