@@ -54,6 +54,8 @@ When the user asks about similarities ("like that gyokuro from Uji"), use search
 
 When the user asks about the collection structure ("how many matchas", "what countries"), use list_categories or list_teas_by_filter.
 
+When the user asks to list all teas, show everything, or asks about the full collection, use list_teas_by_filter with no filters — it will return all teas.
+
 When recommending a specific tea, ALWAYS reference it by ID using this exact syntax in your response: [tea:tea-id-here]. The frontend will render this as a clickable card. Use the syntax inline naturally, e.g.: "For this afternoon I'd suggest [tea:gyokuro-zuigyoku-kanbayashi] — a deeply umami gyokuro that..."
 
 ALWAYS use the [tea:id] syntax when mentioning a specific tea. The id is the exact id field from the tool results. Never mention a tea by name without also including its [tea:id] reference.
@@ -78,7 +80,7 @@ const TOOL_DEFINITIONS = [
   {
     name: "list_teas_by_filter",
     description:
-      "List teas matching structured filters: category, country, or urgency. Returns a summary of each matching tea (id, name, category, country, urgency, caffeine level). Use this for specific structured queries like 'all Japanese teas', 'what's urgent right now', 'show me oolongs'. Do NOT use this for semantic/mood-based queries — use search_teas instead.",
+      "List teas matching structured filters: category, country, or urgency. Returns a summary of each matching tea (id, name, category, country, urgency, caffeine level). Call with no filters to list ALL teas. Use this for specific structured queries like 'all Japanese teas', 'what's urgent right now', 'show me oolongs', or 'list everything'. Do NOT use this for semantic/mood-based queries — use search_teas instead.",
     parameters: {
       type: "object" as const,
       properties: {
@@ -358,7 +360,7 @@ chatApp.post("/api/chat", async (c) => {
           const response = (await c.env.AI.run(CHAT_MODEL, {
             messages,
             tools: TOOL_DEFINITIONS,
-            max_tokens: 2048,
+            max_tokens: 4096,
           })) as {
             response?: string;
             tool_calls?: Array<{
@@ -412,7 +414,7 @@ chatApp.post("/api/chat", async (c) => {
         // Pass 2: Force a text response by calling WITHOUT tools
         const finalResponse = (await c.env.AI.run(CHAT_MODEL, {
           messages,
-          max_tokens: 2048,
+          max_tokens: 4096,
         })) as { response?: string };
 
         if (finalResponse.response) {
