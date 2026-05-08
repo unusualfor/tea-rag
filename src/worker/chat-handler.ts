@@ -293,7 +293,7 @@ chatApp.post("/api/chat", async (c) => {
         // Pass 2: Call model WITHOUT tools to force a text response,
         //         now that tool results are in context.
 
-        const MAX_TOOL_ROUNDS = 2;
+        const MAX_TOOL_ROUNDS = 1;
 
         for (let round = 0; round < MAX_TOOL_ROUNDS; round++) {
           const response = (await c.env.AI.run(CHAT_MODEL, {
