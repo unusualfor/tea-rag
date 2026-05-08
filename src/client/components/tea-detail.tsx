@@ -32,7 +32,7 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
 
   return (
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
-      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto p-0">
+      <DialogContent className="max-w-[100vw] sm:max-w-3xl max-h-[100dvh] sm:max-h-[90vh] overflow-y-auto p-0 rounded-none sm:rounded-xl h-[100dvh] sm:h-auto">
         {/* Header with gradient */}
         <div className={`relative h-48 bg-gradient-to-br ${gradient} flex items-end p-6`}>
           <div className="absolute inset-0 bg-black/15" />
@@ -89,34 +89,34 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
           {tea.brewing && (
             <div>
               <h4 className="text-sm font-medium text-foreground mb-3">Brewing</h4>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 <BrewingParam
-                  icon={<Thermometer className="w-4 h-4" />}
+                  icon={<Thermometer className="w-3.5 h-3.5" />}
                   label="Temperature"
                   value={formatBrewingTemp(tea.brewing.water_temp_c)}
                 />
                 <BrewingParam
-                  icon={<Clock className="w-4 h-4" />}
+                  icon={<Clock className="w-3.5 h-3.5" />}
                   label="Steep time"
                   value={formatBrewingTime(tea.brewing.steep_time_seconds)}
                 />
                 {tea.brewing.leaf_grams_per_100ml && (
                   <BrewingParam
-                    icon={<Scale className="w-4 h-4" />}
+                    icon={<Scale className="w-3.5 h-3.5" />}
                     label="Leaf ratio"
                     value={`${tea.brewing.leaf_grams_per_100ml}g / 100ml`}
                   />
                 )}
                 {tea.brewing.vessel && (
                   <BrewingParam
-                    icon={<Coffee className="w-4 h-4" />}
+                    icon={<Coffee className="w-3.5 h-3.5" />}
                     label="Vessel"
                     value={tea.brewing.vessel}
                   />
                 )}
                 {tea.brewing.rounds && (
                   <BrewingParam
-                    icon={<RotateCcw className="w-4 h-4" />}
+                    icon={<RotateCcw className="w-3.5 h-3.5" />}
                     label="Rounds"
                     value={`${tea.brewing.rounds}`}
                   />
@@ -186,12 +186,12 @@ function BrewingParam({
   value: string;
 }) {
   return (
-    <div className="flex items-start gap-3">
-      <div className="text-muted-foreground mt-0.5 shrink-0">{icon}</div>
-      <div className="min-w-0">
-        <p className="text-xs text-muted-foreground">{label}</p>
-        <p className="text-sm font-medium">{value}</p>
+    <div className="flex flex-col gap-0.5">
+      <div className="flex items-center gap-1.5 text-muted-foreground">
+        <span className="shrink-0 w-3.5 h-3.5">{icon}</span>
+        <span className="text-xs">{label}</span>
       </div>
+      <p className="text-sm font-medium">{value}</p>
     </div>
   );
 }
