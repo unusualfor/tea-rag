@@ -116,8 +116,9 @@ function FilterChip({
   return (
     <Badge
       variant={active ? "default" : "outline"}
-      className="cursor-pointer transition-colors hover:bg-primary/10 select-none"
+      className="cursor-pointer transition-colors hover:bg-primary/10 select-none max-w-full truncate"
       onClick={onClick}
+      title={label}
     >
       {label}
     </Badge>
