@@ -259,6 +259,50 @@ interface ChatRequest {
   history: Array<{ role: "user" | "assistant"; content: string }>;
 }
 
+// All known tea IDs for reference fixup
+const TEA_IDS = new Set(teas.map((t) => t.id));
+
+/**
+ * Fix broken [tea:id] references from the model.
+ * Handles: truncated IDs, [tea.id] syntax, [tea: id] with spaces,
+ * and fuzzy-matches partial IDs to real ones.
+ */
+function fixTeaReferences(text: string): string {
+  // Normalize [tea.id] and [tea: id] to [tea:id]
+  text = text.replace(/\[tea[.:]\s*([a-z0-9-]+)\]/gi, (_, id) => `[tea:${id.toLowerCase()}]`);
+
+  // Find all [tea:...] references and fix broken IDs
+  return text.replace(/\[tea:([a-z0-9-]+)\]/g, (_match, id: string) => {
+    if (TEA_IDS.has(id)) return `[tea:${id}]`;
+
+    // Try to find a matching tea by prefix or substring
+    const candidates = teas.filter(
+      (t) => t.id.startsWith(id) || id.startsWith(t.id) || t.id.includes(id) || id.includes(t.id.slice(0, Math.max(10, t.id.length - 5)))
+    );
+    if (candidates.length === 1) return `[tea:${candidates[0].id}]`;
+
+    // Fallback: best Levenshtein-like match by shared prefix length
+    let bestMatch = "";
+    let bestScore = 0;
+    for (const t of teas) {
+      let shared = 0;
+      for (let i = 0; i < Math.min(id.length, t.id.length); i++) {
+        if (id[i] === t.id[i]) shared++;
+        else break;
+      }
+      if (shared > bestScore) {
+        bestScore = shared;
+        bestMatch = t.id;
+      }
+    }
+    // Only accept if we matched at least 60% of the shorter string
+    const minLen = Math.min(id.length, bestMatch.length);
+    if (bestScore >= minLen * 0.6) return `[tea:${bestMatch}]`;
+
+    return `[tea:${id}]`;
+  });
+}
+
 function streamText(
   text: string,
   controller: ReadableStreamDefaultController,
@@ -323,7 +367,7 @@ chatApp.post("/api/chat", async (c) => {
           // If the model chose to respond with text directly, stream it
           if (!response.tool_calls || response.tool_calls.length === 0) {
             if (response.response) {
-              streamText(response.response, controller, encoder);
+              streamText(fixTeaReferences(response.response), controller, encoder);
             }
             controller.enqueue(encoder.encode(sseEvent("done", {})));
             controller.close();
@@ -367,7 +411,7 @@ chatApp.post("/api/chat", async (c) => {
         })) as { response?: string };
 
         if (finalResponse.response) {
-          streamText(finalResponse.response, controller, encoder);
+          streamText(fixTeaReferences(finalResponse.response), controller, encoder);
         }
 
         controller.enqueue(encoder.encode(sseEvent("done", {})));
