@@ -1,0 +1,45 @@
+id: caykur-tirebolu-42
+name:
+  primary: Tirebolu 42
+  alternate: Çaykur Tirebolu 42
+category: turkish
+category_label: Turkish Black Tea
+producer:
+  name: Çaykur
+  history: Major Turkish tea producer associated with the Black Sea tea-growing regions.
+origin:
+  region: Tirebolu, Giresun
+  country: Turkey
+  locality: Black Sea Region
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 3
+urgency: calm
+expiry_estimate: null
+brewing:
+  vessel: çaydanlık
+  leaf_grams_per_100ml: 4
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 900
+  notes: Usually brewed concentrated and softened with additional hot water when serving.
+notes: |
+  Premium-style Turkish black tea sourced from the Tirebolu area, a region
+  known for high-quality Black Sea tea cultivation. Compared to standard
+  Rize blends, Tirebolu 42 is often considered softer, more aromatic and
+  slightly sweeter while still maintaining the classic Turkish tea intensity.
+  Popular among enthusiasts looking for a more refined everyday çay experience.
+photo:
+  url: /photos/caykur-tirebolu-42.jpg
+  alt: Package of Çaykur Tirebolu 42 Turkish black tea
+  source: null
+  is_local: true
+tags:
+- turkish-tea
+- black-tea
+- tirebolu
+- black-sea-tea
+- premium-everyday

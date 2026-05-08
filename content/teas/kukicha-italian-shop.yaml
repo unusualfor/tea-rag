@@ -1,0 +1,40 @@
+id: kukicha-italian-shop
+name:
+  primary: Kukicha
+  alternate: 茎茶
+category: kukicha
+category_label: Kukicha
+producer:
+  name: Unknown
+  history: null
+origin:
+  region: Unknown
+  country: Japan
+  locality: null
+acquisition:
+  location: Italy
+  year: null
+  month: null
+  context: Purchased from an Italian tea shop
+caffeine_level: 2
+urgency: stable
+expiry_estimate: null
+brewing:
+  vessel: kyusu
+  leaf_grams_per_100ml: 4
+  rounds:
+  - water_temp_c: 80
+    steep_time_seconds: 60
+  - water_temp_c: 80
+    steep_time_seconds: 30
+  notes: Kukicha is made from stems and twigs, so it brews lighter and sweeter than leaf-based teas. Lower caffeine than sencha.
+notes: |
+  Kukicha (twig tea) sourced from an Italian tea shop — exact producer
+  and origin unknown. Made from stems, stalks and twigs of the tea plant,
+  giving it a naturally sweet, nutty and mild character with low caffeine.
+  A gentle everyday tea, popular in macrobiotic diets.
+tags:
+- japanese-tea
+- kukicha
+- twig-tea
+- low-caffeine

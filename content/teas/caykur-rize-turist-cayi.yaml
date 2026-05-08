@@ -1,0 +1,44 @@
+id: caykur-rize-turist-cayi
+name:
+  primary: Rize Turist Çayı
+  alternate: Rize Tourist Tea
+category: turkish
+category_label: Turkish Black Tea
+producer:
+  name: Çaykur
+  history: State-backed Turkish tea producer founded in the Rize region, central to modern Turkish tea culture.
+origin:
+  region: Rize
+  country: Turkey
+  locality: null
+acquisition:
+  location: null
+  year: null
+  month: null
+  context: null
+caffeine_level: 3
+urgency: calm
+expiry_estimate: null
+brewing:
+  vessel: çaydanlık
+  leaf_grams_per_100ml: 4
+  rounds:
+  - water_temp_c: 100
+    steep_time_seconds: 900
+  notes: Traditionally brewed strong in the upper kettle of a Turkish double teapot and diluted to taste with hot water.
+notes: |
+  One of the most iconic everyday Turkish black teas, produced from tea
+  grown around the humid Black Sea region of Rize. Strong, brisk and smooth,
+  designed for repeated daily consumption in small tulip-shaped glasses.
+  A foundational tea for traditional Turkish breakfast culture and social rituals.
+photo:
+  url: /photos/caykur-rize-turist-cayi.jpg
+  alt: Yellow package of Çaykur Rize Turist Çayı black tea
+  source: null
+  is_local: true
+tags:
+- turkish-tea
+- black-tea
+- rize
+- everyday-tea
+- strong-tea

@@ -36,7 +36,7 @@
       ],
       "notes": "Per Ahmad Tea: 3-5 minutes infusion in boiling water; ~1 tsp per cup. Best served hot with a slice of lemon (per producer recommendation) or with a splash of milk. Single infusion."
     },
-    "notes": "IMPORTANT — DISAMBIGUATION NEEDED. The user's input was\n'Ahmad tea no 1 earl grey tea,' which is ambiguous because:\n\n  (a) Ahmad Tea has a product called 'English Tea No. 1' — a Ceylon\n      + Kenyan + Assam blend with a TOUCH of bergamot. This is\n      the most likely match given the 'No. 1' designation.\n  (b) Ahmad Tea also sells a separate 'Earl Grey' product (full\n      bergamot, Kenya/Malawi base).\n  (c) There may be a regional/market SKU 'Earl Grey No. 1' that\n      is not surfaced in standard searches.\n\nThis YAML is built assuming interpretation (a): English Tea No. 1.\nIf the actual product is the standard Ahmad Earl Grey, the\nbrewing parameters and category should be updated:\n  - category: earl-grey\n  - bergamot level: high (vs. light here)\n  - origin: Kenya + Malawi (vs. Ceylon + Kenyan + Assam)\n\nBlack teas keep well — stable urgency regardless of which\ninterpretation is correct.\n",
+    "notes": "Black teas keep well — stable urgency regardless of which\ninterpretation is correct.\n",
     "tags": [
       "british-blend",
       "ceylon",
@@ -629,6 +629,110 @@
       "souvenir",
       "hotel-blend",
       "osaka"
+    ]
+  },
+  {
+    "id": "caykur-rize-turist-cayi",
+    "name": {
+      "primary": "Rize Turist Çayı",
+      "alternate": "Rize Tourist Tea"
+    },
+    "category": "turkish",
+    "category_label": "Turkish Black Tea",
+    "producer": {
+      "name": "Çaykur",
+      "history": "State-backed Turkish tea producer founded in the Rize region, central to modern Turkish tea culture."
+    },
+    "origin": {
+      "region": "Rize",
+      "country": "Turkey",
+      "locality": null
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 3,
+    "urgency": "calm",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "çaydanlık",
+      "leaf_grams_per_100ml": 4,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 900
+        }
+      ],
+      "notes": "Traditionally brewed strong in the upper kettle of a Turkish double teapot and diluted to taste with hot water."
+    },
+    "notes": "One of the most iconic everyday Turkish black teas, produced from tea\ngrown around the humid Black Sea region of Rize. Strong, brisk and smooth,\ndesigned for repeated daily consumption in small tulip-shaped glasses.\nA foundational tea for traditional Turkish breakfast culture and social rituals.\n",
+    "photo": {
+      "url": "/photos/caykur-rize-turist-cayi.jpg",
+      "alt": "Yellow package of Çaykur Rize Turist Çayı black tea",
+      "source": null,
+      "is_local": true
+    },
+    "tags": [
+      "turkish-tea",
+      "black-tea",
+      "rize",
+      "everyday-tea",
+      "strong-tea"
+    ]
+  },
+  {
+    "id": "caykur-tirebolu-42",
+    "name": {
+      "primary": "Tirebolu 42",
+      "alternate": "Çaykur Tirebolu 42"
+    },
+    "category": "turkish",
+    "category_label": "Turkish Black Tea",
+    "producer": {
+      "name": "Çaykur",
+      "history": "Major Turkish tea producer associated with the Black Sea tea-growing regions."
+    },
+    "origin": {
+      "region": "Tirebolu, Giresun",
+      "country": "Turkey",
+      "locality": "Black Sea Region"
+    },
+    "acquisition": {
+      "location": null,
+      "year": null,
+      "month": null,
+      "context": null
+    },
+    "caffeine_level": 3,
+    "urgency": "calm",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "çaydanlık",
+      "leaf_grams_per_100ml": 4,
+      "rounds": [
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 900
+        }
+      ],
+      "notes": "Usually brewed concentrated and softened with additional hot water when serving."
+    },
+    "notes": "Premium-style Turkish black tea sourced from the Tirebolu area, a region\nknown for high-quality Black Sea tea cultivation. Compared to standard\nRize blends, Tirebolu 42 is often considered softer, more aromatic and\nslightly sweeter while still maintaining the classic Turkish tea intensity.\nPopular among enthusiasts looking for a more refined everyday çay experience.\n",
+    "photo": {
+      "url": "/photos/caykur-tirebolu-42.jpg",
+      "alt": "Package of Çaykur Tirebolu 42 Turkish black tea",
+      "source": null,
+      "is_local": true
+    },
+    "tags": [
+      "turkish-tea",
+      "black-tea",
+      "tirebolu",
+      "black-sea-tea",
+      "premium-everyday"
     ]
   },
   {
@@ -1492,6 +1596,55 @@
       "koicha",
       "urasenke",
       "kyushu-collection"
+    ]
+  },
+  {
+    "id": "kukicha-italian-shop",
+    "name": {
+      "primary": "Kukicha",
+      "alternate": "茎茶"
+    },
+    "category": "kukicha",
+    "category_label": "Kukicha",
+    "producer": {
+      "name": "Unknown",
+      "history": null
+    },
+    "origin": {
+      "region": "Unknown",
+      "country": "Japan",
+      "locality": null
+    },
+    "acquisition": {
+      "location": "Italy",
+      "year": null,
+      "month": null,
+      "context": "Purchased from an Italian tea shop"
+    },
+    "caffeine_level": 2,
+    "urgency": "stable",
+    "expiry_estimate": null,
+    "brewing": {
+      "vessel": "kyusu",
+      "leaf_grams_per_100ml": 4,
+      "rounds": [
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 60
+        },
+        {
+          "water_temp_c": 80,
+          "steep_time_seconds": 30
+        }
+      ],
+      "notes": "Kukicha is made from stems and twigs, so it brews lighter and sweeter than leaf-based teas. Lower caffeine than sencha."
+    },
+    "notes": "Kukicha (twig tea) sourced from an Italian tea shop — exact producer\nand origin unknown. Made from stems, stalks and twigs of the tea plant,\ngiving it a naturally sweet, nutty and mild character with low caffeine.\nA gentle everyday tea, popular in macrobiotic diets.\n",
+    "tags": [
+      "japanese-tea",
+      "kukicha",
+      "twig-tea",
+      "low-caffeine"
     ]
   },
   {
