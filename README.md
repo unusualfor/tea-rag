@@ -164,11 +164,6 @@ See [DECISIONS.md](DECISIONS.md) for the full decision log. Highlights:
 - **Bracket syntax for references**: `[tea:id]` in LLM output → inline clickable cards in the UI. A server-side `fixTeaReferences()` post-processor corrects broken IDs and auto-links tea names the model mentions without proper references.
 - **YAML as source of truth**: diffs are readable, no database to manage for ~50 items.
 
-## Related projects
-
-- [cv-mcp](https://github.com/francescoforesta/cv-mcp) — MCP server exposing Francesco's CV for LLM consumption
-- [cv-web](https://github.com/francescoforesta/cv-web) — Personal portfolio site
-
 ## License
 
 MIT
