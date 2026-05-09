@@ -169,7 +169,7 @@ All 8 test queries from the Phase B spec were run against `wrangler dev --experi
 
 **Choice**: Reuse the existing `tea-embeddings` Vectorize index for production. No separate dev/prod indexes.
 
-**Why**: The index contains the canonical 23 teas, ingested with the same embedding model used in production. Creating a separate production index would add complexity (duplicate ingest, config branching) for no benefit at this scale. If the collection grows past ~100 items or multiple contributors are involved, revisit.
+**Why**: The index contains the canonical 52 teas, ingested with the same embedding model used in production. Creating a separate production index would add complexity (duplicate ingest, config branching) for no benefit at this scale. If the collection grows past ~100 items or multiple contributors are involved, revisit.
 
 ---
 
