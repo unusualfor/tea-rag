@@ -135,7 +135,11 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
 
               {/* Simple (traditional) view — single infusion */}
               {tea.brewing.simple && !showGongfu ? (
-                <div className="flex gap-4 text-sm">
+                <div className="flex flex-wrap gap-4 text-sm">
+                  <span className="flex items-center gap-1.5">
+                    <Scale className="w-3.5 h-3.5 text-muted-foreground" />
+                    {tea.brewing.simple.leaf_grams}g
+                  </span>
                   <span className="flex items-center gap-1.5">
                     <Thermometer className="w-3.5 h-3.5 text-muted-foreground" />
                     {formatBrewingTemp(tea.brewing.simple.water_temp_c)}

@@ -47,6 +47,7 @@ brewing:
     steep_time_seconds: 85
     water_ml: 110
   simple:
+    leaf_grams: 5
     water_temp_c: 100
     steep_time_seconds: 180
     water_ml: 355

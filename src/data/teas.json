@@ -173,6 +173,7 @@
         }
       ],
       "simple": {
+        "leaf_grams": 5,
         "water_temp_c": 100,
         "steep_time_seconds": 180,
         "water_ml": 355
@@ -359,6 +360,7 @@
         }
       ],
       "simple": {
+        "leaf_grams": 2,
         "water_temp_c": 85,
         "steep_time_seconds": 180,
         "water_ml": 250
@@ -1570,6 +1572,7 @@
         }
       ],
       "simple": {
+        "leaf_grams": 3,
         "water_temp_c": 85,
         "steep_time_seconds": 180,
         "water_ml": 250
@@ -1647,6 +1650,7 @@
         }
       ],
       "simple": {
+        "leaf_grams": 5,
         "water_temp_c": 85,
         "steep_time_seconds": 300,
         "water_ml": 355
@@ -2234,6 +2238,7 @@
         }
       ],
       "simple": {
+        "leaf_grams": 2,
         "water_temp_c": 85,
         "steep_time_seconds": 180,
         "water_ml": 250
@@ -2439,6 +2444,7 @@
         }
       ],
       "simple": {
+        "leaf_grams": 4,
         "water_temp_c": 100,
         "steep_time_seconds": 300,
         "water_ml": 355
@@ -2525,6 +2531,7 @@
         }
       ],
       "simple": {
+        "leaf_grams": 3,
         "water_temp_c": 95,
         "steep_time_seconds": 180,
         "water_ml": 250
@@ -2750,6 +2757,7 @@
         }
       ],
       "simple": {
+        "leaf_grams": 2,
         "water_temp_c": 85,
         "steep_time_seconds": 300,
         "water_ml": 355

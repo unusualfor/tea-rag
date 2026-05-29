@@ -81,6 +81,7 @@ export interface Tea {
       water_ml?: number;
     }>;
     simple?: {
+      leaf_grams: number;
       water_temp_c: number;
       steep_time_seconds: number;
       water_ml: number;
