@@ -105,12 +105,12 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
                       relative inline-flex h-6 items-center gap-1.5 rounded-full px-2.5
                       text-xs font-medium transition-colors
                       ${showGongfu
-                        ? "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-200"
-                        : "bg-muted text-muted-foreground hover:bg-muted/80"
+                        ? "bg-muted text-muted-foreground hover:bg-muted/80"
+                        : "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-200"
                       }
                     `}
                   >
-                    {showGongfu ? "Gongfu" : "Traditional"}
+                    {showGongfu ? "← Traditional" : "Gongfu →"}
                   </button>
                 )}
               </div>
