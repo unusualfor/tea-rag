@@ -115,21 +115,23 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
                 )}
               </div>
 
-              {/* Vessel & leaf ratio */}
-              <div className="flex flex-wrap gap-4 mb-3">
-                {tea.brewing.leaf_grams_per_100ml && (
-                  <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
-                    <Scale className="w-3.5 h-3.5" />
-                    <span>{tea.brewing.leaf_grams_per_100ml}g / 100ml</span>
-                  </div>
-                )}
-                {tea.brewing.vessel && (
-                  <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
-                    <Coffee className="w-3.5 h-3.5" />
-                    <span>{tea.brewing.vessel}</span>
-                  </div>
-                )}
-              </div>
+              {/* Vessel & leaf ratio — only for gongfu mode or teas without simple */}
+              {(!tea.brewing.simple || showGongfu) && (
+                <div className="flex flex-wrap gap-4 mb-3">
+                  {tea.brewing.leaf_grams_per_100ml && (
+                    <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                      <Scale className="w-3.5 h-3.5" />
+                      <span>{tea.brewing.leaf_grams_per_100ml}g / 100ml</span>
+                    </div>
+                  )}
+                  {tea.brewing.vessel && (
+                    <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                      <Coffee className="w-3.5 h-3.5" />
+                      <span>{tea.brewing.vessel}</span>
+                    </div>
+                  )}
+                </div>
+              )}
 
               {/* Simple (traditional) view — single infusion */}
               {tea.brewing.simple && !showGongfu ? (
