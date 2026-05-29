@@ -18,7 +18,7 @@ export function TeaCard({ tea, onClick }: TeaCardProps) {
 
   return (
     <Card
-      className="group cursor-pointer transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 overflow-hidden"
+      className={`group cursor-pointer transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 overflow-hidden ${tea.in_stock === false ? "opacity-60" : ""}`}
       onClick={() => onClick(tea)}
     >
       {/* Photo or placeholder */}
@@ -52,8 +52,17 @@ export function TeaCard({ tea, onClick }: TeaCardProps) {
 
         <div className="flex items-center justify-between pt-1">
           <div className="flex items-center gap-1.5">
-            <span className={`inline-block w-2 h-2 rounded-full ${urgency.dotColor}`} />
-            <span className="text-xs text-muted-foreground">{urgency.label}</span>
+            {tea.in_stock === false ? (
+              <>
+                <span className="inline-block w-2 h-2 rounded-full bg-muted-foreground/40" />
+                <span className="text-xs text-muted-foreground">Out of stock</span>
+              </>
+            ) : (
+              <>
+                <span className={`inline-block w-2 h-2 rounded-full ${urgency.dotColor}`} />
+                <span className="text-xs text-muted-foreground">{urgency.label}</span>
+              </>
+            )}
           </div>
           <span className="text-xs text-muted-foreground">
             {tea.producer.name}

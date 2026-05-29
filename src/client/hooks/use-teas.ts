@@ -7,12 +7,14 @@ export interface Filters {
   category: TeaCategory | null;
   urgency: TeaUrgency | null;
   country: string | null;
+  showOutOfStock: boolean;
 }
 
 const emptyFilters: Filters = {
   category: null,
   urgency: null,
   country: null,
+  showOutOfStock: false,
 };
 
 // Use bundled data directly, with urgency computed from current date
@@ -30,6 +32,7 @@ export function useTeas() {
 
   // Filter teas locally
   const filteredTeas = (searchResults ?? allTeas).filter((tea) => {
+    if (!filters.showOutOfStock && tea.in_stock === false) return false;
     if (filters.category && tea.category !== filters.category) return false;
     if (filters.urgency && tea.urgency !== filters.urgency) return false;
     if (filters.country && tea.origin.country !== filters.country) return false;

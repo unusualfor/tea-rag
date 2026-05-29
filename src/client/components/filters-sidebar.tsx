@@ -100,6 +100,21 @@ export function FiltersSidebar({
           ))}
         </div>
       </div>
+
+      <Separator />
+
+      {/* Stock */}
+      <div>
+        <label className="flex items-center gap-2 text-sm cursor-pointer select-none">
+          <input
+            type="checkbox"
+            checked={filters.showOutOfStock}
+            onChange={(e) => onFilterChange("showOutOfStock", e.target.checked)}
+            className="rounded border-muted-foreground/40"
+          />
+          <span className="text-muted-foreground">Show out of stock</span>
+        </label>
+      </div>
     </div>
   );
 }

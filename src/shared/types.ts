@@ -70,6 +70,7 @@ export interface Tea {
     context?: string;
   };
   caffeine_level: 1 | 2 | 3 | 4 | 5;
+  in_stock?: boolean;
   urgency: TeaUrgency;
   expiry_estimate?: string;
   brewing?: {
