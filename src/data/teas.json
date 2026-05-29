@@ -1423,6 +1423,7 @@
       "context": "Honeymoon trip"
     },
     "caffeine_level": 5,
+    "in_stock": false,
     "expiry_estimate": "2026.03",
     "brewing": {
       "vessel": "chawan",
@@ -2573,6 +2574,7 @@
       "context": "Honeymoon trip"
     },
     "caffeine_level": 5,
+    "in_stock": false,
     "expiry_estimate": "2026.03",
     "brewing": {
       "vessel": "chawan",
