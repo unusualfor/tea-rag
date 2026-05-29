@@ -25,6 +25,7 @@ brewing:
   rounds:
   - water_temp_c: 80
     steep_time_seconds: 0
+    water_ml: 60
   notes: Designed primarily for lattes, smoothies and baking rather than traditional usucha preparation.
 notes: |
   Unsweetened Japanese culinary-grade matcha powder marketed for baking,

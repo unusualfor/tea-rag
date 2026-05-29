@@ -27,6 +27,7 @@ brewing:
   rounds:
   - water_temp_c: 95
     steep_time_seconds: 300
+    water_ml: 250
   notes: 'Decoction-style brewing typical of Japanese herbal tisanes: 5g leaves in 500ml of near-boiling water, simmer or
     steep 3-5 minutes. Liquor turns reddish-brown / honey-colored. Can be re-steeped for a lighter second cup. Drinkable hot
     or cold-brewed; cold brew works well as a summer beverage. Caffeine-free, suitable for evening or for those avoiding caffeine.'

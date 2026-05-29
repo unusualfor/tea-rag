@@ -24,7 +24,8 @@ brewing:
   leaf_grams_per_100ml: 3
   rounds:
   - water_temp_c: 100
-    steep_time_seconds: 420
+    steep_time_seconds: 360
+    water_ml: 250
   notes: Full boiling water recommended for herbal blends.
 notes: |
   Austrian herbal infusion blend ("forest herb mix") containing assorted

@@ -29,10 +29,13 @@ brewing:
   rounds:
   - water_temp_c: 75
     steep_time_seconds: 60
-  - water_temp_c: 75
-    steep_time_seconds: 60
-  - water_temp_c: 75
-    steep_time_seconds: 60
+    water_ml: 60
+  - water_temp_c: 80
+    steep_time_seconds: 15
+    water_ml: 80
+  - water_temp_c: 80
+    steep_time_seconds: 45
+    water_ml: 100
   notes: 'Tamaryokucha schedule: 75°C, 60s first; 80°C, 15s second; 80°C, 45s third. Tamaryokucha tolerates slightly hotter
     water than premium sencha — the curled leaves open more slowly. Tends to give a richer, rounder profile than needle-rolled
     sencha; less astringent.'

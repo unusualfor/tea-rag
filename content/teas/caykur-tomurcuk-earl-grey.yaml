@@ -28,6 +28,7 @@ brewing:
   rounds:
   - water_temp_c: 100
     steep_time_seconds: 240
+    water_ml: 250
   notes: 'Per Çaykur instructions: 1 tsp per 8oz (240ml) boiling water, 3-5 minutes. Traditional Turkish preparation uses
     a double-pot (çaydanlık): brew concentrated tea in upper pot, dilute with hot water from lower pot to taste. For Western-style:
     brew at full concentration. The bergamot is gentler than UK Earl Greys (Twinings, Ahmad), making it a softer entry into

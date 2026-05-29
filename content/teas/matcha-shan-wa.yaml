@@ -23,8 +23,9 @@ brewing:
   vessel: matcha bowl
   leaf_grams_per_100ml: 2
   rounds:
-  - water_temp_c: 75
+  - water_temp_c: 80
     steep_time_seconds: 0
+    water_ml: 70
   notes: Potential entry-level matcha. Lower temperatures help reduce bitterness.
 notes: |
   Tin-labelled matcha tea with Chinese/Japanese branding elements. Exact

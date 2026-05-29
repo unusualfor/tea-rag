@@ -28,16 +28,26 @@ brewing:
   rounds:
   - water_temp_c: 85
     steep_time_seconds: 40
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 40
+    steep_time_seconds: 50
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 40
+    steep_time_seconds: 60
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 40
+    steep_time_seconds: 80
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 40
+    steep_time_seconds: 100
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 40
+    steep_time_seconds: 120
+    water_ml: 110
+  simple:
+    water_temp_c: 85
+    steep_time_seconds: 300
+    water_ml: 355
   notes: 'Gongfu schedule (110ml gaiwan, 5g): rinse, 40s, 50s, 60s, 80s, 100s, 120s. Western: 5g per 355ml at 85°C, 5-8 minutes.'
 notes: |
   Fujian-base jasmine pearls, distinct from the Yunnan version. Refreshing,

@@ -27,9 +27,20 @@ brewing:
   leaf_grams_per_100ml: 1
   rounds:
   - water_temp_c: 95
-    steep_time_seconds: 210
+    steep_time_seconds: 20
+    water_ml: 110
   - water_temp_c: 95
-    steep_time_seconds: 210
+    steep_time_seconds: 25
+    water_ml: 110
+  - water_temp_c: 95
+    steep_time_seconds: 35
+    water_ml: 110
+  - water_temp_c: 95
+    steep_time_seconds: 50
+    water_ml: 110
+  - water_temp_c: 95
+    steep_time_seconds: 75
+    water_ml: 110
   notes: 'Per producer instructions: 1 tea bag in 250ml boiling water, steep 3-4 minutes. Boiling water is appropriate for
     oolong but in this product the leaf grade and roasting level are unspecified, so brewing is approximated as a moderately
     oxidized ''standard'' oolong. A second steep is feasible but will be lighter than the first. Don''t compare to gongfu-style

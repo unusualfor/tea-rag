@@ -28,10 +28,13 @@ brewing:
   rounds:
   - water_temp_c: 50
     steep_time_seconds: 120
+    water_ml: 30
   - water_temp_c: 50
-    steep_time_seconds: 120
-  - water_temp_c: 50
-    steep_time_seconds: 120
+    steep_time_seconds: 30
+    water_ml: 50
+  - water_temp_c: 60
+    steep_time_seconds: 60
+    water_ml: 80
   notes: 'Yame-style gyokuro brewing: very low temperature, high leaf-to-water ratio. First infusion: 50°C, 120s. Second:
     50°C, 30s. Third: 60°C, 60s. Cool the water (boil and let cool, or pour through cooling vessels). Use shiboridashi or
     houhin for low-temperature pours; kyusu also works. Yame gyokuro often takes a slightly higher temperature than Uji gyokuro.'

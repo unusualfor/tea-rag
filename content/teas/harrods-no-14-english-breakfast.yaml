@@ -28,6 +28,7 @@ brewing:
   rounds:
   - water_temp_c: 100
     steep_time_seconds: 240
+    water_ml: 250
   notes: 'Western brewing: 1 tsp (~3g) per 250ml boiling water, 3-5 minutes. Designed to take milk well — add a splash after
     brewing. Slightly higher leaf-to-water ratio than afternoon teas because the blend is built for strength. Single infusion.'
 notes: |

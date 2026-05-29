@@ -27,19 +27,30 @@ brewing:
   leaf_grams_per_100ml: 6
   rounds:
   - water_temp_c: 100
-    steep_time_seconds: 30
+    steep_time_seconds: 15
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 30
+    steep_time_seconds: 25
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 30
+    steep_time_seconds: 35
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 30
+    steep_time_seconds: 45
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 30
+    steep_time_seconds: 55
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 30
+    steep_time_seconds: 75
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 30
+    steep_time_seconds: 85
+    water_ml: 110
+  simple:
+    water_temp_c: 100
+    steep_time_seconds: 180
+    water_ml: 355
   notes: 'Gongfu schedule (110ml gaiwan, 7g): rinse, 30s, 40s, 50s, 60s, 80s, 100s, 120s. Western: 5g per 355ml at 100°C,
     3-5 minutes.'
 notes: |

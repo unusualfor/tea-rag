@@ -28,6 +28,7 @@ brewing:
   rounds:
   - water_temp_c: 100
     steep_time_seconds: 240
+    water_ml: 250
   notes: 'Western brewing: 1 tsp per 250ml boiling water, 3-5 minutes. Per Harrods: also excellent iced — brew per instructions,
     add honey to taste, cool to room temperature, pour over ice. Single-origin Ceylon doesn''t take milk as well as breakfast
     blends; it''s best appreciated black with a slice of lemon.'

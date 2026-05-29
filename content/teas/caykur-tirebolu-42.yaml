@@ -24,7 +24,8 @@ brewing:
   leaf_grams_per_100ml: 4
   rounds:
   - water_temp_c: 100
-    steep_time_seconds: 900
+    steep_time_seconds: 720
+    water_ml: 200
   notes: Usually brewed concentrated and softened with additional hot water when serving.
 notes: |
   Premium-style Turkish black tea sourced from the Tirebolu area, a region

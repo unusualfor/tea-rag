@@ -29,6 +29,7 @@ brewing:
   rounds:
   - water_temp_c: 80
     steep_time_seconds: 0
+    water_ml: 60
   notes: 'Usucha-style preparation: 1 tsp (~2g) sifted matcha + 60-70ml hot water (~80°C, just below boiling), whisk briskly
     with a chasen in W or M motion until light froth forms (~20-30 seconds). Mighty Leaf packaging suggests 1 tsp + 8oz hot
     water — that''s a Western ''matcha tea'' style, more dilute than traditional usucha. For a latte: same matcha with steamed

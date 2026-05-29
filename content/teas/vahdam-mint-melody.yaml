@@ -27,8 +27,9 @@ brewing:
   vessel: teapot
   leaf_grams_per_100ml: 1
   rounds:
-  - water_temp_c: 85
+  - water_temp_c: 80
     steep_time_seconds: 240
+    water_ml: 250
   notes: 'Per Vahdam: 1 tea bag (or 2g loose) per 200ml, 3-5 minutes. The mint leaves are tolerant of slightly hotter water
     than pure green tea, so 80-90°C works (vs. the 70-75°C ideal for premium pure green tea). Can be enjoyed hot or iced;
     especially refreshing as a cold brew (4-6 hours in fridge with cold water, 1 bag/200ml). Single infusion in tea-bag format;

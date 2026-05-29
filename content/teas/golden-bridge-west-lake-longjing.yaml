@@ -25,15 +25,18 @@ caffeine_level: 3
 urgency: now
 expiry_estimate: null
 brewing:
-  vessel: glass
-  leaf_grams_per_100ml: 1.5
+  vessel: gaiwan
+  leaf_grams_per_100ml: 4
   rounds:
   - water_temp_c: 80
-    steep_time_seconds: 120
+    steep_time_seconds: 30
+    water_ml: 110
   - water_temp_c: 80
-    steep_time_seconds: 120
+    steep_time_seconds: 45
+    water_ml: 110
   - water_temp_c: 80
-    steep_time_seconds: 120
+    steep_time_seconds: 60
+    water_ml: 110
   notes: 'Western/Chinese-style: 3g per 150ml at 80-85°C, 2-3 minutes (or ''wait 10 minutes'' per some packaging). Use a tall
     glass to watch leaves dance and unfurl — Longjing is traditionally appreciated visually. Gongfu schedule alternative:
     4g/100ml in gaiwan, 80°C, 30s/45s/60s. Chestnut/bean notes; should not be bitter. If bitter, lower the temperature.'

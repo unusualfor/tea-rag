@@ -28,6 +28,7 @@ brewing:
   rounds:
   - water_temp_c: 80
     steep_time_seconds: 0
+    water_ml: 80
   notes: 'Primarily a koicha (thick tea): 4g matcha + 30ml water at 80°C, kneaded slowly with chasen. Also drinkable as usucha
     (thin tea): 2g matcha + 70ml water at 80°C, whisked to a fine froth. Sift before whisking. Best-before period from Marukyu:
     7 months from canning (refrigerate after opening, finish in 2-3 weeks).'

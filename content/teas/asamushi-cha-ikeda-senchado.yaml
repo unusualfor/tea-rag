@@ -27,10 +27,13 @@ brewing:
   rounds:
   - water_temp_c: 70
     steep_time_seconds: 60
-  - water_temp_c: 70
-    steep_time_seconds: 60
-  - water_temp_c: 70
-    steep_time_seconds: 60
+    water_ml: 60
+  - water_temp_c: 75
+    steep_time_seconds: 10
+    water_ml: 80
+  - water_temp_c: 80
+    steep_time_seconds: 30
+    water_ml: 100
   notes: 'Asamushi schedule: 70°C, 60s first; 75°C, 10s second; 80°C, 30s third. Light-steamed senchas need slightly longer
     first infusion than fukamushi (the leaves are intact and need time to open). The liquor stays clear and pale even after
     multiple infusions — a hallmark of asamushi vs. fukamushi cloudiness.'

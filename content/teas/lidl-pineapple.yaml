@@ -25,8 +25,7 @@ brewing:
   rounds:
   - water_temp_c: 80
     steep_time_seconds: 120
-  - water_temp_c: 80
-    steep_time_seconds: 120
+    water_ml: 250
   notes: Avoid boiling water to preserve the fruit aromas and prevent bitterness.
 notes: |
   Flavoured green tea blend combining pineapple, lime and ginger notes.

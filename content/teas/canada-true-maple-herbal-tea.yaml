@@ -27,7 +27,8 @@ brewing:
   leaf_grams_per_100ml: 1
   rounds:
   - water_temp_c: 100
-    steep_time_seconds: 300
+    steep_time_seconds: 360
+    water_ml: 250
   notes: 'Standard herbal tisane brewing: 1 tea bag per 200-250ml, boiling water, 5-7 minutes (longer than black tea — herbs
     and dried flowers need extended time to release their volatiles). Caffeine-free, suitable for evening drinking. Single
     infusion.'

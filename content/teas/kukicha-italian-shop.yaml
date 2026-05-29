@@ -25,8 +25,13 @@ brewing:
   rounds:
   - water_temp_c: 80
     steep_time_seconds: 60
-  - water_temp_c: 80
+    water_ml: 80
+  - water_temp_c: 85
+    steep_time_seconds: 15
+    water_ml: 90
+  - water_temp_c: 90
     steep_time_seconds: 30
+    water_ml: 100
   notes: Kukicha is made from stems and twigs, so it brews lighter and sweeter than leaf-based teas. Lower caffeine than sencha.
 notes: |
   Kukicha (twig tea) sourced from an Italian tea shop — exact producer

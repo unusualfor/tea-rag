@@ -28,10 +28,13 @@ brewing:
   rounds:
   - water_temp_c: 70
     steep_time_seconds: 90
-  - water_temp_c: 70
-    steep_time_seconds: 90
-  - water_temp_c: 70
-    steep_time_seconds: 90
+    water_ml: 60
+  - water_temp_c: 75
+    steep_time_seconds: 15
+    water_ml: 80
+  - water_temp_c: 80
+    steep_time_seconds: 45
+    water_ml: 100
   notes: 'Premium sencha schedule: 70°C, 90s first; 75°C, 15s second; 80°C, 45s third. Cool the water (boil and pour through
     cooling vessels). ''Tokusen'' grade rewards careful attention to temperature — too hot and the umami collapses into bitterness.'
 notes: |

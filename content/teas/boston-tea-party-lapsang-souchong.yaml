@@ -31,6 +31,7 @@ brewing:
   rounds:
   - water_temp_c: 100
     steep_time_seconds: 240
+    water_ml: 250
   notes: 'Western brewing: 1-2 tsp (2-3g) per 250ml boiling water, 3-5 minutes. Lapsang Souchong is a polarizing tea — its
     pinewood smoke aroma is reminiscent of campfire, bacon, or Islay whisky. Single infusion mostly; the smoke fades quickly
     on second steep. Pairs well with strong-flavored foods (smoked meats, blue cheese) and whisky. Adding milk is unconventional

@@ -28,8 +28,13 @@ brewing:
   rounds:
   - water_temp_c: 90
     steep_time_seconds: 30
-  - water_temp_c: 90
-    steep_time_seconds: 30
+    water_ml: 100
+  - water_temp_c: 95
+    steep_time_seconds: 15
+    water_ml: 100
+  - water_temp_c: 95
+    steep_time_seconds: 15
+    water_ml: 100
   notes: 'Premium hōjicha brewing — slightly lower temp than standard hōjicha to preserve residual umami from the gyokuro
     base. First infusion: 90°C, 30s. Second: 95°C, 15s. Standard hōjicha can take full-boil water but this gyokuro-base version
     benefits from gentler treatment.'

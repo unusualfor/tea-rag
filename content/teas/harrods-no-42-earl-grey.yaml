@@ -28,6 +28,7 @@ brewing:
   rounds:
   - water_temp_c: 100
     steep_time_seconds: 240
+    water_ml: 250
   notes: 'Western brewing: 1 tsp per 250ml boiling water, 3-5 minutes. Earl Grey is traditionally taken black or with lemon
     (not milk) — milk dampens the bergamot character. Single infusion.'
 notes: |

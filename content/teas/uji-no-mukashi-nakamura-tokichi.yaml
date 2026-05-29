@@ -28,6 +28,7 @@ brewing:
   rounds:
   - water_temp_c: 80
     steep_time_seconds: 0
+    water_ml: 70
   notes: 'Versatile matcha — works well both as usucha and koicha. Usucha: 2g + 70ml water at 80°C, whisked. Koicha: 4g +
     30ml at 80°C, kneaded. Sift before whisking. Same caveats as Hatsu no Mukashi: 6+ months from canning, finish in 2-3 weeks
     once opened, refrigerate sealed.'

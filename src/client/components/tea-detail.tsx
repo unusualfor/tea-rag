@@ -1,4 +1,5 @@
 import type { Tea } from "@shared/types";
+import { useState, useEffect } from "react";
 import {
   Dialog,
   DialogContent,
@@ -16,7 +17,7 @@ import {
   formatBrewingTime,
   caffeineLabel,
 } from "@/lib/tea-utils";
-import { Thermometer, Clock, Scale, Coffee } from "lucide-react";
+import { Thermometer, Clock, Scale, Coffee, Droplets } from "lucide-react";
 
 interface TeaDetailProps {
   tea: Tea | null;
@@ -25,6 +26,10 @@ interface TeaDetailProps {
 }
 
 export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
+  const [showGongfu, setShowGongfu] = useState(false);
+
+  useEffect(() => { setShowGongfu(false); }, [tea?.id]);
+
   if (!tea) return null;
 
   const urgency = urgencyConfig[tea.urgency];
@@ -90,7 +95,25 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
           {/* Brewing */}
           {tea.brewing && (
             <div>
-              <h4 className="text-sm font-medium text-foreground mb-3">Brewing</h4>
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="text-sm font-medium text-foreground">Brewing</h4>
+                {tea.brewing.simple && (
+                  <button
+                    type="button"
+                    onClick={() => setShowGongfu(!showGongfu)}
+                    className={`
+                      relative inline-flex h-6 items-center gap-1.5 rounded-full px-2.5
+                      text-xs font-medium transition-colors
+                      ${showGongfu
+                        ? "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-200"
+                        : "bg-muted text-muted-foreground hover:bg-muted/80"
+                      }
+                    `}
+                  >
+                    {showGongfu ? "Gongfu" : "Traditional"}
+                  </button>
+                )}
+              </div>
 
               {/* Vessel & leaf ratio */}
               <div className="flex flex-wrap gap-4 mb-3">
@@ -108,8 +131,24 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
                 )}
               </div>
 
-              {/* Rounds */}
-              {tea.brewing.rounds.length === 1 ? (
+              {/* Simple (traditional) view — single infusion */}
+              {tea.brewing.simple && !showGongfu ? (
+                <div className="flex gap-4 text-sm">
+                  <span className="flex items-center gap-1.5">
+                    <Thermometer className="w-3.5 h-3.5 text-muted-foreground" />
+                    {formatBrewingTemp(tea.brewing.simple.water_temp_c)}
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <Clock className="w-3.5 h-3.5 text-muted-foreground" />
+                    {formatBrewingTime(tea.brewing.simple.steep_time_seconds)}
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <Droplets className="w-3.5 h-3.5 text-muted-foreground" />
+                    {tea.brewing.simple.water_ml}ml
+                  </span>
+                </div>
+              ) : tea.brewing.rounds.length === 1 ? (
+                /* Single round — no toggle needed */
                 <div className="flex gap-4 text-sm">
                   <span className="flex items-center gap-1.5">
                     <Thermometer className="w-3.5 h-3.5 text-muted-foreground" />
@@ -119,8 +158,15 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
                     <Clock className="w-3.5 h-3.5 text-muted-foreground" />
                     {formatBrewingTime(tea.brewing.rounds[0].steep_time_seconds)}
                   </span>
+                  {tea.brewing.rounds[0].water_ml && (
+                    <span className="flex items-center gap-1.5">
+                      <Droplets className="w-3.5 h-3.5 text-muted-foreground" />
+                      {tea.brewing.rounds[0].water_ml}ml
+                    </span>
+                  )}
                 </div>
               ) : (
+                /* Multi-round (gongfu or Japanese) */
                 <div className="space-y-1">
                   {tea.brewing.rounds.map((round, i) => (
                     <div key={i} className="flex items-center gap-2 text-sm">
@@ -128,6 +174,12 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
                       <span>{formatBrewingTemp(round.water_temp_c)}</span>
                       <span className="text-muted-foreground">·</span>
                       <span>{formatBrewingTime(round.steep_time_seconds)}</span>
+                      {round.water_ml && (
+                        <>
+                          <span className="text-muted-foreground">·</span>
+                          <span>{round.water_ml}ml</span>
+                        </>
+                      )}
                     </div>
                   ))}
                 </div>

@@ -29,6 +29,7 @@ brewing:
   rounds:
   - water_temp_c: 80
     steep_time_seconds: 0
+    water_ml: 30
   notes: 'Designed primarily for koicha (thick tea): 4g matcha + 30ml water at 80°C, kneaded slowly with chasen until smooth
     and syrupy (no foam). Also drinkable as usucha (thin tea): 2g + 70ml at 80°C, whisked to a fine froth. Sift before whisking
     to avoid lumps. Matcha at 6+ months from canning is past peak — consume promptly. Once opened, finish in 2-3 weeks; refrigerate

@@ -28,12 +28,20 @@ brewing:
   rounds:
   - water_temp_c: 85
     steep_time_seconds: 20
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 20
+    steep_time_seconds: 30
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 20
+    steep_time_seconds: 40
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 20
+    steep_time_seconds: 60
+    water_ml: 110
+  simple:
+    water_temp_c: 85
+    steep_time_seconds: 180
+    water_ml: 250
   notes: 'Gongfu schedule (110ml gaiwan, 4g): rinse, 20s, 30s, 40s, 60s. Western: 2g per 250ml at 85°C, 3-5 minutes. Many
     tasters use slightly lower temp (~80°C) and longer single steep for western-style cup.'
 notes: |

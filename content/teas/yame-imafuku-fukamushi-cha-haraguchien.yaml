@@ -29,10 +29,13 @@ brewing:
   rounds:
   - water_temp_c: 70
     steep_time_seconds: 30
-  - water_temp_c: 70
+    water_ml: 60
+  - water_temp_c: 75
+    steep_time_seconds: 10
+    water_ml: 80
+  - water_temp_c: 80
     steep_time_seconds: 30
-  - water_temp_c: 70
-    steep_time_seconds: 30
+    water_ml: 100
   notes: 'Fukamushi (deep-steamed) schedule: 70°C, 30s first; 75°C, 10s second; 80°C, 30s third. Fukamushi-cha needs shorter
     first-infusion time than asamushi because the deep-steaming has already broken the leaf cells and extraction is fast.
     Liquor will be cloudy/opaque green — that''s normal for fukamushi (vs. the limpid clarity of asamushi). Use a kyusu with

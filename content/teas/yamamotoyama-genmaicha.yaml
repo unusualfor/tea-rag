@@ -27,9 +27,11 @@ brewing:
   leaf_grams_per_100ml: 1.5
   rounds:
   - water_temp_c: 85
-    steep_time_seconds: 60
-  - water_temp_c: 85
-    steep_time_seconds: 60
+    steep_time_seconds: 30
+    water_ml: 120
+  - water_temp_c: 90
+    steep_time_seconds: 10
+    water_ml: 120
   notes: 'Per Yamamotoyama: 3-5g per 200-240ml at 80-90°C, 30s-1min. Genmaicha is more forgiving on temperature than premium
     sencha; the roasted rice tolerates and benefits from heat. Second steep retains the rice toastiness even as the green
     tea fades. Loose-leaf gives a much better extraction than tea bags.'

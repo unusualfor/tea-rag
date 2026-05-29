@@ -24,7 +24,8 @@ brewing:
   leaf_grams_per_100ml: 4
   rounds:
   - water_temp_c: 100
-    steep_time_seconds: 900
+    steep_time_seconds: 720
+    water_ml: 200
   notes: Traditionally brewed strong in the upper kettle of a Turkish double teapot and diluted to taste with hot water.
 notes: |
   One of the most iconic everyday Turkish black teas, produced from tea

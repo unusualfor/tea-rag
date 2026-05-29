@@ -27,8 +27,9 @@ brewing:
   vessel: chawan
   leaf_grams_per_100ml: 2.5
   rounds:
-  - water_temp_c: 80
+  - water_temp_c: 75
     steep_time_seconds: 0
+    water_ml: 60
   notes: 'Per producer: ½-1 tsp matcha + 6oz (180ml) of just-short-of-boiling water (~175°F / 80°C); whisk for 1-2 minutes
     until well blended. NOTE: producer says ''just below boiling'' which is somewhat vague — at >85°C matcha turns bitter,
     so aim for 75-80°C, not actually approaching 100°C. For traditional usucha use closer to 70°C and a thicker concentration

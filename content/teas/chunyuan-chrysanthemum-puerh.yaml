@@ -27,9 +27,23 @@ brewing:
   leaf_grams_per_100ml: 1
   rounds:
   - water_temp_c: 100
-    steep_time_seconds: 240
+    steep_time_seconds: 10
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 240
+    steep_time_seconds: 15
+    water_ml: 110
+  - water_temp_c: 100
+    steep_time_seconds: 20
+    water_ml: 110
+  - water_temp_c: 100
+    steep_time_seconds: 30
+    water_ml: 110
+  - water_temp_c: 100
+    steep_time_seconds: 45
+    water_ml: 110
+  - water_temp_c: 100
+    steep_time_seconds: 60
+    water_ml: 110
   notes: 'Western brewing: 1 tea bag (or 2-3g loose) per 200-250ml, boiling water, 3-5 minutes. The chrysanthemum cools/balances
     the earthy pu-erh and adds floral notes. For loose-leaf gongfu (if format allows): rinse the pu-erh leaves with boiling
     water for 5s and discard, then steep 100°C, 15-30s, 30s, 45s. Chrysanthemum tolerates re-steeping.'

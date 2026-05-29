@@ -26,10 +26,12 @@ brewing:
   vessel: teapot
   leaf_grams_per_100ml: 1.5
   rounds:
-  - water_temp_c: 90
-    steep_time_seconds: 45
-  - water_temp_c: 90
-    steep_time_seconds: 45
+  - water_temp_c: 95
+    steep_time_seconds: 30
+    water_ml: 120
+  - water_temp_c: 95
+    steep_time_seconds: 10
+    water_ml: 120
   notes: 'Hojicha tolerates higher water temperatures than most green teas because the roasting has driven off astringent
     compounds. Per Yamamotoyama''s instructions: 3-5g per 200-240ml at 80-90°C, 30s-1min. Second infusion will be lighter
     but still aromatic. Loose-leaf preferred over teabags; with bags use 30s-1min boiling water. Excellent cold-brewed (4+

@@ -27,10 +27,13 @@ brewing:
   rounds:
   - water_temp_c: 70
     steep_time_seconds: 60
+    water_ml: 60
   - water_temp_c: 70
-    steep_time_seconds: 60
-  - water_temp_c: 70
-    steep_time_seconds: 60
+    steep_time_seconds: 15
+    water_ml: 80
+  - water_temp_c: 75
+    steep_time_seconds: 45
+    water_ml: 100
   notes: 'APPROXIMATED — exact brewing parameters depend on the actual content of the seasonal blend. Treating as a sencha-style
     premium green: 70°C, 60s first infusion; 70°C, 15s second; 75°C, 45s third. Adjust based on actual leaf appearance: if
     the leaves look like asamushi (whole-needle), keep cool and short; if fukamushi (deep-steamed/broken), even shorter on

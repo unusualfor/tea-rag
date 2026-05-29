@@ -28,12 +28,20 @@ brewing:
   rounds:
   - water_temp_c: 85
     steep_time_seconds: 30
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 30
+    steep_time_seconds: 45
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 30
+    steep_time_seconds: 70
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 30
+    steep_time_seconds: 100
+    water_ml: 110
+  simple:
+    water_temp_c: 85
+    steep_time_seconds: 180
+    water_ml: 250
   notes: 'APPROXIMATED from standard Huang Shan Mao Feng parameters — TeaVivre does not publish gongfu schedule for the Te
     Gong nonpareil grade. Gongfu schedule (110ml gaiwan, 4g): rinse, 30s, 45s, 70s, 100s. Western: 2g per 250ml at 85°C, 3-5
     minutes. Pre-ming green teas are delicate; consider lower temp (~80°C) and shorter first steep if bitterness develops.'

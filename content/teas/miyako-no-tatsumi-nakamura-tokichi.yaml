@@ -28,10 +28,13 @@ brewing:
   rounds:
   - water_temp_c: 70
     steep_time_seconds: 90
-  - water_temp_c: 70
-    steep_time_seconds: 90
-  - water_temp_c: 70
-    steep_time_seconds: 90
+    water_ml: 60
+  - water_temp_c: 75
+    steep_time_seconds: 15
+    water_ml: 80
+  - water_temp_c: 80
+    steep_time_seconds: 45
+    water_ml: 100
   notes: 'Uji-style sencha is delicate — keep water cool to preserve umami. First infusion: 70°C, 90s. Second: 75°C, 15s.
     Third: 80°C, 45s. If the leaves look slightly shaded (kabusecha-influenced), drop the first temp to 65°C. 6+ months from
     purchase — sencha holds up better than matcha but is still declining; consume in the next few weeks.'

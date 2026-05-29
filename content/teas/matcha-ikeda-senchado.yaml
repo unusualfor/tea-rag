@@ -28,6 +28,7 @@ brewing:
   rounds:
   - water_temp_c: 80
     steep_time_seconds: 0
+    water_ml: 60
   notes: 'Usucha-style: 2g matcha + 70ml water at 80°C, whisked with chasen in a zigzag motion until a fine froth forms. Sift
     before whisking. For koicha: 4g + 30ml at 80°C, kneaded slowly. Refrigerate after opening, finish within 2-3 weeks for
     optimal freshness.'

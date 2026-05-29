@@ -31,7 +31,8 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 240
+          "steep_time_seconds": 240,
+          "water_ml": 250
         }
       ],
       "notes": "Per Ahmad Tea: 3-5 minutes infusion in boiling water; ~1 tsp per cup. Best served hot with a slice of lemon (per producer recommendation) or with a splash of milk. Single infusion."
@@ -79,15 +80,18 @@
       "rounds": [
         {
           "water_temp_c": 70,
-          "steep_time_seconds": 60
+          "steep_time_seconds": 60,
+          "water_ml": 60
         },
         {
           "water_temp_c": 70,
-          "steep_time_seconds": 60
+          "steep_time_seconds": 15,
+          "water_ml": 80
         },
         {
-          "water_temp_c": 70,
-          "steep_time_seconds": 60
+          "water_temp_c": 75,
+          "steep_time_seconds": 45,
+          "water_ml": 100
         }
       ],
       "notes": "APPROXIMATED — exact brewing parameters depend on the actual content of the seasonal blend. Treating as a sencha-style premium green: 70°C, 60s first infusion; 70°C, 15s second; 75°C, 45s third. Adjust based on actual leaf appearance: if the leaves look like asamushi (whole-needle), keep cool and short; if fukamushi (deep-steamed/broken), even shorter on first infusion."
@@ -135,33 +139,45 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 15,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 25,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 35,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 45,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 55,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 75,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 85,
+          "water_ml": 110
         }
       ],
+      "simple": {
+        "water_temp_c": 100,
+        "steep_time_seconds": 180,
+        "water_ml": 355
+      },
       "notes": "Gongfu schedule (110ml gaiwan, 7g): rinse, 30s, 40s, 50s, 60s, 80s, 100s, 120s. Western: 5g per 355ml at 100°C, 3-5 minutes."
     },
     "notes": "Lightly oxidized green-style Tie Guan Yin (qingxiang). Strong and\nlong-lasting orchid-like floral fragrance, smooth and brisk on the\npalate, with a sweet aftertaste. Tightly rolled jade-green pearls\nunfurl into whole leaves through multiple infusions.\n",
@@ -206,15 +222,18 @@
       "rounds": [
         {
           "water_temp_c": 70,
-          "steep_time_seconds": 60
+          "steep_time_seconds": 60,
+          "water_ml": 60
         },
         {
-          "water_temp_c": 70,
-          "steep_time_seconds": 60
+          "water_temp_c": 75,
+          "steep_time_seconds": 10,
+          "water_ml": 80
         },
         {
-          "water_temp_c": 70,
-          "steep_time_seconds": 60
+          "water_temp_c": 80,
+          "steep_time_seconds": 30,
+          "water_ml": 100
         }
       ],
       "notes": "Asamushi schedule: 70°C, 60s first; 75°C, 10s second; 80°C, 30s third. Light-steamed senchas need slightly longer first infusion than fukamushi (the leaves are intact and need time to open). The liquor stays clear and pale even after multiple infusions — a hallmark of asamushi vs. fukamushi cloudiness."
@@ -261,15 +280,18 @@
       "rounds": [
         {
           "water_temp_c": 70,
-          "steep_time_seconds": 90
+          "steep_time_seconds": 90,
+          "water_ml": 60
         },
         {
-          "water_temp_c": 70,
-          "steep_time_seconds": 90
+          "water_temp_c": 75,
+          "steep_time_seconds": 15,
+          "water_ml": 80
         },
         {
-          "water_temp_c": 70,
-          "steep_time_seconds": 90
+          "water_temp_c": 80,
+          "steep_time_seconds": 45,
+          "water_ml": 100
         }
       ],
       "notes": "Premium sencha schedule: 70°C, 90s first; 75°C, 15s second; 80°C, 45s third. Cool the water (boil and pour through cooling vessels). 'Tokusen' grade rewards careful attention to temperature — too hot and the umami collapses into bitterness."
@@ -318,21 +340,30 @@
       "rounds": [
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 20
+          "steep_time_seconds": 20,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 20
+          "steep_time_seconds": 30,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 20
+          "steep_time_seconds": 40,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 20
+          "steep_time_seconds": 60,
+          "water_ml": 110
         }
       ],
+      "simple": {
+        "water_temp_c": 85,
+        "steep_time_seconds": 180,
+        "water_ml": 250
+      },
       "notes": "Gongfu schedule (110ml gaiwan, 4g): rinse, 20s, 30s, 40s, 60s. Western: 2g per 250ml at 85°C, 3-5 minutes. Many tasters use slightly lower temp (~80°C) and longer single steep for western-style cup."
     },
     "notes": "Premium-grade Xihu Long Jing — one of China's top ten teas. Flat,\nsmooth, yellow-green leaves with a bean/chestnut aroma and clean\nsweetness. Lighter and more delicate than the standard Dragon Well;\nnot as expensive as the Ming Qian Nonpareil grade but holds up well\nfor daily drinking. Spring harvest only; like all green teas, freshness\nmatters and flavor degrades within 6-12 months of harvest.\n",
@@ -378,7 +409,8 @@
       "rounds": [
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 300
+          "steep_time_seconds": 300,
+          "water_ml": 250
         }
       ],
       "notes": "Decoction-style brewing typical of Japanese herbal tisanes: 5g leaves in 500ml of near-boiling water, simmer or steep 3-5 minutes. Liquor turns reddish-brown / honey-colored. Can be re-steeped for a lighter second cup. Drinkable hot or cold-brewed; cold brew works well as a summer beverage. Caffeine-free, suitable for evening or for those avoiding caffeine."
@@ -426,7 +458,8 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 240
+          "steep_time_seconds": 240,
+          "water_ml": 250
         }
       ],
       "notes": "Western brewing: 1-2 tsp (2-3g) per 250ml boiling water, 3-5 minutes. Lapsang Souchong is a polarizing tea — its pinewood smoke aroma is reminiscent of campfire, bacon, or Islay whisky. Single infusion mostly; the smoke fades quickly on second steep. Pairs well with strong-flavored foods (smoked meats, blue cheese) and whisky. Adding milk is unconventional but works for a 'smoked breakfast tea' effect."
@@ -476,7 +509,8 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 240
+          "steep_time_seconds": 240,
+          "water_ml": 250
         }
       ],
       "notes": "Per Canada True instructions: 1 tea bag per cup, boiling water, 3-5 minutes hot. For iced: brew 1 bag with 1/3 cup boiling water, steep 3-5 min, remove bag, top with cold water and ice. Single infusion (tea bag format)."
@@ -523,7 +557,8 @@
       "rounds": [
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 180
+          "steep_time_seconds": 150,
+          "water_ml": 250
         }
       ],
       "notes": "Producer doesn't publish green-tea-specific instructions; standard green tea brewing applies: 1 tea bag in 200-250ml at 75-85°C, 2-3 minutes. Boiling water will turn the green tea bitter, so let the kettle cool 1-2 minutes after boil before pouring. Single infusion (tea bag format)."
@@ -569,7 +604,8 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 300
+          "steep_time_seconds": 360,
+          "water_ml": 250
         }
       ],
       "notes": "Standard herbal tisane brewing: 1 tea bag per 200-250ml, boiling water, 5-7 minutes (longer than black tea — herbs and dried flowers need extended time to release their volatiles). Caffeine-free, suitable for evening drinking. Single infusion."
@@ -616,7 +652,8 @@
       "rounds": [
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 240
+          "steep_time_seconds": 240,
+          "water_ml": 250
         }
       ],
       "notes": "Western-style brewing (the natural fit for a flavored blend): ~3g per 250ml at 95°C, 3-5 minutes. Black tea base sets the temperature; the green tea component is added to the blend in proportion that doesn't require lower temp. Single infusion — flavored blends with petals and aromatics generally don't re-steep meaningfully."
@@ -663,7 +700,8 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 900
+          "steep_time_seconds": 720,
+          "water_ml": 200
         }
       ],
       "notes": "Traditionally brewed strong in the upper kettle of a Turkish double teapot and diluted to taste with hot water."
@@ -715,7 +753,8 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 900
+          "steep_time_seconds": 720,
+          "water_ml": 200
         }
       ],
       "notes": "Usually brewed concentrated and softened with additional hot water when serving."
@@ -767,7 +806,8 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 240
+          "steep_time_seconds": 240,
+          "water_ml": 250
         }
       ],
       "notes": "Per Çaykur instructions: 1 tsp per 8oz (240ml) boiling water, 3-5 minutes. Traditional Turkish preparation uses a double-pot (çaydanlık): brew concentrated tea in upper pot, dilute with hot water from lower pot to taste. For Western-style: brew at full concentration. The bergamot is gentler than UK Earl Greys (Twinings, Ahmad), making it a softer entry into the style."
@@ -815,11 +855,33 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 240
+          "steep_time_seconds": 10,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 240
+          "steep_time_seconds": 15,
+          "water_ml": 110
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 20,
+          "water_ml": 110
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 30,
+          "water_ml": 110
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 45,
+          "water_ml": 110
+        },
+        {
+          "water_temp_c": 100,
+          "steep_time_seconds": 60,
+          "water_ml": 110
         }
       ],
       "notes": "Western brewing: 1 tea bag (or 2-3g loose) per 200-250ml, boiling water, 3-5 minutes. The chrysanthemum cools/balances the earthy pu-erh and adds floral notes. For loose-leaf gongfu (if format allows): rinse the pu-erh leaves with boiling water for 5s and discard, then steep 100°C, 15-30s, 30s, 45s. Chrysanthemum tolerates re-steeping."
@@ -865,11 +927,28 @@
       "rounds": [
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 210
+          "steep_time_seconds": 20,
+          "water_ml": 110
         },
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 210
+          "steep_time_seconds": 25,
+          "water_ml": 110
+        },
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 35,
+          "water_ml": 110
+        },
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 50,
+          "water_ml": 110
+        },
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 75,
+          "water_ml": 110
         }
       ],
       "notes": "Per producer instructions: 1 tea bag in 250ml boiling water, steep 3-4 minutes. Boiling water is appropriate for oolong but in this product the leaf grade and roasting level are unspecified, so brewing is approximated as a moderately oxidized 'standard' oolong. A second steep is feasible but will be lighter than the first. Don't compare to gongfu-style preparations of premium oolongs (Tie Guan Yin, Da Hong Pao, etc.) — this is a different category."
@@ -915,7 +994,8 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 420
+          "steep_time_seconds": 360,
+          "water_ml": 250
         }
       ],
       "notes": "Full boiling water recommended for herbal blends."
@@ -961,20 +1041,23 @@
     "urgency": "now",
     "expiry_estimate": null,
     "brewing": {
-      "vessel": "glass",
-      "leaf_grams_per_100ml": 1.5,
+      "vessel": "gaiwan",
+      "leaf_grams_per_100ml": 4,
       "rounds": [
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 120
+          "steep_time_seconds": 30,
+          "water_ml": 110
         },
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 120
+          "steep_time_seconds": 45,
+          "water_ml": 110
         },
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 120
+          "steep_time_seconds": 60,
+          "water_ml": 110
         }
       ],
       "notes": "Western/Chinese-style: 3g per 150ml at 80-85°C, 2-3 minutes (or 'wait 10 minutes' per some packaging). Use a tall glass to watch leaves dance and unfurl — Longjing is traditionally appreciated visually. Gongfu schedule alternative: 4g/100ml in gaiwan, 80°C, 30s/45s/60s. Chestnut/bean notes; should not be bitter. If bitter, lower the temperature."
@@ -1022,11 +1105,18 @@
       "rounds": [
         {
           "water_temp_c": 90,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 30,
+          "water_ml": 100
         },
         {
-          "water_temp_c": 90,
-          "steep_time_seconds": 30
+          "water_temp_c": 95,
+          "steep_time_seconds": 15,
+          "water_ml": 100
+        },
+        {
+          "water_temp_c": 95,
+          "steep_time_seconds": 15,
+          "water_ml": 100
         }
       ],
       "notes": "Premium hōjicha brewing — slightly lower temp than standard hōjicha to preserve residual umami from the gyokuro base. First infusion: 90°C, 30s. Second: 95°C, 15s. Standard hōjicha can take full-boil water but this gyokuro-base version benefits from gentler treatment."
@@ -1074,15 +1164,18 @@
       "rounds": [
         {
           "water_temp_c": 50,
-          "steep_time_seconds": 120
+          "steep_time_seconds": 120,
+          "water_ml": 30
         },
         {
           "water_temp_c": 50,
-          "steep_time_seconds": 120
+          "steep_time_seconds": 30,
+          "water_ml": 50
         },
         {
-          "water_temp_c": 50,
-          "steep_time_seconds": 120
+          "water_temp_c": 60,
+          "steep_time_seconds": 60,
+          "water_ml": 80
         }
       ],
       "notes": "Yame-style gyokuro brewing: very low temperature, high leaf-to-water ratio. First infusion: 50°C, 120s. Second: 50°C, 30s. Third: 60°C, 60s. Cool the water (boil and let cool, or pour through cooling vessels). Use shiboridashi or houhin for low-temperature pours; kyusu also works. Yame gyokuro often takes a slightly higher temperature than Uji gyokuro."
@@ -1129,15 +1222,18 @@
       "rounds": [
         {
           "water_temp_c": 50,
-          "steep_time_seconds": 120
+          "steep_time_seconds": 120,
+          "water_ml": 30
         },
         {
           "water_temp_c": 50,
-          "steep_time_seconds": 120
+          "steep_time_seconds": 30,
+          "water_ml": 50
         },
         {
-          "water_temp_c": 50,
-          "steep_time_seconds": 120
+          "water_temp_c": 60,
+          "steep_time_seconds": 60,
+          "water_ml": 80
         }
       ],
       "notes": "Premium Uji gyokuro — extreme low-temp, high leaf-density brewing. First infusion: 50°C, 120s. Second: 50°C, 30s. Third: 60°C, 60s. Cool the water carefully (boil, pour through cooling vessels). Use shiboridashi or houhin; they're designed for these slow low-temp pours. The first brew should be syrup-thick with nori-like umami; subsequent rounds get progressively more vegetal. Acquired Sep 2025 — already 6+ months old at time of cataloging, gyokuro loses umami fast."
@@ -1184,7 +1280,8 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 240
+          "steep_time_seconds": 240,
+          "water_ml": 250
         }
       ],
       "notes": "Western brewing: 1 tsp (~3g) per 250ml boiling water, 3-5 minutes. Designed to take milk well — add a splash after brewing. Slightly higher leaf-to-water ratio than afternoon teas because the blend is built for strength. Single infusion."
@@ -1234,7 +1331,8 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 240
+          "steep_time_seconds": 240,
+          "water_ml": 250
         }
       ],
       "notes": "Western brewing: 1 tsp per 250ml boiling water, 3-5 minutes. Per Harrods: also excellent iced — brew per instructions, add honey to taste, cool to room temperature, pour over ice. Single-origin Ceylon doesn't take milk as well as breakfast blends; it's best appreciated black with a slice of lemon."
@@ -1282,7 +1380,8 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 240
+          "steep_time_seconds": 240,
+          "water_ml": 250
         }
       ],
       "notes": "Western brewing: 1 tsp per 250ml boiling water, 3-5 minutes. Earl Grey is traditionally taken black or with lemon (not milk) — milk dampens the bergamot character. Single infusion."
@@ -1330,7 +1429,8 @@
       "rounds": [
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 0
+          "steep_time_seconds": 0,
+          "water_ml": 30
         }
       ],
       "notes": "Designed primarily for koicha (thick tea): 4g matcha + 30ml water at 80°C, kneaded slowly with chasen until smooth and syrupy (no foam). Also drinkable as usucha (thin tea): 2g + 70ml at 80°C, whisked to a fine froth. Sift before whisking to avoid lumps. Matcha at 6+ months from canning is past peak — consume promptly. Once opened, finish in 2-3 weeks; refrigerate sealed in original tin."
@@ -1379,11 +1479,13 @@
       "rounds": [
         {
           "water_temp_c": 90,
-          "steep_time_seconds": 150
+          "steep_time_seconds": 150,
+          "water_ml": 200
         },
         {
-          "water_temp_c": 90,
-          "steep_time_seconds": 150
+          "water_temp_c": 95,
+          "steep_time_seconds": 180,
+          "water_ml": 200
         }
       ],
       "notes": "Japanese black teas are often lighter and smoother than Indian or Ceylon styles."
@@ -1434,45 +1536,45 @@
       "rounds": [
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 40
+          "steep_time_seconds": 20,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 40
+          "steep_time_seconds": 30,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 40
+          "steep_time_seconds": 40,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 40
+          "steep_time_seconds": 50,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 40
+          "steep_time_seconds": 60,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 40
+          "steep_time_seconds": 80,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 40
-        },
-        {
-          "water_temp_c": 85,
-          "steep_time_seconds": 40
-        },
-        {
-          "water_temp_c": 85,
-          "steep_time_seconds": 40
-        },
-        {
-          "water_temp_c": 85,
-          "steep_time_seconds": 40
+          "steep_time_seconds": 120,
+          "water_ml": 110
         }
       ],
+      "simple": {
+        "water_temp_c": 85,
+        "steep_time_seconds": 180,
+        "water_ml": 250
+      },
       "notes": "Gongfu schedule (110ml gaiwan, 4g): rinse, 40s, 40s, 40s, 40s, 50s, 60s, 80s, 100s, 120s, 150s. Western: 3g per 250ml at 85°C, 3-5 minutes."
     },
     "notes": "Yunnan-base jasmine pearls. Sweeter and more delicate than Fujian-base\nversions, with an intense jasmine fragrance and lingering aftertaste.\nBrews many infusions before fading. Distinguishable from the Long Zhu\nvariant (Fujian-base) by the deeper, fuller tea body underneath the\njasmine layer.\n",
@@ -1516,29 +1618,40 @@
       "rounds": [
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 40
+          "steep_time_seconds": 40,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 40
+          "steep_time_seconds": 50,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 40
+          "steep_time_seconds": 60,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 40
+          "steep_time_seconds": 80,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 40
+          "steep_time_seconds": 100,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 40
+          "steep_time_seconds": 120,
+          "water_ml": 110
         }
       ],
+      "simple": {
+        "water_temp_c": 85,
+        "steep_time_seconds": 300,
+        "water_ml": 355
+      },
       "notes": "Gongfu schedule (110ml gaiwan, 5g): rinse, 40s, 50s, 60s, 80s, 100s, 120s. Western: 5g per 355ml at 85°C, 5-8 minutes."
     },
     "notes": "Fujian-base jasmine pearls, distinct from the Yunnan version. Refreshing,\nsoft and sweet; resists bitterness even when brewed at high temperature\nor for long durations. The \"Long Zhu\" in the name is literally\n\"Dragon Pearls\" — the redundancy is part of the SKU naming convention.\nLess of a deep-mountain character than the Yunnan version; more polished\njasmine intensity due to the extra 'yi-ti' final scenting step.\n",
@@ -1582,7 +1695,8 @@
       "rounds": [
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 0
+          "steep_time_seconds": 0,
+          "water_ml": 80
         }
       ],
       "notes": "Primarily a koicha (thick tea): 4g matcha + 30ml water at 80°C, kneaded slowly with chasen. Also drinkable as usucha (thin tea): 2g matcha + 70ml water at 80°C, whisked to a fine froth. Sift before whisking. Best-before period from Marukyu: 7 months from canning (refrigerate after opening, finish in 2-3 weeks)."
@@ -1630,11 +1744,18 @@
       "rounds": [
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 60
+          "steep_time_seconds": 60,
+          "water_ml": 80
         },
         {
-          "water_temp_c": 80,
-          "steep_time_seconds": 30
+          "water_temp_c": 85,
+          "steep_time_seconds": 15,
+          "water_ml": 90
+        },
+        {
+          "water_temp_c": 90,
+          "steep_time_seconds": 30,
+          "water_ml": 100
         }
       ],
       "notes": "Kukicha is made from stems and twigs, so it brews lighter and sweeter than leaf-based teas. Lower caffeine than sencha."
@@ -1679,11 +1800,8 @@
       "rounds": [
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 180
-        },
-        {
-          "water_temp_c": 95,
-          "steep_time_seconds": 180
+          "steep_time_seconds": 180,
+          "water_ml": 250
         }
       ],
       "notes": "Longer steeps will emphasize the floral rose character."
@@ -1734,11 +1852,8 @@
       "rounds": [
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 120
-        },
-        {
-          "water_temp_c": 80,
-          "steep_time_seconds": 120
+          "steep_time_seconds": 120,
+          "water_ml": 250
         }
       ],
       "notes": "Avoid boiling water to preserve the fruit aromas and prevent bitterness."
@@ -1789,7 +1904,8 @@
       "rounds": [
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 0
+          "steep_time_seconds": 0,
+          "water_ml": 60
         }
       ],
       "notes": "Usucha-style: 2g matcha + 70ml water at 80°C, whisked with chasen in a zigzag motion until a fine froth forms. Sift before whisking. For koicha: 4g + 30ml at 80°C, kneaded slowly. Refrigerate after opening, finish within 2-3 weeks for optimal freshness."
@@ -1836,7 +1952,8 @@
       "rounds": [
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 0
+          "steep_time_seconds": 0,
+          "water_ml": 70
         }
       ],
       "notes": "Single-cultivar Samidori — try both usucha (2g + 70ml at 80°C, whisked) and koicha (4g + 30ml at 80°C, kneaded) to taste the cultivar's character without blending. Samidori is traditionally a koicha-leaning cultivar but works in both. Sift before whisking. Same freshness caveats as other honeymoon-acquired matchas: 6+ months from canning, consume promptly."
@@ -1885,7 +2002,8 @@
       "rounds": [
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 0
+          "steep_time_seconds": 0,
+          "water_ml": 60
         }
       ],
       "notes": "Designed primarily for lattes, smoothies and baking rather than traditional usucha preparation."
@@ -1936,8 +2054,9 @@
       "leaf_grams_per_100ml": 2,
       "rounds": [
         {
-          "water_temp_c": 75,
-          "steep_time_seconds": 0
+          "water_temp_c": 80,
+          "steep_time_seconds": 0,
+          "water_ml": 70
         }
       ],
       "notes": "Potential entry-level matcha. Lower temperatures help reduce bitterness."
@@ -1987,7 +2106,8 @@
       "rounds": [
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 0
+          "steep_time_seconds": 0,
+          "water_ml": 60
         }
       ],
       "notes": "Usucha-style preparation: 1 tsp (~2g) sifted matcha + 60-70ml hot water (~80°C, just below boiling), whisk briskly with a chasen in W or M motion until light froth forms (~20-30 seconds). Mighty Leaf packaging suggests 1 tsp + 8oz hot water — that's a Western 'matcha tea' style, more dilute than traditional usucha. For a latte: same matcha with steamed milk, optional sweetener."
@@ -2036,15 +2156,18 @@
       "rounds": [
         {
           "water_temp_c": 70,
-          "steep_time_seconds": 90
+          "steep_time_seconds": 90,
+          "water_ml": 60
         },
         {
-          "water_temp_c": 70,
-          "steep_time_seconds": 90
+          "water_temp_c": 75,
+          "steep_time_seconds": 15,
+          "water_ml": 80
         },
         {
-          "water_temp_c": 70,
-          "steep_time_seconds": 90
+          "water_temp_c": 80,
+          "steep_time_seconds": 45,
+          "water_ml": 100
         }
       ],
       "notes": "Uji-style sencha is delicate — keep water cool to preserve umami. First infusion: 70°C, 90s. Second: 75°C, 15s. Third: 80°C, 45s. If the leaves look slightly shaded (kabusecha-influenced), drop the first temp to 65°C. 6+ months from purchase — sencha holds up better than matcha but is still declining; consume in the next few weeks."
@@ -2092,21 +2215,30 @@
       "rounds": [
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 30,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 45,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 70,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 100,
+          "water_ml": 110
         }
       ],
+      "simple": {
+        "water_temp_c": 85,
+        "steep_time_seconds": 180,
+        "water_ml": 250
+      },
       "notes": "APPROXIMATED from standard Huang Shan Mao Feng parameters — TeaVivre does not publish gongfu schedule for the Te Gong nonpareil grade. Gongfu schedule (110ml gaiwan, 4g): rinse, 30s, 45s, 70s, 100s. Western: 2g per 250ml at 85°C, 3-5 minutes. Pre-ming green teas are delicate; consider lower temp (~80°C) and shorter first steep if bitterness develops."
     },
     "notes": "Pre-Qing Ming (early spring, before April 5) harvest, considered the\nmost precious window for green tea. Bird-tongue (sparrow-tongue) shape:\nthe leaves stand vertically when brewed in glass, then slowly sink.\nSmooth and sweet with orchid-like floral aroma, hints of chestnut and\ntoasted rice. One of China's top ten green teas. Best consumed within\n6-12 months of harvest while the freshness peaks.\n",
@@ -2150,8 +2282,9 @@
       "leaf_grams_per_100ml": 2.5,
       "rounds": [
         {
-          "water_temp_c": 80,
-          "steep_time_seconds": 0
+          "water_temp_c": 75,
+          "steep_time_seconds": 0,
+          "water_ml": 60
         }
       ],
       "notes": "Per producer: ½-1 tsp matcha + 6oz (180ml) of just-short-of-boiling water (~175°F / 80°C); whisk for 1-2 minutes until well blended. NOTE: producer says 'just below boiling' which is somewhat vague — at >85°C matcha turns bitter, so aim for 75-80°C, not actually approaching 100°C. For traditional usucha use closer to 70°C and a thicker concentration (2g + 60ml). Iced/latte: blend ½-1 tsp with 8oz cold water or milk."
@@ -2199,15 +2332,18 @@
       "rounds": [
         {
           "water_temp_c": 75,
-          "steep_time_seconds": 60
+          "steep_time_seconds": 60,
+          "water_ml": 60
         },
         {
-          "water_temp_c": 75,
-          "steep_time_seconds": 60
+          "water_temp_c": 80,
+          "steep_time_seconds": 15,
+          "water_ml": 80
         },
         {
-          "water_temp_c": 75,
-          "steep_time_seconds": 60
+          "water_temp_c": 80,
+          "steep_time_seconds": 45,
+          "water_ml": 100
         }
       ],
       "notes": "Tamaryokucha schedule: 75°C, 60s first; 80°C, 15s second; 80°C, 45s third. Tamaryokucha tolerates slightly hotter water than premium sencha — the curled leaves open more slowly. Tends to give a richer, rounder profile than needle-rolled sencha; less astringent."
@@ -2254,53 +2390,60 @@
       "rounds": [
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 5
+          "steep_time_seconds": 5,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 5
+          "steep_time_seconds": 5,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 5
+          "steep_time_seconds": 10,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 5
+          "steep_time_seconds": 15,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 5
+          "steep_time_seconds": 20,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 5
+          "steep_time_seconds": 25,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 5
+          "steep_time_seconds": 30,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 5
+          "steep_time_seconds": 45,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 5
+          "steep_time_seconds": 70,
+          "water_ml": 110
         },
         {
           "water_temp_c": 100,
-          "steep_time_seconds": 5
-        },
-        {
-          "water_temp_c": 100,
-          "steep_time_seconds": 5
-        },
-        {
-          "water_temp_c": 100,
-          "steep_time_seconds": 5
+          "steep_time_seconds": 90,
+          "water_ml": 110
         }
       ],
+      "simple": {
+        "water_temp_c": 100,
+        "steep_time_seconds": 300,
+        "water_ml": 355
+      },
       "notes": "APPROXIMATED from TeaVivre's Bing Lang Xiang Liu Bao Cha 2014 (closest match — same producer, same category, same vintage range). Gongfu schedule (110ml gaiwan, 8g): rinse, 5s, 5s, 10s, 10s, 20s, 20s, 30s, 40s, 50s, 70s, 90s, 120s. Western: 4g per 355ml at 100°C, 5-8 minutes. Always rinse first to wake the leaf; use full-boil water for proper extraction."
     },
     "notes": "Aged dark tea (heicha) blended with chenpi. Years of fermentation\ngive the Liu Bao base a deep earthy/woody profile; the aged Xinhui\npeel adds a bright tangy citrus layer that balances the earthiness\nwith a sweet aftertaste. Mellower than ripe pu-erh — gentler on the\nstomach. Improves with further aging; no urgency to consume quickly.\nExcellent autumn/winter tea and traditional digestive after heavy meals.\n",
@@ -2348,33 +2491,45 @@
       "rounds": [
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 20,
+          "water_ml": 110
         },
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 25,
+          "water_ml": 110
         },
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 35,
+          "water_ml": 110
         },
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 50,
+          "water_ml": 110
         },
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 70,
+          "water_ml": 110
         },
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 90,
+          "water_ml": 110
         },
         {
           "water_temp_c": 95,
-          "steep_time_seconds": 15
+          "steep_time_seconds": 120,
+          "water_ml": 110
         }
       ],
+      "simple": {
+        "water_temp_c": 95,
+        "steep_time_seconds": 180,
+        "water_ml": 250
+      },
       "notes": "Gongfu schedule for qingxiang-style (lightly oxidized 'green' Tieguanyin): 95°C, flash steeps. Rinse first. First infusion: 95°C, 15s. Then 25s, 35s, 45s, 55s, 75s, 85s. For traditional roasted (nongxiang) style, use 100°C and similar timing. The packaging style determines: tightly rolled jade-green pearls = qingxiang; darker, twisted leaf = nongxiang."
     },
     "notes": "Anxi Tieguanyin acquired in Japan (likely from a Chinese tea retailer\nor Japanese tea shop with Chinese selection). Style (qingxiang/light\nvs. nongxiang/roasted) not specified — Francesco's note 'gongfu 95°C\nflash' suggests qingxiang style. Oolongs are semi-oxidized and\ngenerally stable; qingxiang versions degrade faster than roasted\nversions but still keep well for many months when sealed.\n",
@@ -2419,7 +2574,8 @@
       "rounds": [
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 0
+          "steep_time_seconds": 0,
+          "water_ml": 70
         }
       ],
       "notes": "Versatile matcha — works well both as usucha and koicha. Usucha: 2g + 70ml water at 80°C, whisked. Koicha: 4g + 30ml at 80°C, kneaded. Sift before whisking. Same caveats as Hatsu no Mukashi: 6+ months from canning, finish in 2-3 weeks once opened, refrigerate sealed."
@@ -2467,7 +2623,8 @@
       "rounds": [
         {
           "water_temp_c": 80,
-          "steep_time_seconds": 0
+          "steep_time_seconds": 0,
+          "water_ml": 70
         }
       ],
       "notes": "Daily-use matcha — works well for usucha (2g + 70ml at 80°C, whisked) but its character is more straightforward than premium ceremonial grades; fine for matcha lattes, daily preparation, or as the user note suggests, even Keurig-style brewing. Sift before whisking. Once opened, finish in 2-3 weeks; refrigerate sealed."
@@ -2513,8 +2670,9 @@
       "leaf_grams_per_100ml": 1,
       "rounds": [
         {
-          "water_temp_c": 85,
-          "steep_time_seconds": 240
+          "water_temp_c": 80,
+          "steep_time_seconds": 240,
+          "water_ml": 250
         }
       ],
       "notes": "Per Vahdam: 1 tea bag (or 2g loose) per 200ml, 3-5 minutes. The mint leaves are tolerant of slightly hotter water than pure green tea, so 80-90°C works (vs. the 70-75°C ideal for premium pure green tea). Can be enjoyed hot or iced; especially refreshing as a cold brew (4-6 hours in fridge with cold water, 1 bag/200ml). Single infusion in tea-bag format; loose-leaf tolerates a second steep."
@@ -2563,25 +2721,40 @@
       "rounds": [
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 25
+          "steep_time_seconds": 20,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 25
+          "steep_time_seconds": 25,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 25
+          "steep_time_seconds": 35,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 25
+          "steep_time_seconds": 50,
+          "water_ml": 110
         },
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 25
+          "steep_time_seconds": 70,
+          "water_ml": 110
+        },
+        {
+          "water_temp_c": 85,
+          "steep_time_seconds": 100,
+          "water_ml": 110
         }
       ],
+      "simple": {
+        "water_temp_c": 85,
+        "steep_time_seconds": 300,
+        "water_ml": 355
+      },
       "notes": "Gongfu schedule (110ml gaiwan, 5g): rinse, 25s, 45s, 70s, 90s, 150s. Western: 2g per 355ml at 85°C, 5-8 minutes. Some sources recommend slightly hotter water (90°C) for entry-level Bai Mu Dan; experiment per palate."
     },
     "notes": "Entry-level white tea — a balance between the fresh delicacy of Silver\nNeedle and the fuller character of older white tea grades. Apricot-yellow\nliquor when brewed, with a soft, mellow profile, light floral notes,\nand the characteristic pekoe/hay scent of Fuding white teas. White tea\nages well: aged Bai Mu Dan (3+ years) develops deeper, sweeter, more\ncomplex notes — like aged pu-erh, value increases with proper storage.\n",
@@ -2627,11 +2800,13 @@
       "rounds": [
         {
           "water_temp_c": 85,
-          "steep_time_seconds": 60
+          "steep_time_seconds": 30,
+          "water_ml": 120
         },
         {
-          "water_temp_c": 85,
-          "steep_time_seconds": 60
+          "water_temp_c": 90,
+          "steep_time_seconds": 10,
+          "water_ml": 120
         }
       ],
       "notes": "Per Yamamotoyama: 3-5g per 200-240ml at 80-90°C, 30s-1min. Genmaicha is more forgiving on temperature than premium sencha; the roasted rice tolerates and benefits from heat. Second steep retains the rice toastiness even as the green tea fades. Loose-leaf gives a much better extraction than tea bags."
@@ -2676,12 +2851,14 @@
       "leaf_grams_per_100ml": 1.5,
       "rounds": [
         {
-          "water_temp_c": 90,
-          "steep_time_seconds": 45
+          "water_temp_c": 95,
+          "steep_time_seconds": 30,
+          "water_ml": 120
         },
         {
-          "water_temp_c": 90,
-          "steep_time_seconds": 45
+          "water_temp_c": 95,
+          "steep_time_seconds": 10,
+          "water_ml": 120
         }
       ],
       "notes": "Hojicha tolerates higher water temperatures than most green teas because the roasting has driven off astringent compounds. Per Yamamotoyama's instructions: 3-5g per 200-240ml at 80-90°C, 30s-1min. Second infusion will be lighter but still aromatic. Loose-leaf preferred over teabags; with bags use 30s-1min boiling water. Excellent cold-brewed (4+ hours in fridge)."
@@ -2728,15 +2905,18 @@
       "rounds": [
         {
           "water_temp_c": 70,
-          "steep_time_seconds": 30
+          "steep_time_seconds": 30,
+          "water_ml": 60
         },
         {
-          "water_temp_c": 70,
-          "steep_time_seconds": 30
+          "water_temp_c": 75,
+          "steep_time_seconds": 10,
+          "water_ml": 80
         },
         {
-          "water_temp_c": 70,
-          "steep_time_seconds": 30
+          "water_temp_c": 80,
+          "steep_time_seconds": 30,
+          "water_ml": 100
         }
       ],
       "notes": "Fukamushi (deep-steamed) schedule: 70°C, 30s first; 75°C, 10s second; 80°C, 30s third. Fukamushi-cha needs shorter first-infusion time than asamushi because the deep-steaming has already broken the leaf cells and extraction is fast. Liquor will be cloudy/opaque green — that's normal for fukamushi (vs. the limpid clarity of asamushi). Use a kyusu with a fine mesh filter, since fine particles are part of the style."
@@ -2783,8 +2963,9 @@
       "leaf_grams_per_100ml": 1,
       "rounds": [
         {
-          "water_temp_c": 80,
-          "steep_time_seconds": 0
+          "water_temp_c": 65,
+          "steep_time_seconds": 0,
+          "water_ml": 30
         }
       ],
       "notes": "Culinary use — not designed for traditional whisking. For matcha latte: 1 tsp (~2g) sifted into a small amount of warm water (60-70°C), whisked into a paste, then add steamed milk. For baking: substitute for cocoa powder ratio in recipes. Storage: refrigerate the bulk bag, transfer small amounts to an airtight container for daily use to limit oxidation. 300g is a lot — open only when ready to use regularly."

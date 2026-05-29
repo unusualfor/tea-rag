@@ -25,8 +25,10 @@ brewing:
   rounds:
   - water_temp_c: 90
     steep_time_seconds: 150
-  - water_temp_c: 90
-    steep_time_seconds: 150
+    water_ml: 200
+  - water_temp_c: 95
+    steep_time_seconds: 180
+    water_ml: 200
   notes: Japanese black teas are often lighter and smoother than Indian or Ceylon styles.
 notes: |
   Loose-leaf Japanese black tea stored in a labelled plastic bag. Specific

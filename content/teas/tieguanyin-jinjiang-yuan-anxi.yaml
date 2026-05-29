@@ -28,19 +28,30 @@ brewing:
   leaf_grams_per_100ml: 6
   rounds:
   - water_temp_c: 95
-    steep_time_seconds: 15
+    steep_time_seconds: 20
+    water_ml: 110
   - water_temp_c: 95
-    steep_time_seconds: 15
+    steep_time_seconds: 25
+    water_ml: 110
   - water_temp_c: 95
-    steep_time_seconds: 15
+    steep_time_seconds: 35
+    water_ml: 110
   - water_temp_c: 95
-    steep_time_seconds: 15
+    steep_time_seconds: 50
+    water_ml: 110
   - water_temp_c: 95
-    steep_time_seconds: 15
+    steep_time_seconds: 70
+    water_ml: 110
   - water_temp_c: 95
-    steep_time_seconds: 15
+    steep_time_seconds: 90
+    water_ml: 110
   - water_temp_c: 95
-    steep_time_seconds: 15
+    steep_time_seconds: 120
+    water_ml: 110
+  simple:
+    water_temp_c: 95
+    steep_time_seconds: 180
+    water_ml: 250
   notes: 'Gongfu schedule for qingxiang-style (lightly oxidized ''green'' Tieguanyin): 95°C, flash steeps. Rinse first. First
     infusion: 95°C, 15s. Then 25s, 35s, 45s, 55s, 75s, 85s. For traditional roasted (nongxiang) style, use 100°C and similar
     timing. The packaging style determines: tightly rolled jade-green pearls = qingxiang; darker, twisted leaf = nongxiang.'

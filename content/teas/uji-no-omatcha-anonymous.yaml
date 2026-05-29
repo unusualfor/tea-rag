@@ -28,6 +28,7 @@ brewing:
   rounds:
   - water_temp_c: 80
     steep_time_seconds: 0
+    water_ml: 70
   notes: Daily-use matcha — works well for usucha (2g + 70ml at 80°C, whisked) but its character is more straightforward than
     premium ceremonial grades; fine for matcha lattes, daily preparation, or as the user note suggests, even Keurig-style
     brewing. Sift before whisking. Once opened, finish in 2-3 weeks; refrigerate sealed.

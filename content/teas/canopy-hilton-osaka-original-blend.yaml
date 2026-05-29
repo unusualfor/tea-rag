@@ -28,6 +28,7 @@ brewing:
   rounds:
   - water_temp_c: 95
     steep_time_seconds: 240
+    water_ml: 250
   notes: 'Western-style brewing (the natural fit for a flavored blend): ~3g per 250ml at 95°C, 3-5 minutes. Black tea base
     sets the temperature; the green tea component is added to the blend in proportion that doesn''t require lower temp. Single
     infusion — flavored blends with petals and aromatics generally don''t re-steep meaningfully.'

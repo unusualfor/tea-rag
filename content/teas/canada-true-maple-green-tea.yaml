@@ -26,7 +26,8 @@ brewing:
   leaf_grams_per_100ml: 1
   rounds:
   - water_temp_c: 80
-    steep_time_seconds: 180
+    steep_time_seconds: 150
+    water_ml: 250
   notes: 'Producer doesn''t publish green-tea-specific instructions; standard green tea brewing applies: 1 tea bag in 200-250ml
     at 75-85°C, 2-3 minutes. Boiling water will turn the green tea bitter, so let the kettle cool 1-2 minutes after boil before
     pouring. Single infusion (tea bag format).'

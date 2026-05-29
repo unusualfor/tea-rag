@@ -29,10 +29,13 @@ brewing:
   rounds:
   - water_temp_c: 50
     steep_time_seconds: 120
+    water_ml: 30
   - water_temp_c: 50
-    steep_time_seconds: 120
-  - water_temp_c: 50
-    steep_time_seconds: 120
+    steep_time_seconds: 30
+    water_ml: 50
+  - water_temp_c: 60
+    steep_time_seconds: 60
+    water_ml: 80
   notes: 'Premium Uji gyokuro — extreme low-temp, high leaf-density brewing. First infusion: 50°C, 120s. Second: 50°C, 30s.
     Third: 60°C, 60s. Cool the water carefully (boil, pour through cooling vessels). Use shiboridashi or houhin; they''re
     designed for these slow low-temp pours. The first brew should be syrup-thick with nori-like umami; subsequent rounds get

@@ -28,6 +28,7 @@ brewing:
   rounds:
   - water_temp_c: 100
     steep_time_seconds: 240
+    water_ml: 250
   notes: 'Per Ahmad Tea: 3-5 minutes infusion in boiling water; ~1 tsp per cup. Best served hot with a slice of lemon (per
     producer recommendation) or with a splash of milk. Single infusion.'
 notes: |

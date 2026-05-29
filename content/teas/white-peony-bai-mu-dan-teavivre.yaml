@@ -27,15 +27,27 @@ brewing:
   leaf_grams_per_100ml: 5
   rounds:
   - water_temp_c: 85
-    steep_time_seconds: 25
+    steep_time_seconds: 20
+    water_ml: 110
   - water_temp_c: 85
     steep_time_seconds: 25
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 25
+    steep_time_seconds: 35
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 25
+    steep_time_seconds: 50
+    water_ml: 110
   - water_temp_c: 85
-    steep_time_seconds: 25
+    steep_time_seconds: 70
+    water_ml: 110
+  - water_temp_c: 85
+    steep_time_seconds: 100
+    water_ml: 110
+  simple:
+    water_temp_c: 85
+    steep_time_seconds: 300
+    water_ml: 355
   notes: 'Gongfu schedule (110ml gaiwan, 5g): rinse, 25s, 45s, 70s, 90s, 150s. Western: 2g per 355ml at 85°C, 5-8 minutes.
     Some sources recommend slightly hotter water (90°C) for entry-level Bai Mu Dan; experiment per palate.'
 notes: |

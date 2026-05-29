@@ -28,28 +28,38 @@ brewing:
   rounds:
   - water_temp_c: 100
     steep_time_seconds: 5
+    water_ml: 110
   - water_temp_c: 100
     steep_time_seconds: 5
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 5
+    steep_time_seconds: 10
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 5
+    steep_time_seconds: 15
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 5
+    steep_time_seconds: 20
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 5
+    steep_time_seconds: 25
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 5
+    steep_time_seconds: 30
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 5
+    steep_time_seconds: 45
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 5
+    steep_time_seconds: 70
+    water_ml: 110
   - water_temp_c: 100
-    steep_time_seconds: 5
-  - water_temp_c: 100
-    steep_time_seconds: 5
-  - water_temp_c: 100
-    steep_time_seconds: 5
+    steep_time_seconds: 90
+    water_ml: 110
+  simple:
+    water_temp_c: 100
+    steep_time_seconds: 300
+    water_ml: 355
   notes: 'APPROXIMATED from TeaVivre''s Bing Lang Xiang Liu Bao Cha 2014 (closest match — same producer, same category, same
     vintage range). Gongfu schedule (110ml gaiwan, 8g): rinse, 5s, 5s, 10s, 10s, 20s, 20s, 30s, 40s, 50s, 70s, 90s, 120s.
     Western: 4g per 355ml at 100°C, 5-8 minutes. Always rinse first to wake the leaf; use full-boil water for proper extraction.'

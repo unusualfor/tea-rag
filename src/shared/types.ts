@@ -78,7 +78,13 @@ export interface Tea {
     rounds: Array<{
       water_temp_c: number;
       steep_time_seconds: number;
+      water_ml?: number;
     }>;
+    simple?: {
+      water_temp_c: number;
+      steep_time_seconds: number;
+      water_ml: number;
+    };
     notes?: string;
   };
   notes: string;
