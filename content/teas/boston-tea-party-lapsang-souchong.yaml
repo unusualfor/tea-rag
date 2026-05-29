@@ -23,7 +23,6 @@ acquisition:
   month: 5
   context: Red Hat Summit Boston work trip
 caffeine_level: 3
-urgency: stable
 expiry_estimate: '2027.05'
 brewing:
   vessel: teapot

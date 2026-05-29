@@ -43,7 +43,7 @@ export type TeaCategory =
   // Fallback
   | "other";
 
-export type TeaUrgency = "now" | "soon" | "summer" | "calm" | "stable";
+export type TeaUrgency = "now" | "soon" | "no-rush" | "stable";
 
 export interface Tea {
   id: string;

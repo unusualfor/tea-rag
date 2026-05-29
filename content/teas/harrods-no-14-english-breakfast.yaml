@@ -20,7 +20,6 @@ acquisition:
   month: null
   context: null
 caffeine_level: 4
-urgency: stable
 expiry_estimate: '2025.11'
 brewing:
   vessel: teapot

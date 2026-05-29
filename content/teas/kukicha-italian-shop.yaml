@@ -17,7 +17,6 @@ acquisition:
   month: null
   context: Purchased from an Italian tea shop
 caffeine_level: 2
-urgency: stable
 expiry_estimate: null
 brewing:
   vessel: kyusu

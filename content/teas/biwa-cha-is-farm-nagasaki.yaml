@@ -19,7 +19,6 @@ acquisition:
   month: 3
   context: 3GPP RAN#111 work trip
 caffeine_level: 1
-urgency: calm
 expiry_estimate: null
 brewing:
   vessel: teapot

@@ -20,7 +20,6 @@ acquisition:
   month: 3
   context: Trip with Federica
 caffeine_level: 2
-urgency: stable
 expiry_estimate: null
 brewing:
   vessel: teapot

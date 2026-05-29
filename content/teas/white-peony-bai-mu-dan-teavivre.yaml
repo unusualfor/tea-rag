@@ -20,7 +20,6 @@ acquisition:
   month: null
   context: null
 caffeine_level: 2
-urgency: calm
 expiry_estimate: null
 brewing:
   vessel: gaiwan

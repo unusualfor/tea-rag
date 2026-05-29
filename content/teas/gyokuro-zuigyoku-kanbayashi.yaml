@@ -21,7 +21,6 @@ acquisition:
   month: 9
   context: Honeymoon trip
 caffeine_level: 5
-urgency: now
 expiry_estimate: '2026.02'
 brewing:
   vessel: shiboridashi

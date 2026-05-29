@@ -20,7 +20,6 @@ acquisition:
   month: 3
   context: 3GPP RAN#111 work trip
 caffeine_level: 5
-urgency: soon
 expiry_estimate: '2026.11'
 brewing:
   vessel: chawan

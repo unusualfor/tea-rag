@@ -21,7 +21,6 @@ acquisition:
   month: null
   context: null
 caffeine_level: 4
-urgency: now
 expiry_estimate: '2028.04'
 brewing:
   vessel: chawan

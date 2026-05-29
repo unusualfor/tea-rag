@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import type { Tea, TeaCategory, TeaUrgency } from "@shared/types";
+import { computeUrgency } from "@shared/urgency";
 import teasData from "../../data/teas.json";
 
 export interface Filters {
@@ -14,8 +15,11 @@ const emptyFilters: Filters = {
   country: null,
 };
 
-// Use bundled data directly (no API call needed for local data)
-const allTeas: Tea[] = teasData as Tea[];
+// Use bundled data directly, with urgency computed from current date
+const allTeas: Tea[] = (teasData as Tea[]).map((tea) => ({
+  ...tea,
+  urgency: computeUrgency(tea),
+}));
 
 export function useTeas() {
   const [filters, setFilters] = useState<Filters>(emptyFilters);
@@ -91,7 +95,7 @@ export function useTeas() {
     allTeas.map((t) => [t.category, t.category_label])
   );
   const countries = [...new Set(allTeas.map((t) => t.origin.country))].sort();
-  const urgencies: TeaUrgency[] = ["now", "soon", "summer", "calm", "stable"];
+  const urgencies: TeaUrgency[] = ["now", "soon", "no-rush", "stable"];
 
 
   const clearFilters = () => setFilters(emptyFilters);

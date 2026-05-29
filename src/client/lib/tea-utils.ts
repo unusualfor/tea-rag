@@ -6,8 +6,7 @@ export const urgencyConfig: Record<
 > = {
   now: { label: "Drink now", color: "text-red-700 bg-red-50", dotColor: "bg-red-500" },
   soon: { label: "Soon", color: "text-amber-700 bg-amber-50", dotColor: "bg-amber-500" },
-  summer: { label: "Summer", color: "text-sky-700 bg-sky-50", dotColor: "bg-sky-500" },
-  calm: { label: "No rush", color: "text-emerald-700 bg-emerald-50", dotColor: "bg-emerald-500" },
+  "no-rush": { label: "No rush", color: "text-emerald-700 bg-emerald-50", dotColor: "bg-emerald-500" },
   stable: { label: "Stable", color: "text-slate-600 bg-slate-50", dotColor: "bg-slate-400" },
 };
 

@@ -21,6 +21,7 @@ import path from "path";
 import yaml from "js-yaml";
 import crypto from "crypto";
 import type { Tea } from "../src/shared/types";
+import { computeUrgency } from "../src/shared/urgency";
 
 const TEAS_DIR = path.resolve(process.cwd(), "content/teas");
 const OUTPUT_FILE = path.resolve(process.cwd(), "dist/ingest-payload.json");
@@ -68,7 +69,6 @@ function validateTea(tea: unknown, filename: string): Tea {
     errors.push("missing 'origin.country'");
   if (!t.caffeine_level || typeof t.caffeine_level !== "number" || t.caffeine_level < 1 || t.caffeine_level > 5)
     errors.push("missing or invalid 'caffeine_level' (must be 1-5)");
-  if (!t.urgency) errors.push("missing 'urgency'");
   if (!t.notes) errors.push("missing 'notes'");
 
   if (errors.length > 0) {
@@ -90,6 +90,7 @@ function loadTeas(): IngestRecord[] {
     const raw = fs.readFileSync(filePath, "utf-8");
     const parsed = yaml.load(raw);
     const tea = validateTea(parsed, file);
+    tea.urgency = computeUrgency(tea);
     const compositeText = buildCompositeText(tea);
     const hash = contentHash(tea);
 

@@ -20,7 +20,6 @@ acquisition:
   month: null
   context: Canada visit / souvenir
 caffeine_level: 1
-urgency: stable
 expiry_estimate: null
 brewing:
   vessel: teapot

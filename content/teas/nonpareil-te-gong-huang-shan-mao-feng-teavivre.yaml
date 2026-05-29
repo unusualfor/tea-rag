@@ -20,7 +20,6 @@ acquisition:
   month: null
   context: null
 caffeine_level: 3
-urgency: now
 expiry_estimate: '2026.10'
 brewing:
   vessel: gaiwan

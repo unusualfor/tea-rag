@@ -21,7 +21,6 @@ acquisition:
   month: null
   context: Acquired during 2025 Japan trip
 caffeine_level: 3
-urgency: stable
 expiry_estimate: null
 brewing:
   vessel: gaiwan

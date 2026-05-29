@@ -17,7 +17,6 @@ acquisition:
   month: null
   context: null
 caffeine_level: 3
-urgency: calm
 expiry_estimate: null
 brewing:
   vessel: çaydanlık

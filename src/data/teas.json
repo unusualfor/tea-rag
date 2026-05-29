@@ -23,7 +23,6 @@
       "context": "Gift"
     },
     "caffeine_level": 3,
-    "urgency": "stable",
     "expiry_estimate": "2027.01",
     "brewing": {
       "vessel": "teapot",
@@ -46,7 +45,8 @@
       "light-bergamot",
       "commercial",
       "ambiguous-sku"
-    ]
+    ],
+    "urgency": "soon"
   },
   {
     "id": "akisho-cha-mitsuyasu-seikaen",
@@ -72,7 +72,6 @@
       "context": "3GPP RAN#111 work trip"
     },
     "caffeine_level": 3,
-    "urgency": "summer",
     "expiry_estimate": "2026.11",
     "brewing": {
       "vessel": "kyusu",
@@ -105,7 +104,8 @@
       "seasonal",
       "autumn",
       "kyushu-collection"
-    ]
+    ],
+    "urgency": "soon"
   },
   {
     "id": "anxi-monkey-king-tie-guan-yin-teavivre",
@@ -131,7 +131,6 @@
       "context": null
     },
     "caffeine_level": 3,
-    "urgency": "soon",
     "expiry_estimate": "2027.05",
     "brewing": {
       "vessel": "gaiwan",
@@ -188,7 +187,8 @@
       "tie-guan-yin",
       "anxi",
       "teavivre"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "asamushi-cha-ikeda-senchado",
@@ -214,7 +214,6 @@
       "context": "3GPP RAN#111 work trip"
     },
     "caffeine_level": 3,
-    "urgency": "summer",
     "expiry_estimate": "2026.12",
     "brewing": {
       "vessel": "kyusu",
@@ -246,7 +245,8 @@
       "kagoshima",
       "premium",
       "kyushu-collection"
-    ]
+    ],
+    "urgency": "soon"
   },
   {
     "id": "aso-no-megumi-nagata-seicha",
@@ -272,7 +272,6 @@
       "context": "3GPP RAN#111 work trip"
     },
     "caffeine_level": 3,
-    "urgency": "summer",
     "expiry_estimate": "2026.07",
     "brewing": {
       "vessel": "kyusu",
@@ -306,7 +305,8 @@
       "family-farm",
       "award-winning",
       "kyushu-collection"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "award-winning-premium-dragon-well-long-jing-teavivre",
@@ -332,7 +332,6 @@
       "context": null
     },
     "caffeine_level": 3,
-    "urgency": "now",
     "expiry_estimate": "2026.10",
     "brewing": {
       "vessel": "gaiwan",
@@ -375,7 +374,8 @@
       "spring-tea",
       "long-jing",
       "teavivre"
-    ]
+    ],
+    "urgency": "soon"
   },
   {
     "id": "biwa-cha-is-farm-nagasaki",
@@ -401,7 +401,6 @@
       "context": "3GPP RAN#111 work trip"
     },
     "caffeine_level": 1,
-    "urgency": "calm",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "teapot",
@@ -424,7 +423,8 @@
       "caffeine-free",
       "ages-well",
       "kyushu-collection"
-    ]
+    ],
+    "urgency": "stable"
   },
   {
     "id": "boston-tea-party-lapsang-souchong",
@@ -450,7 +450,6 @@
       "context": "Red Hat Summit Boston work trip"
     },
     "caffeine_level": 3,
-    "urgency": "stable",
     "expiry_estimate": "2027.05",
     "brewing": {
       "vessel": "teapot",
@@ -475,7 +474,8 @@
       "museum-souvenir",
       "historical",
       "commercial"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "canada-true-maple-black-tea",
@@ -501,7 +501,6 @@
       "context": "Canada visit / souvenir"
     },
     "caffeine_level": 3,
-    "urgency": "stable",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "teapot",
@@ -523,7 +522,8 @@
       "ceylon-base",
       "souvenir",
       "commercial"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "canada-true-maple-green-tea",
@@ -549,7 +549,6 @@
       "context": "Canada visit / souvenir"
     },
     "caffeine_level": 2,
-    "urgency": "stable",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "teapot",
@@ -570,7 +569,8 @@
       "maple",
       "souvenir",
       "commercial"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "canada-true-maple-herbal-tea",
@@ -596,7 +596,6 @@
       "context": "Canada visit / souvenir"
     },
     "caffeine_level": 1,
-    "urgency": "stable",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "teapot",
@@ -618,7 +617,8 @@
       "caffeine-free",
       "souvenir",
       "commercial"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "canopy-hilton-osaka-original-blend",
@@ -644,7 +644,6 @@
       "context": "Hotel souvenir during Osaka stay"
     },
     "caffeine_level": 2,
-    "urgency": "stable",
     "expiry_estimate": "~2026.01",
     "brewing": {
       "vessel": "teapot",
@@ -666,7 +665,8 @@
       "souvenir",
       "hotel-blend",
       "osaka"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "caykur-rize-turist-cayi",
@@ -692,7 +692,6 @@
       "context": null
     },
     "caffeine_level": 3,
-    "urgency": "calm",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "çaydanlık",
@@ -719,7 +718,8 @@
       "rize",
       "everyday-tea",
       "strong-tea"
-    ]
+    ],
+    "urgency": "stable"
   },
   {
     "id": "caykur-tirebolu-42",
@@ -745,7 +745,6 @@
       "context": null
     },
     "caffeine_level": 3,
-    "urgency": "calm",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "çaydanlık",
@@ -772,7 +771,8 @@
       "tirebolu",
       "black-sea-tea",
       "premium-everyday"
-    ]
+    ],
+    "urgency": "stable"
   },
   {
     "id": "caykur-tomurcuk-earl-grey",
@@ -798,7 +798,6 @@
       "context": "Trip with Federica"
     },
     "caffeine_level": 3,
-    "urgency": "stable",
     "expiry_estimate": "2027.06",
     "brewing": {
       "vessel": "teapot",
@@ -821,7 +820,8 @@
       "rize",
       "black-sea",
       "commercial"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "chunyuan-chrysanthemum-puerh",
@@ -847,7 +847,6 @@
       "context": "Trip with Federica"
     },
     "caffeine_level": 2,
-    "urgency": "stable",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "teapot",
@@ -893,7 +892,8 @@
       "chrysanthemum",
       "herbal-blend",
       "commercial"
-    ]
+    ],
+    "urgency": "stable"
   },
   {
     "id": "chunyuan-oolong",
@@ -919,7 +919,6 @@
       "context": "Trip with Federica"
     },
     "caffeine_level": 3,
-    "urgency": "stable",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "teapot",
@@ -960,7 +959,8 @@
       "commercial",
       "tea-bag",
       "organic"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "demmers",
@@ -986,7 +986,6 @@
       "context": null
     },
     "caffeine_level": 1,
-    "urgency": "stable",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "teapot",
@@ -1012,7 +1011,8 @@
       "caffeine-free",
       "austrian-tea",
       "evening-tea"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "golden-bridge-west-lake-longjing",
@@ -1038,7 +1038,6 @@
       "context": "Trip with Federica"
     },
     "caffeine_level": 3,
-    "urgency": "now",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "gaiwan",
@@ -1071,7 +1070,8 @@
       "hangzhou",
       "zhejiang",
       "commercial"
-    ]
+    ],
+    "urgency": "soon"
   },
   {
     "id": "gyokuro-hojicha-ikeda-senchado",
@@ -1097,7 +1097,6 @@
       "context": "3GPP RAN#111 work trip"
     },
     "caffeine_level": 2,
-    "urgency": "calm",
     "expiry_estimate": "2027.02",
     "brewing": {
       "vessel": "kyusu",
@@ -1130,7 +1129,8 @@
       "premium",
       "ages-well",
       "kyushu-collection"
-    ]
+    ],
+    "urgency": "soon"
   },
   {
     "id": "gyokuro-mitsuyasu-seikaen",
@@ -1156,7 +1156,6 @@
       "context": "3GPP RAN#111 work trip"
     },
     "caffeine_level": 5,
-    "urgency": "summer",
     "expiry_estimate": "2026.11",
     "brewing": {
       "vessel": "shiboridashi",
@@ -1188,7 +1187,8 @@
       "fukuoka",
       "kyushu-collection",
       "premium"
-    ]
+    ],
+    "urgency": "soon"
   },
   {
     "id": "gyokuro-zuigyoku-kanbayashi",
@@ -1214,7 +1214,6 @@
       "context": "Honeymoon trip"
     },
     "caffeine_level": 5,
-    "urgency": "now",
     "expiry_estimate": "2026.02",
     "brewing": {
       "vessel": "shiboridashi",
@@ -1246,7 +1245,8 @@
       "premium",
       "honeymoon-collection",
       "historic-producer"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "harrods-no-14-english-breakfast",
@@ -1272,7 +1272,6 @@
       "context": null
     },
     "caffeine_level": 4,
-    "urgency": "stable",
     "expiry_estimate": "2025.11",
     "brewing": {
       "vessel": "teapot",
@@ -1297,7 +1296,8 @@
       "kenyan",
       "morning-tea",
       "luxury-souvenir"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "harrods-no-16-afternoon-ceylon",
@@ -1323,7 +1323,6 @@
       "context": null
     },
     "caffeine_level": 3,
-    "urgency": "stable",
     "expiry_estimate": "2025.11",
     "brewing": {
       "vessel": "teapot",
@@ -1346,7 +1345,8 @@
       "sri-lanka",
       "afternoon-tea",
       "luxury-souvenir"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "harrods-no-42-earl-grey",
@@ -1372,7 +1372,6 @@
       "context": null
     },
     "caffeine_level": 3,
-    "urgency": "stable",
     "expiry_estimate": "2025.11",
     "brewing": {
       "vessel": "teapot",
@@ -1395,7 +1394,8 @@
       "kenyan",
       "flavored-black-tea",
       "luxury-souvenir"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "hatsu-no-mukashi-nakamura-tokichi",
@@ -1421,7 +1421,6 @@
       "context": "Honeymoon trip"
     },
     "caffeine_level": 5,
-    "urgency": "now",
     "expiry_estimate": "2026.03",
     "brewing": {
       "vessel": "chawan",
@@ -1445,7 +1444,8 @@
       "premium",
       "honeymoon-collection",
       "historic-producer"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "japanese-black-tea-nero-giappone",
@@ -1471,7 +1471,6 @@
       "context": null
     },
     "caffeine_level": 3,
-    "urgency": "calm",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "kyusu",
@@ -1502,7 +1501,8 @@
       "black-tea",
       "wakoucha",
       "loose-leaf"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "jasmine-dragon-pearls-green-tea-teavivre",
@@ -1528,7 +1528,6 @@
       "context": null
     },
     "caffeine_level": 3,
-    "urgency": "soon",
     "expiry_estimate": "2028.05",
     "brewing": {
       "vessel": "gaiwan",
@@ -1584,7 +1583,8 @@
       "scented-tea",
       "jasmine",
       "teavivre"
-    ]
+    ],
+    "urgency": "stable"
   },
   {
     "id": "jasmine-dragon-pearls-long-zhu-teavivre",
@@ -1610,7 +1610,6 @@
       "context": null
     },
     "caffeine_level": 3,
-    "urgency": "soon",
     "expiry_estimate": "2028.06",
     "brewing": {
       "vessel": "gaiwan",
@@ -1661,7 +1660,8 @@
       "scented-tea",
       "jasmine",
       "teavivre"
-    ]
+    ],
+    "urgency": "stable"
   },
   {
     "id": "kiun-matcha-marukyu-koyamaen",
@@ -1687,7 +1687,6 @@
       "context": "3GPP RAN#111 work trip"
     },
     "caffeine_level": 5,
-    "urgency": "soon",
     "expiry_estimate": "2026.07",
     "brewing": {
       "vessel": "chawan",
@@ -1710,7 +1709,8 @@
       "koicha",
       "urasenke",
       "kyushu-collection"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "kukicha-italian-shop",
@@ -1736,7 +1736,6 @@
       "context": "Purchased from an Italian tea shop"
     },
     "caffeine_level": 2,
-    "urgency": "stable",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "kyusu",
@@ -1766,7 +1765,8 @@
       "kukicha",
       "twig-tea",
       "low-caffeine"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "lidl-lychee",
@@ -1792,7 +1792,6 @@
       "context": null
     },
     "caffeine_level": 3,
-    "urgency": "calm",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "teapot",
@@ -1818,7 +1817,8 @@
       "flavoured-tea",
       "floral",
       "fruity"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "lidl-pineapple",
@@ -1844,7 +1844,6 @@
       "context": null
     },
     "caffeine_level": 2,
-    "urgency": "calm",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "teapot",
@@ -1870,7 +1869,8 @@
       "flavoured-tea",
       "tropical",
       "ginger"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "matcha-ikeda-senchado",
@@ -1896,7 +1896,6 @@
       "context": "3GPP RAN#111 work trip"
     },
     "caffeine_level": 5,
-    "urgency": "soon",
     "expiry_estimate": "2026.11",
     "brewing": {
       "vessel": "chawan",
@@ -1918,7 +1917,8 @@
       "ceremonial",
       "single-origin",
       "kyushu-collection"
-    ]
+    ],
+    "urgency": "soon"
   },
   {
     "id": "matcha-kuwari-samidori-ujitawara",
@@ -1944,7 +1944,6 @@
       "context": "Honeymoon trip"
     },
     "caffeine_level": 5,
-    "urgency": "now",
     "expiry_estimate": "2026.07",
     "brewing": {
       "vessel": "chawan",
@@ -1968,7 +1967,8 @@
       "samidori",
       "premium",
       "honeymoon-collection"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "matcha-love",
@@ -1994,7 +1994,6 @@
       "context": null
     },
     "caffeine_level": 4,
-    "urgency": "calm",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "matcha bowl",
@@ -2021,7 +2020,8 @@
       "culinary-grade",
       "latte",
       "baking"
-    ]
+    ],
+    "urgency": "soon"
   },
   {
     "id": "matcha-shan-wa",
@@ -2047,7 +2047,6 @@
       "context": null
     },
     "caffeine_level": 4,
-    "urgency": "calm",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "matcha bowl",
@@ -2072,7 +2071,8 @@
       "matcha",
       "powdered-tea",
       "everyday-tea"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "mighty-leaf-organic-matcha",
@@ -2098,7 +2098,6 @@
       "context": null
     },
     "caffeine_level": 4,
-    "urgency": "now",
     "expiry_estimate": "2028.04",
     "brewing": {
       "vessel": "chawan",
@@ -2122,7 +2121,8 @@
       "shizuoka",
       "us-brand",
       "commercial"
-    ]
+    ],
+    "urgency": "stable"
   },
   {
     "id": "miyako-no-tatsumi-nakamura-tokichi",
@@ -2148,7 +2148,6 @@
       "context": "Honeymoon trip"
     },
     "caffeine_level": 3,
-    "urgency": "now",
     "expiry_estimate": "2026.03",
     "brewing": {
       "vessel": "kyusu",
@@ -2181,7 +2180,8 @@
       "premium",
       "honeymoon-collection",
       "historic-producer"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "nonpareil-te-gong-huang-shan-mao-feng-teavivre",
@@ -2207,7 +2207,6 @@
       "context": null
     },
     "caffeine_level": 3,
-    "urgency": "now",
     "expiry_estimate": "2026.10",
     "brewing": {
       "vessel": "gaiwan",
@@ -2249,7 +2248,8 @@
       "pre-ming",
       "spring-tea",
       "teavivre"
-    ]
+    ],
+    "urgency": "soon"
   },
   {
     "id": "republic-of-tea-organic-ceremonial-matcha",
@@ -2275,7 +2275,6 @@
       "context": null
     },
     "caffeine_level": 4,
-    "urgency": "now",
     "expiry_estimate": "2027.10",
     "brewing": {
       "vessel": "chawan",
@@ -2298,7 +2297,8 @@
       "tencha",
       "us-brand",
       "commercial"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "satsuki-tsuyu-kusano-seichaen",
@@ -2324,7 +2324,6 @@
       "context": "3GPP RAN#111 work trip"
     },
     "caffeine_level": 3,
-    "urgency": "calm",
     "expiry_estimate": "2027.03",
     "brewing": {
       "vessel": "kyusu",
@@ -2356,7 +2355,8 @@
       "ureshino",
       "yushuku-meicha",
       "kyushu-collection"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "tangerine-peel-chen-pi-liu-bao-cha-teavivre",
@@ -2382,7 +2382,6 @@
       "context": null
     },
     "caffeine_level": 2,
-    "urgency": "stable",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "gaiwan",
@@ -2457,7 +2456,8 @@
       "scented-with-peel",
       "ages-well",
       "teavivre"
-    ]
+    ],
+    "urgency": "stable"
   },
   {
     "id": "tieguanyin-jinjiang-yuan-anxi",
@@ -2483,7 +2483,6 @@
       "context": "Acquired during 2025 Japan trip"
     },
     "caffeine_level": 3,
-    "urgency": "stable",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "gaiwan",
@@ -2540,7 +2539,8 @@
       "anxi",
       "fujian",
       "gongfu"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "uji-no-mukashi-nakamura-tokichi",
@@ -2566,7 +2566,6 @@
       "context": "Honeymoon trip"
     },
     "caffeine_level": 5,
-    "urgency": "now",
     "expiry_estimate": "2026.03",
     "brewing": {
       "vessel": "chawan",
@@ -2589,7 +2588,8 @@
       "premium",
       "honeymoon-collection",
       "historic-producer"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "uji-no-omatcha-anonymous",
@@ -2615,7 +2615,6 @@
       "context": "Kyushu trip"
     },
     "caffeine_level": 4,
-    "urgency": "soon",
     "expiry_estimate": "2027.02",
     "brewing": {
       "vessel": "chawan",
@@ -2637,7 +2636,8 @@
       "everyday",
       "daily-use",
       "honeymoon-collection"
-    ]
+    ],
+    "urgency": "soon"
   },
   {
     "id": "vahdam-mint-melody",
@@ -2663,7 +2663,6 @@
       "context": null
     },
     "caffeine_level": 2,
-    "urgency": "soon",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "teapot",
@@ -2687,7 +2686,8 @@
       "spearmint",
       "himalayan",
       "commercial"
-    ]
+    ],
+    "urgency": "no-rush"
   },
   {
     "id": "white-peony-bai-mu-dan-teavivre",
@@ -2713,7 +2713,6 @@
       "context": null
     },
     "caffeine_level": 2,
-    "urgency": "calm",
     "expiry_estimate": null,
     "brewing": {
       "vessel": "gaiwan",
@@ -2766,7 +2765,8 @@
       "fuding",
       "ages-well",
       "teavivre"
-    ]
+    ],
+    "urgency": "stable"
   },
   {
     "id": "yamamotoyama-genmaicha",
@@ -2792,7 +2792,6 @@
       "context": null
     },
     "caffeine_level": 2,
-    "urgency": "stable",
     "expiry_estimate": "2025.09",
     "brewing": {
       "vessel": "kyusu",
@@ -2818,7 +2817,8 @@
       "roasted-rice",
       "daily-driver",
       "commercial"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "yamamotoyama-hojicha",
@@ -2844,7 +2844,6 @@
       "context": null
     },
     "caffeine_level": 1,
-    "urgency": "stable",
     "expiry_estimate": "2025.09",
     "brewing": {
       "vessel": "teapot",
@@ -2871,7 +2870,8 @@
       "daily-driver",
       "low-caffeine",
       "commercial"
-    ]
+    ],
+    "urgency": "now"
   },
   {
     "id": "yame-imafuku-fukamushi-cha-haraguchien",
@@ -2897,7 +2897,6 @@
       "context": "3GPP RAN#111 work trip"
     },
     "caffeine_level": 3,
-    "urgency": "calm",
     "expiry_estimate": "2027.02",
     "brewing": {
       "vessel": "kyusu",
@@ -2930,7 +2929,8 @@
       "fukuoka",
       "daily-driver",
       "kyushu-collection"
-    ]
+    ],
+    "urgency": "soon"
   },
   {
     "id": "yame-matcha-culinary",
@@ -2956,7 +2956,6 @@
       "context": "3GPP RAN#111 work trip"
     },
     "caffeine_level": 4,
-    "urgency": "calm",
     "expiry_estimate": "2027.01",
     "brewing": {
       "vessel": "any",
@@ -2979,6 +2978,7 @@
       "fukuoka",
       "bulk",
       "kyushu-collection"
-    ]
+    ],
+    "urgency": "soon"
   }
 ]
