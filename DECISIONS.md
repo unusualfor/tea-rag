@@ -4,6 +4,42 @@ Architectural and design decisions for tea-rag. Updated as the project evolves.
 
 ---
 
+## 2026-07 — Chat model: stay on Llama 3.3 70B; swapping is not a one-line change
+
+**Choice**: Keep `@cf/meta/llama-3.3-70b-instruct-fp8-fast`. Evaluated GLM-4.7-Flash and Kimi K2.6 as replacements and rejected both.
+
+**Why we looked**: Llama 3.3 has the most expensive output tokens in the Workers AI catalog and is the weakest link in the chat UX — it regularly answers "Your input is lacking necessary details" instead of calling `get_tea`. The two-pass loop, `MAX_TOOL_ROUNDS = 1`, and `extractToolCallFromText` all exist to work around it.
+
+**Catalog pricing** (neurons per M tokens, in/out):
+
+| Model | Input | Cached input | Output |
+|---|---|---|---|
+| `@cf/meta/llama-3.3-70b-instruct-fp8-fast` (current) | 26,668 | — | 204,805 |
+| `@cf/zai-org/glm-4.7-flash` | 5,500 | — | 36,400 |
+| `@cf/openai/gpt-oss-20b` | 18,182 | — | 27,273 |
+| `@cf/meta/llama-4-scout-17b-16e-instruct` | 24,545 | — | 77,273 |
+| `@cf/mistralai/mistral-small-3.1-24b-instruct` | 31,876 | — | 50,488 |
+| `@cf/moonshotai/kimi-k2.6` | 86,364 | 14,545 | 363,636 |
+
+Free tier is 10,000 neurons/day. The two-pass loop bills two model calls per turn, so a turn costs roughly double a single call.
+
+**Why not GLM-4.7-Flash**: cheapest in the catalog (4.8x/5.6x below current) and the only model described as optimized for multi-turn tool calling — but it does not work. Tested locally via `wrangler dev` with the real AI binding: the first call returns, then every subsequent call hangs past 200s, including a bare "hello". Not a code fault. Verified by swapping back to Llama in the same session, which responded normally.
+
+**Why not Kimi K2.6**: the quality answer (262k context, real multi-turn tool calling, would likely let us delete the workarounds above) but it costs *more* than what we already run — 3.2x input, 1.8x output. Cached input at 14,545 would soften that to roughly 1.4x per turn since the system prompt and tool definitions are identical every request, but we did not confirm Workers AI caches them automatically. Rejected on cost.
+
+**The real finding — a model swap is not a one-line change.** Two incompatibilities, both discovered only by testing:
+
+1. **Tool schema.** We send the flat `{name, description, parameters}` shape (deliberately, see commit `5834150`). OpenAI-compatible models reject it with `8001: Invalid input` and require `{type: "function", function: {...}}`.
+2. **Response envelope.** Llama returns the Workers AI native `{response, tool_calls}`. GLM and Kimi return OpenAI `chat.completion` with `choices[0].message`. Reading only the native shape yields an **empty stream with no error** — the failure is silent.
+
+Both are fixable with a nested `TOOLS_PAYLOAD` projection and a `normalizeAiResponse()` helper. That work was written and then discarded, because switching the tool payload to nested **regressed Llama**: the tool call fires but the second pass returns no text. So the tool format is coupled to the model. Adopting an OpenAI-format model is a commitment, not a toggle, unless both formats are kept.
+
+**If revisited**: `gpt-oss-20b` is the only candidate that is both cheaper and better than current (7.5x cheaper output). It carries the same two code changes above, plus its own wrinkle — it exposes three API formats with dynamic detection.
+
+**Process note**: the first GLM attempt was deployed straight to production without local testing and broke chat for several minutes until reverted. Workers AI cannot be exercised without credentials, so model changes must be tested with `npx wrangler dev --experimental-vectorize-bind-to-prod` before deploy. Note that long dev sessions with many hot reloads eventually stop responding; check production before concluding the account or quota is at fault.
+
+---
+
 ## 2026-07 — Cold brew: derived per category, not authored per tea
 
 **Choice**: Cold brew parameters (g/L, steep window, overnight advice) live in a category-keyed table in `src/shared/cold-brew.ts`, resolved at read time by `getColdBrew(tea)`. Individual teas override via an optional `cold_brew` block in their YAML. Teas that resolve to `null` never show the mode in the UI.
