@@ -274,7 +274,8 @@ interface AiMessage {
 
 interface ChatRequest {
   message: string;
-  history: Array<{ role: "user" | "assistant"; content: string }>;
+  /** Optional — the UI always sends it, but direct API callers may not. */
+  history?: Array<{ role: "user" | "assistant"; content: string }>;
 }
 
 // All known tea IDs for reference fixup
@@ -403,10 +404,15 @@ chatApp.post("/api/chat", async (c) => {
     return c.json({ error: "message is required" }, 400);
   }
 
-  // Build message list
+  // Build message list. `history` is optional and this runs outside the stream's
+  // try/catch, so an unguarded .map here surfaces as an opaque 500.
+  const priorTurns = Array.isArray(history) ? history : [];
+
   const messages: AiMessage[] = [
     { role: "system", content: SYSTEM_PROMPT },
-    ...history.map((h) => ({ role: h.role, content: h.content })),
+    ...priorTurns
+      .filter((h) => h && typeof h.content === "string" && (h.role === "user" || h.role === "assistant"))
+      .map((h) => ({ role: h.role, content: h.content })),
     { role: "user", content: message },
   ];
 
