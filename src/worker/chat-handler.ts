@@ -8,6 +8,7 @@
 
 import { Hono } from "hono";
 import type { Tea } from "../shared/types";
+import { getColdBrew, coldBrewIneligibleReason } from "../shared/cold-brew";
 import teasData from "../data/teas.json";
 
 const teas: Tea[] = teasData as Tea[];
@@ -62,7 +63,9 @@ When recommending a specific tea, ALWAYS reference it by ID using this exact syn
 
 ALWAYS use the [tea:id] syntax when mentioning a specific tea. The id is the exact id field from the tool results. Never mention a tea by name without also including its [tea:id] reference.
 
-Tone: warm, knowledgeable, concise. You're talking with someone who also knows tea. Don't lecture about basics. Don't use marketing language. Default to short paragraphs. Mention specific brewing parameters (temperature, time) when recommending — they matter. Use Celsius for temperature. Brewing data uses a rounds array: each round has its own water_temp_c and steep_time_seconds. For multi-round teas (Japanese, oolong, puer), mention the first round's parameters and how many rounds are recommended.
+Brewing data has up to three modes. (1) A 'rounds' array — each round has its own water_temp_c and steep_time_seconds. For multi-round teas (Japanese, oolong, puer), mention the first round's parameters and how many rounds are recommended. (2) An optional 'simple' block — a single Western-style infusion, given as leaf_grams in water_ml. (3) An optional 'cold_brew' block returned by get_tea, giving g_per_l, an hours range, and overnight advice. Cold brew means leaf left in fridge-cold water for hours — there is no temperature to state, just the fridge. Because cold water extracts amino acids readily but barely touches catechins and caffeine, a long steep does NOT turn bitter the way a long hot steep does; the same dose works for a short steep or overnight. The exception is broken or fine-cut leaf (deep-steamed sencha, CTC blends), where the overnight advice will say to reduce the dose. Not every tea can be cold brewed: matcha is whisked into suspension rather than steeped, smoky teas turn ashy, and masala chai needs heat for the spices. When get_tea reports a tea is ineligible it also gives the reason — use it rather than inventing one.
+
+Tone: warm, knowledgeable, concise. You're talking with someone who also knows tea. Don't lecture about basics. Don't use marketing language. Default to short paragraphs. Mention specific brewing parameters (temperature, time) when recommending — they matter. Use Celsius for temperature.
 
 Language: English.`;
 
@@ -82,7 +85,7 @@ const TOOL_DEFINITIONS = [
   {
     name: "list_teas_by_filter",
     description:
-      "List teas matching structured filters: category, country, or urgency. Returns a summary of each matching tea (id, name, category, country, urgency, caffeine level). Call with no filters to list ALL teas. Use this for specific structured queries like 'all Japanese teas', 'what's urgent right now', 'show me oolongs', or 'list everything'. Do NOT use this for semantic/mood-based queries — use search_teas instead.",
+      "List teas matching structured filters: category, country, urgency, or cold_brew. Returns a summary of each matching tea (id, name, category, country, urgency, caffeine level). Call with no filters to list ALL teas. Use this for specific structured queries like 'all Japanese teas', 'what's urgent right now', 'show me oolongs', 'what can I cold brew', or 'list everything'. Do NOT use this for semantic/mood-based queries — use search_teas instead.",
     parameters: {
       type: "object" as const,
       properties: {
@@ -98,6 +101,11 @@ const TOOL_DEFINITIONS = [
           type: "string",
           description:
             "Filter by urgency level. From most to least urgent: 'now' (expired or <3 months), 'soon' (3-9 months), 'no-rush' (9-18 months), 'stable' (>18 months or aging). Results are a filtered subset — not all teas.",
+        },
+        cold_brew: {
+          type: "boolean",
+          description:
+            "Filter by cold brew suitability. true returns only teas that can be cold brewed; false returns only those that cannot (matcha, smoky teas, masala chai). Use for questions like 'what can I cold brew?'.",
         },
       },
       required: [] as string[],
@@ -165,12 +173,26 @@ function executeListCategories() {
   return { total_teas: teas.length, categories };
 }
 
-function executeListTeasByFilter(args: Record<string, string>) {
+function executeListTeasByFilter(args: Record<string, unknown>) {
   let filtered = [...teas];
   if (args.category) filtered = filtered.filter((t) => t.category === args.category);
   if (args.country) filtered = filtered.filter((t) => t.origin.country === args.country);
   if (args.urgency) filtered = filtered.filter((t) => t.urgency === args.urgency);
+
+  // The LLM sometimes sends booleans as strings — same coercion the top_k arg needs.
+  const coldBrew = coerceBoolean(args.cold_brew);
+  if (coldBrew !== undefined) {
+    filtered = filtered.filter((t) => (getColdBrew(t) !== null) === coldBrew);
+  }
+
   return { count: filtered.length, teas: filtered.map(teaSummary) };
+}
+
+function coerceBoolean(value: unknown): boolean | undefined {
+  if (typeof value === "boolean") return value;
+  if (value === "true") return true;
+  if (value === "false") return false;
+  return undefined;
 }
 
 async function executeSearchTeas(
@@ -204,7 +226,16 @@ async function executeSearchTeas(
 function executeGetTea(args: { id: string }) {
   const tea = teas.find((t) => t.id === args.id);
   if (!tea) return { error: `Tea with id '${args.id}' not found in the collection.` };
-  return tea;
+
+  // Cold brew params are derived from category, not stored — resolve them here so
+  // the model can answer "can I cold brew this?" without guessing.
+  const rule = getColdBrew(tea);
+  return {
+    ...tea,
+    cold_brew: rule
+      ? { eligible: true, ...rule }
+      : { eligible: false, reason: coldBrewIneligibleReason(tea) },
+  };
 }
 
 async function executeTool(

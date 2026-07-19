@@ -4,6 +4,22 @@ Architectural and design decisions for tea-rag. Updated as the project evolves.
 
 ---
 
+## 2026-07 — Cold brew: derived per category, not authored per tea
+
+**Choice**: Cold brew parameters (g/L, steep window, overnight advice) live in a category-keyed table in `src/shared/cold-brew.ts`, resolved at read time by `getColdBrew(tea)`. Individual teas override via an optional `cold_brew` block in their YAML. Teas that resolve to `null` never show the mode in the UI.
+
+**Why**: The alternative was authoring a cold brew block in all 52 YAML files. The parameters are almost entirely a function of category and leaf shape — a sencha is a sencha — so per-tea authoring would have been 52 copies of a dozen distinct answers, plus a new obligation on every tea added later. The override exists for the cases the category genuinely doesn't predict: `boston-tea-party-lapsang-souchong` is a `black-chinese` that must not be cold brewed, and nothing about its category says so.
+
+**Why read-time rather than ingest-time**: unlike `computeUrgency`, which depends on today's date and so must be frozen into `teas.json` at ingest, cold brew depends only on category. Deriving on demand means tuning a ratio needs no re-ingest and no re-embedding.
+
+**The overnight model**: ratio is fixed and time is a range, because cold water extracts selectively — amino acids dissolve at 4 °C while catechins and caffeine barely move, so a 12-hour steep does not turn bitter the way a 12-hour hot steep would. The exception is leaf surface area: deep-steamed sencha, CTC blends and other broken leaf keep extracting, so those categories carry an `overnight: { kind: "reduce" }` variant with a lower dose. Turkish çay is the one `avoid`. This asymmetry is why `OvernightAdvice` is a tagged union rather than a number.
+
+**Not embedded**: cold brew params were deliberately left out of `buildCompositeText`. Embedding numeric brewing values buys little and would force a full re-index on every rule tweak; the `cold_brew` boolean filter on `list_teas_by_filter` answers "what can I cold brew?" deterministically instead.
+
+**Consequence**: `tea-detail.tsx`'s `showGongfu` boolean became a three-value `BrewMode` rendered through the (previously unused) shadcn `Tabs` primitive. Two states could not become three inside a boolean.
+
+---
+
 ## 2025-05 — Project template: Hono + Vite (React) monorepo
 
 **Choice**: Single repo with Hono for the Worker API and Vite + React for the frontend, deployed via Cloudflare Workers with static assets.

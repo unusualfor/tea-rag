@@ -9,6 +9,10 @@ import {
 } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ColdBrewPanel } from "@/components/cold-brew-panel";
+import { getColdBrew } from "@shared/cold-brew";
+import { useUnits } from "@/hooks/use-units";
 import {
   urgencyConfig,
   getCategoryGradient,
@@ -25,15 +29,69 @@ interface TeaDetailProps {
   onClose: () => void;
 }
 
-export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
-  const [showGongfu, setShowGongfu] = useState(false);
+type BrewMode = "traditional" | "hot" | "cold-brew";
 
-  useEffect(() => { setShowGongfu(false); }, [tea?.id]);
+/**
+ * Every tea's hot schedule is a rounds array, but the tradition it belongs to
+ * differs — and the vessel is what names it. A kyusu schedule is senchadō, not
+ * gongfu; only the Chinese gaiwan teas are actually brewed gongfu style.
+ */
+const VESSEL_LABELS: Record<string, string> = {
+  gaiwan: "Gongfu",
+  kyusu: "Japanese",
+  shiboridashi: "Japanese",
+  chawan: "Whisked",
+  "matcha bowl": "Whisked",
+  "çaydanlık": "Turkish",
+};
+
+function hotModeLabel(tea: Tea): string {
+  if (tea.category.startsWith("matcha")) return "Whisked";
+
+  const byVessel = VESSEL_LABELS[tea.brewing?.vessel?.toLowerCase() ?? ""];
+  if (byVessel) return byVessel;
+
+  // Generic vessel ("teapot", "any"). A multi-round schedule still belongs to a
+  // tradition — gongfu is regularly done in a yixing pot rather than a gaiwan —
+  // so fall back to origin. Single infusions are Western whatever the origin.
+  if ((tea.brewing?.rounds.length ?? 0) > 1) {
+    if (tea.origin.country === "China") return "Gongfu";
+    if (tea.origin.country === "Japan") return "Japanese";
+  }
+  return "Western";
+}
+
+function modeLabel(mode: BrewMode, tea: Tea): string {
+  if (mode === "cold-brew") return "Cold Brew";
+  // The 8 teas carrying a `simple` block are all gaiwan teas, so its counterpart
+  // is always the Western single infusion.
+  if (mode === "traditional") return "Western";
+  return hotModeLabel(tea);
+}
+
+/** Which brewing modes this tea actually supports, in display order. */
+function availableModes(tea: Tea | null): BrewMode[] {
+  if (!tea) return [];
+  const modes: BrewMode[] = [];
+  if (tea.brewing?.simple) modes.push("traditional");
+  if (tea.brewing?.rounds.length) modes.push("hot");
+  if (getColdBrew(tea)) modes.push("cold-brew");
+  return modes;
+}
+
+export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
+  const { units } = useUnits();
+  const modes = availableModes(tea);
+  const [mode, setMode] = useState<BrewMode | null>(modes[0] ?? null);
+
+  useEffect(() => { setMode(availableModes(tea)[0] ?? null); }, [tea?.id]);
 
   if (!tea) return null;
 
   const urgency = urgencyConfig[tea.urgency];
   const gradient = getCategoryGradient(tea.category);
+  const coldBrew = getColdBrew(tea);
+  const activeMode = mode && modes.includes(mode) ? mode : modes[0] ?? null;
 
   return (
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
@@ -93,30 +151,25 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
           <Separator />
 
           {/* Brewing */}
-          {tea.brewing && (
+          {(tea.brewing || coldBrew) && (
             <div>
-              <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center justify-between mb-3 gap-3">
                 <h4 className="text-sm font-medium text-foreground">Brewing</h4>
-                {tea.brewing.simple && (
-                  <button
-                    type="button"
-                    onClick={() => setShowGongfu(!showGongfu)}
-                    className={`
-                      relative inline-flex h-6 items-center gap-1.5 rounded-full px-2.5
-                      text-xs font-medium transition-colors
-                      ${showGongfu
-                        ? "bg-muted text-muted-foreground hover:bg-muted/80"
-                        : "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-200"
-                      }
-                    `}
-                  >
-                    {showGongfu ? "← Traditional" : "Gongfu →"}
-                  </button>
+                {modes.length > 1 && activeMode && (
+                  <Tabs value={activeMode} onValueChange={(v) => setMode(v as BrewMode)}>
+                    <TabsList>
+                      {modes.map((m) => (
+                        <TabsTrigger key={m} value={m} className="px-2.5 text-xs">
+                          {modeLabel(m, tea)}
+                        </TabsTrigger>
+                      ))}
+                    </TabsList>
+                  </Tabs>
                 )}
               </div>
 
-              {/* Vessel & leaf ratio — only for gongfu mode or teas without simple */}
-              {(!tea.brewing.simple || showGongfu) && (
+              {/* Vessel & leaf ratio — hot brewing only */}
+              {activeMode === "hot" && tea.brewing && (
                 <div className="flex flex-wrap gap-4 mb-3">
                   {tea.brewing.leaf_grams_per_100ml && (
                     <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
@@ -133,8 +186,8 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
                 </div>
               )}
 
-              {/* Simple (traditional) view — single infusion */}
-              {tea.brewing.simple && !showGongfu ? (
+              {/* Traditional — single infusion */}
+              {activeMode === "traditional" && tea.brewing?.simple && (
                 <div className="flex flex-wrap gap-4 text-sm">
                   <span className="flex items-center gap-1.5">
                     <Scale className="w-3.5 h-3.5 text-muted-foreground" />
@@ -142,7 +195,7 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
                   </span>
                   <span className="flex items-center gap-1.5">
                     <Thermometer className="w-3.5 h-3.5 text-muted-foreground" />
-                    {formatBrewingTemp(tea.brewing.simple.water_temp_c)}
+                    {formatBrewingTemp(tea.brewing.simple.water_temp_c, units)}
                   </span>
                   <span className="flex items-center gap-1.5">
                     <Clock className="w-3.5 h-3.5 text-muted-foreground" />
@@ -153,45 +206,51 @@ export function TeaDetail({ tea, open, onClose }: TeaDetailProps) {
                     {tea.brewing.simple.water_ml}ml
                   </span>
                 </div>
-              ) : tea.brewing.rounds.length === 1 ? (
-                /* Single round — no toggle needed */
-                <div className="flex gap-4 text-sm">
-                  <span className="flex items-center gap-1.5">
-                    <Thermometer className="w-3.5 h-3.5 text-muted-foreground" />
-                    {formatBrewingTemp(tea.brewing.rounds[0].water_temp_c)}
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <Clock className="w-3.5 h-3.5 text-muted-foreground" />
-                    {formatBrewingTime(tea.brewing.rounds[0].steep_time_seconds)}
-                  </span>
-                  {tea.brewing.rounds[0].water_ml && (
-                    <span className="flex items-center gap-1.5">
-                      <Droplets className="w-3.5 h-3.5 text-muted-foreground" />
-                      {tea.brewing.rounds[0].water_ml}ml
-                    </span>
-                  )}
-                </div>
-              ) : (
-                /* Multi-round (gongfu or Japanese) */
-                <div className="space-y-1">
-                  {tea.brewing.rounds.map((round, i) => (
-                    <div key={i} className="flex items-center gap-2 text-sm">
-                      <span className="w-4 text-xs text-muted-foreground font-medium">{i + 1}.</span>
-                      <span>{formatBrewingTemp(round.water_temp_c)}</span>
-                      <span className="text-muted-foreground">·</span>
-                      <span>{formatBrewingTime(round.steep_time_seconds)}</span>
-                      {round.water_ml && (
-                        <>
-                          <span className="text-muted-foreground">·</span>
-                          <span>{round.water_ml}ml</span>
-                        </>
-                      )}
-                    </div>
-                  ))}
-                </div>
               )}
 
-              {tea.brewing.notes && (
+              {/* Hot — one row per round, collapsed to a single line when there's only one */}
+              {activeMode === "hot" && tea.brewing && (
+                tea.brewing.rounds.length === 1 ? (
+                  <div className="flex gap-4 text-sm">
+                    <span className="flex items-center gap-1.5">
+                      <Thermometer className="w-3.5 h-3.5 text-muted-foreground" />
+                      {formatBrewingTemp(tea.brewing.rounds[0].water_temp_c, units)}
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <Clock className="w-3.5 h-3.5 text-muted-foreground" />
+                      {formatBrewingTime(tea.brewing.rounds[0].steep_time_seconds)}
+                    </span>
+                    {tea.brewing.rounds[0].water_ml && (
+                      <span className="flex items-center gap-1.5">
+                        <Droplets className="w-3.5 h-3.5 text-muted-foreground" />
+                        {tea.brewing.rounds[0].water_ml}ml
+                      </span>
+                    )}
+                  </div>
+                ) : (
+                  <div className="space-y-1">
+                    {tea.brewing.rounds.map((round, i) => (
+                      <div key={i} className="flex items-center gap-2 text-sm">
+                        <span className="w-4 text-xs text-muted-foreground font-medium">{i + 1}.</span>
+                        <span>{formatBrewingTemp(round.water_temp_c, units)}</span>
+                        <span className="text-muted-foreground">·</span>
+                        <span>{formatBrewingTime(round.steep_time_seconds)}</span>
+                        {round.water_ml && (
+                          <>
+                            <span className="text-muted-foreground">·</span>
+                            <span>{round.water_ml}ml</span>
+                          </>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )
+              )}
+
+              {activeMode === "cold-brew" && coldBrew && <ColdBrewPanel rule={coldBrew} />}
+
+              {/* Authored notes describe hot brewing — the cold brew panel carries its own. */}
+              {tea.brewing?.notes && activeMode !== "cold-brew" && (
                 <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
                   {tea.brewing.notes}
                 </p>

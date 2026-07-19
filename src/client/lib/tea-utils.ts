@@ -69,8 +69,45 @@ export function getCategoryGradient(category: TeaCategory): string {
   return categoryColors[category] || categoryColors.other;
 }
 
-export function formatBrewingTemp(temp: number): string {
+export type UnitSystem = "metric" | "imperial";
+
+export function formatBrewingTemp(temp: number, units: UnitSystem = "metric"): string {
+  if (units === "imperial") {
+    return `${Math.round((temp * 9) / 5 + 32)}°F`;
+  }
   return `${temp}°C`;
+}
+
+const ML_PER_FL_OZ = 29.5735;
+
+/** Volume for display. Metric promotes whole litres; imperial uses US fl oz. */
+export function formatVolume(ml: number, units: UnitSystem = "metric"): string {
+  if (units === "imperial") {
+    const flOz = ml / ML_PER_FL_OZ;
+    return `${flOz >= 10 ? Math.round(flOz) : Math.round(flOz * 10) / 10} fl oz`;
+  }
+  if (ml >= 1000 && ml % 1000 === 0) return `${ml / 1000} L`;
+  return `${ml} ml`;
+}
+
+export function mlToFlOz(ml: number): number {
+  return Math.round((ml / ML_PER_FL_OZ) * 10) / 10;
+}
+
+export function flOzToMl(flOz: number): number {
+  return Math.round(flOz * ML_PER_FL_OZ);
+}
+
+/**
+ * Leaf mass. Stays metric in both systems on purpose — tea scales read grams,
+ * and 0.35 oz is not an actionable number.
+ */
+export function formatMass(grams: number): string {
+  return `${Math.round(grams * 10) / 10} g`;
+}
+
+export function formatSteepHours([min, max]: [number, number]): string {
+  return min === max ? `${min} h` : `${min}–${max} h`;
 }
 
 export function formatBrewingTime(seconds: number): string {

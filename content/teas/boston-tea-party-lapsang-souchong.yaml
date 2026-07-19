@@ -24,6 +24,10 @@ acquisition:
   context: Red Hat Summit Boston work trip
 caffeine_level: 3
 expiry_estimate: '2027.05'
+cold_brew:
+  eligible: false
+  reason: Pine-smoke phenols need heat to read as aroma. Cold, they steep out as
+    flat ashtray notes with none of the sweetness underneath.
 brewing:
   vessel: teapot
   leaf_grams_per_100ml: 1

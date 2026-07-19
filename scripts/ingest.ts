@@ -71,6 +71,27 @@ function validateTea(tea: unknown, filename: string): Tea {
     errors.push("missing or invalid 'caffeine_level' (must be 1-5)");
   if (!t.notes) errors.push("missing 'notes'");
 
+  // Cold brew params are derived per category; this block only overrides them,
+  // so a typo here would silently disable a tea's Cold Brew mode.
+  if (t.cold_brew !== undefined) {
+    const cb = t.cold_brew as Record<string, unknown>;
+    if (typeof cb !== "object" || cb === null) {
+      errors.push("'cold_brew' must be an object");
+    } else {
+      if (cb.eligible !== undefined && typeof cb.eligible !== "boolean")
+        errors.push("'cold_brew.eligible' must be a boolean");
+      if (cb.eligible === false && typeof cb.reason !== "string")
+        errors.push("'cold_brew.eligible: false' requires a 'cold_brew.reason' string");
+      if (cb.g_per_l !== undefined && (typeof cb.g_per_l !== "number" || cb.g_per_l <= 0))
+        errors.push("'cold_brew.g_per_l' must be a positive number");
+      if (cb.hours !== undefined) {
+        const h = cb.hours;
+        if (!Array.isArray(h) || h.length !== 2 || h.some((n) => typeof n !== "number") || h[0] > h[1])
+          errors.push("'cold_brew.hours' must be [min, max] numbers with min <= max");
+      }
+    }
+  }
+
   if (errors.length > 0) {
     throw new Error(`Validation failed for ${filename}: ${errors.join(", ")}`);
   }

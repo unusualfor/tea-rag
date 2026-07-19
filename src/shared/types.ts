@@ -89,6 +89,20 @@ export interface Tea {
     };
     notes?: string;
   };
+  /**
+   * Per-tea escape hatch for cold brewing. Parameters are normally derived from
+   * the category (see shared/cold-brew.ts) — this only exists for teas whose
+   * category doesn't predict them, e.g. a smoky black that shouldn't be cold
+   * brewed at all.
+   */
+  cold_brew?: {
+    eligible?: boolean;
+    /** Shown to the chat assistant when eligible is false. Not rendered in the UI. */
+    reason?: string;
+    g_per_l?: number;
+    hours?: [number, number];
+    note?: string;
+  };
   notes: string;
   photo?: {
     url: string;

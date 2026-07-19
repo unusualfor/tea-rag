@@ -377,7 +377,7 @@
       "long-jing",
       "teavivre"
     ],
-    "urgency": "soon"
+    "urgency": "now"
   },
   {
     "id": "biwa-cha-is-farm-nagasaki",
@@ -453,6 +453,10 @@
     },
     "caffeine_level": 3,
     "expiry_estimate": "2027.05",
+    "cold_brew": {
+      "eligible": false,
+      "reason": "Pine-smoke phenols need heat to read as aroma. Cold, they steep out as flat ashtray notes with none of the sweetness underneath."
+    },
     "brewing": {
       "vessel": "teapot",
       "leaf_grams_per_100ml": 1,
@@ -962,7 +966,7 @@
       "tea-bag",
       "organic"
     ],
-    "urgency": "no-rush"
+    "urgency": "soon"
   },
   {
     "id": "demmers",
@@ -1073,7 +1077,7 @@
       "zhejiang",
       "commercial"
     ],
-    "urgency": "soon"
+    "urgency": "now"
   },
   {
     "id": "gyokuro-hojicha-ikeda-senchado",
@@ -1949,6 +1953,7 @@
       "context": "Honeymoon trip"
     },
     "caffeine_level": 5,
+    "in_stock": false,
     "expiry_estimate": "2026.07",
     "brewing": {
       "vessel": "chawan",
@@ -2255,7 +2260,7 @@
       "spring-tea",
       "teavivre"
     ],
-    "urgency": "soon"
+    "urgency": "now"
   },
   {
     "id": "republic-of-tea-organic-ceremonial-matcha",
@@ -2362,7 +2367,7 @@
       "yushuku-meicha",
       "kyushu-collection"
     ],
-    "urgency": "no-rush"
+    "urgency": "soon"
   },
   {
     "id": "tangerine-peel-chen-pi-liu-bao-cha-teavivre",
