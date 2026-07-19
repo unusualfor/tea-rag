@@ -13,12 +13,8 @@ import teasData from "../data/teas.json";
 
 const teas: Tea[] = teasData as Tea[];
 
-// Workers AI model with function calling. GLM-4.7-Flash is the catalog's
-// cheapest tool-calling model (5,500/36,400 neurons per M tokens in/out vs
-// 26,668/204,805 for llama-3.3-70b-fp8-fast) and the one explicitly tuned for
-// multi-turn tool calling, which is where the 70B struggled.
-// Fallback if answer quality regresses: "@cf/meta/llama-3.3-70b-instruct-fp8-fast".
-const CHAT_MODEL = "@cf/zai-org/glm-4.7-flash";
+// Best available Workers AI model with function calling
+const CHAT_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
 const EMBEDDING_MODEL = "@cf/baai/bge-base-en-v1.5";
 
 type Bindings = {
