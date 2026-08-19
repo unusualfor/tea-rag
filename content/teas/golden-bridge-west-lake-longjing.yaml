@@ -22,6 +22,7 @@ acquisition:
   month: 3
   context: Trip with Federica
 caffeine_level: 3
+in_stock: false
 expiry_estimate: null
 brewing:
   vessel: gaiwan
