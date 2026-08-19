@@ -20,6 +20,7 @@ acquisition:
   month: null
   context: null
 caffeine_level: 2
+in_stock: false
 expiry_estimate: '2025.09'
 brewing:
   vessel: kyusu
