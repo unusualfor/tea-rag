@@ -30,3 +30,11 @@ export function getTeas(): Tea[] {
 export function isInStock(tea: Tea): boolean {
   return tea.in_stock !== false;
 }
+
+/** How many matches a stock filter can drop, so a query knows its headroom. */
+export function outOfStockCount(): number {
+  return getTeas().filter((t) => !isInStock(t)).length;
+}
+
+// Vectorize caps topK at 20 when metadata is returned.
+export const MAX_TOP_K = 20;

@@ -9,7 +9,7 @@
 import { Hono } from "hono";
 import type { Tea } from "../shared/types";
 import { getColdBrew, coldBrewIneligibleReason } from "../shared/cold-brew";
-import { getTeas, isInStock } from "./teas";
+import { getTeas, isInStock, outOfStockCount, MAX_TOP_K } from "./teas";
 
 // Best available Workers AI model with function calling
 const CHAT_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
@@ -213,7 +213,7 @@ async function executeSearchTeas(
   args: { query: string; top_k?: number },
   env: Bindings
 ) {
-  const topK = Number(args.top_k) || 5;
+  const topK = Math.min(Number(args.top_k) || 5, MAX_TOP_K);
 
   // Generate embedding for the query
   const embeddingResponse = (await env.AI.run(EMBEDDING_MODEL, {
@@ -222,9 +222,9 @@ async function executeSearchTeas(
   const queryVector = embeddingResponse.data[0];
 
   // Query Vectorize
-  // Over-fetch so out-of-stock matches, dropped below, do not shrink the set.
+  // Ask for exactly as many extra matches as the stock filter below can drop.
   const vectorResults = await env.VECTORIZE.query(queryVector, {
-    topK: topK * 2,
+    topK: Math.min(topK + outOfStockCount(), MAX_TOP_K),
     returnMetadata: "all",
   });
 

@@ -115,7 +115,9 @@ Both are fixable with a nested `TOOLS_PAYLOAD` projection and a `normalizeAiResp
 
 **Why**: `in_stock` was only honoured by the browse grid, so Ask mode happily recommended teas that had been finished. The value is stored explicitly as a boolean rather than being omitted when true, since metadata filters cannot match an absent field.
 
-**Correction (same day)**: filtering on it at query time did not work. Vectorize only filters on properties that have a *metadata index*, and this account has none — `wrangler vectorize list-metadata-index tea-embeddings` reports zero. Filtering on an unindexed property matches nothing, so the first deploy returned 0 results for every search. Stock is now filtered in the Worker after the query, with `topK` doubled to absorb the dropped matches. The same gap silently affects the pre-existing `category`, `urgency`, and `country` filters on `/api/search` — they have never narrowed anything. Fixing those needs `wrangler vectorize create-metadata-index` plus a full re-upsert, because an index only covers vectors written after it exists.
+**Correction (same day)**: filtering on it at query time did not work. Vectorize only filters on properties that have a *metadata index*, and this account has none — `wrangler vectorize list-metadata-index tea-embeddings` reports zero. Filtering on an unindexed property matches nothing, so the first deploy returned 0 results for every search. Stock is now filtered in the Worker after the query, with `topK` doubled to absorb the dropped matches. The same gap silently affected the pre-existing `category`, `urgency`, and `country` filters on `/api/search` — they had never narrowed anything. String metadata indexes now exist for all three, created before the re-upsert that follows them, since an index only covers vectors written after it exists.
+
+`in_stock` deliberately has no index: it is filtered in the Worker instead, and the query asks for `top_k + outOfStockCount()` matches so a full page survives the filter. Vectorize caps `topK` at 20 when metadata is returned, which bounds both.
 
 ## 2025-05 — Vectorize metadata filters vs. embedding
 

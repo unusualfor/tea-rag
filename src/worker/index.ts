@@ -2,7 +2,7 @@ import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { ingestApp } from "./ingest-handler";
 import { chatApp } from "./chat-handler";
-import { getTeas, isInStock } from "./teas";
+import { getTeas, isInStock, outOfStockCount, MAX_TOP_K } from "./teas";
 import { refreshVectorMetadata } from "./refresh-metadata";
 
 type Bindings = {
@@ -88,9 +88,12 @@ app.post("/api/search", async (c) => {
 
   // Stock is filtered in JS, not by Vectorize: metadata filters only work on
   // properties with a metadata index, and vectors upserted before an index
-  // exists stay unfilterable until they are re-upserted. Over-fetch so the
-  // dropped out-of-stock matches do not shrink the result set.
-  const overFetch = include_out_of_stock ? top_k : top_k * 2;
+  // exists stay unfilterable until they are re-upserted. Ask for exactly as
+  // many extra matches as the filter can drop, so a full page survives it.
+  const wanted = Math.min(top_k, MAX_TOP_K);
+  const overFetch = include_out_of_stock
+    ? wanted
+    : Math.min(wanted + outOfStockCount(), MAX_TOP_K);
 
   // Query Vectorize
   const vectorResults = await c.env.VECTORIZE.query(queryVector, {
@@ -107,7 +110,7 @@ app.post("/api/search", async (c) => {
       return tea ? { tea, score: match.score } : null;
     })
     .filter((r) => r !== null && (include_out_of_stock || isInStock(r.tea)))
-    .slice(0, top_k);
+    .slice(0, wanted);
 
   return c.json({ results, query });
 });
