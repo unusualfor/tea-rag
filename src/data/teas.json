@@ -23,6 +23,7 @@
       "context": "Gift"
     },
     "caffeine_level": 3,
+    "in_stock": false,
     "expiry_estimate": "2027.01",
     "brewing": {
       "vessel": "teapot",
@@ -105,7 +106,7 @@
       "autumn",
       "kyushu-collection"
     ],
-    "urgency": "soon"
+    "urgency": "now"
   },
   {
     "id": "anxi-monkey-king-tie-guan-yin-teavivre",
@@ -189,7 +190,7 @@
       "anxi",
       "teavivre"
     ],
-    "urgency": "no-rush"
+    "urgency": "soon"
   },
   {
     "id": "asamushi-cha-ikeda-senchado",
@@ -247,7 +248,7 @@
       "premium",
       "kyushu-collection"
     ],
-    "urgency": "soon"
+    "urgency": "now"
   },
   {
     "id": "aso-no-megumi-nagata-seicha",
@@ -426,7 +427,7 @@
       "ages-well",
       "kyushu-collection"
     ],
-    "urgency": "stable"
+    "urgency": "no-rush"
   },
   {
     "id": "boston-tea-party-lapsang-souchong",
@@ -481,7 +482,7 @@
       "historical",
       "commercial"
     ],
-    "urgency": "no-rush"
+    "urgency": "soon"
   },
   {
     "id": "canada-true-maple-black-tea",
@@ -650,6 +651,7 @@
       "context": "Hotel souvenir during Osaka stay"
     },
     "caffeine_level": 2,
+    "in_stock": false,
     "expiry_estimate": "~2026.01",
     "brewing": {
       "vessel": "teapot",
@@ -672,7 +674,7 @@
       "hotel-blend",
       "osaka"
     ],
-    "urgency": "no-rush"
+    "urgency": "soon"
   },
   {
     "id": "caykur-rize-turist-cayi",
@@ -827,7 +829,7 @@
       "black-sea",
       "commercial"
     ],
-    "urgency": "no-rush"
+    "urgency": "soon"
   },
   {
     "id": "chunyuan-chrysanthemum-puerh",
@@ -925,6 +927,7 @@
       "context": "Trip with Federica"
     },
     "caffeine_level": 3,
+    "in_stock": false,
     "expiry_estimate": null,
     "brewing": {
       "vessel": "teapot",
@@ -1044,6 +1047,7 @@
       "context": "Trip with Federica"
     },
     "caffeine_level": 3,
+    "in_stock": false,
     "expiry_estimate": null,
     "brewing": {
       "vessel": "gaiwan",
@@ -1194,7 +1198,7 @@
       "kyushu-collection",
       "premium"
     ],
-    "urgency": "soon"
+    "urgency": "now"
   },
   {
     "id": "gyokuro-zuigyoku-kanbayashi",
@@ -1927,7 +1931,7 @@
       "single-origin",
       "kyushu-collection"
     ],
-    "urgency": "soon"
+    "urgency": "now"
   },
   {
     "id": "matcha-kuwari-samidori-ujitawara",
@@ -2286,6 +2290,7 @@
       "context": null
     },
     "caffeine_level": 4,
+    "in_stock": false,
     "expiry_estimate": "2027.10",
     "brewing": {
       "vessel": "chawan",
@@ -2553,7 +2558,7 @@
       "fujian",
       "gongfu"
     ],
-    "urgency": "no-rush"
+    "urgency": "soon"
   },
   {
     "id": "uji-no-mukashi-nakamura-tokichi",
@@ -2807,6 +2812,7 @@
       "context": null
     },
     "caffeine_level": 2,
+    "in_stock": false,
     "expiry_estimate": "2025.09",
     "brewing": {
       "vessel": "kyusu",
@@ -2859,6 +2865,7 @@
       "context": null
     },
     "caffeine_level": 1,
+    "in_stock": false,
     "expiry_estimate": "2025.09",
     "brewing": {
       "vessel": "teapot",

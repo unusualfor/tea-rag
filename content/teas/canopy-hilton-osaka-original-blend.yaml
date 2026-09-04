@@ -20,6 +20,7 @@ acquisition:
   month: null
   context: Hotel souvenir during Osaka stay
 caffeine_level: 2
+in_stock: false
 expiry_estimate: ~2026.01
 brewing:
   vessel: teapot

@@ -20,6 +20,7 @@ acquisition:
   month: null
   context: Gift
 caffeine_level: 3
+in_stock: false
 expiry_estimate: '2027.01'
 brewing:
   vessel: teapot
