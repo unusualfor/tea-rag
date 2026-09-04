@@ -107,6 +107,8 @@ Both are fixable with a nested `TOOLS_PAYLOAD` projection and a `normalizeAiResp
 
 **Trade-off**: Between `wrangler deploy` finishing and the ingest POST completing, searches filtering on `in_stock` can miss vectors that predate the field. The window is seconds and only affects the deploying commit.
 
+**The ingest POST targets workers.dev, not the custom domain.** Posting to `tea.francescoforesta.com/api/ingest` from a GitHub Actions runner gets a Cloudflare *managed challenge* — an HTML interstitial served by the zone's bot protection before the request reaches the Worker, so the auth header is never evaluated and the response is a challenge page rather than JSON. The same request from a residential IP passes, which is what made this look like an auth failure for four runs. Free-plan Bot Fight Mode cannot be bypassed with a WAF skip rule, so the fix is to leave the zone out of the path: the URL comes from `wrangler-action`'s `deployment-url` output, which is the workers.dev hostname.
+
 ## 2026-09 — in_stock is Vectorize metadata, not just a UI flag
 
 **Choice**: `in_stock` is written into vector metadata at ingest and filtered in `/api/search` and the chat tools. Out-of-stock teas are excluded by default; `include_out_of_stock` opts back in.

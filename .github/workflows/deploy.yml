@@ -28,6 +28,7 @@ jobs:
       - run: npm run build
 
       - uses: cloudflare/wrangler-action@v3
+        id: deploy
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -35,19 +36,35 @@ jobs:
 
       # Push embeddings + metadata to Vectorize. Runs after deploy so the
       # endpoint serving /api/ingest is the version matching this commit.
+      #
+      # Targets the workers.dev URL, not the custom domain: the zone's bot
+      # protection issues a managed challenge to POSTs from runner IPs, which
+      # is served before the request ever reaches the Worker. workers.dev is
+      # not behind the zone, so it skips that layer entirely.
       - name: Push embeddings to Vectorize
         env:
           INGEST_SECRET: ${{ secrets.INGEST_SECRET }}
-          SITE_URL: https://tea.francescoforesta.com
+          DEPLOY_URL: ${{ steps.deploy.outputs.deployment-url }}
         run: |
+          if [ -z "$DEPLOY_URL" ]; then
+            echo "::error::wrangler-action returned no deployment-url; is workers.dev disabled for this Worker?"
+            exit 1
+          fi
+          echo "Ingesting via $DEPLOY_URL"
           status=$(curl -sS -o ingest-response.json -w '%{http_code}' \
-            -X POST "$SITE_URL/api/ingest" \
+            -X POST "$DEPLOY_URL/api/ingest" \
             -H "Authorization: Bearer $INGEST_SECRET" \
             -H "Content-Type: application/json" \
             --data-binary @dist/ingest-payload.json)
-          cat ingest-response.json
-          echo
           if [ "$status" != "200" ]; then
             echo "::error::Ingest failed with HTTP $status"
+            # Truncated: a challenge page is ~50KB of HTML and buries the signal.
+            head -c 300 ingest-response.json
+            echo
+            if grep -q "challenge-platform" ingest-response.json; then
+              echo "::error::Response is a Cloudflare bot challenge, not the Worker."
+            fi
             exit 1
           fi
+          cat ingest-response.json
+          echo

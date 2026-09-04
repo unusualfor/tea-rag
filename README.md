@@ -107,6 +107,11 @@ committing it is the whole workflow — no manual `wrangler deploy`, no manual
 Required GitHub Actions secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`,
 `INGEST_SECRET` (must match the Worker secret of the same name).
 
+CI posts the ingest payload to the **workers.dev** URL rather than
+`tea.francescoforesta.com` — the zone's bot protection challenges POSTs from
+runner IPs before they reach the Worker. Keep workers.dev enabled for this
+Worker or the ingest step has no route in.
+
 ### Add a new tea
 
 1. Create `content/teas/{id}.yaml` using an existing file as a template.
