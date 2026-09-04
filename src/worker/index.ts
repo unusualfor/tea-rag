@@ -82,14 +82,19 @@ app.post("/api/search", async (c) => {
 
   // Build metadata filter
   const metadataFilter: Record<string, string | boolean> = {};
-  if (!include_out_of_stock) metadataFilter.in_stock = true;
   if (filters?.category) metadataFilter.category = filters.category;
   if (filters?.urgency) metadataFilter.urgency = filters.urgency;
   if (filters?.country) metadataFilter.country = filters.country;
 
+  // Stock is filtered in JS, not by Vectorize: metadata filters only work on
+  // properties with a metadata index, and vectors upserted before an index
+  // exists stay unfilterable until they are re-upserted. Over-fetch so the
+  // dropped out-of-stock matches do not shrink the result set.
+  const overFetch = include_out_of_stock ? top_k : top_k * 2;
+
   // Query Vectorize
   const vectorResults = await c.env.VECTORIZE.query(queryVector, {
-    topK: top_k,
+    topK: overFetch,
     filter: Object.keys(metadataFilter).length > 0 ? metadataFilter : undefined,
     returnMetadata: "all",
   });
@@ -101,9 +106,8 @@ app.post("/api/search", async (c) => {
       const tea = teas.find((t) => t.id === match.id);
       return tea ? { tea, score: match.score } : null;
     })
-    // Vectors ingested before in_stock existed carry no such metadata, so the
-    // filter above cannot exclude them — drop them here too.
-    .filter((r) => r !== null && (include_out_of_stock || isInStock(r.tea)));
+    .filter((r) => r !== null && (include_out_of_stock || isInStock(r.tea)))
+    .slice(0, top_k);
 
   return c.json({ results, query });
 });

@@ -222,8 +222,9 @@ async function executeSearchTeas(
   const queryVector = embeddingResponse.data[0];
 
   // Query Vectorize
+  // Over-fetch so out-of-stock matches, dropped below, do not shrink the set.
   const vectorResults = await env.VECTORIZE.query(queryVector, {
-    topK,
+    topK: topK * 2,
     returnMetadata: "all",
   });
 
@@ -233,7 +234,8 @@ async function executeSearchTeas(
       const tea = teas.find((t) => t.id === match.id);
       return tea ? { ...teaSummary(tea), relevance_score: match.score } : null;
     })
-    .filter((r) => r !== null && r.in_stock !== false);
+    .filter((r) => r !== null && r.in_stock !== false)
+    .slice(0, topK);
 
   return { query: args.query, count: results.length, results };
 }

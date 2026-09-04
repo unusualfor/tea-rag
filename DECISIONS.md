@@ -111,7 +111,9 @@ Both are fixable with a nested `TOOLS_PAYLOAD` projection and a `normalizeAiResp
 
 **Choice**: `in_stock` is written into vector metadata at ingest and filtered in `/api/search` and the chat tools. Out-of-stock teas are excluded by default; `include_out_of_stock` opts back in.
 
-**Why**: `in_stock` was only honoured by the browse grid, so Ask mode happily recommended teas that had been finished. Vectorize metadata filters cannot match an absent field, so the value is stored explicitly as a boolean rather than being omitted when true.
+**Why**: `in_stock` was only honoured by the browse grid, so Ask mode happily recommended teas that had been finished. The value is stored explicitly as a boolean rather than being omitted when true, since metadata filters cannot match an absent field.
+
+**Correction (same day)**: filtering on it at query time did not work. Vectorize only filters on properties that have a *metadata index*, and this account has none — `wrangler vectorize list-metadata-index tea-embeddings` reports zero. Filtering on an unindexed property matches nothing, so the first deploy returned 0 results for every search. Stock is now filtered in the Worker after the query, with `topK` doubled to absorb the dropped matches. The same gap silently affects the pre-existing `category`, `urgency`, and `country` filters on `/api/search` — they have never narrowed anything. Fixing those needs `wrangler vectorize create-metadata-index` plus a full re-upsert, because an index only covers vectors written after it exists.
 
 ## 2025-05 — Vectorize metadata filters vs. embedding
 
