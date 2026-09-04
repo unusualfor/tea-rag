@@ -99,35 +99,54 @@ The Vite dev server proxies `/api/*` to the Worker on port 8787. Workers AI and 
 
 ## Adding and managing teas
 
+Deployment is fully automated: pushing to `main` runs `npm run ingest`, builds,
+deploys the Worker, and pushes embeddings to Vectorize. Editing a YAML file and
+committing it is the whole workflow — no manual `wrangler deploy`, no manual
+`curl` to `/api/ingest`.
+
+Required GitHub Actions secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`,
+`INGEST_SECRET` (must match the Worker secret of the same name).
+
 ### Add a new tea
 
 1. Create `content/teas/{id}.yaml` using an existing file as a template.
-2. Run `npm run ingest` to validate and regenerate `src/data/teas.json`.
+2. Run `npm run ingest` locally to validate and refresh `src/data/teas.json`
+   (optional — CI regenerates it — but it catches validation errors before push).
 3. Optionally upload a photo:
    ```bash
    npx wrangler r2 object put tea-photos/photos/{id}.jpg --file ./path/to/photo.jpg
    ```
-4. Deploy: `npm run deploy`.
-5. Push embeddings to Vectorize by calling the ingest endpoint:
-   ```bash
-   curl -X POST https://tea.francescoforesta.com/api/ingest \
-     -H "Authorization: Bearer $INGEST_SECRET" \
-     -H "Content-Type: application/json" \
-     -d @dist/ingest-payload.json
-   ```
+4. Commit and push. CI ingests, deploys, and re-embeds.
 
-The ingest handler detects new, changed, and unchanged teas via content hashing. Only new or modified teas are re-embedded.
+### Update a tea (including stock status)
 
-### Update a tea
-
-Edit the YAML file, run `npm run ingest`, deploy, and re-ingest. The content hash detects the change and re-embeds only the modified tea.
+Edit the YAML file, commit, push. Setting `in_stock: false` hides the tea from
+the default browse view; CI regenerates `teas.json` and re-embeds automatically.
 
 ### Remove a tea
 
 1. Delete the YAML file from `content/teas/`.
-2. Run `npm run ingest` to regenerate data.
-3. Vectors for deleted teas remain in Vectorize but won't match any tea in the dataset — they're effectively orphaned and harmless.
-4. Commit and deploy.
+2. Commit and push.
+3. Vectors for deleted teas remain in Vectorize but won't match any tea in the
+   dataset — they're effectively orphaned and harmless. To purge them, call
+   `/api/ingest/delete` with the ids.
+
+### Urgency freshness
+
+`urgency` is derived from today's date, so it cannot be stored once and trusted.
+The client and the Worker both recompute it on read; a nightly cron
+(`15 3 * * *`) patches the copy held in Vectorize metadata so filtered searches
+stay correct between deploys.
+
+### Manual deploy (escape hatch)
+
+```bash
+npm run ingest && npm run deploy
+curl -X POST https://tea.francescoforesta.com/api/ingest \
+  -H "Authorization: Bearer $INGEST_SECRET" \
+  -H "Content-Type: application/json" \
+  -d @dist/ingest-payload.json
+```
 
 ## Commands
 

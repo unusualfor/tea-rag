@@ -97,6 +97,22 @@ Both are fixable with a nested `TOOLS_PAYLOAD` projection and a `normalizeAiResp
 
 ---
 
+## 2026-09 — Deploy pipeline owns ingest; urgency refreshed nightly
+
+**Choice**: The GitHub Actions deploy workflow runs `npm run ingest` before building and POSTs `dist/ingest-payload.json` to `/api/ingest` after deploying. A cron trigger (`15 3 * * *`) runs a `scheduled` handler that patches `urgency` and `in_stock` on stored vectors.
+
+**Why**: Changing a tea previously took three manual steps — local ingest, `npm run deploy`, and a hand-run curl with `INGEST_SECRET`. Committing a YAML edit is now the whole workflow.
+
+**Why a cron and not just re-ingest**: `computeUrgency` depends on today's date, so it is frozen twice — into `teas.json` at ingest, and into Vectorize metadata at upsert. Local checks in September found 10 of 52 teas carrying urgency computed in May. The Worker cannot rewrite its own bundle, so the fixes differ per surface: the Worker now recomputes urgency at read time (`src/worker/teas.ts`, mirroring what the client already did in `use-teas.ts`), while the cron repairs Vectorize metadata by re-upserting stored vectors with patched metadata. Values are reused, so nothing is re-embedded.
+
+**Trade-off**: Between `wrangler deploy` finishing and the ingest POST completing, searches filtering on `in_stock` can miss vectors that predate the field. The window is seconds and only affects the deploying commit.
+
+## 2026-09 — in_stock is Vectorize metadata, not just a UI flag
+
+**Choice**: `in_stock` is written into vector metadata at ingest and filtered in `/api/search` and the chat tools. Out-of-stock teas are excluded by default; `include_out_of_stock` opts back in.
+
+**Why**: `in_stock` was only honoured by the browse grid, so Ask mode happily recommended teas that had been finished. Vectorize metadata filters cannot match an absent field, so the value is stored explicitly as a boolean rather than being omitted when true.
+
 ## 2025-05 — Vectorize metadata filters vs. embedding
 
 **Choice**: Structured fields (`urgency`, `category`, `status`, `country`) are metadata filters in Vectorize. Free-text fields (`notes`, `producer.history`, `brewing.notes`) are embedded.

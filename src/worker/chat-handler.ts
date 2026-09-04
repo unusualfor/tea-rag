@@ -9,9 +9,7 @@
 import { Hono } from "hono";
 import type { Tea } from "../shared/types";
 import { getColdBrew, coldBrewIneligibleReason } from "../shared/cold-brew";
-import teasData from "../data/teas.json";
-
-const teas: Tea[] = teasData as Tea[];
+import { getTeas, isInStock } from "./teas";
 
 // Best available Workers AI model with function calling
 const CHAT_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
@@ -53,6 +51,8 @@ The urgency field indicates freshness priority, computed from expiry dates and c
 
 When the user asks open-ended questions like "what should I drink?" or "what's good right now?", consider urgency (prefer 'now' and 'soon' teas), caffeine_level (1=very low, 5=very high — important for afternoon/evening), time of day, season, and mood. Recommend specific teas and briefly explain why.
 
+Teas that have been finished are excluded from tool results by default, so anything you see can actually be brewed. If the user asks specifically about teas they have run out of, call list_teas_by_filter with include_out_of_stock=true; the in_stock field marks which ones are gone.
+
 When the user asks about similarities ("like that gyokuro from Uji"), use search_teas with a descriptive query.
 
 When the user asks about the collection structure ("how many matchas", "what countries"), use list_categories or list_teas_by_filter.
@@ -85,7 +85,7 @@ const TOOL_DEFINITIONS = [
   {
     name: "list_teas_by_filter",
     description:
-      "List teas matching structured filters: category, country, urgency, or cold_brew. Returns a summary of each matching tea (id, name, category, country, urgency, caffeine level). Call with no filters to list ALL teas. Use this for specific structured queries like 'all Japanese teas', 'what's urgent right now', 'show me oolongs', 'what can I cold brew', or 'list everything'. Do NOT use this for semantic/mood-based queries — use search_teas instead.",
+      "List teas matching structured filters: category, country, urgency, or cold_brew. Returns a summary of each matching tea (id, name, category, country, urgency, caffeine level, in_stock). Finished teas are excluded unless include_out_of_stock is true. Call with no filters to list ALL teas. Use this for specific structured queries like 'all Japanese teas', 'what's urgent right now', 'show me oolongs', 'what can I cold brew', or 'list everything'. Do NOT use this for semantic/mood-based queries — use search_teas instead.",
     parameters: {
       type: "object" as const,
       properties: {
@@ -106,6 +106,11 @@ const TOOL_DEFINITIONS = [
           type: "boolean",
           description:
             "Filter by cold brew suitability. true returns only teas that can be cold brewed; false returns only those that cannot (matcha, smoky teas, masala chai). Use for questions like 'what can I cold brew?'.",
+        },
+        include_out_of_stock: {
+          type: "boolean",
+          description:
+            "Include teas that have been finished. Defaults to false — finished teas are hidden. Set true only when the user explicitly asks about teas they have run out of or the full historical collection.",
         },
       },
       required: [] as string[],
@@ -158,10 +163,12 @@ function teaSummary(tea: Tea) {
     country: tea.origin.country,
     urgency: tea.urgency,
     caffeine_level: tea.caffeine_level,
+    in_stock: isInStock(tea),
   };
 }
 
 function executeListCategories() {
+  const teas = getTeas().filter(isInStock);
   const counts: Record<string, { category: string; label: string; count: number }> = {};
   for (const tea of teas) {
     if (!counts[tea.category]) {
@@ -174,7 +181,14 @@ function executeListCategories() {
 }
 
 function executeListTeasByFilter(args: Record<string, unknown>) {
-  let filtered = [...teas];
+  let filtered = [...getTeas()];
+
+  // Finished teas are excluded unless the model explicitly asks for them, so
+  // recommendations never point at something that is gone.
+  if (coerceBoolean(args.include_out_of_stock) !== true) {
+    filtered = filtered.filter(isInStock);
+  }
+
   if (args.category) filtered = filtered.filter((t) => t.category === args.category);
   if (args.country) filtered = filtered.filter((t) => t.origin.country === args.country);
   if (args.urgency) filtered = filtered.filter((t) => t.urgency === args.urgency);
@@ -213,18 +227,19 @@ async function executeSearchTeas(
     returnMetadata: "all",
   });
 
+  const teas = getTeas();
   const results = vectorResults.matches
     .map((match) => {
       const tea = teas.find((t) => t.id === match.id);
       return tea ? { ...teaSummary(tea), relevance_score: match.score } : null;
     })
-    .filter(Boolean);
+    .filter((r) => r !== null && r.in_stock !== false);
 
   return { query: args.query, count: results.length, results };
 }
 
 function executeGetTea(args: { id: string }) {
-  const tea = teas.find((t) => t.id === args.id);
+  const tea = getTeas().find((t) => t.id === args.id);
   if (!tea) return { error: `Tea with id '${args.id}' not found in the collection.` };
 
   // Cold brew params are derived from category, not stored — resolve them here so
@@ -278,12 +293,17 @@ interface ChatRequest {
   history?: Array<{ role: "user" | "assistant"; content: string }>;
 }
 
+// Reference fixup covers the whole collection, finished teas included — the
+// model may legitimately mention one, and a broken [tea:id] is worse than a
+// reference to something out of stock.
+const ALL_TEAS = getTeas();
+
 // All known tea IDs for reference fixup
-const TEA_IDS = new Set(teas.map((t) => t.id));
+const TEA_IDS = new Set(ALL_TEAS.map((t) => t.id));
 
 // Build a name→id lookup (primary and alternate names, lowercased)
 const TEA_NAME_MAP = new Map<string, string>();
-for (const t of teas) {
+for (const t of ALL_TEAS) {
   TEA_NAME_MAP.set(t.name.primary.toLowerCase(), t.id);
   if (t.name.alternate) TEA_NAME_MAP.set(t.name.alternate.toLowerCase(), t.id);
 }
@@ -307,7 +327,7 @@ function fixTeaReferences(text: string): string {
     // Best prefix match
     let bestMatch = "";
     let bestScore = 0;
-    for (const t of teas) {
+    for (const t of ALL_TEAS) {
       let shared = 0;
       for (let i = 0; i < Math.min(id.length, t.id.length); i++) {
         if (id[i] === t.id[i]) shared++;

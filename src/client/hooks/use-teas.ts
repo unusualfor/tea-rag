@@ -57,6 +57,7 @@ export function useTeas() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           query,
+          include_out_of_stock: filters.showOutOfStock,
           filters: Object.keys(activeFilters).length > 0 ? activeFilters : undefined,
           top_k: 20,
         }),

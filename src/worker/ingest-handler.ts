@@ -66,6 +66,9 @@ ingestApp.post("/api/ingest", async (c) => {
         country: record.tea.origin.country,
         region: record.tea.origin.region,
         urgency: record.tea.urgency,
+        // Missing in_stock means in stock; store it explicitly so Vectorize
+        // can filter on it (metadata filters cannot match an absent field).
+        in_stock: record.tea.in_stock !== false,
         caffeine_level: String(record.tea.caffeine_level),
         contentHash: record.contentHash,
         name: record.tea.name.primary,

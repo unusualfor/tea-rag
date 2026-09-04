@@ -20,6 +20,11 @@ jobs:
 
       - run: npm ci
 
+      # Regenerate src/data/teas.json from content/teas/*.yaml so the YAML files
+      # are the single source of truth. Also recomputes urgency against today's
+      # date, which is frozen into teas.json at ingest time.
+      - run: npm run ingest
+
       - run: npm run build
 
       - uses: cloudflare/wrangler-action@v3
@@ -27,3 +32,22 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy
+
+      # Push embeddings + metadata to Vectorize. Runs after deploy so the
+      # endpoint serving /api/ingest is the version matching this commit.
+      - name: Push embeddings to Vectorize
+        env:
+          INGEST_SECRET: ${{ secrets.INGEST_SECRET }}
+          SITE_URL: https://tea.francescoforesta.com
+        run: |
+          status=$(curl -sS -o ingest-response.json -w '%{http_code}' \
+            -X POST "$SITE_URL/api/ingest" \
+            -H "Authorization: Bearer $INGEST_SECRET" \
+            -H "Content-Type: application/json" \
+            --data-binary @dist/ingest-payload.json)
+          cat ingest-response.json
+          echo
+          if [ "$status" != "200" ]; then
+            echo "::error::Ingest failed with HTTP $status"
+            exit 1
+          fi

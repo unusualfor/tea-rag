@@ -19,6 +19,10 @@ bucket_name = "tea-photos"
 [ai]
 binding = "AI"
 
+# Nightly metadata refresh — recomputes urgency on stored vectors (03:15 UTC)
+[triggers]
+crons = ["15 3 * * *"]
+
 [vars]
 ENVIRONMENT = "production"
 
