@@ -17,6 +17,7 @@ acquisition:
   month: null
   context: null
 caffeine_level: 4
+in_stock: false
 expiry_estimate: null
 brewing:
   vessel: matcha bowl
