@@ -20,6 +20,7 @@ acquisition:
   month: 3
   context: 3GPP RAN#111 work trip
 caffeine_level: 3
+in_stock: false
 expiry_estimate: '2026.07'
 brewing:
   vessel: kyusu
